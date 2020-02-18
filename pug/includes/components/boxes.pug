@@ -1,0 +1,20 @@
+mixin box(options)
+  - options = options || {};
+  - var showImage = options.showImage || false;
+  - var showDescription = options.showDescription || false;
+  - var hideSubtitle = options.hideSubtitle || false;
+  - var boxTitle = options.boxTitle || 'Coming in September, exclusively on OneCampus – World Business Forum London';
+  - var boxSubtitle = options.boxSubtitle || 'World Business Forum London';
+  - var boxLink = options.boxLink || 'Discover Now';
+  - var boxDescription = options.boxDescription || 'Morbi mattis ullamcorper velit. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Ut a nisl id ante tempus hendrerit. Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.';
+  - var boxImage = options.boxImage || '../assets/graphic-conversation.svg';
+  .box&attributes(attributes)
+    .box__media
+      if showImage
+        img.box__image(src=boxImage alt='key')
+    unless hideSubtitle
+      .box__subtitle #{boxSubtitle}
+    .box__title #{boxTitle}
+    if showDescription
+      .box__description #{boxDescription}
+    +link(boxLink)

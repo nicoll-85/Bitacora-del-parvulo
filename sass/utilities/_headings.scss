@@ -1,0 +1,82 @@
+
+/* Global Styles for Heading
+**********************/
+
+.heading {
+	margin-top: 40px;
+	padding: 10px 0;
+}
+
+.heading__icon {
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+
+.heading__subtitle {
+	display: inline-block;
+}
+
+.heading--hero{
+	&, h1#{&}{
+		text-shadow: 0 1px 4px rgba($darkest-color,.5);
+		font-family: var(--primary-font);
+		color: var(--lightest-color);
+	  letter-spacing: .01em;
+	  font-weight: 900;
+		@include font-size(36px);
+		@include media(desktop-s) {
+			letter-spacing: .006em;
+			@include font-size(48px);
+		}
+	}
+}
+
+/* Header with Avatar
+**********************/
+
+.header--with-avatar {
+	@include clearfix();
+} 
+
+.header--with-avatar img {
+	float: left;
+	margin-right: 10px;
+} 
+
+.header--with-avatar__title {
+	float: left;
+}
+
+
+/*  Global Styles for Hero Image 
+**********************/
+
+.hero-image {
+	position: relative;
+	width: 100%;
+	min-height: 400px;
+	background-color: #000;
+}
+
+.hero-image img {
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+	object-fit: cover;
+	opacity: .5;
+}
+
+.hero-image__content {
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+  text-align: center;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+	color: #FFF;
+}

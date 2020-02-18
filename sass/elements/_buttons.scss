@@ -1,0 +1,200 @@
+/* Global Styles for Buttons
+**********************/
+.button {
+  display: inline-block;
+  position: relative;
+  min-width: 150px;
+  width: auto;
+  max-width: none;
+  height: auto;
+  padding: 0.5rem;
+  margin-bottom: 5px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 22px;
+  cursor: pointer;
+  color: var(--secondary-color);
+  background-color: var(--lightest-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  font-weight: 900;
+  @include font-size(14px);
+  transition: all 0.25s ease-in-out;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    background-color: var(--fourth-color);
+  }
+}
+
+/* Buttons Variations
+**********************/
+.button--primary {
+  background-color: var(--primary-color);
+  color: var(--lightest-color);
+  border-color: var(--primary-color);
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: lighten($primary-color, 5%);
+  }
+}
+
+.button--ghost {
+  color: var(--primary-color);
+  background-color: var(--lightest-color);
+  border: 1px solid var(--primary-color);
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+.button--rounded {
+  border-radius: 50%;
+}
+
+.button--square {
+  border-radius: 0px;
+}
+
+.button--fullwidth {
+  margin: 0;
+  min-width: 100%;
+}
+
+.button--normal-case {
+  text-transform: none;
+}
+
+/* Only icon Buttons
+**********************/
+
+.button--icon {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+}
+
+.button--icon i {
+  font-size: 3rem;
+}
+
+/* Button with Text and icon
+**********************/
+
+.button-with-icons i {
+  padding-right: 6px;
+  vertical-align: text-bottom;
+  font-size: 1.2rem;
+}
+
+.button-with-icons span {
+  display: inline;
+}
+// .button-switch {
+//   display: inline-block;
+//   width: 40px;
+//   height: 26px;
+//   input {
+// 	  display: none;
+//   }
+//   .switch-private .switch-input:checked + .switch-slider {
+//     background-color: #f86c6b;
+//     border-color: #f63c3a;
+//   }
+//   .switch-slider {
+//     position: relative;
+//     display: block;
+//     height: inherit;
+//     cursor: pointer;
+//     background-color: #fff;
+//     border: 1px solid #c8ced3;
+//     transition: 0.15s ease-out;
+//     border-radius: 0.25rem;
+//   }
+//   input[type="checkbox"] {
+//     box-sizing: border-box;
+//     padding: 0;
+//   }
+//   .button-popover-public--public {
+//     background-color: var(--accent-color-06);
+//     text-align: left;
+//   }
+
+//   .button-popover-public--privacy {
+//     width: 70px;
+//     height: 35px;
+//     border-radius: 18px;
+//     padding: 4px;
+//     border: 0;
+//     vertical-align: top;
+//     position: relative;
+//   }
+// }
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  display: none;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--accent-color-06);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input.default:checked + .slider {
+  background-color: var(--accent-color-06);
+}
+input.private:checked + .slider {
+  background-color: #f44336;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+

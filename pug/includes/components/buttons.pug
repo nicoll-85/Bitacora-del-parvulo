@@ -1,0 +1,12 @@
+mixin button(options)
+	- options = options || {};
+	- var buttonTitle = options.buttonTitle || "button";
+	- var showIcon = options.showIcon || false;
+	- var iconName = options.iconName || '';
+	- var iconUrl = 'images/icons/oc-icons.svg#icon-'+iconName;
+
+	button.button&attributes(attributes)
+		span.button__title #{buttonTitle}
+		if showIcon
+			svg(class="icon" role="img" aria-label="icon" aria-hidden=true)
+				use(xlink:href=iconUrl)

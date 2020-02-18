@@ -1,0 +1,13 @@
+
+/* Global Styles for Links
+**************************/
+.link{
+  display: inline-block;
+  margin-bottom: 5px;
+  color: var(--primary-color);
+  text-decoration: underline;
+  font-family: var(--primary-font);
+  font-weight: 600;
+  @include font-size(14px);
+  cursor: pointer;
+}

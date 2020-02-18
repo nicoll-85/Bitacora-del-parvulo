@@ -1,0 +1,185 @@
+/* Global Styles for Boxes
+**********************/
+
+.box {
+	& *{
+		z-index: 1;
+	}
+	min-width: 200px;
+	width: 100%;
+	max-width: 100%;
+	min-height: 120px;
+	position: relative;
+	padding: 15px 20px;
+	margin: 10px auto;
+	display: flex;
+	flex-direction: column;
+	align-items:left;
+	justify-content: center;
+	text-align: left;
+	border-radius: 5px;
+	justify-content: space-between;
+	border-radius: 5px;
+	background: var(--lightest-color);
+	color: var(--secondary-color);
+	box-shadow: 0 2px 8px rgba(0,0,0,.23);
+	font-family: var(--primary-font);
+	text-align: left;
+	line-height: 18px;
+	@include font-size(18px);
+	@include media(desktop-m) {
+		max-width: 400px;
+		min-height: 150px;
+	}
+
+	&:after{
+		content: " ";
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		background: 100% 100%/auto 90px no-repeat;
+		background-image: url(https://onecampus.laureate.net/assets/images/global/card-watermark-default.svg);
+		z-index: 0;
+	}
+
+	.box__subtitle{
+		margin-bottom: 5px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		color: lighten($secondary-color, 30%);
+		font-weight: 600;
+		@include font-size(12px);
+	}
+
+	.box__title{
+		margin-bottom: 15px;
+		color: var(--secondary-color);
+		font-weight: 600;
+		@include font-size(18px);
+	}
+}
+
+.box__content {
+	width: 90%;
+}
+
+.box__detail {
+	margin-bottom: 0;
+	text-transform: uppercase;
+	@include font-size(14px);
+}
+
+.box__image {
+	height: 60px;
+	width: 60px;
+	min-width: 60px;
+}
+.box__title {
+	margin-top: 28px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.box__media {
+	text-align: left;
+}
+.box__description {
+	margin-bottom: 18px;
+}
+
+/* Variations
+**********************/
+
+.box--rounded {
+	border-radius: 10px;
+	.box__background-img {
+		border-radius: 10px;
+	}
+}
+
+
+/* Box with Background Image
+**********************/
+
+.box--with-background {
+	background-color: #000;
+	.box__content {
+		position: absolute;
+		z-index: 2;
+		color: #FFF;
+	}	
+}
+
+.box__background_image {
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+	object-fit: cover;
+	opacity: .3;
+}
+
+
+/* Box with Image
+**********************/
+
+.box--with-image {
+	position: relative;
+	border: none;
+	.box__title {
+		margin-top: 15px;
+	}
+	.box__background-img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+}
+
+
+/* Box with Icons
+**********************/
+
+.box--with-icon .box__icon {
+	display: block;
+	height: 50px;
+	width: auto;
+	margin: 0 auto;
+}
+
+
+/* Small Boxes
+**********************/
+
+.box--small {
+	padding: 1% 1%;
+	min-height: 100px;
+	flex-direction: row;
+	svg, img {
+		padding-left: 3%;
+	}
+	.box-content {
+		margin-left: 5%;
+		flex-grow: 2;
+		margin-left: 10px;
+		text-align: left;
+		overflow: hidden;
+	}
+}
+
+
+/* Small Box with image
+**********************/
+
+.box--small.box--with-image {
+	justify-content: flex-start;
+	border: 1px solid #CCC;
+	text-align: left;
+	.box__image {
+		margin-right: 8px;
+	}
+}
+
