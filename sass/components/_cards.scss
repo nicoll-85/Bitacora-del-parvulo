@@ -1,0 +1,60 @@
+/* Global Styles for Boxes
+**********************/
+
+.card {
+  position: relative;
+  width: 18rem;
+  max-width: 18rem;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  font-family: var(--primary-font);
+  word-wrap: break-word;
+  background-color: $lightest-color;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 12px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+  @include font-size(18px);
+  
+  .media--top {
+    width: 100%;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+  }
+
+  .card__body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    border-radius: 12px;
+    background-color: var(--secondary-font);
+    margin-top: -8px;
+    .card__title {
+      font-family: "Open Sans", sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      color:var(--accent-color-06);
+      letter-spacing: 0;
+      line-height: 20px;
+    }
+    .card__text {
+      opacity: 0.5;
+      font-family: var(--secondary-font);
+      font-size: 14px;
+      color:var(--accent-color-06);
+      letter-spacing: 0;
+      line-height: 20px;
+    }
+  }
+  [type="button"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  [type="submit"]:not(:disabled),
+  button:not(:disabled) {
+    cursor: pointer;
+    background-color: transparent;
+  }
+}
