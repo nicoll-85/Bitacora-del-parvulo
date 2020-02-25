@@ -1,4 +1,4 @@
-/* Global Styles for Boxes
+/* Global Styles for Cards
 **********************/
 
 .card {
@@ -28,10 +28,11 @@
   }
 
   .card__body {
+	-webkit-box-flex: 1;
     flex: 1 1 auto;
     padding: 1.25rem;
     border-radius: 12px;
-    background-color: var(--secondary-font);
+    background-color: $lightest-color;
     margin-top: -8px;
     .card__title {
       font-family: "Open Sans", sans-serif;

@@ -1,25 +1,15 @@
 mixin card(options)
-  //- - options = options || {};
-  //- - var showImage = options.showImage || false;
-  //- - var showDescription = options.showDescription || false;
-  //- - var hideSubtitle = options.hideSubtitle || false;
-  //- - var boxTitle = options.boxTitle || 'Coming in September, exclusively on OneCampus – World Business Forum London';
-  //- - var boxSubtitle = options.boxSubtitle || 'World Business Forum London';
-  //- - var boxLink = options.boxLink || 'Discover Now';
-  //- - var boxDescription = options.boxDescription || 'Morbi mattis ullamcorper velit. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Ut a nisl id ante tempus hendrerit. Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.';
-  //- - var boxImage = options.boxImage || '../assets/graphic-conversation.svg';
   .card&attributes(attributes)
-    img.media--top(src="./images/Fill@3x.png", alt="video image" class="media--top") 
+    img.media--top(src="./images/Fill@3x.png", alt="video image") 
     .card__body
       h5.card__title Design Thinking: The New Standard for Creative Probl…
       p.card__text Some quick example text to build on the card title and make up the bulk of the content.
 
-
-    //-   if showImage
-    //-     img.box__image(src=boxImage alt='key')
-    //- unless hideSubtitle
-    //-   .box__subtitle #{boxSubtitle}
-    //- .box__title #{boxTitle}
-    //- if showDescription
-    //-   .box__description #{boxDescription}
-    //- +link(boxLink)
+  .card-video
+    img.card__img(src="", alt="")
+    .card-img-overlay
+      p.card-video__section-title How are you doing at Analyzing & Solving Problems?
+      h5.card-video__title Answer a few short questions and get an idea of your current ability level so you know where you can improve.
+      img.card-video__badge(src="", alt="")
+      +button
+   
