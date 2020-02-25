@@ -39,6 +39,12 @@ footer {
 	  margin-top: 0;
 	  margin-bottom: 11px;
 	}
+	.lang-select__options {
+		justify-content: flex-start;
+		li {
+			margin-right: 8px;
+		}
+	}
 }
 
 

@@ -4389,6 +4389,12 @@ footer {
     list-style: none;
     margin-top: 0;
     margin-bottom: 11px; }
+  footer .lang-select__options {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+    footer .lang-select__options li {
+      margin-right: 8px; }
 
 .footer__nav-link {
   color: inherit;
