@@ -2,7 +2,10 @@
 **********************/
 
 .button {
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   position: relative;
   min-width: 150px;
   width: auto;
@@ -35,6 +38,13 @@
     &:focus {
       text-decoration: none;
     }
+  }
+  .icon {
+    width: 16px;
+    height: 16px;
+    margin: 4px;
+    vertical-align: text-bottom;
+    font-size: 1.2rem;
   }
 }
 
@@ -126,62 +136,9 @@
   padding: 0;
 }
 
-.button--icon i {
+.button--icon .icon {
   font-size: 3rem;
 }
-
-/* Button with Text and icon
-**********************/
-
-.button-with-icons i {
-  padding-right: 6px;
-  vertical-align: text-bottom;
-  font-size: 1.2rem;
-}
-
-.button-with-icons span {
-  display: inline;
-}
-// .button-switch {
-//   display: inline-block;
-//   width: 40px;
-//   height: 26px;
-//   input {
-// 	  display: none;
-//   }
-//   .switch-private .switch-input:checked + .switch-slider {
-//     background-color: #f86c6b;
-//     border-color: #f63c3a;
-//   }
-//   .switch-slider {
-//     position: relative;
-//     display: block;
-//     height: inherit;
-//     cursor: pointer;
-//     background-color: #fff;
-//     border: 1px solid #c8ced3;
-//     transition: 0.15s ease-out;
-//     border-radius: 0.25rem;
-//   }
-//   input[type="checkbox"] {
-//     box-sizing: border-box;
-//     padding: 0;
-//   }
-//   .button-popover-public--public {
-//     background-color: var(--accent-color-06);
-//     text-align: left;
-//   }
-
-//   .button-popover-public--privacy {
-//     width: 70px;
-//     height: 35px;
-//     border-radius: 18px;
-//     padding: 4px;
-//     border: 0;
-//     vertical-align: top;
-//     position: relative;
-//   }
-// }
 
 /* The switch - the box around the slider */
 .switch {

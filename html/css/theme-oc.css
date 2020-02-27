@@ -4038,7 +4038,19 @@ output {
 /* Global Styles for Buttons
 **********************/
 .button {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: relative;
   min-width: 150px;
   width: auto;
@@ -4070,6 +4082,12 @@ output {
     border: 1px solid var(--darkest-color); }
     .button.button--ghost:hover, .button.button--ghost:focus {
       text-decoration: none; }
+  .button .icon {
+    width: 16px;
+    height: 16px;
+    margin: 4px;
+    vertical-align: text-bottom;
+    font-size: 1.2rem; }
 
 /* Buttons Variations
 **********************/
@@ -4132,18 +4150,8 @@ output {
   height: 50px;
   padding: 0; }
 
-.button--icon i {
+.button--icon .icon {
   font-size: 3rem; }
-
-/* Button with Text and icon
-**********************/
-.button-with-icons i {
-  padding-right: 6px;
-  vertical-align: text-bottom;
-  font-size: 1.2rem; }
-
-.button-with-icons span {
-  display: inline; }
 
 /* The switch - the box around the slider */
 .switch {
