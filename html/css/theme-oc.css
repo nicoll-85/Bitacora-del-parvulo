@@ -4076,18 +4076,19 @@ output {
   .button:hover, .button:focus {
     text-decoration: none;
     background-color: var(--fourth-color); }
+  .button .icon {
+    width: 16px;
+    height: 16px;
+    margin: 4px;
+    vertical-align: text-bottom;
+    font-size: 1.2rem;
+    fill: var(--darkest-color); }
   .button.button--ghost {
     color: var(--darkest-color);
     background-color: var(--lightest-color);
     border: 1px solid var(--darkest-color); }
     .button.button--ghost:hover, .button.button--ghost:focus {
       text-decoration: none; }
-  .button .icon {
-    width: 16px;
-    height: 16px;
-    margin: 4px;
-    vertical-align: text-bottom;
-    font-size: 1.2rem; }
 
 /* Buttons Variations
 **********************/
@@ -4097,12 +4098,16 @@ output {
   border-color: var(--primary-color); }
   .button--primary:hover, .button--primary:focus, .button--primary:active {
     background-color: #ff9179; }
+  .button--primary .icon {
+    fill: var(--lightest-color); }
   .button--primary.button--ghost {
     color: var(--primary-color);
     background-color: var(--lightest-color);
     border: 1px solid var(--primary-color); }
     .button--primary.button--ghost:hover, .button--primary.button--ghost:focus {
       text-decoration: none; }
+    .button--primary.button--ghost .icon {
+      fill: var(--primary-color); }
 
 .button--secondary {
   background-color: var(--secondary-color);
@@ -4110,12 +4115,16 @@ output {
   border-color: var(--secondary-color); }
   .button--secondary:hover, .button--secondary:focus, .button--secondary:active {
     background-color: #4f93d4; }
+  .button--secondary .icon {
+    fill: var(--lightest-color); }
   .button--secondary.button--ghost {
     color: var(--secondary-color);
     background-color: var(--lightest-color);
     border: 1px solid var(--secondary-color); }
     .button--secondary.button--ghost:hover, .button--secondary.button--ghost:focus {
       text-decoration: none; }
+    .button--secondary.button--ghost .icon {
+      fill: var(--secondary-color); }
 
 .button--third {
   background-color: var(--darkest-color);
@@ -4123,12 +4132,16 @@ output {
   border-color: var(--darkest-color); }
   .button--third:hover, .button--third:focus, .button--third:active {
     background-color: #3d5362; }
+  .button--third .icon {
+    fill: var(--lightest-color); }
   .button--third.button--ghost {
     color: var(--darkest-color);
     background-color: var(--lightest-color);
     border: 1px solid var(--darkest-color); }
     .button--third.button--ghost:hover, .button--third.button--ghost:focus {
       text-decoration: none; }
+    .button--third.button--ghost .icon {
+      fill: var(--darkest-color); }
 
 .button--rounded {
   border-radius: 50%; }
