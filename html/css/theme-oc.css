@@ -4440,6 +4440,7 @@ input:checked + .slider:before {
           margin-top: 26px; } }
 
 .card-featured {
+  width: 75%;
   position: relative;
   display: -ms-flexbox;
   display: flex;
