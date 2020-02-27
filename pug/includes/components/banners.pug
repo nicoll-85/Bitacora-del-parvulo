@@ -1,0 +1,13 @@
+mixin banner()
+	.banner
+		.banner__content
+			.banner__label
+				svg(class="icon" role="img" aria-label="icon" aria-hidden=true)
+					use(xlink:href='images/icons/oc-icons.svg#oc-Ability')
+				span.label__text Abilities
+			.banner__text
+				h1 Analyzing & Solving Problems
+				span Employers look for candidates who approach a situation by quickly assessing and efficiently applying their knowledge to influence it.
+			.banner__actions
+				+button({'buttonTitle': 'Learn More'}).button--primary
+		.banner__image(style={'background-image': 'url("images/ability-analyzing-hero.svg")'})
