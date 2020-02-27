@@ -4569,7 +4569,7 @@ input:checked + .slider:before {
         opacity: 0.5; }
 
 footer {
-  background: var(--secondary-color);
+  background: #22252a;
   color: var(--lightest-color);
   line-height: 1;
   display: flow-root; }
