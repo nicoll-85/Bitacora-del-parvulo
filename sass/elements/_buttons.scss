@@ -1,5 +1,6 @@
 /* Global Styles for Buttons
 **********************/
+
 .button {
   display: inline-block;
   position: relative;
@@ -11,20 +12,29 @@
   margin-bottom: 5px;
   text-decoration: none;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: none;
   line-height: 22px;
   cursor: pointer;
-  color: var(--secondary-color);
+  color: var(--darkest-color);
   background-color: var(--lightest-color);
-  border: 1px solid var(--secondary-color);
-  border-radius: 4px;
-  font-weight: 900;
+  border: 1px solid var(--darkest-color);
+  border-radius: 8px;
+  font-weight: 400;
   @include font-size(14px);
   transition: all 0.25s ease-in-out;
   &:hover,
   &:focus {
     text-decoration: none;
     background-color: var(--fourth-color);
+  }
+  &.button--ghost {
+    color: var(--darkest-color);
+    background-color: var(--lightest-color);
+    border: 1px solid var(--darkest-color);
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
   }
 }
 
@@ -39,15 +49,54 @@
   &:active {
     background-color: lighten($primary-color, 5%);
   }
+  &.button--ghost {
+    color: var(--primary-color);
+    background-color: var(--lightest-color);
+    border: 1px solid var(--primary-color);
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
 }
 
-.button--ghost {
-  color: var(--primary-color);
-  background-color: var(--lightest-color);
-  border: 1px solid var(--primary-color);
+.button--secondary {
+  background-color: var(--secondary-color);
+  color: var(--lightest-color);
+  border-color: var(--secondary-color);
   &:hover,
-  &:focus {
-    text-decoration: none;
+  &:focus,
+  &:active {
+    background-color: lighten($secondary-color, 5%);
+  }
+  &.button--ghost {
+    color: var(--secondary-color);
+    background-color: var(--lightest-color);
+    border: 1px solid var(--secondary-color);
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}
+
+.button--third {
+  background-color: var(--darkest-color);
+  color: var(--lightest-color);
+  border-color: var(--darkest-color);
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: lighten($darkest-color, 5%);
+  }
+  &.button--ghost {
+    color: var(--darkest-color);
+    background-color: var(--lightest-color);
+    border: 1px solid var(--darkest-color);
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
   }
 }
 

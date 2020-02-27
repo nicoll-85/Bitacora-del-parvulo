@@ -5,37 +5,37 @@
 /* Typography and Variables
 **********************/
 
-$primary-color: #df4722;
-$secondary-color: #22252a;
+$primary-color: #FF7C5F;
+$secondary-color: #3A86CF;
 $third-color: #979797;
 $fourth-color: #f2f4f5;
 $fifth-color: #0d1733;
-$accent-color-01: #97b4de;
-$accent-color-02: #ffcb6d;
-$accent-color-03: #387b7d;
-$accent-color-04: #7f6284;
-$accent-color-05: #196cb3;
+$accent-color-01: #1400A1;
+$accent-color-02: #A6D800;
+$accent-color-03: #B200FF;
+$accent-color-04: #00AED6;
+$accent-color-05: #FF7900;
 $accent-color-06: #323e56;
 $lightest-color: #ffffff;
-$darkest-color: #050505;
+$darkest-color: #334652;
 
 :root {
   --primary-font: "canada-type-gibson", "Helvetica Neue", Arial, sans-serif;
   --secondary-font: "Lato", "Helvetica Neue", Arial, sans-serif;
 
-  --primary-color: #df4722;
-  --secondary-color: #22252a;
+  --primary-color: #FF7C5F;
+  --secondary-color: #3A86CF;
   --third-color: #979797;
   --fourth-color: #f2f4f5;
   --fifth-color: #0d1733;
-  --accent-color-01: #97b4de;
-  --accent-color-02: #ffcb6d;
-  --accent-color-03: #387b7d;
-  --accent-color-04: #7f6284;
-  --accent-color-05: #196cb3;
+  --accent-color-01: #1400A1;
+  --accent-color-02: #A6D800;
+  --accent-color-03: #B200FF;
+  --accent-color-04: #00AED6;
+  --accent-color-05: #FF7900;
   --accent-color-06: #323e56;
   --lightest-color: #ffffff;
-  --darkest-color: #050505;
+  --darkest-color: #334652;
 }
 
 .section-background {
