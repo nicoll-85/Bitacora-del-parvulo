@@ -5,14 +5,16 @@ mixin card(options)
       h5.card__title Design Thinking: The New Standard for Creative Probl…
       p.card__text Some quick example text to build on the card title and make up the bulk of the content.
 
-  .card-video
+mixin card--video(options)
+  .card-video&attributes(attributes)
     img.card-video__img(src="./images/Fill.png", alt="")
     .card-img-overlay
       p.card-video__section-title LeARNING SERIES
       h5.card-video__title Analyzing and Solving Problems: Instinct vs. Evidence
       img.card-video__badge(src="./images/Badge.svg", alt="")
-  
-  .card-featured
+
+mixin card--featured(options)
+  .card-featured&attributes(attributes)
     .card-featured__body
       img.card-featured__img(src="./images/Card Image.svg", alt="")
       .card-featured__content
