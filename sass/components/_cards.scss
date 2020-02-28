@@ -34,6 +34,7 @@
     border-radius: 12px;
     background-color: $lightest-color;
     margin-top: -8px;
+
     .card__title {
       font-family: var(--secondary-font);
       font-size: 14px;
@@ -42,6 +43,7 @@
       letter-spacing: 0;
       line-height: 20px;
     }
+
     .card__text {
       opacity: 0.5;
       font-family: var(--secondary-font);
@@ -51,6 +53,7 @@
       line-height: 20px;
     }
   }
+
   [type="button"]:not(:disabled),
   [type="reset"]:not(:disabled),
   [type="submit"]:not(:disabled),
@@ -59,6 +62,7 @@
     background-color: transparent;
   }
 }
+
 // Card video Global styles
 .card-video {
   position: relative;
@@ -77,11 +81,13 @@
   border-radius: 12px;
   background-color: $darkest-color;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+
   .card-video__img {
     opacity: 0.4;
     width: 100%;
     border-radius: calc(1rem - 1px);
   }
+
   .card-img-overlay {
     position: absolute;
     top: 0;
@@ -89,6 +95,7 @@
     bottom: 0;
     left: 0;
     padding: 40px;
+
     .card-video__section-title {
       font-weight: 800;
       color: $lightest-color;
@@ -96,6 +103,7 @@
       text-transform: uppercase;
       font-size: 12px;
     }
+
     .card-video__title {
       width: 50%;
       margin-bottom: 0.75rem;
@@ -104,15 +112,17 @@
       color: $lightest-color;
       text-align: left;
       text-transform: uppercase;
+
       @media screen and (max-width: 575px) {
         width: 100%;
       }
     }
+
     .card-video__badge {
       margin-left: 351px;
       margin-top: 82px;
       width: 137px;
-      
+
       @media screen and (max-width: 360px) {
         margin-left: 213px;
         margin-top: -8px;
@@ -123,11 +133,13 @@
         margin-left: 365px;
         margin-top: 56px;
       }
+
       @media screen and (min-width: 768px) {
         margin-left: 352px;
         margin-top: 39px;
         width: 137px;
       }
+
       @media screen and (min-width: 992px) {
         margin-left: 354px;
         margin-top: 41px;
@@ -136,6 +148,7 @@
     }
   }
 }
+
 //  Card featured global styles
 .card-featured {
   width: 75%;
@@ -149,7 +162,7 @@
   background-color: rgba(255, 121, 0, 0.06);
   background-clip: border-box;
   border-radius: 12px;
-  
+
   .card-featured__body {
     display: flex;
     flex-direction: row;
@@ -159,28 +172,102 @@
     color: #334652;
     margin-top: -8px;
     text-align: left;
+
     @media screen and (max-width: 575px) {
       flex-wrap: wrap;
       text-align: center;
     }
-    .card-featured__img{
+
+    .card-featured__img {
       @media screen and (min-width: 576px) {
-       margin: 0 auto;
+        margin: 0 auto;
       }
     }
+
     .card-featured__content {
       margin-right: 36px;
       margin-left: 36px;
+
       @media screen and (min-width: 575px) {
         margin-right: 0px;
         margin: 5 auto;
         margin-left: 0px;
       }
+
       .card-featured__title {
         margin-bottom: 0.75rem;
       }
+
       .card-featured__text {
         opacity: 0.5;
+      }
+    }
+  }
+}
+
+.card-panel {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: $lightest-color;
+  background-clip: border-box;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+
+  .card-panel__body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 31px 36px;
+
+    .card-panel__content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      text-align: center;
+
+      @media screen and (min-width: 576px) {
+        flex-wrap: nowrap;
+        text-align: left;
+      }
+
+      .card-panel__img {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        @media screen and (min-width: 576px) {
+          margin-right: 10px;
+        }
+      }
+
+      .card-panel__descrip {
+        font-family: var(--primary-font);
+        color: $darkest-color;
+        padding: 5px 15px;
+
+        .card-panel__title {
+          font-weight: 800;
+        }
+        .card-panel__help-text{
+          font-size: 12px;
+          opacity: 0.5;
+        }
+
+        .card-panel__text {
+          opacity: 0.5;
+        }
+
+        .card-panel__labels {
+          display: flex;
+          flex-direction: row;
+        }
+      }
+      .card-panel__action{
+        margin: 0 auto;
       }
     }
   }
