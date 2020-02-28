@@ -109,20 +109,29 @@
       }
     }
     .card-video__badge {
-      margin-left: 343px;
-      margin-top: 53px;
+      margin-left: 351px;
+      margin-top: 82px;
+      width: 137px;
+      
+      @media screen and (max-width: 360px) {
+        margin-left: 213px;
+        margin-top: -8px;
+        width: 100px;
+      }
 
       @media screen and (min-width: 576px) {
-        margin-left: 350px;
-        margin-top: 24px;
+        margin-left: 365px;
+        margin-top: 56px;
       }
       @media screen and (min-width: 768px) {
         margin-left: 352px;
         margin-top: 39px;
+        width: 137px;
       }
       @media screen and (min-width: 992px) {
         margin-left: 354px;
-        margin-top: 26px;
+        margin-top: 41px;
+        width: 137px;
       }
     }
   }
@@ -140,6 +149,7 @@
   background-color: rgba(255, 121, 0, 0.06);
   background-clip: border-box;
   border-radius: 12px;
+  
   .card-featured__body {
     display: flex;
     flex-direction: row;
@@ -153,12 +163,18 @@
       flex-wrap: wrap;
       text-align: center;
     }
+    .card-featured__img{
+      @media screen and (min-width: 576px) {
+       margin: 0 auto;
+      }
+    }
     .card-featured__content {
       margin-right: 36px;
       margin-left: 36px;
-      @media screen and (max-width: 575px) {
+      @media screen and (min-width: 575px) {
         margin-right: 0px;
         margin: 5 auto;
+        margin-left: 0px;
       }
       .card-featured__title {
         margin-bottom: 0.75rem;
