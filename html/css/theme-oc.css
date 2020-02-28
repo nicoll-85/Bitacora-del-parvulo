@@ -4235,7 +4235,6 @@ input:checked + .slider:before {
   border-radius: 5px;
   background: transparent;
   color: var(--darkest-color);
-  -webkit-box-shadow: none;
   box-shadow: none;
   font-family: var(--primary-font);
   text-align: left;
