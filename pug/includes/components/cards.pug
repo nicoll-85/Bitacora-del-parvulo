@@ -19,4 +19,17 @@ mixin card(options)
         h4.card-featured__title How are you doing at Analyzing & Solving Problems?
         p.card-featured__text Answer a few short questions and get an idea of your current
                         ability level so you know where you can improve.
-        
+  
+  .card-panel
+    .card-panel__body
+      .card-panel__content
+        img.card-panel__img(src="./images/Image/Circle/Fill.png", alt="")
+        .card-panel__descrip
+          h4.card-panel__title LPA: Resolución de problemas, cumplimiento de objetivos y trabajo en equipo
+          p.card-panel__help-text Duration 45 min
+          p.card-panel__text Fusce dapibus, tellus ac cursus commodo, tortor mauris condimen tum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit am et, consectetur adipiscing 
+          .card-panel__labels
+            +label({'labelTitle': 'Analyzing & Solving Problems'})
+            +label({'labelTitle': 'Making decisions'})
+        .card-panel__action  
+          +button({'buttonTitle': 'Enroll'}).button--primary

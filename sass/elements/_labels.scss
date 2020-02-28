@@ -1,0 +1,19 @@
+/* Global Styles for Links
+**************************/
+.label {
+  display: inline-block;
+  padding: 5px;
+  font-size: 75%;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+  .label__default {
+    color:rgba(51, 70, 82, 0.5);;
+    background-color:rgba(51, 70, 82, 0.1);
+  }
+}
