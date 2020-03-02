@@ -4942,7 +4942,15 @@ input:checked + .slider:before {
       background: #fff;
       color: #0d1733;
       -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transition: all 0.25s ease-in-out;
+      -o-transition: all 0.25s ease-in-out;
+      transition: all 0.25s ease-in-out; }
+      .topbar .topbar__content .topbar__dropdown.is-open {
+        opacity: 1;
+        visibility: visible; }
       .topbar .topbar__content .topbar__dropdown .dropdown__header {
         display: -webkit-box;
         display: -ms-flexbox;
