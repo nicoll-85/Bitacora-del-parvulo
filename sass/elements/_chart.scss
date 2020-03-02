@@ -1,0 +1,74 @@
+/* Global Styles for Charts
+**************************/
+.chart {
+  width: 280px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  height: auto;
+  margin-top: 20px;
+
+  .chart-img {
+    .circle-chart {
+      margin-right: 15px;
+    }
+
+    .circle-chart__info {
+      -webkit-animation: circle-chart-appear 2s forwards;
+      animation: circle-chart-appear 2s forwards;
+      opacity: 0;
+      -webkit-transform: translateY(0.3em);
+      transform: translateY(0.3em);
+    }
+    .circle-chart__percent{
+      font-weight: 800
+    }
+  }
+
+  .chart-title {
+    color: $darkest-color;
+    opacity: 0.4;
+    margin-top: 20px;
+    margin-left: 8px;
+  }
+}
+
+.circle-chart__circle--negative {
+  transform: rotate(-90deg) scale(1, -1);
+  /* 1, 2, 3 */
+}
+
+.circle-chart__info {
+  animation: circle-chart-appear 2s forwards;
+  opacity: 0;
+  transform: translateY(0.3em);
+}
+
+@keyframes circle-chart-fill {
+  to {
+    stroke-dasharray: 0 100;
+  }
+}
+
+@keyframes circle-chart-appear {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 31em) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
