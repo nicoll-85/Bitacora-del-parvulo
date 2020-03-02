@@ -1,0 +1,115 @@
+mixin topbar()
+  nav.topbar
+    .topbar__menu
+      button.topbar__menu-toggle
+        svg(class="topbar__menu-icon" role="img" aria-label="icon" aria-hidden=true)
+          use(xlink:href='images/icons/oc-icons.svg#oc-List')
+    .topbar__content.topbar__content--left
+      img(src="images/logo-onecampus-white.svg" class="topbar__logo")
+    .topbar__content.topbar__content--right
+      .topbar__nav-item
+        button.topbar__dropdown-button
+          svg(class="topbar__menu-icon" role="img" aria-label="icon" aria-hidden=true)
+            use(xlink:href='images/icons/oc-icons.svg#oc-search')
+      .topbar__nav-item
+        button.topbar__dropdown-button.topbar__dropdown-button--notification
+          svg(class="topbar__menu-icon" role="img" aria-label="icon" aria-hidden=true)
+            use(xlink:href='images/icons/oc-icons.svg#oc-bell')
+        
+      .topbar__nav-item
+        button.topbar__dropdown-button
+          .avatar(style={"background-image": "url('images/user--profile.png')"})
+
+        nav.topbar__dropdown.is-open
+          .topbar__dropdown-content
+            .dropdown__header
+              .dropdown__header-text Pasaporte
+              a.dropdown__header-link(href="#") Ver mi Pasaporte
+
+            ul.dropdown__link-list
+              li.dropdown__link-list-item
+                a.dropdown__link(tabindex="0" href="#")
+                  span Configuraciones
+              li.dropdown__link-list-item
+                a.dropdown__link(tabindex="0" href="#")
+                  span Ayuda y reporte
+              li.dropdown__link-list-item
+                a.dropdown__link(tabindex="0" href="#")
+                  span Cerrar sesión
+
+
+mixin topbar-old()
+  header.header-main
+    .container
+      .row
+        h1.header-logo
+          a OneCampus
+        a.nav-mobile.visible-xs.visible-sm
+          i.icon-menu: em
+        .header-container
+          .col-md-6.col-xl-6.col-xs-12.header-main--left
+            nav.nav-menu
+              ul
+                li: a.menu__item OC_FOR_INSTITUTIONS
+                li: a.menu__item OC_HELP_SUPPORT
+          .col-md-6.col-xl-6.col-xs-12.header-main--right
+            nav.nav-menu.pull-right
+              ul
+                li
+                  a.menu__item
+                    i.icon-passport
+                    OC_CREATE_YOUR_PASSPORT
+                li
+                  a.menu__item
+                    i.icon-author OC_STUDENT_ACCESS
+
+                li
+                  .nav-dropdown.nav-dropdown--language.pull-right
+                    a.nav-dropdown-button
+                      i.icon-world
+                      span ctrl.language
+
+                    ul
+                      li: a EN
+                      li: a ES
+                      li: a PT
+
+      .row
+      h1.header-logo
+        a OneCampus
+
+      a.nav-mobile.visible-xs.visible-sm
+        i.icon-menu: em
+      .header-container
+        .col-md-8.col-xs-12.header-main--left
+          nav.nav-menu.nav-menu--logged
+            ul
+              li
+                a.menu__item.menu__item--learn OC_LEARN
+              li
+                a.menu__item.menu__item--engage OC_ENGAGE
+              li
+                a.menu__item.menu__item--connect OC_CONNECT
+
+        .col-md-4.col-xs-12.header-main--right
+          .nav-dropdown.nav-dropdown--user.pull-right
+            a.nav-dropdown-button.nav-dropdown-picture
+              img(src='/assets/images/global/img-default-user-dashboard.png')
+            ul
+              li.nav-highlighted-item
+                a OC_YOUR_PASSPORT
+                a OC_ACTIVATE_PASSPORT
+              li
+                a OC_GO_TO_DASHBOARD
+              li
+                a OC_HELP_SUPPORT
+              li
+                a OC_LOG_OUT
+          .nav-dropdown.nav-dropdown--language.pull-right
+            .nav-dropdown-button
+              i.icon-world
+              span language
+            ul
+              li: a en
+              li: a es
+              li: a pt

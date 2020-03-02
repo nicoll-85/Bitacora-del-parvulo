@@ -10,6 +10,49 @@
   </head>
 </html>
 <body>
+  <nav class="topbar">
+    <div class="topbar__menu">
+      <button class="topbar__menu-toggle">
+        <svg class="topbar__menu-icon" role="img" aria-label="icon" aria-hidden="aria-hidden">
+          <use xlink:href="images/icons/oc-icons.svg#oc-List"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="topbar__content topbar__content--left"><img class="topbar__logo" src="images/logo-onecampus-white.svg"/></div>
+    <div class="topbar__content topbar__content--right">
+      <div class="topbar__nav-item">
+        <button class="topbar__dropdown-button">
+          <svg class="topbar__menu-icon" role="img" aria-label="icon" aria-hidden="aria-hidden">
+            <use xlink:href="images/icons/oc-icons.svg#oc-search"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="topbar__nav-item">
+        <button class="topbar__dropdown-button topbar__dropdown-button--notification">
+          <svg class="topbar__menu-icon" role="img" aria-label="icon" aria-hidden="aria-hidden">
+            <use xlink:href="images/icons/oc-icons.svg#oc-bell"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="topbar__nav-item">
+        <button class="topbar__dropdown-button">
+          <div class="avatar" style="background-image:url('images/user--profile.png');"></div>
+        </button>
+        <nav class="topbar__dropdown is-open">
+          <div class="topbar__dropdown-content">
+            <div class="dropdown__header">
+              <div class="dropdown__header-text">Pasaporte</div><a class="dropdown__header-link" href="#">Ver mi Pasaporte</a>
+            </div>
+            <ul class="dropdown__link-list">
+              <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#"><span>Configuraciones</span></a></li>
+              <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#"><span>Ayuda y reporte</span></a></li>
+              <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#"><span>Cerrar sesión</span></a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </nav>
   <div class="container">
     <div class="row">
       <div class="col-12">
