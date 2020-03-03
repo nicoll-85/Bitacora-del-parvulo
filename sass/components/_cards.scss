@@ -239,6 +239,7 @@
         width: 100px;
         height: 100px;
         margin: 0 auto;
+
         @media screen and (min-width: 576px) {
           margin-right: 10px;
         }
@@ -252,7 +253,8 @@
         .card-panel__title {
           font-weight: 800;
         }
-        .card-panel__help-text{
+
+        .card-panel__help-text {
           font-size: 12px;
           opacity: 0.5;
         }
@@ -266,8 +268,231 @@
           flex-direction: row;
         }
       }
-      .card-panel__action{
+
+      .card-panel__action {
         margin: 0 auto;
+      }
+    }
+  }
+}
+
+// Card-panel version 2 - Global Styles
+
+.card-panel--start {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: $lightest-color;
+  background-clip: border-box;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+
+  .card-panel__body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 31px 36px;
+
+    .card-panel__content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      text-align: center;
+
+      @media screen and (min-width: 576px) {
+        flex-wrap: nowrap;
+        text-align: left;
+      }
+
+      .card-panel__img {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+
+        @media screen and (min-width: 576px) {
+          margin-right: 10px;
+        }
+      }
+
+      .card-panel__descrip {
+        font-family: var(--primary-font);
+        color: $darkest-color;
+        padding: 5px 15px;
+
+        .card-panel__title {
+          font-weight: 800;
+        }
+
+        .text-group {
+          display: flex;
+          text-align: center;
+
+          @media screen and (min-width: 576px) {
+            text-align: left;
+          }
+
+          .card-panel__help-text {
+            font-size: 12px;
+            opacity: 0.5;
+          }
+
+          .pipe-separator {
+            border-left: 1px solid #ccc;
+            padding: 0 4px;
+            margin-left: 5px;
+            height: 22px;
+
+            :first-child {
+              border-left: none;
+              padding-left: 0;
+            }
+
+            :after {
+              content: "|";
+              margin: 0 4px;
+            }
+
+            :last-child:after {
+              content: '';
+              margin: 0 4px;
+            }
+          }
+
+          .card_panel__end-text {
+            font-size: 12px;
+            color: $secondary-color;
+          }
+        }
+
+        .card-panel__text {
+          opacity: 0.5;
+        }
+
+        .card-panel__labels {
+          display: flex;
+          flex-direction: row;
+        }
+      }
+
+      .card-panel__action {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+// Card-panel version 3 - Global Styles
+
+.card-panel-complete {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: $lightest-color;
+  background-clip: border-box;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  margin-top: 20px;
+  z-index: 1;
+
+  .card-panel__body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 31px 36px;
+
+    .card-panel__content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      text-align: center;
+
+      @media screen and (min-width: 576px) {
+        flex-wrap: nowrap;
+        text-align: left;
+      }
+
+      .card-panel__img {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+
+        @media screen and (min-width: 576px) {
+          margin-right: 10px;
+        }
+      }
+
+      .card-panel__descrip {
+        font-family: var(--primary-font);
+        color: $darkest-color;
+        padding: 5px 15px;
+
+        .card-panel__title {
+          font-weight: 800;
+        }
+
+        .card_panel__end-text {
+          font-size: 12px;
+          color: $secondary-color;
+        }
+
+        .card-panel__text {
+          opacity: 0.5;
+        }
+
+        .card-panel__labels {
+          display: flex;
+          flex-direction: row;
+        }
+      }
+
+      .card-panel__action {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.card-chart {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 12px;
+  z-index: 0;
+  margin-top: -28px;
+
+  .card-chart__body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+
+    .card-chart__content {
+      display: flex;
+      justify-content: left;
+      flex-wrap: wrap;
+      align-content: center;
+      flex-direction: column;
+
+      @media screen and (min-width: 576px) {
+        flex-direction: row;
+        color: var(--primary-font);
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
       }
     }
   }
