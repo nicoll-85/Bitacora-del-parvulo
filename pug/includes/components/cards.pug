@@ -35,3 +35,41 @@ mixin card--panel(options)
             +label({'labelTitle': 'Making decisions'})
         .card-panel__action  
           +button({'buttonTitle': 'Enroll'}).button--primary
+
+mixin card--panel-start(options)
+  .card-panel--start&attributes(attributes)
+    .card-panel__body
+      .card-panel__content
+        img.card-panel__img(src="./images/Image/Circle/Fill.png", alt="")
+        .card-panel__descrip
+          h4.card-panel__title LPA: Resolución de problemas, cumplimiento de objetivos y trabajo en equipo
+          .text-group
+            p.card-panel__help-text Duration 45 min
+            .pipe-separator
+            p.card_panel__end-text Due by March 23, 2020
+          p.card-panel__text Fusce dapibus, tellus ac cursus commodo, tortor mauris condimen tum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit am et, consectetur adipiscing 
+          .card-panel__labels
+            +label({'labelTitle': 'Analyzing & Solving Problems'})
+            +label({'labelTitle': 'Making decisions'})
+        .card-panel__action  
+          +button({'buttonTitle': 'Start Test'}).button--secondary
+
+mixin card--panel-complete(options)
+  .card-panel-complete&attributes(attributes)
+    .card-panel__body
+      .card-panel__content
+        img.card-panel__img(src="./images/Image/Circle/Fill.png", alt="")
+        .card-panel__descrip
+          h4.card-panel__title LPA: Resolución de problemas, cumplimiento de objetivos y trabajo en equipo
+          p.card_panel__end-text Completed on March 23,2020
+          p.card-panel__text Fusce dapibus, tellus ac cursus commodo, tortor mauris condimen tum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit am et, consectetur adipiscing 
+          .card-panel__labels
+            +label({'labelTitle': 'Analyzing & Solving Problems'})
+            +label({'labelTitle': 'Making decisions'})
+  .card-chart.mb-5
+    .card-chart__body
+      .card-chart__content
+        p My Score
+        +chart
+        +chart
+        +chart
