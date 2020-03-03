@@ -34,7 +34,8 @@
 				background: var(--secondary-color);
 			}
 
-			.topbar__menu-icon{
+			.topbar__menu-icon,
+			.topbar__menu-icon svg{
 				width: 24px;
 				height: 24px;
 				fill: var(--lightest-color);
@@ -83,7 +84,8 @@
 				background: var(--secondary-color);
 			}
 
-			.topbar__menu-icon{
+			.topbar__menu-icon,
+			.topbar__menu-icon svg{
 				width: 24px;
 				height: 24px;
 				fill: var(--lightest-color);
