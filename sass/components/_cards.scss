@@ -216,7 +216,8 @@
   background-color: $lightest-color;
   background-clip: border-box;
   border-radius: 12px;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  box-shadow: 0 0 3px 0 rgba(0,0,0,0.05), 0 1px 1px 0 rgba(0,0,0,0.05);
+  margin-bottom: 30px;
 
   .card-panel__body {
     flex: 1 1 auto;
@@ -289,7 +290,7 @@
   background-color: $lightest-color;
   background-clip: border-box;
   border-radius: 12px;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
 
   .card-panel__body {
     flex: 1 1 auto;
@@ -472,6 +473,7 @@
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 12px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
   z-index: 0;
   margin-top: -28px;
 

@@ -44,8 +44,8 @@ $darkest-color: #334652;
   &--third,
   &--fourth,
   &--sixth {
-    background: top/100% auto no-repeat var(--primary-color);
-    color: var(--lightest-color);
+    background-image: url("../images/bg-oc_1.svg");
+    background: top/100% auto no-repeat;
     padding: 30px 30px 60px;
     margin: 0px;
     max-width: 100%;

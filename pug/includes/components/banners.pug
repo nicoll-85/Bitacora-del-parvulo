@@ -1,3 +1,12 @@
+mixin banner--basic(options)
+	.banner&attributes(attributes)
+		.banner__content
+			.banner__text
+				h3 Laureate Professional Assesment Testing
+				p.label__description Employers look for candidates who approach a situation by quickly assessing and efficiently applying their knowledge to influence it.
+			.banner__actions
+				+button({'buttonTitle': 'Learn More'}).button--ghost-primary
+
 mixin banner()
 	.banner
 		.banner__content
