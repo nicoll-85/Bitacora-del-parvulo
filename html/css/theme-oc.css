@@ -3771,8 +3771,8 @@ body {
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
-  color: #292b2c;
-  background-color: #fff; }
+  color: #334652;
+  background-color: #f9f9fa; }
 
 [tabindex="-1"]:focus {
   outline: none !important; }
@@ -3948,7 +3948,6 @@ output {
   --darkest-color: #334652; }
 
 .section-background, .section-background--secondary, .section-background--third, .section-background--fourth, .section-background--sixth {
-  background-image: url("../images/bg-oc_1.svg");
   background: top/100% auto no-repeat;
   padding: 30px 30px 60px;
   margin: 0px;
@@ -3956,6 +3955,12 @@ output {
   @media (desktop-s) {
     .section-background, .section-background--secondary, .section-background--third, .section-background--fourth, .section-background--sixth {
       padding: 60px 100px 80px; } }
+
+.section-background .section-background--primary {
+  background-image: url("../images/bg-oc_2.svg");
+  background: top/100% auto no-repeat #3a86cf;
+  color: #ffffff;
+  background-color: red; }
 
 /* Global Styles for Heading
 **********************/
@@ -4069,6 +4074,12 @@ output {
     background-color: var(--lightest-color);
     border: 1px solid var(--darkest-color); }
     .button.button--ghost:hover, .button.button--ghost:focus {
+      text-decoration: none; }
+  .button.button--ghost-primary {
+    color: var(--primary-color);
+    background-color: var(--lightest-color);
+    border: 1px solid var(--primary-color); }
+    .button.button--ghost-primary:hover, .button.button--ghost-primary:focus {
       text-decoration: none; }
 
 /* Buttons Variations
@@ -4622,7 +4633,8 @@ input:checked + .slider:before {
   background-color: #ffffff;
   background-clip: border-box;
   border-radius: 12px;
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1px 0 rgba(0, 0, 0, 0.05); }
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px; }
   .card-panel--start .card-panel__body {
     flex: 1 1 auto;
     min-height: 1px;
@@ -4754,7 +4766,7 @@ input:checked + .slider:before {
   .card-chart .card-chart__body {
     flex: 1 1 auto;
     min-height: 1px;
-    padding: 1.25rem; }
+    padding: 31px 65px; }
     .card-chart .card-chart__body .card-chart__content {
       display: flex;
       justify-content: left;
@@ -4851,17 +4863,19 @@ input:checked + .slider:before {
       .banner--basic .banner__content {
         order: 1; } }
   @media only screen and (min-width: 768px) {
-        .banner--basic .banner__content .banner__text h3 {
-          font-size: 24px;
-          line-height: 42px;
-          font-weight: 700;
-          color: #334652;
-          margin-bottom: 32px;
-          width: 100%; }
-        .banner--basic .banner__content .banner__text .label__description {
-          font-size: 16px;
-          color: #334652;
-          opacity: 0.4; }
+        .banner--basic .banner__content .banner__text {
+          font-family: var(--primary-font); }
+          .banner--basic .banner__content .banner__text h4 {
+            font-size: 21px;
+            line-height: 42px;
+            font-weight: 700;
+            color: #334652;
+            margin-bottom: 32px;
+            width: 100%; }
+          .banner--basic .banner__content .banner__text .label__description {
+            font-size: 16px;
+            color: #334652;
+            opacity: 0.4; }
         .banner--basic .banner__content .banner__actions {
           margin: 64px 0px; } }
 
