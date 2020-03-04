@@ -30,9 +30,15 @@ mixin card--panel(options)
           h4.card-panel__title LPA: Resolución de problemas, cumplimiento de objetivos y trabajo en equipo
           p.card-panel__help-text Duration 45 min
           p.card-panel__text Fusce dapibus, tellus ac cursus commodo, tortor mauris condimen tum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit am et, consectetur adipiscing 
-          .card-panel__labels
-            +label({'labelTitle': 'Analyzing & Solving Problems'})
-            +label({'labelTitle': 'Making decisions'})
+          .card-panel__label.row
+            .col
+              +label({'labelTitle': 'Analyzing & Solving Problems'})
+            .col
+              +label({'labelTitle': 'Making decisions'})
+            .col
+              +label({'labelTitle': 'Analyzing & Solving Problems'})
+            .col
+              +label({'labelTitle': 'Making decisions'})
         .card-panel__action  
           +button({'buttonTitle': 'Enroll'}).button--primary
 
@@ -70,6 +76,10 @@ mixin card--panel-complete(options)
     .card-chart__body
       .card-chart__content
         p My Score
-        +chart
-        +chart
-        +chart
+        .row
+          .col-4
+            +chart
+          .col-4
+            +chart
+          .col-4
+            +chart

@@ -1,15 +1,17 @@
 include includes/head.pug
 body
 	+topbar()
-	.section-background--sixth
 	.container
 		.col-8
 			+banner--basic
 		.col-12
-			h5 Available Test
+			h4 Available Test
+			+card--panel-start
 			+card--panel
 			+card--panel
 			+card--panel
 			+card--panel
-			+card--panel
+		.col-12.mt-5.mb-5
+			h4 Completed
+			+card--panel-complete
 	+footer()

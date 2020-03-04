@@ -44,7 +44,6 @@ $darkest-color: #334652;
   &--third,
   &--fourth,
   &--sixth {
-    background-image: url("../images/bg-oc_1.svg");
     background: top/100% auto no-repeat;
     padding: 30px 30px 60px;
     margin: 0px;
@@ -52,5 +51,11 @@ $darkest-color: #334652;
     @media (desktop-s) {
       padding: 60px 100px 80px;
     }
+  }
+  .section-background--primary {
+    background-image: url("../images/bg-oc_2.svg");
+    background: top/100% auto no-repeat lighten($secondary-color, 0%);
+    color: $lightest-color;
+    background-color: red;
   }
 }

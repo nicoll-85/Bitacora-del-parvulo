@@ -104,8 +104,9 @@
       }
 
       .banner__text {
-        h3 {
-          font-size: 24px;
+        font-family: var(--primary-font);
+        h4 {
+          font-size: 21px;
           line-height: 42px;
           font-weight: 700;
           color: #334652;
