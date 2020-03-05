@@ -41,7 +41,32 @@
         <nav class="topbar__dropdown is-open">
           <div class="topbar__dropdown-content">
             <div class="dropdown__header">
+              <div class="dropdown__header-icon">
+                <svg class="icon" role="img" aria-label="icon" aria-hidden="aria-hidden">
+                  <use xlink:href="images/icons/oc-icons.svg#oc-passport"></use>
+                </svg>
+              </div>
               <div class="dropdown__header-text">Pasaporte</div><a class="dropdown__header-link" href="#">Ver mi Pasaporte</a>
+            </div>
+            <div class="checkbox-container--with-icon-left">
+              <div class="checkbox-container__icon">
+                <svg class="icon" role="img" aria-label="icon" aria-hidden="aria-hidden">
+                  <use xlink:href="images/icons/oc-icons.svg#oc-logo"></use>
+                </svg>
+              </div>
+              <div class="checkbox">
+                <ul class="checkbox-list">
+                  <li class="checkbox__list-item">
+                    <button class="checkbox__button" aria-pressed="true"><span class="checkbox__text">ENG</span></button>
+                  </li>
+                  <li class="checkbox__list-item">
+                    <button class="checkbox__button"><span class="checkbox__text">ESP</span></button>
+                  </li>
+                  <li class="checkbox__list-item">
+                    <button class="checkbox__button"><span class="checkbox__text">POR</span></button>
+                  </li>
+                </ul>
+              </div>
             </div>
             <ul class="dropdown__link-list">
               <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#"><span>Configuraciones</span></a></li>
@@ -53,6 +78,89 @@
       </div>
     </div>
   </nav>
+  <div class="sidebar-menu is-active">
+    <div class="sidebar-menu__search-box">
+      <label class="label-search">Search</label>
+      <input class="input-search" type="text"/>
+      <button class="button-search">
+        <svg class="icon" role="img" aria-label="icon" aria-hidden="aria-hidden">
+          <use xlink:href="images/icons/oc-icons.svg#oc-search"></use>
+        </svg>
+      </button>
+    </div>
+    <ul class="sidebar-menu__list">
+      <li class="sidebar-menu__list-item"><a class="sidebar-menu__list-action is-active" href="#">
+          <div class="list-action__text"><span class="list-action__title">Home</span><span class="list-action__subtitle">Access your personalized dashboard</span></div></a></li>
+      <li class="sidebar-menu__list-item"><a class="sidebar-menu__list-action" href="#">
+          <div class="list-action__text"><span class="list-action__title">Laureate Professional Assessment Testing</span><span class="list-action__subtitle">subtitle goes here</span></div>
+          <div class="list-action__icon">
+            <svg class="icon" role="img" aria-label="icon" aria-hidden="aria-hidden">
+              <use xlink:href="images/icons/oc-icons.svg#oc-chevron-right"></use>
+            </svg>
+          </div></a></li>
+      <li class="sidebar-menu__list-item"><a class="sidebar-menu__list-action" href="#">
+          <div class="list-action__text"><span class="list-action__title">Abilities</span><span class="list-action__subtitle">Subtitle goes here</span></div>
+          <div class="list-action__icon">
+            <svg class="icon" role="img" aria-label="icon" aria-hidden="aria-hidden">
+              <use xlink:href="images/icons/oc-icons.svg#oc-chevron-right"></use>
+            </svg>
+          </div></a></li>
+      <li class="sidebar-menu__list-item"><a class="sidebar-menu__list-action" href="#">
+          <div class="list-action__text"><span class="list-action__title">Professional Skills</span><span class="list-action__subtitle">Develop critical professional skills with curated learning experience</span></div>
+          <div class="list-action__icon">
+            <svg class="icon" role="img" aria-label="icon" aria-hidden="aria-hidden">
+              <use xlink:href="images/icons/oc-icons.svg#oc-chevron-right"></use>
+            </svg>
+          </div></a></li>
+      <li class="sidebar-menu__list-item"><a class="sidebar-menu__list-action" href="#">
+          <div class="list-action__text"><span class="list-action__title">Global Network</span><span class="list-action__subtitle">Connect and grow with students from across the globe</span></div>
+          <div class="list-action__icon">
+            <svg class="icon" role="img" aria-label="icon" aria-hidden="aria-hidden">
+              <use xlink:href="images/icons/oc-icons.svg#oc-chevron-right"></use>
+            </svg>
+          </div></a></li>
+      <li class="sidebar-menu__list-item"><a class="sidebar-menu__list-action" href="#">
+          <div class="list-action__text"><span class="list-action__title">Events</span><span class="list-action__subtitle">Engage in virtual events led by experts and industry leaders</span></div>
+          <div class="list-action__icon">
+            <svg class="icon" role="img" aria-label="icon" aria-hidden="aria-hidden">
+              <use xlink:href="images/icons/oc-icons.svg#oc-chevron-right"></use>
+            </svg>
+          </div></a></li>
+      <li class="sidebar-menu__list-item"><a class="sidebar-menu__list-action" href="#">
+          <div class="list-action__text"><span class="list-action__title">News</span><span class="list-action__subtitle">Stay current with the latest from OneCampus</span></div>
+          <div class="list-action__icon">
+            <svg class="icon" role="img" aria-label="icon" aria-hidden="aria-hidden">
+              <use xlink:href="images/icons/oc-icons.svg#oc-chevron-right"></use>
+            </svg>
+          </div></a></li>
+    </ul>
+    <div class="sidebar-menu sidebar-menu--level-02 is-active">
+      <ul class="sidebar-menu__list">
+        <li class="sidebar-menu__list-item sidebar-menu__list-item--icon-left"><a class="sidebar-menu__list-action" href="#">
+            <div class="list-action__icon">
+              <svg class="icon" role="img" aria-label="icon" aria-hidden="aria-hidden">
+                <use xlink:href="images/icons/oc-icons.svg#oc-chevron-left"></use>
+              </svg>
+            </div>
+            <div class="list-action__text"><span class="list-action__title">Back</span></div></a></li>
+        <li class="sidebar-menu__list-item">
+          <h1 class="sidebar-menu__list-action" href="#">
+            <div class="list-action__text"><span class="list-action__title">Abilities</span></div>
+          </h1>
+        </li>
+        <li class="sidebar-menu__list-item"><a class="sidebar-menu__list-action" href="#">
+            <div class="list-action__text"><span class="list-action__subtitle">Analyzing & solving problems</span></div></a></li>
+        <li class="sidebar-menu__list-item"><a class="sidebar-menu__list-action" href="#">
+            <div class="list-action__text"><span class="list-action__subtitle">Achieving Objectives</span></div></a></li>
+        <li class="sidebar-menu__list-item"><a class="sidebar-menu__list-action" href="#">
+            <div class="list-action__text"><span class="list-action__subtitle">Working Well with Others</span></div></a></li>
+        <li class="sidebar-menu__list-item"><a class="sidebar-menu__list-action" href="#">
+            <div class="list-action__text"><span class="list-action__subtitle">Adapting to Change</span></div></a></li>
+        <li class="sidebar-menu__list-item"><a class="sidebar-menu__list-action" href="#">
+            <div class="list-action__text"><span class="list-action__subtitle">Learning & Self-Development</span></div></a></li>
+      </ul>
+    </div>
+  </div>
   <div class="container">
     <div class="row">
       <div class="col-12">

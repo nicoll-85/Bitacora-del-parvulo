@@ -1,0 +1,100 @@
+mixin sidebar-menu--level1()
+	.sidebar-menu&attributes(attributes)
+		.sidebar-menu__search-box
+			label.label-search Search
+			input.input-search(type="text")
+			button.button-search
+				svg(class="icon" role="img" aria-label="icon" aria-hidden=true)
+							use(xlink:href='images/icons/oc-icons.svg#oc-search')
+		ul.sidebar-menu__list
+			li.sidebar-menu__list-item
+				a.sidebar-menu__list-action.is-active(href="#")
+					.list-action__text
+						span.list-action__title Home
+						span.list-action__subtitle Access your personalized dashboard
+			li.sidebar-menu__list-item
+				a.sidebar-menu__list-action(href="#")
+					.list-action__text
+						span.list-action__title Laureate Professional Assessment Testing
+						span.list-action__subtitle subtitle goes here
+					.list-action__icon
+						svg(class="icon" role="img" aria-label="icon" aria-hidden=true)
+							use(xlink:href='images/icons/oc-icons.svg#oc-chevron-right')
+			li.sidebar-menu__list-item
+				a.sidebar-menu__list-action(href="#")
+					.list-action__text
+						span.list-action__title Abilities
+						span.list-action__subtitle Subtitle goes here
+					.list-action__icon
+						svg(class="icon" role="img" aria-label="icon" aria-hidden=true)
+							use(xlink:href='images/icons/oc-icons.svg#oc-chevron-right')
+			li.sidebar-menu__list-item
+				a.sidebar-menu__list-action(href="#")
+					.list-action__text
+						span.list-action__title Professional Skills
+						span.list-action__subtitle Develop critical professional skills with curated learning experience
+					.list-action__icon
+						svg(class="icon" role="img" aria-label="icon" aria-hidden=true)
+							use(xlink:href='images/icons/oc-icons.svg#oc-chevron-right')
+			li.sidebar-menu__list-item
+				a.sidebar-menu__list-action(href="#")
+					.list-action__text
+						span.list-action__title Global Network
+						span.list-action__subtitle Connect and grow with students from across the globe
+					.list-action__icon
+						svg(class="icon" role="img" aria-label="icon" aria-hidden=true)
+							use(xlink:href='images/icons/oc-icons.svg#oc-chevron-right')
+			li.sidebar-menu__list-item
+				a.sidebar-menu__list-action(href="#")
+					.list-action__text
+						span.list-action__title Events
+						span.list-action__subtitle Engage in virtual events led by experts and industry leaders
+					.list-action__icon
+						svg(class="icon" role="img" aria-label="icon" aria-hidden=true)
+							use(xlink:href='images/icons/oc-icons.svg#oc-chevron-right')
+			li.sidebar-menu__list-item
+				a.sidebar-menu__list-action(href="#")
+					.list-action__text
+						span.list-action__title News
+						span.list-action__subtitle Stay current with the latest from OneCampus
+					.list-action__icon
+						svg(class="icon" role="img" aria-label="icon" aria-hidden=true)
+							use(xlink:href='images/icons/oc-icons.svg#oc-chevron-right')
+		+sidebar-menu--level2().is-active
+
+
+mixin sidebar-menu--level2()
+	.sidebar-menu.sidebar-menu--level-02&attributes(attributes)
+		ul.sidebar-menu__list
+			li.sidebar-menu__list-item.sidebar-menu__list-item--icon-left
+				a.sidebar-menu__list-action(href="#")
+					.list-action__icon
+						svg(class="icon" role="img" aria-label="icon" aria-hidden=true)
+							use(xlink:href='images/icons/oc-icons.svg#oc-chevron-left')
+					.list-action__text
+						span.list-action__title Back
+			li.sidebar-menu__list-item
+				h1.sidebar-menu__list-action(href="#")
+					.list-action__text
+						span.list-action__title Abilities
+			li.sidebar-menu__list-item
+				a.sidebar-menu__list-action(href="#")
+					.list-action__text
+						span.list-action__subtitle Analyzing & solving problems
+			li.sidebar-menu__list-item
+				a.sidebar-menu__list-action(href="#")
+					.list-action__text
+						span.list-action__subtitle Achieving Objectives
+			li.sidebar-menu__list-item
+				a.sidebar-menu__list-action(href="#")
+					.list-action__text
+						span.list-action__subtitle Working Well with Others
+			li.sidebar-menu__list-item
+				a.sidebar-menu__list-action(href="#")
+					.list-action__text
+						span.list-action__subtitle Adapting to Change
+			li.sidebar-menu__list-item
+				a.sidebar-menu__list-action(href="#")
+					.list-action__text
+						span.list-action__subtitle Learning & Self-Development
+

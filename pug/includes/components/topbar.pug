@@ -23,8 +23,13 @@ mixin topbar()
         nav.topbar__dropdown.is-open
           .topbar__dropdown-content
             .dropdown__header
+              .dropdown__header-icon
+                svg(class="icon" role="img" aria-label="icon" aria-hidden=true)
+                  use(xlink:href='images/icons/oc-icons.svg#oc-passport')
               .dropdown__header-text Pasaporte
               a.dropdown__header-link(href="#") Ver mi Pasaporte
+
+            +checkbox--lang()
 
             ul.dropdown__link-list
               li.dropdown__link-list-item
@@ -36,6 +41,7 @@ mixin topbar()
               li.dropdown__link-list-item
                 a.dropdown__link(tabindex="0" href="#")
                   span Cerrar sesión
+  +sidebar-menu--level1().is-active
 
 
 mixin topbar-old()
