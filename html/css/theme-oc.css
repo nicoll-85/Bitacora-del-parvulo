@@ -3948,7 +3948,8 @@ output {
   --darkest-color: #334652; }
 
 .section-background, .section-background--secondary, .section-background--third, .section-background--fourth, .section-background--sixth {
-  background: top/100% auto no-repeat;
+  background: top/100% auto no-repeat #FF7C5F;
+  color: #ffffff;
   padding: 30px 30px 60px;
   margin: 0px;
   max-width: 100%; }
@@ -3956,11 +3957,26 @@ output {
     .section-background, .section-background--secondary, .section-background--third, .section-background--fourth, .section-background--sixth {
       padding: 60px 100px 80px; } }
 
-.section-background .section-background--primary {
-  background-image: url("../images/bg-oc_2.svg");
-  background: top/100% auto no-repeat #3a86cf;
-  color: #ffffff;
-  background-color: red; }
+.section-background--secondary {
+  background: top/100% auto no-repeat;
+  background-image: url("../images/bg-section1.svg");
+  color: #ffffff; }
+
+.section-background--fourth {
+  background-size: cover;
+  background: top/100% auto no-repeat;
+  background-image: url("../images/bg-section2.svg");
+  color: #334652; }
+
+.section-background--sixth {
+  background: top/100% auto no-repeat;
+  background-image: url("../images/bg-section3.svg");
+  color: #334652; }
+
+.section-background--seventh {
+  background: top/100% auto no-repeat;
+  background-image: url("../images/bg-section4.svg");
+  color: #334652; }
 
 /* Global Styles for Heading
 **********************/

@@ -39,23 +39,45 @@ $darkest-color: #334652;
 }
 
 .section-background {
+
   &,
   &--secondary,
   &--third,
   &--fourth,
   &--sixth {
-    background: top/100% auto no-repeat;
+    background: top/100% auto no-repeat $primary-color;
+    color: $lightest-color;
     padding: 30px 30px 60px;
     margin: 0px;
     max-width: 100%;
+
     @media (desktop-s) {
       padding: 60px 100px 80px;
     }
   }
-  .section-background--primary {
-    background-image: url("../images/bg-oc_2.svg");
-    background: top/100% auto no-repeat lighten($secondary-color, 0%);
-    color: $lightest-color;
-    background-color: red;
-  }
+}
+
+.section-background--secondary {
+  background: top/100% auto no-repeat;
+  background-image: url("../images/bg-section1.svg");
+  color: $lightest-color;
+}
+
+.section-background--fourth {
+  background-size: cover;
+  background: top/100% auto no-repeat ;
+  background-image: url("../images/bg-section2.svg");
+  color: $darkest-color;
+}
+
+.section-background--sixth {
+  background: top/100% auto no-repeat;
+  background-image: url("../images/bg-section3.svg");
+  color: $darkest-color;
+}
+
+.section-background--seventh {
+  background: top/100% auto no-repeat;
+  background-image: url("../images/bg-section4.svg");
+  color: $darkest-color;
 }
