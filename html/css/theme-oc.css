@@ -5167,7 +5167,7 @@ input:checked + .slider:before {
   -webkit-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
   transform: translateX(-100%);
-  position: absolute;
+  position: fixed;
   top: 60px;
   left: 0;
   width: 100vw;
