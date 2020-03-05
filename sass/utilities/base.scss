@@ -38,6 +38,10 @@ $darkest-color: #334652;
   --darkest-color: #334652;
 }
 
+body {
+  position: relative;
+}
+
 .section-background {
   &,
   &--secondary,
