@@ -152,6 +152,8 @@
 					color: #c53c0e;
 					text-decoration: underline;
 					padding: 0px;
+					width: auto;
+    			flex: 1 0 auto;
 				}
 
 	    }
@@ -163,7 +165,8 @@
 	    		padding: 10px 0px;
 	    		border-top: 1px solid var(--third-color);
 	    		.dropdown__link {
-	    			display: block;
+	    			display: flex;
+    				flex-direction: row;
 				    font-size: 15px;
 				    line-height: 1.2;
 				    text-transform: uppercase;
@@ -179,6 +182,38 @@
 							background: var(--secondary-color);
 							color: var(--lightest-color);
 							text-decoration: none;
+						}
+
+						.dropdown__link-media {
+							display: flex;
+							img.link__image {
+								width: 40px;
+    						height: 40px;
+								&.link__image--left-overlapped {
+									margin-left: -8px;
+								}
+							}
+						}
+                
+            .dropdown__link-text {
+            	padding-left: 16px;
+							display: flex;
+							flex-direction: column;
+							.link__title {
+								font-size: 16px;
+								line-height: 1.5;
+								text-transform: none;
+								font-weight: 400;
+								display: flex;
+
+							}
+							.link__subtitle {
+								display: flex;
+								font-size: 12px;
+								color: var(--darkest-color);
+								text-transform: none;
+								padding-top: 16px;
+							}
 						}
 	    		}
 	    	}
