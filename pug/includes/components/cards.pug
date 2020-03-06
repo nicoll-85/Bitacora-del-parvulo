@@ -77,9 +77,17 @@ mixin card--panel-complete(options)
       .card-chart__content
         p My Score
         .row
-          .col-4
+          .col
             +chart
-          .col-4
+          .col
             +chart
-          .col-4
+          .col
             +chart
+
+mixin card--small(options)
+  a.card-small.mt-2.mb-1(href="#")
+    .card-small__body
+      .card-small__group
+        img.card-small__img(src="./images/user--profile.png", alt="")
+        p.card-small__text Analizyng & Solving Problems
+      
