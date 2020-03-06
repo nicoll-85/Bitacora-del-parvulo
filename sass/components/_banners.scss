@@ -76,7 +76,56 @@
 
   .banner__actions {
     margin: 64px 0px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    button, span {
+      display: flex;
+    }
+    span {
+      margin: 0px 8px;
+    }
+    a.link {
+      font-size: 14px;
+      color: var(--primary-color);
+      text-decoration: underline;
+    }
   }
+
+  &.banner--lite {
+    .banner__content {
+
+      .banner__text {
+        h1 {
+          font-size: 24px;
+          line-height: 32px;
+          font-weight: 600;
+          margin-bottom: 32px;
+        }
+      }
+    }
+
+  }
+
+
+
+
+  &.banner--image-left {
+    .banner__content {
+      @include media(tablet) {
+        order: 2;
+        padding-right: 0px;
+        padding-left: 56px;
+      }
+    }
+
+    .banner__image {
+      @include media(tablet) {
+        order: 1;
+      }
+    }
+  }
+
 }
 
 .banner--basic {
