@@ -47,6 +47,31 @@
   .checkbox-container__icon svg {
     width: 20px;
     height: 20px;
+    fill: var(--darkest-color);
+  }
+
+
+
+  &.checkbox--light {
+
+    .checkbox-container__icon,
+    .checkbox-container__icon svg {
+      fill: var(--lightest-color);
+    }
+    
+    .checkbox {
+      .checkbox__button {
+        color: var(--lightest-color);
+        &[aria-pressed=true] {
+          border-color: var(--lightest-color);
+          background: var(--lightest-color);
+          color: var(--darkest-color);
+        }
+        .checkbox__text{
+          display: inline;
+        }
+      }
+    }
   }
 }
 

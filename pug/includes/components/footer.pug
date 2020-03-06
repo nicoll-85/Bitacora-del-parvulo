@@ -10,18 +10,7 @@ mixin footer()
 					li
 						a.footer__nav-link Login
 
-				.footer__lang
-					.footer__lang-select
-						ul.lang-select__options
-							li
-								button.lang-select__option(aria-pressed="true")
-									span ENG
-							li
-								button.lang-select__option 
-									span ESP
-							li
-								button.lang-select__option 
-									span POR
+				+checkbox--lang().checkbox--light
 
 			.footer__brand
 				.footer__logos

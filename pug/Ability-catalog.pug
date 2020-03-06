@@ -1,21 +1,21 @@
 include includes/head.pug
 body
-	+topbar()
+	+topbar--closed-menu()
 	.container.container--main
 		.row
-			.col-12
+			.col-sm-12
 				+banner()
 		.row
-			.col-4
+			.col-sm-12.col-md-4
 				+box(
 					{'boxTitle': 'Key Behaviors', 
 						'hideSubtitle': true,
 						'showDescription': true, 
 						'boxDescription': 'Based on the Laureate Professional Assessment, we’ve broken this ability down into a few key behaviors and provided an example of what they mean.'
 					})
-			.col-8
-				.row
-					.col-6
+			.col-sm-12.col-md-8
+				.row.carousel--horizontal-scroll
+					.col-sm-12.col-md-6
 						+box(
 							{'boxTitle': 'Critical Thinking', 
 								'hideSubtitle': true, 
@@ -23,8 +23,8 @@ body
 								'iconName': 'Bulb', 
 								'showDescription': true, 
 								'boxDescription': 'You look at information critically. You check your sources because knowing where the information comes from is just as important as what’s in it.'
-							})
-					.col-6
+							}).box--carousel
+					.col-sm-12.col-md-6
 						+box(
 							{'boxTitle': 'Critical Thinking', 
 								'hideSubtitle': true, 
@@ -32,8 +32,8 @@ body
 								'iconName': 'Holistic', 
 								'showDescription': true, 
 								'boxDescription': 'You look at information critically. You check your sources because knowing where the information comes from is just as important as what’s in it.'
-							})
-					.col-6
+							}).box--carousel
+					.col-sm-12.col-md-6
 						+box(
 							{'boxTitle': 'Critical Thinking', 
 								'hideSubtitle': true, 
@@ -41,8 +41,8 @@ body
 								'iconName': 'Synthesis', 
 								'showDescription': true, 
 								'boxDescription': 'You look at information critically. You check your sources because knowing where the information comes from is just as important as what’s in it.'
-							})
-					.col-6
+							}).box--carousel
+					.col-sm-12.col-md-6
 						+box(
 							{'boxTitle': 'Critical Thinking', 
 								'hideSubtitle': true, 
@@ -50,14 +50,14 @@ body
 								'iconName': 'Pattern', 
 								'showDescription': true, 
 								'boxDescription': 'You look at information critically. You check your sources because knowing where the information comes from is just as important as what’s in it.'
-							})
+							}).box--carousel
 				.row
 					.col-12
 						+card--featured()
 		.row
-			.col-6
+			.col-sm-12.col-md-6
 				+card--video()
-			.col-6
+			.col-sm-12.col-md-6
 				+box(
 					{'boxTitle': 'Want to improve this ability?', 
 						'hideSubtitle': false, 
@@ -69,15 +69,15 @@ body
 						'boxAction': 'Start the Episode'
 					})
 
-		.container
-			.row
-				.col-12
-					+button({'buttonTitle': 'Mi botón','showIcon': true, 'iconName': 'Synthesis'}).button--secondary
-				.col-12
-					+button({'buttonTitle': 'Mi botón primario'}).button--primary
-				.col-12
-					+button({'buttonTitle': 'Ghost button'}).button--ghost
-			.row
+		.row
+			.col-sm-12.col-md-4
+				+box(
+					{'boxTitle': 'More videos on analyzing & solving problems', 
+						'hideSubtitle': true,
+						'showDescription': true, 
+						'boxDescription': 'Checkout popular content to help you continue improving on this ability'
+					})
+			.row.carousel--horizontal-scroll
 				.col
 					+card
 				.col
