@@ -4665,29 +4665,20 @@ input:checked + .slider:before {
       @media screen and (max-width: 575px) {
         .card-video .card-img-overlay .card-video__title {
           width: 100%; } }
-    .card-video .card-img-overlay .card-video__badge {
-      margin-left: 351px;
-      margin-top: 82px;
-      width: 137px; }
-      @media screen and (max-width: 360px) {
-        .card-video .card-img-overlay .card-video__badge {
-          margin-left: 213px;
-          margin-top: -8px;
-          width: 100px; } }
-      @media screen and (min-width: 576px) {
-        .card-video .card-img-overlay .card-video__badge {
-          margin-left: 365px;
-          margin-top: 56px; } }
-      @media screen and (min-width: 768px) {
-        .card-video .card-img-overlay .card-video__badge {
-          margin-left: 352px;
-          margin-top: 39px;
-          width: 137px; } }
-      @media screen and (min-width: 992px) {
-        .card-video .card-img-overlay .card-video__badge {
-          margin-left: 354px;
-          margin-top: 41px;
-          width: 137px; } }
+    .card-video .card-img-overlay .box-badge {
+      float: right;
+      margin-right: -40px;
+      margin-top: 48px; }
+      @media screen and (min-width: 1200px) {
+        .card-video .card-img-overlay .box-badge {
+          margin-right: -40px;
+          margin-top: 47px; } }
+      .card-video .card-img-overlay .box-badge .card-video__triangle {
+        position: relative; }
+      .card-video .card-img-overlay .box-badge .card-video__badge {
+        position: relative;
+        margin-left: -120px;
+        margin-top: -58px; }
 
 .card-featured {
   width: 75%;
