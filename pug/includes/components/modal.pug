@@ -1,0 +1,13 @@
+mixin modal-basic()
+	.modal-container&attributes(attributes)
+		+link(href="#open-modal") My modal
+	#open-modal.modal-window
+		.modal-box
+			.modal-header
+					a.modal-close(href="#",title="close") X
+			.modal-body
+				.modal-content()
+					p Nullam dictum felis eu pede mollis pretium. Quisque id odio. Aenean imperdiet. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam.
+				.modal-actions
+					+button({'buttonTitle': 'Secondary action'}).button--ghost-primary.mr-1
+					+button({'buttonTitle': 'Primary action'}).button--primary
