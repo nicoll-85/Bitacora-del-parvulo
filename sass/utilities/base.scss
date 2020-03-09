@@ -43,49 +43,62 @@ body {
 }
 
 .container--main {
-  padding-top: 100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @include media(tablet) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }
 
-.section-background {
-
-  &,
-  &--secondary,
-  &--third,
-  &--fourth,
-  &--sixth {
-    background: top/100% auto no-repeat $primary-color;
-    color: $lightest-color;
-    padding: 30px 30px 60px;
-    margin: 0px;
-    max-width: 100%;
-
-    @media (desktop-s) {
-      padding: 60px 100px 80px;
+.section--partial-background {
+  background-size: contain;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  &.section--partial-background--left-top {
+    background-position: left;
+    background-position-y: 60px;
+  }
+  &.section--partial-background--left-center {
+    background-position: left;
+    background-position-y: center;
+  }
+  &.section--partial-background--right-center {
+    background-position: right;
+    background-position-y: center;
+  }
+  &.section--partial-background--bottom-center {
+    background-position: center;
+    background-position-y: bottom;
+  }
+  &.section--partial-background--tiny {
+    background-size: 5%;
+  }
+  &.section--partial-background--xsmall {
+    background-size: 10%;
+  }
+  &.section--partial-background--small {
+    background-size: 20%;
+  }
+  &.section--partial-background--medium {
+    background-size: 40%;
+  }
+}
+.section--color-background {
+  background-color: var(--lightest-color);
+  &.section--color-background--fourth {
+    background-color: var(--fourth-color);
+  }
+  &.section--color-background-traslapped {
+    background-color: var(--fourth-color);
+    margin-top: 260px;
+    padding-top: 1px;
+    .container--main {
+      padding-top: 0px;
+      margin-top: -200px;
     }
   }
 }
 
-.section-background--secondary {
-  background: top/100% auto no-repeat;
-  background-image: url("../images/bg-section1.svg");
-  color: $lightest-color;
-}
 
-.section-background--fourth {
-  background-size: cover;
-  background: top/100% auto no-repeat ;
-  background-image: url("../images/bg-section2.svg");
-  color: $darkest-color;
-}
-
-.section-background--sixth {
-  background: top/100% auto no-repeat;
-  background-image: url("../images/bg-section3.svg");
-  color: $darkest-color;
-}
-
-.section-background--seventh {
-  background: top/100% auto no-repeat;
-  background-image: url("../images/bg-section4.svg");
-  color: $darkest-color;
-}

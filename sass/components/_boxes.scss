@@ -8,7 +8,7 @@
 	min-width: 250px;
 	width: 100%;
 	max-width: 100%;
-	min-height: 120px;
+	min-height: 60px;
 	position: relative;
 	padding: 15px 20px;
 	margin: 10px auto;
@@ -28,8 +28,8 @@
 	line-height: 18px;
 	@include font-size(18px);
 	@include media(tablet) {
-		max-width: 400px;
-		min-height: 150px;
+		max-width: 600px;
+		min-height: 100px;
 	}
 
 	.box__subtitle{
@@ -75,6 +75,14 @@
 			background: transparent;
 		}
 	}
+	&.box--centered-content {
+    text-align: center;
+  }
+	&.box--condensed {
+		.box__title{
+			margin: 0px;
+		}
+  }
 }
 
 .box__content {
@@ -196,5 +204,9 @@
 	overflow: hidden;
 	overflow-x: auto;
 	margin-bottom: 32px;
+	@include media(tablet) {
+		flex-wrap: wrap;
+	overflow: visible;
+	}
 }
 

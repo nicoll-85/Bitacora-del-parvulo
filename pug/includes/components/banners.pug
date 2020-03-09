@@ -22,13 +22,11 @@ mixin banner()
 
 
 mixin banner--about01()
-	.banner.banner--lite
+	.banner.banner--lite.banner--featured-image
 		.banner__content
 			.banner__text
 				h1 Turn Learning into Employability
 				span This is your place for becoming a smarter, more connected professional.
-			.banner__actions
-				+button({'buttonTitle': 'Learn More'}).button--primary
 		.banner__image(style={'background-image': 'url("images/Employability.svg")'})
 
 

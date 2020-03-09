@@ -17,6 +17,7 @@
     flex-direction: column;
     flex: 1 1 70%;
     width: 70%;
+    justify-content: center;
     padding-right: 32px;
     order: 2;
 
@@ -122,6 +123,14 @@
     .banner__image {
       @include media(tablet) {
         order: 1;
+      }
+    }
+  }
+
+  &.banner--featured-image {
+    .banner__image {
+      @include media(tablet) {
+        min-height: 300px;
       }
     }
   }
