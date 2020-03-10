@@ -68,6 +68,13 @@ svg {
   }
 }
 
+.is-blurred {
+  filter: blur(4px);
+}
+.no-scroll {
+  overflow: hidden;
+}
+
 .section--partial-background {
   background-size: contain;
   background-origin: content-box;

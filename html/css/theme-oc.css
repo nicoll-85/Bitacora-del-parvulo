@@ -3993,6 +3993,13 @@ svg {
       padding-top: 80px;
       padding-bottom: 80px; } }
 
+.is-blurred {
+  -webkit-filter: blur(4px);
+  filter: blur(4px); }
+
+.no-scroll {
+  overflow: hidden; }
+
 .section--partial-background {
   background-size: contain;
   background-origin: content-box;
