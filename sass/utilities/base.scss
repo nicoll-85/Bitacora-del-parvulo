@@ -41,6 +41,22 @@ $darkest-color: #334652;
 body {
   position: relative;
   background-color: var(--lightest-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+svg {
+  vertical-align: unset;
+}
+.page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.page-content{
+  flex: 1;
+  margin-top: 60px;
 }
 
 .container--main {
@@ -59,7 +75,7 @@ body {
   background-position: center;
   &.section--partial-background--left-top {
     background-position: left;
-    background-position-y: 60px;
+    background-position-y: 0px;
   }
   &.section--partial-background--left-center {
     background-position: left;
