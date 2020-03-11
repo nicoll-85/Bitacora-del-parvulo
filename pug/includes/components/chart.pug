@@ -8,3 +8,17 @@ mixin chart(options)
 					text.circle-chart__percent(x='16.91549431', y='15.5', alignment-baseline='central', font-size='8') 7
 					text.circle-chart__subline(x='16.91549431', y='20.5', alignment-baseline='central', font-size='2')
 		.chart-title Analizing & Solving Problems
+
+mixin chart--info(options)
+	.chart-info&attributes(attributes)
+		.chart-info__img
+			svg.circle-chart(xmlns='http://www.w3.org/2000/svg', style='width:70px', viewBox='0 0 33.83098862 33.83098862')
+				circle.circle-chart__background(cx='16.915', cy='16.915', r='15.915', fill='none', stroke='#efefef', stroke-width='2')
+				circle.circle-chart__circle(cx='16.915', cy='16.915', r='15.915', fill='none', stroke='#37b896', stroke-dasharray='30,100', stroke-linecap='round', stroke-width='2')
+				g.circle-chart__info(text-anchor='middle')
+					text.circle-chart__percent(x='16.91549431', y='15.5', alignment-baseline='central', font-size='8') 7
+					text.circle-chart__subline(x='16.91549431', y='20.5', alignment-baseline='central', font-size='2')
+		.chart-info__content
+			.chart-info__title Your LPA Ability Score
+			.chart-info__subtitle An 8-10 means you are excelling at the basics
+			.char-info__description You've wroked really hard to refine your ability. You know advanced methods, handle complex systems of information, and can juggle subtle or big picture ideas.
