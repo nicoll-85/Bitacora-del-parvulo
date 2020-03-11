@@ -80,10 +80,10 @@
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    button, span {
+    .button, .banner__actions-text {
       display: flex;
     }
-    span {
+    .banner__actions-text {
       margin: 0px 8px;
     }
     a.link {
