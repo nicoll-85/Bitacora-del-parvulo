@@ -117,26 +117,30 @@
         width: 100%;
       }
     }
+  }
+}
 
-    .box-badge {
-      float: right;
-      margin-right: -40px;
-      margin-top: 48px;
-      @media screen and (min-width: 1200px) {
-        margin-right: -40px;
-        margin-top: 47px;
-      }
+.box-badge {
+  float: right;
+  margin-left: -31px;
+  margin-top: -131px;
 
-      .card-video__triangle {
-        position: relative;
-      }
+  @media screen and (min-width: 768px) {
+    margin-right: 200px;
+  }
+  @media screen and (min-width: 992px) {
+    margin-left: -31px;
+    margin-right: 0px;
+  }
 
-      .card-video__badge {
-        position: relative;
-        margin-left: -120px;
-        margin-top: -58px;
-      }
-    }
+  .card-video__triangle {
+    position: relative;
+  }
+
+  .card-video__badge {
+    position: relative;
+    margin-left: -120px;
+    margin-top: -58px;
   }
 }
 

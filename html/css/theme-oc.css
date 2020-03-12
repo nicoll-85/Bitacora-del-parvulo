@@ -4800,20 +4800,24 @@ ul.list {
       @media screen and (max-width: 575px) {
         .card-video .card-img-overlay .card-video__title {
           width: 100%; } }
-    .card-video .card-img-overlay .box-badge {
-      float: right;
-      margin-right: -40px;
-      margin-top: 48px; }
-      @media screen and (min-width: 1200px) {
-        .card-video .card-img-overlay .box-badge {
-          margin-right: -40px;
-          margin-top: 47px; } }
-      .card-video .card-img-overlay .box-badge .card-video__triangle {
-        position: relative; }
-      .card-video .card-img-overlay .box-badge .card-video__badge {
-        position: relative;
-        margin-left: -120px;
-        margin-top: -58px; }
+
+.box-badge {
+  float: right;
+  margin-left: -31px;
+  margin-top: -131px; }
+  @media screen and (min-width: 768px) {
+    .box-badge {
+      margin-right: 200px; } }
+  @media screen and (min-width: 992px) {
+    .box-badge {
+      margin-left: -31px;
+      margin-right: 0px; } }
+  .box-badge .card-video__triangle {
+    position: relative; }
+  .box-badge .card-video__badge {
+    position: relative;
+    margin-left: -120px;
+    margin-top: -58px; }
 
 .card-featured {
   width: 75%;
