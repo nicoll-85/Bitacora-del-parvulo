@@ -199,13 +199,21 @@
             	padding-left: 16px;
 							display: flex;
 							flex-direction: column;
+
+							&.dropdown__link-text--full-width {
+								width: 100%;
+								padding-left: 0px;
+							}
 							.link__title {
 								font-size: 16px;
 								line-height: 1.5;
 								text-transform: none;
 								font-weight: 400;
 								display: block;
-
+								&.link__title--strong {
+									font-weight: 600;
+									text-align: center;
+								}
 							}
 							.link__subtitle {
 								display: block;
