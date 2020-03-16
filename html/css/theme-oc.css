@@ -5197,7 +5197,7 @@ a {
   .banner.banner--lite .banner__content .banner__text h1 {
     font-size: 24px;
     line-height: 32px;
-    font-weight: 600;
+    font-weight: 800;
     margin-bottom: 32px; }
   @media only screen and (min-width: 768px) {
     .banner.banner--image-left .banner__content {
@@ -5238,7 +5238,7 @@ a {
           .banner--basic .banner__content .banner__text h4 {
             font-size: 21px;
             line-height: 42px;
-            font-weight: 700;
+            font-weight: 800;
             color: #334652;
             margin-bottom: 32px;
             width: 100%; }
@@ -5248,6 +5248,15 @@ a {
             opacity: 0.4; }
         .banner--basic .banner__content .banner__actions {
           margin: 64px 0px; } }
+
+.banner__description {
+  color: #334652;
+  opacity: .6;
+  font-family: var(--primary-font); }
+
+.banner__title {
+  color: #334652;
+  font-weight: 700; }
 
 .sidebar-menu {
   transform: translateX(-100%);
