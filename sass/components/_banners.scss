@@ -100,7 +100,7 @@
         h1 {
           font-size: 24px;
           line-height: 32px;
-          font-weight: 600;
+          font-weight: 800;
           margin-bottom: 32px;
         }
       }
@@ -166,7 +166,7 @@
         h4 {
           font-size: 21px;
           line-height: 42px;
-          font-weight: 700;
+          font-weight: 800;
           color: #334652;
           margin-bottom: 32px;
           width: 100%;
@@ -184,4 +184,13 @@
       }
     }
   }
+}
+.banner__description{
+  color: $darkest-color;
+  opacity: .6;
+  font-family: var(--primary-font);
+}
+.banner__title {
+  color: $darkest-color;
+  font-weight: 700;
 }
