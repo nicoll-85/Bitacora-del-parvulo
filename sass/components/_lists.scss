@@ -4,6 +4,7 @@ ul.list {
   margin: 0px;
   display: flex;
   flex-direction: column;
+  width: 80%;
 
   a.list-item__link {
     display: flex;
@@ -38,13 +39,13 @@ ul.list {
     .list-link__text {
       font-family: var(--primary-font);
       .list-link__title {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 600;
         color: var(--darkest-color);
       }
 
       .list-link__subtitle {
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 400;
         color: var(--darkest-color);
         opacity: .4;

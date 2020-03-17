@@ -4490,7 +4490,8 @@ ul.list {
   padding: 0px;
   margin: 0px;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  width: 80%; }
   ul.list a.list-item__link {
     display: flex;
     margin-bottom: 10px;
@@ -4519,11 +4520,11 @@ ul.list {
     ul.list a.list-item__link .list-link__text {
       font-family: var(--primary-font); }
       ul.list a.list-item__link .list-link__text .list-link__title {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 600;
         color: var(--darkest-color); }
       ul.list a.list-item__link .list-link__text .list-link__subtitle {
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 400;
         color: var(--darkest-color);
         opacity: .4; }
@@ -5141,13 +5142,15 @@ a {
     display: flex;
     flex-direction: column;
     flex: 1 1 70%;
-    width: 70%;
     justify-content: center;
     padding-right: 32px;
     order: 2; }
     @media only screen and (min-width: 768px) {
       .banner .banner__content {
-        order: 1; } }
+        order: 1;
+        width: 100%;
+        max-width: 500px;
+        margin-right: 129px; } }
     .banner .banner__content .banner__label {
       display: flex;
       align-items: flex-end;
@@ -5162,9 +5165,9 @@ a {
         font-size: 14px;
         font-weight: 300;
         display: flex; }
-    .banner .banner__content .banner__text h1 {
+    .banner .banner__content .banner__text .banner__title h1 {
       font-size: 36px;
-      line-height: 42px;
+      line-height: 47px;
       font-weight: 900;
       color: #334652;
       margin-bottom: 32px;
@@ -5174,6 +5177,7 @@ a {
     min-width: 150px;
     width: 30%;
     min-height: 150px;
+    max-width: 300px;
     background: transparent;
     background-size: contain;
     background-repeat: no-repeat;
@@ -5189,7 +5193,8 @@ a {
     display: flex;
     flex-wrap: nowrap;
     align-items: center; }
-    .banner .banner__actions .button, .banner .banner__actions .banner__actions-text {
+    .banner .banner__actions .button,
+    .banner .banner__actions .banner__actions-text {
       display: flex; }
     .banner .banner__actions .banner__actions-text {
       margin: 0px 8px; }
@@ -5198,8 +5203,8 @@ a {
       color: var(--primary-color);
       text-decoration: underline; }
   .banner.banner--lite .banner__content .banner__text h1 {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 34px;
+    line-height: 47px;
     font-weight: 800;
     margin-bottom: 32px; }
   @media only screen and (min-width: 768px) {
@@ -5212,10 +5217,10 @@ a {
       order: 1; } }
   @media only screen and (min-width: 768px) {
     .banner.banner--featured-image .banner__image {
-      min-height: 300px; } }
+      min-height: 375px; } }
 
 .banner--basic {
-  padding: 32px;
+  padding: 34px;
   display: flex;
   min-height: 250px;
   margin-bottom: 32px;
@@ -5262,6 +5267,12 @@ a {
   color: #334652;
   font-weight: 700;
   font-size: 28px; }
+
+.banner__text2 .banner__title {
+  font-size: 26px;
+  line-height: 37px;
+  font-weight: 800;
+  margin-bottom: 32px; }
 
 .sidebar-menu {
   transform: translateX(-100%);
