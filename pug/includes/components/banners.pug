@@ -23,17 +23,17 @@ mixin banner()
 
 mixin banner--about01()
 	.banner.banner--lite.banner--featured-image
-		.banner__content
+		.banner__content.mr-5
 			.banner__text
 				h1.banner__title Turn Learning into Employability
 				span.banner__description This is your place for becoming a smarter, more connected professional.
-		.banner__image(style={'background-image': 'url("images/Employability.svg")'})
+		.banner__image(style={'background-image': 'url("images/Employability.svg")', 'max-width':'400px'})
 
 
 mixin banner--about02()
 	.banner.banner--lite.banner--image-left
-		.banner__content
-			.banner__text
+		.banner__content.ml-5
+			.banner__text2
 				h1.banner__title Understand Your Strengths
 				span.banner__description OneCampus helps you identify professional areas you can improve on based on the abilities that employers value most. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur. Sed posuere consectetur est at lobortis.
 			.banner__actions
@@ -46,7 +46,7 @@ mixin banner--about02()
 mixin banner--about03()
 	.banner.banner--lite
 		.banner__content
-			.banner__text
+			.banner__text2
 				h1.banner__title Learn from the Best
 				span.banner__description OneCampus teaches you about abilities with concise videos created by some of the world’s top business minds and educators.
 			.banner__actions
@@ -81,19 +81,18 @@ mixin banner--about03()
 
 mixin banner--about04()
 	.banner.banner--lite.banner--image-left
-		.banner__content
-			.banner__text
+		.banner__content.ml-5
+			.banner__text2
 				h1.banner__title Passport Let’s You Connect with Others and Track Your Achievements
-				span.banner__description Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, ege stas eget quam. Etiam porta sem malesuada ma gna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-			.banner__actions
-				a.link Go to passport
+				span.banner__description Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, ege stas eget quam. Etiam porta sem malesuada ma gna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras justo odio, dapibus ac facilisis in, egestas eget quam. 
+					a.link(style={'color':"rgba(255, 124, 95, 1)"}) Go to passport	
 		.banner__image(style={'background-image': 'url("images/achievements.svg")'})
 
 
 mixin banner--about05()
 	.banner.banner--lite
 		.banner__content
-			.banner__text
+			.banner__text2
 				h1.banner__title Learn within a global community of peers, faculty and business professionals
 				span.banner__description On OneCampus, you are learning alongside your peers. Join a community of learners around the globe who are working on improving their professional abilities. Share experiences, learn in new contexts, and strengthen your global mindset as you prepare for the global job market.
 
