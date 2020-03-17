@@ -36,6 +36,7 @@ ul.list {
     }
 
     .list-link__text {
+      font-family: var(--primary-font);
       .list-link__title {
         font-size: 14px;
         font-weight: 600;
@@ -46,6 +47,7 @@ ul.list {
         font-size: 12px;
         font-weight: 400;
         color: var(--darkest-color);
+        opacity: .4;
       }
     }
 
