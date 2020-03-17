@@ -187,10 +187,12 @@
 }
 .banner__description{
   color: $darkest-color;
-  opacity: .6;
+  opacity: .4;
   font-family: var(--primary-font);
+  font-size: 18px;
 }
 .banner__title {
   color: $darkest-color;
   font-weight: 700;
+  font-size: 28px;
 }

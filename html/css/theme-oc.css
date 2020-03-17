@@ -4516,14 +4516,17 @@ ul.list {
         width: 18px;
         height: 18px;
         fill: var(--lightest-color); }
-    ul.list a.list-item__link .list-link__text .list-link__title {
-      font-size: 14px;
-      font-weight: 600;
-      color: var(--darkest-color); }
-    ul.list a.list-item__link .list-link__text .list-link__subtitle {
-      font-size: 12px;
-      font-weight: 400;
-      color: var(--darkest-color); }
+    ul.list a.list-item__link .list-link__text {
+      font-family: var(--primary-font); }
+      ul.list a.list-item__link .list-link__text .list-link__title {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--darkest-color); }
+      ul.list a.list-item__link .list-link__text .list-link__subtitle {
+        font-size: 12px;
+        font-weight: 400;
+        color: var(--darkest-color);
+        opacity: .4; }
     ul.list a.list-item__link:active, ul.list a.list-item__link:focus, ul.list a.list-item__link:hover {
       border-radius: 6px;
       background: var(--fourth-color); }
@@ -5251,12 +5254,14 @@ a {
 
 .banner__description {
   color: #334652;
-  opacity: .6;
-  font-family: var(--primary-font); }
+  opacity: .4;
+  font-family: var(--primary-font);
+  font-size: 18px; }
 
 .banner__title {
   color: #334652;
-  font-weight: 700; }
+  font-weight: 700;
+  font-size: 28px; }
 
 .sidebar-menu {
   transform: translateX(-100%);
