@@ -19,6 +19,7 @@
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 12px;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+  height: 100%;
   @include font-size(18px);
 
   .media--top {
@@ -34,6 +35,7 @@
     border-radius: 12px;
     background-color: $lightest-color;
     margin-top: -8px;
+    position: relative;
 
     .card__title {
       font-family: var(--secondary-font);
@@ -150,7 +152,6 @@
 
 //  Card featured global styles
 .card-featured {
-  width: 75%;
   position: relative;
   display: -ms-flexbox;
   display: flex;

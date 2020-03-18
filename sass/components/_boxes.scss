@@ -26,6 +26,7 @@
 	font-family: var(--primary-font);
 	text-align: left;
 	line-height: 18px;
+	margin-top: 51px;
 	@include font-size(18px);
 	@include media(tablet) {
 		max-width: 600px;
@@ -61,6 +62,7 @@
 		margin-bottom: 18px;
 		font-weight: 200;
 		color: var(--third-color);
+		font-style: italic;
 	}
 
 	&.box--carousel {
@@ -70,6 +72,7 @@
 			margin-bottom: 18px;
 			font-weight: 200;
 			color: var(--darkest-color);
+			opacity: .4;
 		}
 		@include media(tablet) {
 			background: transparent;
@@ -100,7 +103,7 @@
 	height: 80px;
 	width: 80px;
 	min-width: 80px;
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 }
 .box__media {
 	text-align: left;
