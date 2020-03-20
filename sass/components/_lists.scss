@@ -4,7 +4,11 @@ ul.list {
   margin: 0px;
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
+
+  @include media(tablet) {
+    width: 80%;
+  }
 
   a.list-item__link {
     display: flex;
