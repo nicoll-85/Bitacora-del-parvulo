@@ -4036,7 +4036,7 @@ svg {
     padding-top: 1px; }
     .section--color-background.section--color-background-traslapped .container--main {
       padding-top: 0px;
-      margin-top: -200px; }
+      margin-top: -260px; }
 
 /* Global Styles for Heading
 **********************/
@@ -4697,9 +4697,10 @@ ul.list {
   .box .box__title {
     margin: 0px 0px 32px 0px;
     color: var(--darkest-color);
-    font-weight: 600;
-    font-size: 18px;
-    font-size: 1.125rem; }
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25; }
   .box .box__icon {
     fill: var(--darkest-color);
     width: 80px;
@@ -4709,22 +4710,51 @@ ul.list {
     border-radius: 50%;
     overflow: overlay; }
   .box .box__description {
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: 400;
     margin-bottom: 18px;
-    font-weight: 200;
-    color: var(--third-color);
-    font-style: italic; }
+    color: var(--darkest-color);
+    opacity: .4; }
   .box.box--carousel {
     background: #eef5fb; }
     .box.box--carousel .box__description {
       margin-bottom: 18px;
-      font-weight: 200;
+      font-size: 14px;
+      font-size: 0.875rem;
+      font-weight: 400;
       color: var(--darkest-color);
       opacity: .4; }
     @media only screen and (min-width: 768px) {
       .box.box--carousel {
         background: transparent; } }
+  .box.box--key-behavior .box__title {
+    font-weight: 600;
+    font-size: 20px;
+    font-size: 1.25rem;
+    max-width: 60%; }
+  .box.box--key-behavior .box__description {
+    font-style: italic; }
+  .box.box--episode-card .box__subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    font-size: 0.875rem; }
+  .box.box--episode-card .box__title {
+    font-weight: 600;
+    font-size: 24px;
+    font-size: 1.5rem; }
+  .box.box--episode-card .box__description {
+    font-style: normal; }
   .box.box--centered-content {
     text-align: center; }
+    .box.box--centered-content .box__title {
+      font-weight: 600;
+      font-size: 24px;
+      font-size: 1.5rem; }
+    .box.box--centered-content .box__description {
+      font-style: normal;
+      font-size: 16px;
+      font-size: 1rem; }
   .box.box--condensed .box__title {
     margin: 0px;
     margin-bottom: 10px; }
@@ -7383,10 +7413,10 @@ footer {
     margin: 0 auto; }
     @media only screen and (min-width: 768px) {
       footer .footer__content {
-        padding: 36px 22px 120px 32px; } }
+        padding: 32px 24px; } }
     footer .footer__content .footer__nav {
       display: block;
-      margin-bottom: 70px;
+      margin-bottom: 0px;
       padding-right: 80px;
       position: relative;
       z-index: 0; }

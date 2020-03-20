@@ -45,8 +45,8 @@
 	.box__title{
 		margin: 0px 0px 32px 0px;
 		color: var(--darkest-color);
-		font-weight: 600;
-		@include font-size(18px);
+		font-weight: 400;
+		@include font-size(16px);
 		line-height: 1.25;
 	}
 	.box__icon {
@@ -60,10 +60,11 @@
 	}
 
 	.box__description {
+		@include font-size(14px);
+		font-weight: 400;
 		margin-bottom: 18px;
-		font-weight: 200;
-		color: var(--third-color);
-		font-style: italic;
+		color: var(--darkest-color);
+		opacity: .4;
 	}
 
 	&.box--carousel {
@@ -71,7 +72,8 @@
 
 		.box__description {
 			margin-bottom: 18px;
-			font-weight: 200;
+			@include font-size(14px);
+			font-weight: 400;
 			color: var(--darkest-color);
 			opacity: .4;
 		}
@@ -79,8 +81,44 @@
 			background: transparent;
 		}
 	}
+
+	&.box--key-behavior {
+		.box__title{
+			font-weight: 600;
+			@include font-size(20px);
+			max-width: 60%;
+		}
+
+		.box__description {
+			font-style: italic;
+		}
+	}
+
+	&.box--episode-card {
+		.box__subtitle{
+			font-weight: 400;
+			@include font-size(14px);
+		}
+		.box__title{
+			font-weight: 600;
+			@include font-size(24px);
+		}
+
+		.box__description {
+			font-style: normal;
+		}
+	}
 	&.box--centered-content {
     text-align: center;
+		.box__title{
+			font-weight: 600;
+			@include font-size(24px);
+		}
+
+		.box__description {
+			font-style: normal;
+			@include font-size(16px);
+		}
   }
 	&.box--condensed {
 		.box__title{
