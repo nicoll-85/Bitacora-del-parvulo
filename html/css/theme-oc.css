@@ -5863,15 +5863,15 @@ a {
             border-left: 4px solid transparent;
             text-decoration: none; }
 
-.modal--scrollable .modal-content {
+.modal--scrollable.modal-content {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
   max-height: calc(100vh - 1rem); }
   @media only screen and (min-width: 576px) {
-    .modal--scrollable .modal-content {
+    .modal--scrollable.modal-content {
       max-height: calc(100vh - 3.5rem); } }
-  .modal--scrollable .modal-content .modal-body {
+  .modal--scrollable.modal-content .modal-body {
     overflow: hidden;
     overflow-y: auto; }
 

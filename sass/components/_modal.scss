@@ -1,5 +1,5 @@
 .modal--scrollable {
-  .modal-content {
+  &.modal-content {
     justify-content: space-between;
     max-height: calc(100vh - 1rem);
     @media only screen and (min-width: 576px) {
