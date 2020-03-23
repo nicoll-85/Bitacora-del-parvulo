@@ -26,8 +26,12 @@
       order: 1;
       flex: 1 1 70%;
       width: 100%;
+      max-width: 350px;
+    }
+
+    @include media(desktop-s) {
       max-width: 500px;
-      margin-right: 129px;
+      margin-right: 80px;
     }
 
     .banner__label {
