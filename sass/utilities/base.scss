@@ -113,7 +113,7 @@ svg {
   background-color: var(--lightest-color);
   &.section--color-background--fourth {
     background-color: var(--fourth-color);
-  }
+  }º
   &.section--color-background-traslapped {
     background-color: var(--fourth-color);
     margin-top: 260px;
@@ -125,4 +125,14 @@ svg {
   }
 }
 
+.carousel--horizontal-scroll {
+  flex-wrap: nowrap;
+  overflow: hidden;
+  overflow-x: auto;
+  margin-bottom: 32px;
+  @include media(tablet) {
+    flex-wrap: wrap;
+    overflow: visible;
+  }
+}
 

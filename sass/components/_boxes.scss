@@ -243,14 +243,3 @@
 	}
 }
 
-.carousel--horizontal-scroll {
-	flex-wrap: nowrap;
-	overflow: hidden;
-	overflow-x: auto;
-	margin-bottom: 32px;
-	@include media(tablet) {
-		flex-wrap: wrap;
-	overflow: visible;
-	}
-}
-

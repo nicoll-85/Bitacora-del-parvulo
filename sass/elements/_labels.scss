@@ -13,7 +13,18 @@
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 
   .label__default {
-    color:rgba(51, 70, 82, 0.5);;
-    background-color:rgba(51, 70, 82, 0.1);
+    //color:rgba(51, 70, 82, 0.5);
+    //background-color:rgba(51, 70, 82, 0.1);
+    color: var(--darkest-color);
+    font-weight: 200;
+    background-color: #eef0f1;
   }
+}
+
+.label--outside-text {
+  font-family: var(--primary-font);
+  color: var(--darkest-color);
+  font-weight: 400;
+  @include font-size(16px);
+  line-height: 1.25;
 }

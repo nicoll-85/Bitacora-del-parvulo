@@ -153,9 +153,7 @@
 //  Card featured global styles
 .card-featured {
   position: relative;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
@@ -167,31 +165,34 @@
     display: flex;
     flex-direction: row;
     flex: 1 1 auto;
-    padding: 31px 36px;
+    padding: 32px 36px;
     border-radius: 12px;
-    color: #334652;
+    color: var(--darkest-color);
     margin-top: -8px;
-    text-align: left;
+    text-align: center;
+    justify-content: center;
 
-    @media screen and (max-width: 575px) {
+    @media screen and (max-width: 576px) {
       flex-wrap: wrap;
-      text-align: center;
+      text-align: left;
     }
 
     .card-featured__img {
+      margin-bottom: 16px;
+
       @media screen and (min-width: 576px) {
         margin: 0 auto;
       }
     }
 
     .card-featured__content {
-      margin-right: 36px;
-      margin-left: 36px;
+      margin: 0px;
+      text-align: center;
 
-      @media screen and (min-width: 575px) {
-        margin-right: 0px;
+      @media screen and (min-width: 576px) {
         margin: 5 auto;
-        margin-left: 0px;
+        margin-left: 32px;
+        text-align: left;
       }
 
       .card-featured__title {
