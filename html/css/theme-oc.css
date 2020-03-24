@@ -4452,7 +4452,6 @@ input:checked + .slider:before {
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out; }
   .label .label__default {
     color: var(--darkest-color);
-    font-weight: 200;
     background-color: #eef0f1; }
 
 .label--outside-text {
