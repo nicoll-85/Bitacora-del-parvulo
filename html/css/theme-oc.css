@@ -6042,7 +6042,10 @@ a {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      position: relative; }
+      position: unset; }
+      @media only screen and (min-width: 768px) {
+        .topbar .topbar__content .topbar__nav-item {
+          position: relative; } }
     .topbar .topbar__content .topbar__dropdown-button {
       background: transparent;
       border: none;
@@ -6098,6 +6101,9 @@ a {
       .topbar .topbar__content .topbar__dropdown.is-open {
         opacity: 1;
         visibility: visible; }
+      .topbar .topbar__content .topbar__dropdown .topbar__dropdown-content {
+        max-height: calc(100vh - 70px);
+        overflow-y: auto; }
       .topbar .topbar__content .topbar__dropdown .dropdown__header {
         display: -webkit-box;
         display: -ms-flexbox;

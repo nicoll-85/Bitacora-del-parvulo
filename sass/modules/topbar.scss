@@ -69,7 +69,11 @@
 		}
 		.topbar__nav-item {
 			display: flex;
-			position: relative;
+			position: unset;
+
+			@include media(tablet) {
+				position: relative;
+			}
 		}
 		.topbar__dropdown-button {
 			background: transparent;
@@ -82,6 +86,7 @@
 			cursor: pointer;
 			position: relative;
 			transition: all 0.25s ease-in-out;
+
 			&:active,
 			&:focus,
 			&:hover{
@@ -124,6 +129,11 @@
 	    	opacity: 1;
 	    	visibility: visible;
 	    }
+
+	    .topbar__dropdown-content {
+	    	max-height: calc(100vh - 70px);
+    		overflow-y: auto;
+    	}
 
 	    .dropdown__header {
 	    	display: flex;
