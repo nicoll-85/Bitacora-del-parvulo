@@ -4437,7 +4437,8 @@ input:checked + .slider:before {
 .label {
   display: inline-block;
   padding: 5px;
-  font-size: 75%;
+  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
   line-height: 1;
   text-align: center;
