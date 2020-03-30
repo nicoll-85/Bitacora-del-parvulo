@@ -57,8 +57,10 @@ mixin card--panel-start(options)
             p.card_panel__end-text Due by March 23, 2020
           p.card-panel__text Fusce dapibus, tellus ac cursus commodo, tortor mauris condimen tum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit am et, consectetur adipiscing 
           .card-panel__labels
-            +label({'labelTitle': 'Analyzing & Solving Problems'})
-            +label({'labelTitle': 'Making decisions'})
+            .col-12.col-sm-12.col-lg-4.col-md-6
+              +label({'labelTitle': 'Analyzing & Solving Problems'})
+            .col-12.col-sm-12.col-lg-4.col-md-6
+              +label({'labelTitle': 'Making decisions'})
         .card-panel__action  
           +button({'buttonTitle': 'Start Test'}).button--secondary
 
