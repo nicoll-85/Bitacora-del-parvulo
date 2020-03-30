@@ -1,0 +1,21 @@
+.navbar {
+  position: relative;
+  font-family: canada-type-gibson, Helvetica, Arial, sans-serif; 
+  background-color: white;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+  color: #334652;
+  padding-left: 40px;
+  padding-right: 40px;
+  .img-box {
+    margin-right: 10px;
+  }
+  .nav-item {
+    .nav-link{
+      color: #334652;
+      font-size: 14px;
+      font-weight: 400;
+      padding-left: 20px;
+      padding-right: 20px
+    }
+  }
+}
