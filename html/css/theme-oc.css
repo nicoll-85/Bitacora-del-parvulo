@@ -5555,6 +5555,22 @@ a {
         display: flex;
         float: right; }
 
+.navbar {
+  position: relative;
+  display: flex;
+  font-family: var(--primary-font);
+  background-color: #ffffff;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+  color: #334652;
+  padding-left: 40px;
+  padding-right: 40px; }
+  .navbar .navbar-nav .nav-item .nav-link {
+    color: #334652;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 20px;
+    padding-right: 20px; }
+
 .topbar {
   background: #22262B;
   color: var(--lightest-color);

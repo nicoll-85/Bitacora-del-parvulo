@@ -1,15 +1,25 @@
 mixin new-menu()
-	nav.navbar&attributes(attributes)
-		.navbar-expand-lg.navbar-light.rounded
-			button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarsExample10", aria-controls="navbarsExample10", aria-expanded="false", aria-label="Toggle navigation")
-			#navbarsExample10.collapse.navbar-collapse
-				ul.navbar-nav
-					li.nav-item
-						a(href="#").nav-link
-							img.img-box(src="./images/Logo.png", alt="")Dashboard
-					li.nav-item
-						a(href="#").nav-link Professional Abilities
-					li.nav-item
-						a(href="#").nav-link Learning
-					li.nav-item
-						a(href="#").nav-link Community
+	nav.navbar.navbar-expand-lg.navbar-light.rounded&attributes(attributes)
+		a(href="#").navbar-brand
+			img(src="./images/Logo.png", alt="OneCampus logo")
+		button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarsExample10", aria-controls="navbarsExample10", aria-expanded="false", aria-label="Toggle navigation")
+			.navbar-toggler-icon
+		#navbarsExample10.collapse.navbar-collapse
+			ul.navbar-nav.mr-auto
+				li.nav-item
+					a(href="#").nav-link Dashboard
+				li.nav-item
+					a(href="#").nav-link Professional Abilities
+				li.nav-item
+					a(href="#").nav-link Learning
+				li.nav-item
+					a(href="#").nav-link Community
+			ul.navbar-nav
+				li.nav-item
+					a(href="#").nav-link
+						img(src="./images/Icon/chat.png", alt="")
+				li.nav-item
+					a(href="#").nav-link 
+						img(src="./images/Icon/Bell.png", alt="")
+				li.nav-item
+					a(href="#").nav-link Learning
