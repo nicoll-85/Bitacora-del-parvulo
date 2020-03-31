@@ -148,3 +148,182 @@ mixin topbar--closed-menu()
 
   +sidebar-menu--level1()
 
+
+mixin topbar--mega-menu()
+  nav.topbar&attributes(attributes)
+    .topbar__menu
+      button.topbar__menu-toggle
+        svg(class="topbar__menu-icon" role="img" aria-label="icon" aria-hidden=true)
+          use(xlink:href='images/icons/oc-icons.svg#oc-List')
+    .topbar__content.topbar__content--left
+      .topbar__nav-item
+        button.topbar__dropdown-button.topbar__dropdown-button--notification
+          svg(class="topbar__menu-icon" role="img" aria-label="icon" aria-hidden=true)
+            use(xlink:href='images/icons/oc-icons.svg#oc-bubble')
+
+        nav.dropdown--mega-menu.is-open
+          .dropdown-content
+            .dropdown__section
+              .dropdown__header
+                .dropdown__header-text Learning Series
+                a.dropdown__header-link(href="#") View All
+
+              ul.dropdown__link-list
+                li.dropdown__link-list-item
+                  a.dropdown__link(tabindex="0" href="#")
+                    .dropdown__link-text
+                      span.link__title Accountability
+                li.dropdown__link-list-item
+                  a.dropdown__link(tabindex="0" href="#")
+                    .dropdown__link-text
+                      span.link__title Achieving Objectives
+                li.dropdown__link-list-item
+                  a.dropdown__link(tabindex="0" href="#")
+                    .dropdown__link-text
+                      span.link__title Adapting to Change
+                li.dropdown__link-list-item
+                  a.dropdown__link(tabindex="0" href="#")
+                    .dropdown__link-text
+                      span.link__title Analyzing & Solving Problems
+                li.dropdown__link-list-item
+                  a.dropdown__link(tabindex="0" href="#")
+                    .dropdown__link-text
+                      span.link__title Ethics & Social Responsibility
+                li.dropdown__link-list-item
+                  a.dropdown__link(tabindex="0" href="#")
+                    .dropdown__link-text
+                      span.link__title Generating Ideas & Innovating
+                li.dropdown__link-list-item
+                  a.dropdown__link(tabindex="0" href="#")
+                    .dropdown__link-text
+                      span.link__title Global Mindset
+
+            .dropdown__section
+              .dropdown__header
+                .dropdown__header-text 
+
+              ul.dropdown__link-list
+                li.dropdown__link-list-item
+                  a.dropdown__link(tabindex="0" href="#")
+                    .dropdown__link-media
+                      svg(class="icon" role="img" aria-label="icon" aria-hidden=true)
+                        use(xlink:href='images/icons/oc-icons.svg#oc-passport')
+                    .dropdown__link-text
+                      span.link__title My Passport
+                li.dropdown__link-list-item
+                  a.dropdown__link(tabindex="0" href="#")
+                    .dropdown__link-media
+                      svg(class="icon" role="img" aria-label="icon" aria-hidden=true)
+                        use(xlink:href='images/icons/oc-icons.svg#oc-settings')
+                    .dropdown__link-text
+                      span.link__title Settings
+                li.dropdown__link-list-item
+                  a.dropdown__link(tabindex="0" href="#")
+                    .dropdown__link-media
+                      svg(class="icon" role="img" aria-label="icon" aria-hidden=true)
+                        use(xlink:href='images/icons/oc-icons.svg#oc-support')
+                    .dropdown__link-text
+                      span.link__title Help & Support
+                li.dropdown__link-list-item
+                  a.dropdown__link(tabindex="0" href="#")
+                    .dropdown__link-media
+                      svg(class="icon" role="img" aria-label="icon" aria-hidden=true)
+                        use(xlink:href='images/icons/oc-icons.svg#oc-logout')
+                    .dropdown__link-text
+                      span.link__title Logout
+                li.dropdown__link-list-item
+                  a.dropdown__link(tabindex="0" href="#")
+                    .dropdown__link-text
+                      span.link__title Resilience
+                li.dropdown__link-list-item
+                  a.dropdown__link(tabindex="0" href="#")
+                    .dropdown__link-text
+                      span.link__title Strategic & Entrepreneurial Mindset
+                li.dropdown__link-list-item
+                  a.dropdown__link(tabindex="0" href="#")
+                    .dropdown__link-text
+                      span.link__title Working Well with Others
+
+            .dropdown__section.dropdown__section--featured
+              .dropdown__header
+                .dropdown__header-text Assessments
+
+              ul.dropdown__link-list
+                li.dropdown__link-list-item.dropdown__link-list-item--with-action
+                  a.dropdown__link(tabindex="0" href="#")
+                    .dropdown__link-text
+                      span.link__title Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                    .dropdown__link-action
+                      +button({'buttonTitle': 'Take Professional Assessment'}).button--primary
+                li.dropdown__link-list-item.dropdown__link-list-item--with-action
+                  a.dropdown__link(tabindex="0" href="#")
+                    .dropdown__link-text
+                      span.link__title Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque
+                    .dropdown__link-action
+                      +button({'buttonTitle': 'Take Self Assessment'}).button--primary
+
+    .topbar__content.topbar__content--right
+      .topbar__nav-item
+        button.topbar__dropdown-button
+          svg(class="topbar__menu-icon" role="img" aria-label="icon" aria-hidden=true)
+            use(xlink:href='images/icons/oc-icons.svg#oc-search')
+      .topbar__nav-item
+        button.topbar__dropdown-button.topbar__dropdown-button--notification
+          svg(class="topbar__menu-icon" role="img" aria-label="icon" aria-hidden=true)
+            use(xlink:href='images/icons/oc-icons.svg#oc-bell')
+
+        nav.topbar__dropdown.is-ope
+          .topbar__dropdown-content
+            .dropdown__header
+              .dropdown__header-text Notificaciones
+              a.dropdown__header-link(href="#") Ver todo
+
+            ul.dropdown__link-list
+              li.dropdown__link-list-item
+                a.dropdown__link(tabindex="0" href="#")
+                  .dropdown__link-media
+                    img.link__image(src="images/user-2--profile.jpg" alt='key')
+                    img.link__image.link__image--left-overlapped(src="images/stamp-data-scientist.svg" alt='key')
+                  .dropdown__link-text
+                    span.link__title Hi user, your connection, <b>userName</b>, earned...
+                    span.link__subtitle hace 5 meses
+              li.dropdown__link-list-item
+                a.dropdown__link(tabindex="0" href="#")
+                  .dropdown__link-media
+                    img.link__image(src="images/user-2--profile.jpg" alt='key')
+                  .dropdown__link-text
+                    span.link__title Hi user, your connection, <b>userName</b>, earned...
+                    span.link__subtitle hace 5 meses
+              li.dropdown__link-list-item
+                a.dropdown__link(tabindex="0" href="#")
+                  .dropdown__link-media
+                    img.link__image(src="images/icon-onecampus.svg" alt='key')
+                  .dropdown__link-text
+                    span.link__title OneCampus® by Laureate News! A new post was added....
+        
+      .topbar__nav-item
+        button.topbar__dropdown-button
+          .avatar(style={"background-image": "url('images/user--profile.png')"})
+
+        nav.topbar__dropdown
+          .topbar__dropdown-content
+            .dropdown__header
+              .dropdown__header-icon
+                svg(class="icon" role="img" aria-label="icon" aria-hidden=true)
+                  use(xlink:href='images/icons/oc-icons.svg#oc-passport')
+              .dropdown__header-text Pasaporte
+              a.dropdown__header-link(href="#") Ver mi Pasaporte
+
+            +checkbox--lang()
+
+            ul.dropdown__link-list
+              li.dropdown__link-list-item
+                a.dropdown__link(tabindex="0" href="#")
+                  span Configuraciones
+              li.dropdown__link-list-item
+                a.dropdown__link(tabindex="0" href="#")
+                  span Ayuda y reporte
+              li.dropdown__link-list-item
+                a.dropdown__link(tabindex="0" href="#")
+                  span Cerrar sesión
+
