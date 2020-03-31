@@ -17,6 +17,11 @@
   visibility: hidden;
   transition: all 0.25s ease-in-out;
   font-family: var(--primary-font);
+
+  &.dropdown--right-aligned {
+  	right: 0px;
+  	left: unset;
+  }
   &.is-open {
   	opacity: 1;
   	visibility: visible;

@@ -205,32 +205,20 @@ mixin topbar--mega-menu()
               ul.dropdown__link-list
                 li.dropdown__link-list-item
                   a.dropdown__link(tabindex="0" href="#")
-                    .dropdown__link-media
-                      svg(class="icon" role="img" aria-label="icon" aria-hidden=true)
-                        use(xlink:href='images/icons/oc-icons.svg#oc-passport')
                     .dropdown__link-text
-                      span.link__title My Passport
+                      span.link__title Leading Others
                 li.dropdown__link-list-item
                   a.dropdown__link(tabindex="0" href="#")
-                    .dropdown__link-media
-                      svg(class="icon" role="img" aria-label="icon" aria-hidden=true)
-                        use(xlink:href='images/icons/oc-icons.svg#oc-settings')
                     .dropdown__link-text
-                      span.link__title Settings
+                      span.link__title Learning & Self-Development
                 li.dropdown__link-list-item
                   a.dropdown__link(tabindex="0" href="#")
-                    .dropdown__link-media
-                      svg(class="icon" role="img" aria-label="icon" aria-hidden=true)
-                        use(xlink:href='images/icons/oc-icons.svg#oc-support')
                     .dropdown__link-text
-                      span.link__title Help & Support
+                      span.link__title Making Decisions
                 li.dropdown__link-list-item
                   a.dropdown__link(tabindex="0" href="#")
-                    .dropdown__link-media
-                      svg(class="icon" role="img" aria-label="icon" aria-hidden=true)
-                        use(xlink:href='images/icons/oc-icons.svg#oc-logout')
                     .dropdown__link-text
-                      span.link__title Logout
+                      span.link__title Planning & Organizing
                 li.dropdown__link-list-item
                   a.dropdown__link(tabindex="0" href="#")
                     .dropdown__link-text
@@ -305,25 +293,36 @@ mixin topbar--mega-menu()
         button.topbar__dropdown-button
           .avatar(style={"background-image": "url('images/user--profile.png')"})
 
-        nav.topbar__dropdown
-          .topbar__dropdown-content
-            .dropdown__header
-              .dropdown__header-icon
-                svg(class="icon" role="img" aria-label="icon" aria-hidden=true)
-                  use(xlink:href='images/icons/oc-icons.svg#oc-passport')
-              .dropdown__header-text Pasaporte
-              a.dropdown__header-link(href="#") Ver mi Pasaporte
-
-            +checkbox--lang()
-
-            ul.dropdown__link-list
-              li.dropdown__link-list-item
-                a.dropdown__link(tabindex="0" href="#")
-                  span Configuraciones
-              li.dropdown__link-list-item
-                a.dropdown__link(tabindex="0" href="#")
-                  span Ayuda y reporte
-              li.dropdown__link-list-item
-                a.dropdown__link(tabindex="0" href="#")
-                  span Cerrar sesión
+        nav.dropdown--mega-menu.dropdown--right-aligned.is-open
+          .dropdown-content
+            .dropdown__section
+              ul.dropdown__link-list
+                  li.dropdown__link-list-item
+                    a.dropdown__link(tabindex="0" href="#")
+                      .dropdown__link-media
+                        svg(class="icon" role="img" aria-label="icon" aria-hidden=true)
+                          use(xlink:href='images/icons/oc-icons.svg#oc-passport')
+                      .dropdown__link-text
+                        span.link__title My Passport
+                  li.dropdown__link-list-item
+                    a.dropdown__link(tabindex="0" href="#")
+                      .dropdown__link-media
+                        svg(class="icon" role="img" aria-label="icon" aria-hidden=true)
+                          use(xlink:href='images/icons/oc-icons.svg#oc-settings')
+                      .dropdown__link-text
+                        span.link__title Settings
+                  li.dropdown__link-list-item
+                    a.dropdown__link(tabindex="0" href="#")
+                      .dropdown__link-media
+                        svg(class="icon" role="img" aria-label="icon" aria-hidden=true)
+                          use(xlink:href='images/icons/oc-icons.svg#oc-support')
+                      .dropdown__link-text
+                        span.link__title Help & Support
+                  li.dropdown__link-list-item
+                    a.dropdown__link(tabindex="0" href="#")
+                      .dropdown__link-media
+                        svg(class="icon" role="img" aria-label="icon" aria-hidden=true)
+                          use(xlink:href='images/icons/oc-icons.svg#oc-logout')
+                      .dropdown__link-text
+                        span.link__title Logout
 

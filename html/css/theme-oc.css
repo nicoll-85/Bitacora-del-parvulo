@@ -5884,6 +5884,9 @@ a {
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
   font-family: var(--primary-font); }
+  .dropdown--mega-menu.dropdown--right-aligned {
+    right: 0px;
+    left: unset; }
   .dropdown--mega-menu.is-open {
     opacity: 1;
     visibility: visible; }
