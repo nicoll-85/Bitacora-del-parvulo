@@ -5571,6 +5571,31 @@ a {
     padding-left: 20px;
     padding-right: 20px; }
 
+.alert-msg {
+  position: relative;
+  display: flex;
+  margin-bottom: 20px;
+  max-width: 500px; }
+  .alert-msg .alert-msg__container {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
+    padding: 12px; }
+    .alert-msg .alert-msg__container .alert-msg__media {
+      max-width: 60px;
+      width: 100%;
+      margin-right: 10px; }
+    .alert-msg .alert-msg__container .alert-msg__descrip {
+      display: flex;
+      flex-direction: column;
+      color: #334652;
+      font-family: var(--primary-font);
+      font-size: 14px;
+      font-weight: 400;
+      margin-top: 10px; }
+      .alert-msg .alert-msg__container .alert-msg__descrip span {
+        font-weight: 700; }
+
 .topbar {
   background: #22262B;
   color: var(--lightest-color);
