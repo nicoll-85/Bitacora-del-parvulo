@@ -5,16 +5,49 @@
   background-color: $lightest-color;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
   color: $darkest-color;
-  padding-left: 40px;
-  padding-right: 40px;
-  .navbar-nav{
+  padding-left: 150px;
+  padding-right: 150px;
+
+  .navbar-nav {
     .nav-item {
-      .nav-link{
-        color:$darkest-color;
+      .nav-link {
+        color: $darkest-color;
         font-size: 16px;
         font-weight: 400;
         padding-left: 20px;
-        padding-right: 20px
+        padding-right: 20px;
+
+        .avatar-prof {
+          width: 35px;
+        }
+      }
+
+      .dropdown-menu {
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 12px;
+        box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.03), 0 16px 24px 0;
+        padding-top: 15px;
+        padding-left: 5px;
+        padding-right: 5px;
+
+        .dropdown-item {
+          opacity: .6;
+
+          .dropdown-item__content {
+            display: flex;
+            flex-direction: row;
+
+            .icon-item {
+              width: 26px;
+              height: 26px;
+              margin-right: 10px;
+            }
+
+            .text-item {
+              color: $darkest-color;
+            }
+          }
+        }
       }
     }
   }

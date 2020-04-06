@@ -17,9 +17,28 @@ mixin new-menu()
 			ul.navbar-nav
 				li.nav-item
 					a(href="#").nav-link
-						img(src="./images/Icon/chat.png", alt="")
+						img(src="./images/Icon/chat.png", alt="Chat")
 				li.nav-item
 					a(href="#").nav-link 
-						img(src="./images/Icon/Bell.png", alt="")
-				li.nav-item
-					a(href="#").nav-link Learning
+						img(src="./images/Icon/Bell.png", alt="Notification")
+				li.nav-item.dropdown
+					li.nav-item.dropdown.show
+						a#dropdown07.nav-link.dropdown-toggle(href='#' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true')
+							img.avatar-prof.rounded-circle(src="./images/Avatar/Image.png", alt="profile")
+						.dropdown-menu.show(aria-labelledby='dropdown07')
+							a.dropdown-item(href='#')
+								.dropdown-item__content
+									img.icon-item(src="./images/Icon/Twitter.png", alt="icon")
+									p.tex-item My Passport
+							a.dropdown-item(href='#')
+								.dropdown-item__content
+									img.icon-item(src="./images/Icon/Twitter.png", alt="icon")
+									p.tex-item Settings
+							a.dropdown-item(href='#')
+								.dropdown-item__content
+									img.icon-item(src="./images/Icon/Twitter.png", alt="icon")
+									p.tex-item Help & Support
+							a.dropdown-item(href='#')
+								.dropdown-item__content
+									img.icon-item(src="./images/Icon/Twitter.png", alt="icon")
+									p.tex-item Log Out
