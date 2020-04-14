@@ -5,15 +5,104 @@ mixin new-menu()
 		button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarsExample10", aria-controls="navbarsExample10", aria-expanded="false", aria-label="Toggle navigation")
 			.navbar-toggler-icon
 		#navbarsExample10.collapse.navbar-collapse
-			ul.navbar-nav.mr-auto
+			ul.navbar-nav.mr-auto 
 				li.nav-item
 					a(href="#").nav-link Dashboard
 				li.nav-item
 					a(href="#").nav-link Professional Abilities
+					nav.dropdown--mega-menu.is-open
+						.dropdown-content
+							.dropdown__section
+								.dropdown__header
+									.dropdown__header-text Learning Series
+									a.dropdown__header-link(href="#") View All
+
+								ul.dropdown__link-list
+									li.dropdown__link-list-item
+										a.dropdown__link(tabindex="0" href="#")
+											.dropdown__link-text
+												span.link__title Accountability
+									li.dropdown__link-list-item
+										a.dropdown__link(tabindex="0" href="#")
+											.dropdown__link-text
+												span.link__title Achieving Objectives
+									li.dropdown__link-list-item
+										a.dropdown__link(tabindex="0" href="#")
+											.dropdown__link-text
+												span.link__title Adapting to Change
+									li.dropdown__link-list-item
+										a.dropdown__link(tabindex="0" href="#")
+											.dropdown__link-text
+												span.link__title Analyzing & Solving Problems
+									li.dropdown__link-list-item
+										a.dropdown__link(tabindex="0" href="#")
+											.dropdown__link-text
+												span.link__title Ethics & Social Responsibility
+									li.dropdown__link-list-item
+										a.dropdown__link(tabindex="0" href="#")
+											.dropdown__link-text
+												span.link__title Generating Ideas & Innovating
+									li.dropdown__link-list-item
+										a.dropdown__link(tabindex="0" href="#")
+											.dropdown__link-text
+												span.link__title Global Mindset
+
+							.dropdown__section
+								.dropdown__header
+									.dropdown__header-text 
+
+								ul.dropdown__link-list
+									li.dropdown__link-list-item
+										a.dropdown__link(tabindex="0" href="#")
+											.dropdown__link-text
+												span.link__title Leading Others
+									li.dropdown__link-list-item
+										a.dropdown__link(tabindex="0" href="#")
+											.dropdown__link-text
+												span.link__title Learning & Self-Development
+									li.dropdown__link-list-item
+										a.dropdown__link(tabindex="0" href="#")
+											.dropdown__link-text
+												span.link__title Making Decisions
+									li.dropdown__link-list-item
+										a.dropdown__link(tabindex="0" href="#")
+											.dropdown__link-text
+												span.link__title Planning & Organizing
+									li.dropdown__link-list-item
+										a.dropdown__link(tabindex="0" href="#")
+											.dropdown__link-text
+												span.link__title Resilience
+									li.dropdown__link-list-item
+										a.dropdown__link(tabindex="0" href="#")
+											.dropdown__link-text
+												span.link__title Strategic & Entrepreneurial Mindset
+									li.dropdown__link-list-item
+										a.dropdown__link(tabindex="0" href="#")
+											.dropdown__link-text
+												span.link__title Working Well with Others
+
+							.dropdown__section.dropdown__section--featured
+								.dropdown__header
+									.dropdown__header-text Assessments
+
+								ul.dropdown__link-list
+									li.dropdown__link-list-item.dropdown__link-list-item--with-action
+										a.dropdown__link(tabindex="0" href="#")
+											.dropdown__link-text
+												span.link__title Fusce dapibus, tellus ac cursus commodo, tortor mauris
+											.dropdown__link-action
+												+button({'buttonTitle': 'Take Professional Assessment'}).button--primary
+									li.dropdown__link-list-item.dropdown__link-list-item--with-action
+										a.dropdown__link(tabindex="0" href="#")
+											.dropdown__link-text
+												span.link__title Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque
+											.dropdown__link-action
+												+button({'buttonTitle': 'Take Self Assessment'}).button--primary
 				li.nav-item
 					a(href="#").nav-link Learning
 				li.nav-item
 					a(href="#").nav-link Community
+
 			ul.navbar-nav
 				li.nav-item
 					a(href="#").nav-link
@@ -28,17 +117,17 @@ mixin new-menu()
 						.dropdown-menu.show(aria-labelledby='dropdown07')
 							a.dropdown-item(href='#')
 								.dropdown-item__content
-									img.icon-item(src="./images/Icon/Twitter.png", alt="icon")
-									p.tex-item My Passport
+									img.icon-item(src="./images/Icon/User.png", alt="icon")
+									p.text-item My Passport
 							a.dropdown-item(href='#')
 								.dropdown-item__content
-									img.icon-item(src="./images/Icon/Twitter.png", alt="icon")
-									p.tex-item Settings
+									img.icon-item(src="./images/Icon/Settings.png", alt="icon")
+									p.text-item Settings
 							a.dropdown-item(href='#')
 								.dropdown-item__content
-									img.icon-item(src="./images/Icon/Twitter.png", alt="icon")
-									p.tex-item Help & Support
+									img.icon-item(src="./images/Icon/Support.png", alt="icon")
+									p.text-item Help & Support
 							a.dropdown-item(href='#')
 								.dropdown-item__content
-									img.icon-item(src="./images/Icon/Twitter.png", alt="icon")
-									p.tex-item Log Out
+									img.icon-item(src="./images/Icon/Logout.png", alt="icon")
+									p.text-item Log Out
