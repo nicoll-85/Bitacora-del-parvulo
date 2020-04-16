@@ -54,13 +54,18 @@ svg {
   display: flex;
   flex-direction: column;
 }
-.page-content{
+.page-content {
   flex: 1;
   margin-top: 60px;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   @include media(tablet) {
     flex-wrap: nowrap;
+  }
+
+  &.page-content--with-sidebar {
+    flex-direction: row;
   }
 }
 
@@ -82,8 +87,13 @@ svg {
 
   @include media(tablet) {
     padding: 0px;
-    padding-right: 40px;
+    padding-right: 56px;
   }
+}
+
+.comments-container {
+  margin-top: 64px;
+  width: 100%;
 }
 
 .is-blurred {

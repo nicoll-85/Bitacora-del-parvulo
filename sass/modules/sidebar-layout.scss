@@ -15,4 +15,15 @@
 	background: var(--fourth-color);
 	border-radius: 12px;
 	padding: 20px;
+	margin-bottom: 24px;
+
+	* {
+		font-family: var(--primary-font);
+	}
+	h1.sidebar-layout__title {
+		color: var(--darkest-color);
+    @include font-size(16px);
+    font-weight: 400;
+    margin-bottom: 8px;
+	}
 }

@@ -1,3 +1,4 @@
+ol.list,
 ul.list {
   list-style-type: none;
   padding: 0px;
@@ -69,9 +70,39 @@ ul.list {
   }
 }
 
+ol.list {
+  list-style-type: decimal;
+  padding-left: 20px;
+
+  &.list--with-image {
+    li.list-item {
+      margin-bottom: 24px;
+      .list-item__content {
+        display: flex;
+        .list-image {
+          margin-top: 2px;
+          width: 40px;
+          height: 30px;
+          margin-right: 12px;
+        }
+        .list-text {
+          .list-title {
+            color: var(--darkest-color);
+            @include font-size(14px);
+            font-weight: 600;
+            margin-bottom: 0px;
+          }
+          .list-subtitle {
+            color: var(--darkest-color);
+            @include font-size(12px);
+            font-weight: 400;
+            opacity: 0.5;
+          }
+        }
+      }
+
+    }
+  }
+}
 
 
-
-
-
-      

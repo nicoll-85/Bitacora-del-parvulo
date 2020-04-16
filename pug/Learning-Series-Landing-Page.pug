@@ -3,11 +3,13 @@ body
 	+new-menu()
 	.page
 		.page-content.container.page-content--with-sidebar
+
+			.video-thumbnail.video-thumbnail--lg(style={'background-image': 'url("images/content-viewer-video.png")'})
+				button.video-thumbnail--play
+					svg(class="video-thumbnail-icon" role="img" aria-label="icon" aria-hidden=true)
+						use(xlink:href='images/icons/oc-icons.svg#oc-Play') 
+
 			.container--with-sidebar
-				.video-thumbnail.video-thumbnail--lg(style={'background-image': 'url("images/content-viewer-video.png")'})
-					button.video-thumbnail--play
-						svg(class="video-thumbnail-icon" role="img" aria-label="icon" aria-hidden=true)
-							use(xlink:href='images/icons/oc-icons.svg#oc-Play')
 
 				.article
 					.article__title The Robots Are Coming, And They’re Already Here
