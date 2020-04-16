@@ -1,0 +1,13 @@
+.sidebar-layout {
+	width: 100%;
+	min-height: 10vh;
+	height: auto;
+	background: var(--accent-color-06);
+	flex: 1 1 auto;
+	@include media(tablet) {
+		min-width: 350px;
+		width: 350px;
+		max-width: 350px;
+		height: auto;
+	}
+}
