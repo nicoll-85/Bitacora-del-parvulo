@@ -5,5 +5,48 @@ body
 		.page-content.container
 			.container--with-sidebar
 				.video-thumbnail.video-thumbnail--lg(style={'background-image': 'url("images/content-viewer-video.png")'})
+					button.video-thumbnail--play
+						svg(class="video-thumbnail-icon" role="img" aria-label="icon" aria-hidden=true)
+							use(xlink:href='images/icons/oc-icons.svg#oc-Play')
 			.sidebar-layout
+				.sidebar-layout__main-container
+					.card.card--video-with-actions
+						.video-thumbnail(style={'background-image': 'url("images/card-image-01.png")'})
+							button.video-thumbnail--play
+								svg(class="video-thumbnail-icon" role="img" aria-label="icon" aria-hidden=true)
+									use(xlink:href='images/icons/oc-icons.svg#oc-Play')
+						.card__title Etiam Condimentum Magna Egestas Sem
+						.card__description Donec id elit non mi porta gravida at eget metus. Cura bitur blandit tempus porttitor. Nullam quis risus eget  as mollis ornaLorem ipsum dolor sit amet, consectur…
+						.card__footer
+							.card__footer-stats
+								svg(class="card__stat-icon" role="img" aria-label="icon" aria-hidden=true)
+									use(xlink:href='images/icons/oc-icons.svg#oc-bubble')
+								span.card__footer-stats-text 1.1k
+							.card__footer-actions
+								button.card__action
+									svg(class="card__action-icon" role="img" aria-label="icon" aria-hidden=true)
+										use(xlink:href='images/icons/oc-icons.svg#oc-Play')
+								button.card__action
+									svg(class="card__action-icon" role="img" aria-label="icon" aria-hidden=true)
+										use(xlink:href='images/icons/oc-icons.svg#oc-chevron-right')
+					
+					.card.card--video-with-actions
+						.video-thumbnail(style={'background-image': 'url("images/card-image-02.png")'})
+							button.video-thumbnail--play
+								svg(class="video-thumbnail-icon" role="img" aria-label="icon" aria-hidden=true)
+									use(xlink:href='images/icons/oc-icons.svg#oc-Play')
+						.card__title Etiam Condimentum Magna Egestas Sem
+						.card__description Donec id elit non mi porta gravida at eget metus. Cura bitur blandit tempus porttitor. Nullam quis risus eget  as mollis ornaLorem ipsum dolor sit amet, consectur…
+						.card__footer
+							.card__footer-stats
+								svg(class="card__stat-icon" role="img" aria-label="icon" aria-hidden=true)
+									use(xlink:href='images/icons/oc-icons.svg#oc-bubble')
+								span.card__footer-stats-text 1.1k
+							.card__footer-actions
+								button.card__action
+									svg(class="card__action-icon" role="img" aria-label="icon" aria-hidden=true)
+										use(xlink:href='images/icons/oc-icons.svg#oc-Play')
+								button.card__action
+									svg(class="card__action-icon" role="img" aria-label="icon" aria-hidden=true)
+										use(xlink:href='images/icons/oc-icons.svg#oc-chevron-right')
 		+footer()
