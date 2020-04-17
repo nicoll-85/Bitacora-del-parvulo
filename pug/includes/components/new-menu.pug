@@ -104,30 +104,59 @@ mixin new-menu()
 					a(href="#").nav-link Community
 
 			ul.navbar-nav
-				li.nav-item
-					a(href="#").nav-link
-						img(src="./images/Icon/chat.png", alt="Chat")
-				li.nav-item
-					a(href="#").nav-link 
-						img(src="./images/Icon/Bell.png", alt="Notification")
 				li.nav-item.dropdown
-					li.nav-item.dropdown.show
-						a#dropdown07.nav-link.dropdown-toggle(href='#' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true')
-							img.avatar-prof.rounded-circle(src="./images/Avatar/Image.png", alt="profile")
-						.dropdown-menu.show(aria-labelledby='dropdown07')
-							a.dropdown-item(href='#')
-								.dropdown-item__content
-									img.icon-item(src="./images/Icon/User.png", alt="icon")
-									p.text-item My Passport
-							a.dropdown-item(href='#')
-								.dropdown-item__content
-									img.icon-item(src="./images/Icon/Settings.png", alt="icon")
-									p.text-item Settings
-							a.dropdown-item(href='#')
-								.dropdown-item__content
-									img.icon-item(src="./images/Icon/Support.png", alt="icon")
-									p.text-item Help & Support
-							a.dropdown-item(href='#')
-								.dropdown-item__content
-									img.icon-item(src="./images/Icon/Logout.png", alt="icon")
-									p.text-item Log Out
+					a#notification.nav-link.dropdown-toggle-split(href='#')
+						img(src="./images/Icon/Bell.png", alt="Notification")
+					.notification-menu.animated.slideInRight.show-menu(aria-labelledby='notification')
+						.notification-header
+							p.notification-menu__title Notifications
+							span.close-menu x
+						hr
+						p.notification-date Today
+						.notification-body
+							.link-item
+								img.notif-icon(src="./images/Logo.png" alt="OneCampus logo")
+								a.notification-link(href="#")
+									p.notification-link__title Title notification goes here
+									p.notification-link__description Curabitur a felis in nunc fringilla tristique. Nunc nec neque.
+							.link-item
+								img.notif-icon(src="./images/Logo.png" alt="OneCampus logo")
+								a.notification-link(href="#")
+									p.notification-link__title Title notification goes here
+									p.notification-link__description Curabitur a felis in nunc fringilla tristique. Nunc nec neque.
+							.link-item
+								img.notif-icon(src="./images/Logo.png" alt="OneCampus logo")
+								a.notification-link(href="#")
+									p.notification-link__title Title notification goes here
+									p.notification-link__description Curabitur a felis in nunc fringilla tristique. Nunc nec neque.
+							.link-item
+								img.notif-icon(src="./images/Logo.png" alt="OneCampus logo")
+								a.notification-link(href="#")
+									p.notification-link__title Title notification goes here
+									p.notification-link__description Curabitur a felis in nunc fringilla tristique. Nunc nec neque.
+							.link-item
+								img.notif-icon(src="./images/Logo.png" alt="OneCampus logo")
+								a.notification-link(href="#")
+									p.notification-link__title Title notification goes here
+									p.notification-link__description Curabitur a felis in nunc fringilla tristique. Nunc nec neque.
+						
+				li.nav-item.dropdown
+					a#dropdown07.nav-link.dropdown-toggle
+						img.avatar-prof.rounded-circle(src="./images/Avatar/Image.png", alt="profile")
+					.dropdown-menu.show(aria-labelledby='dropdown07')
+						a.dropdown-item(href='#',)
+							.dropdown-item__content
+								img.icon-item(src="./images/Icon/User.png", alt="icon")
+								p.text-item My Passport
+						a.dropdown-item(href='#')
+							.dropdown-item__content
+								img.icon-item(src="./images/Icon/Settings.png", alt="icon")
+								p.text-item Settings
+						a.dropdown-item(href='#')
+							.dropdown-item__content
+								img.icon-item(src="./images/Icon/Support.png", alt="icon")
+								p.text-item Help & Support
+						a.dropdown-item(href='#')
+							.dropdown-item__content
+								img.icon-item(src="./images/Icon/Logout.png", alt="icon")
+								p.text-item Log Out
