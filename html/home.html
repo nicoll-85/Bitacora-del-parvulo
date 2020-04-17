@@ -7,166 +7,131 @@
     <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no">
     <link rel="shortcut icon" href="images/logo-onecampus-white.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="css/theme-oc.css">
   </head>
 </html>
 <body>
-  <nav class="topbar">
-    <div class="topbar__menu">
-      <button class="topbar__menu-toggle">
-        <svg class="topbar__menu-icon" role="img" aria-label="icon" aria-hidden="aria-hidden">
-          <use xlink:href="images/icons/oc-icons.svg#oc-List"></use>
-        </svg>
-      </button>
-    </div>
-    <div class="topbar__content topbar__content--left">
-      <div class="topbar__nav-item">
-        <button class="topbar__dropdown-button topbar__dropdown-button--notification">
-          <svg class="topbar__menu-icon" role="img" aria-label="icon" aria-hidden="aria-hidden">
-            <use xlink:href="images/icons/oc-icons.svg#oc-bubble"></use>
-          </svg>
-        </button>
-        <nav class="dropdown--mega-menu is-open">
-          <div class="dropdown-content">
-            <div class="dropdown__section">
-              <div class="dropdown__header">
-                <div class="dropdown__header-text">Learning Series</div><a class="dropdown__header-link" href="#">View All</a>
+  <nav class="navbar navbar-expand-lg navbar-light rounded"><a class="navbar-brand" href="#"><img src="./images/Logo.png" alt="OneCampus logo"/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="navbar-toggler-icon"></div>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExample10">
+      <ul class="navbar-nav mr-auto"> 
+        <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Professional Abilities</a>
+          <nav class="dropdown--mega-menu is-open">
+            <div class="dropdown-content">
+              <div class="dropdown__section">
+                <div class="dropdown__header">
+                  <div class="dropdown__header-text">Learning Series</div><a class="dropdown__header-link" href="#">View All</a>
+                </div>
+                <ul class="dropdown__link-list">
+                  <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
+                      <div class="dropdown__link-text"><span class="link__title">Accountability</span></div></a></li>
+                  <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
+                      <div class="dropdown__link-text"><span class="link__title">Achieving Objectives</span></div></a></li>
+                  <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
+                      <div class="dropdown__link-text"><span class="link__title">Adapting to Change</span></div></a></li>
+                  <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
+                      <div class="dropdown__link-text"><span class="link__title">Analyzing & Solving Problems</span></div></a></li>
+                  <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
+                      <div class="dropdown__link-text"><span class="link__title">Ethics & Social Responsibility</span></div></a></li>
+                  <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
+                      <div class="dropdown__link-text"><span class="link__title">Generating Ideas & Innovating</span></div></a></li>
+                  <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
+                      <div class="dropdown__link-text"><span class="link__title">Global Mindset</span></div></a></li>
+                </ul>
               </div>
-              <ul class="dropdown__link-list">
-                <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
-                    <div class="dropdown__link-text"><span class="link__title">Accountability</span></div></a></li>
-                <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
-                    <div class="dropdown__link-text"><span class="link__title">Achieving Objectives</span></div></a></li>
-                <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
-                    <div class="dropdown__link-text"><span class="link__title">Adapting to Change</span></div></a></li>
-                <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
-                    <div class="dropdown__link-text"><span class="link__title">Analyzing & Solving Problems</span></div></a></li>
-                <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
-                    <div class="dropdown__link-text"><span class="link__title">Ethics & Social Responsibility</span></div></a></li>
-                <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
-                    <div class="dropdown__link-text"><span class="link__title">Generating Ideas & Innovating</span></div></a></li>
-                <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
-                    <div class="dropdown__link-text"><span class="link__title">Global Mindset</span></div></a></li>
-              </ul>
+              <div class="dropdown__section">
+                <div class="dropdown__header">
+                  <div class="dropdown__header-text"> </div>
+                </div>
+                <ul class="dropdown__link-list">
+                  <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
+                      <div class="dropdown__link-text"><span class="link__title">Leading Others</span></div></a></li>
+                  <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
+                      <div class="dropdown__link-text"><span class="link__title">Learning & Self-Development</span></div></a></li>
+                  <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
+                      <div class="dropdown__link-text"><span class="link__title">Making Decisions</span></div></a></li>
+                  <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
+                      <div class="dropdown__link-text"><span class="link__title">Planning & Organizing</span></div></a></li>
+                  <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
+                      <div class="dropdown__link-text"><span class="link__title">Resilience</span></div></a></li>
+                  <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
+                      <div class="dropdown__link-text"><span class="link__title">Strategic & Entrepreneurial Mindset</span></div></a></li>
+                  <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
+                      <div class="dropdown__link-text"><span class="link__title">Working Well with Others</span></div></a></li>
+                </ul>
+              </div>
+              <div class="dropdown__section dropdown__section--featured">
+                <div class="dropdown__header">
+                  <div class="dropdown__header-text">Assessments</div>
+                </div>
+                <ul class="dropdown__link-list">
+                  <li class="dropdown__link-list-item dropdown__link-list-item--with-action"><a class="dropdown__link" tabindex="0" href="#">
+                      <div class="dropdown__link-text"><span class="link__title">Fusce dapibus, tellus ac cursus commodo, tortor mauris</span></div>
+                      <div class="dropdown__link-action">
+                        <button class="button button--primary"><span class="button__title">Take Professional Assessment</span>
+                        </button>
+                      </div></a></li>
+                  <li class="dropdown__link-list-item dropdown__link-list-item--with-action"><a class="dropdown__link" tabindex="0" href="#">
+                      <div class="dropdown__link-text"><span class="link__title">Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque</span></div>
+                      <div class="dropdown__link-action">
+                        <button class="button button--primary"><span class="button__title">Take Self Assessment</span>
+                        </button>
+                      </div></a></li>
+                </ul>
+              </div>
             </div>
-            <div class="dropdown__section">
-              <div class="dropdown__header">
-                <div class="dropdown__header-text"> </div>
-              </div>
-              <ul class="dropdown__link-list">
-                <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
-                    <div class="dropdown__link-text"><span class="link__title">Leading Others</span></div></a></li>
-                <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
-                    <div class="dropdown__link-text"><span class="link__title">Learning & Self-Development</span></div></a></li>
-                <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
-                    <div class="dropdown__link-text"><span class="link__title">Making Decisions</span></div></a></li>
-                <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
-                    <div class="dropdown__link-text"><span class="link__title">Planning & Organizing</span></div></a></li>
-                <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
-                    <div class="dropdown__link-text"><span class="link__title">Resilience</span></div></a></li>
-                <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
-                    <div class="dropdown__link-text"><span class="link__title">Strategic & Entrepreneurial Mindset</span></div></a></li>
-                <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
-                    <div class="dropdown__link-text"><span class="link__title">Working Well with Others</span></div></a></li>
-              </ul>
+          </nav>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#">Learning</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Community</a></li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle-split" id="notification" href="#"><img src="./images/Icon/Bell.png" alt="Notification"/></a>
+          <div class="notification-menu animated slideInRight show-menu" aria-labelledby="notification">
+            <div class="notification-header">
+              <p class="notification-menu__title">Notifications</p><span class="close-menu">x</span>
             </div>
-            <div class="dropdown__section dropdown__section--featured">
-              <div class="dropdown__header">
-                <div class="dropdown__header-text">Assessments</div>
-              </div>
-              <ul class="dropdown__link-list">
-                <li class="dropdown__link-list-item dropdown__link-list-item--with-action"><a class="dropdown__link" tabindex="0" href="#">
-                    <div class="dropdown__link-text"><span class="link__title">Fusce dapibus, tellus ac cursus commodo, tortor mauris</span></div>
-                    <div class="dropdown__link-action">
-                      <button class="button button--primary"><span class="button__title">Take Professional Assessment</span>
-                      </button>
-                    </div></a></li>
-                <li class="dropdown__link-list-item dropdown__link-list-item--with-action"><a class="dropdown__link" tabindex="0" href="#">
-                    <div class="dropdown__link-text"><span class="link__title">Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque</span></div>
-                    <div class="dropdown__link-action">
-                      <button class="button button--primary"><span class="button__title">Take Self Assessment</span>
-                      </button>
-                    </div></a></li>
-              </ul>
+            <hr/>
+            <p class="notification-date">Today</p>
+            <div class="notification-body">
+              <div class="link-item"><img class="notif-icon" src="./images/Logo.png" alt="OneCampus logo"/><a class="notification-link" href="#">
+                  <p class="notification-link__title">Title notification goes here</p>
+                  <p class="notification-link__description">Curabitur a felis in nunc fringilla tristique. Nunc nec neque.</p></a></div>
+              <div class="link-item"><img class="notif-icon" src="./images/Logo.png" alt="OneCampus logo"/><a class="notification-link" href="#">
+                  <p class="notification-link__title">Title notification goes here</p>
+                  <p class="notification-link__description">Curabitur a felis in nunc fringilla tristique. Nunc nec neque.</p></a></div>
+              <div class="link-item"><img class="notif-icon" src="./images/Logo.png" alt="OneCampus logo"/><a class="notification-link" href="#">
+                  <p class="notification-link__title">Title notification goes here</p>
+                  <p class="notification-link__description">Curabitur a felis in nunc fringilla tristique. Nunc nec neque.</p></a></div>
+              <div class="link-item"><img class="notif-icon" src="./images/Logo.png" alt="OneCampus logo"/><a class="notification-link" href="#">
+                  <p class="notification-link__title">Title notification goes here</p>
+                  <p class="notification-link__description">Curabitur a felis in nunc fringilla tristique. Nunc nec neque.</p></a></div>
+              <div class="link-item"><img class="notif-icon" src="./images/Logo.png" alt="OneCampus logo"/><a class="notification-link" href="#">
+                  <p class="notification-link__title">Title notification goes here</p>
+                  <p class="notification-link__description">Curabitur a felis in nunc fringilla tristique. Nunc nec neque.</p></a></div>
             </div>
           </div>
-        </nav>
-      </div>
-    </div>
-    <div class="topbar__content topbar__content--right">
-      <div class="topbar__nav-item">
-        <button class="topbar__dropdown-button">
-          <svg class="topbar__menu-icon" role="img" aria-label="icon" aria-hidden="aria-hidden">
-            <use xlink:href="images/icons/oc-icons.svg#oc-search"></use>
-          </svg>
-        </button>
-      </div>
-      <div class="topbar__nav-item">
-        <button class="topbar__dropdown-button topbar__dropdown-button--notification">
-          <svg class="topbar__menu-icon" role="img" aria-label="icon" aria-hidden="aria-hidden">
-            <use xlink:href="images/icons/oc-icons.svg#oc-bell"></use>
-          </svg>
-        </button>
-        <nav class="topbar__dropdown is-ope">
-          <div class="topbar__dropdown-content">
-            <div class="dropdown__header">
-              <div class="dropdown__header-text">Notificaciones</div><a class="dropdown__header-link" href="#">Ver todo</a>
-            </div>
-            <ul class="dropdown__link-list">
-              <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
-                  <div class="dropdown__link-media"><img class="link__image" src="images/user-2--profile.jpg" alt="key"/><img class="link__image link__image--left-overlapped" src="images/stamp-data-scientist.svg" alt="key"/></div>
-                  <div class="dropdown__link-text"><span class="link__title">Hi user, your connection, <b>userName</b>, earned...</span><span class="link__subtitle">hace 5 meses</span></div></a></li>
-              <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
-                  <div class="dropdown__link-media"><img class="link__image" src="images/user-2--profile.jpg" alt="key"/></div>
-                  <div class="dropdown__link-text"><span class="link__title">Hi user, your connection, <b>userName</b>, earned...</span><span class="link__subtitle">hace 5 meses</span></div></a></li>
-              <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
-                  <div class="dropdown__link-media"><img class="link__image" src="images/icon-onecampus.svg" alt="key"/></div>
-                  <div class="dropdown__link-text"><span class="link__title">OneCampus® by Laureate News! A new post was added....</span></div></a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-      <div class="topbar__nav-item">
-        <button class="topbar__dropdown-button">
-          <div class="avatar" style="background-image:url('images/user--profile.png');"></div>
-        </button>
-        <nav class="dropdown--mega-menu dropdown--right-aligned is-open">
-          <div class="dropdown-content">
-            <div class="dropdown__section">
-              <ul class="dropdown__link-list">
-                <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
-                    <div class="dropdown__link-media">
-                      <svg class="icon" role="img" aria-label="icon" aria-hidden="aria-hidden">
-                        <use xlink:href="images/icons/oc-icons.svg#oc-passport"></use>
-                      </svg>
-                    </div>
-                    <div class="dropdown__link-text"><span class="link__title">My Passport</span></div></a></li>
-                <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
-                    <div class="dropdown__link-media">
-                      <svg class="icon" role="img" aria-label="icon" aria-hidden="aria-hidden">
-                        <use xlink:href="images/icons/oc-icons.svg#oc-settings"></use>
-                      </svg>
-                    </div>
-                    <div class="dropdown__link-text"><span class="link__title">Settings</span></div></a></li>
-                <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
-                    <div class="dropdown__link-media">
-                      <svg class="icon" role="img" aria-label="icon" aria-hidden="aria-hidden">
-                        <use xlink:href="images/icons/oc-icons.svg#oc-support"></use>
-                      </svg>
-                    </div>
-                    <div class="dropdown__link-text"><span class="link__title">Help & Support</span></div></a></li>
-                <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
-                    <div class="dropdown__link-media">
-                      <svg class="icon" role="img" aria-label="icon" aria-hidden="aria-hidden">
-                        <use xlink:href="images/icons/oc-icons.svg#oc-logout"></use>
-                      </svg>
-                    </div>
-                    <div class="dropdown__link-text"><span class="link__title">Logout</span></div></a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
+        </li>
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="dropdown07"><img class="avatar-prof rounded-circle" src="./images/Avatar/Image.png" alt="profile"/></a>
+          <div class="dropdown-menu show" aria-labelledby="dropdown07"><a class="dropdown-item" href="#">
+              <div class="dropdown-item__content"><img class="icon-item" src="./images/Icon/User.png" alt="icon"/>
+                <p class="text-item">My Passport</p>
+              </div></a><a class="dropdown-item" href="#">
+              <div class="dropdown-item__content"><img class="icon-item" src="./images/Icon/Settings.png" alt="icon"/>
+                <p class="text-item">Settings</p>
+              </div></a><a class="dropdown-item" href="#">
+              <div class="dropdown-item__content"><img class="icon-item" src="./images/Icon/Support.png" alt="icon"/>
+                <p class="text-item">Help & Support</p>
+              </div></a><a class="dropdown-item" href="#">
+              <div class="dropdown-item__content"><img class="icon-item" src="./images/Icon/Logout.png" alt="icon"/>
+                <p class="text-item">Log Out</p>
+              </div></a></div>
+        </li>
+      </ul>
     </div>
   </nav>
   <div class="container container--main">
@@ -589,106 +554,6 @@
       </div>
     </div>
   </div>
-  <nav class="navbar navbar-expand-lg navbar-light rounded"><a class="navbar-brand" href="#"><img src="./images/Logo.png" alt="OneCampus logo"/></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="navbar-toggler-icon"></div>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarsExample10">
-      <ul class="navbar-nav mr-auto"> 
-        <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Professional Abilities</a>
-          <nav class="dropdown--mega-menu is-open">
-            <div class="dropdown-content">
-              <div class="dropdown__section">
-                <div class="dropdown__header">
-                  <div class="dropdown__header-text">Learning Series</div><a class="dropdown__header-link" href="#">View All</a>
-                </div>
-                <ul class="dropdown__link-list">
-                  <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
-                      <div class="dropdown__link-text"><span class="link__title">Accountability</span></div></a></li>
-                  <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
-                      <div class="dropdown__link-text"><span class="link__title">Achieving Objectives</span></div></a></li>
-                  <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
-                      <div class="dropdown__link-text"><span class="link__title">Adapting to Change</span></div></a></li>
-                  <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
-                      <div class="dropdown__link-text"><span class="link__title">Analyzing & Solving Problems</span></div></a></li>
-                  <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
-                      <div class="dropdown__link-text"><span class="link__title">Ethics & Social Responsibility</span></div></a></li>
-                  <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
-                      <div class="dropdown__link-text"><span class="link__title">Generating Ideas & Innovating</span></div></a></li>
-                  <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
-                      <div class="dropdown__link-text"><span class="link__title">Global Mindset</span></div></a></li>
-                </ul>
-              </div>
-              <div class="dropdown__section">
-                <div class="dropdown__header">
-                  <div class="dropdown__header-text"> </div>
-                </div>
-                <ul class="dropdown__link-list">
-                  <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
-                      <div class="dropdown__link-text"><span class="link__title">Leading Others</span></div></a></li>
-                  <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
-                      <div class="dropdown__link-text"><span class="link__title">Learning & Self-Development</span></div></a></li>
-                  <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
-                      <div class="dropdown__link-text"><span class="link__title">Making Decisions</span></div></a></li>
-                  <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
-                      <div class="dropdown__link-text"><span class="link__title">Planning & Organizing</span></div></a></li>
-                  <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
-                      <div class="dropdown__link-text"><span class="link__title">Resilience</span></div></a></li>
-                  <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
-                      <div class="dropdown__link-text"><span class="link__title">Strategic & Entrepreneurial Mindset</span></div></a></li>
-                  <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
-                      <div class="dropdown__link-text"><span class="link__title">Working Well with Others</span></div></a></li>
-                </ul>
-              </div>
-              <div class="dropdown__section dropdown__section--featured">
-                <div class="dropdown__header">
-                  <div class="dropdown__header-text">Assessments</div>
-                </div>
-                <ul class="dropdown__link-list">
-                  <li class="dropdown__link-list-item dropdown__link-list-item--with-action"><a class="dropdown__link" tabindex="0" href="#">
-                      <div class="dropdown__link-text"><span class="link__title">Fusce dapibus, tellus ac cursus commodo, tortor mauris</span></div>
-                      <div class="dropdown__link-action">
-                        <button class="button button--primary"><span class="button__title">Take Professional Assessment</span>
-                        </button>
-                      </div></a></li>
-                  <li class="dropdown__link-list-item dropdown__link-list-item--with-action"><a class="dropdown__link" tabindex="0" href="#">
-                      <div class="dropdown__link-text"><span class="link__title">Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque</span></div>
-                      <div class="dropdown__link-action">
-                        <button class="button button--primary"><span class="button__title">Take Self Assessment</span>
-                        </button>
-                      </div></a></li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="#">Learning</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Community</a></li>
-      </ul>
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="#"><img src="./images/Icon/chat.png" alt="Chat"/></a></li>
-        <li class="nav-item"><a class="nav-link" href="#"> <img src="./images/Icon/Bell.png" alt="Notification"/></a></li>
-        <li class="nav-item dropdown">
-          <li class="nav-item dropdown show"><a class="nav-link dropdown-toggle" id="dropdown07" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><img class="avatar-prof rounded-circle" src="./images/Avatar/Image.png" alt="profile"/></a>
-            <div class="dropdown-menu show" aria-labelledby="dropdown07"><a class="dropdown-item" href="#">
-                <div class="dropdown-item__content"><img class="icon-item" src="./images/Icon/User.png" alt="icon"/>
-                  <p class="text-item">My Passport</p>
-                </div></a><a class="dropdown-item" href="#">
-                <div class="dropdown-item__content"><img class="icon-item" src="./images/Icon/Settings.png" alt="icon"/>
-                  <p class="text-item">Settings</p>
-                </div></a><a class="dropdown-item" href="#">
-                <div class="dropdown-item__content"><img class="icon-item" src="./images/Icon/Support.png" alt="icon"/>
-                  <p class="text-item">Help & Support</p>
-                </div></a><a class="dropdown-item" href="#">
-                <div class="dropdown-item__content"><img class="icon-item" src="./images/Icon/Logout.png" alt="icon"/>
-                  <p class="text-item">Log Out</p>
-                </div></a></div>
-          </li>
-        </li>
-      </ul>
-    </div>
-  </nav>
   <footer>
     <div class="footer__content clearfix">
       <nav class="footer__nav">
