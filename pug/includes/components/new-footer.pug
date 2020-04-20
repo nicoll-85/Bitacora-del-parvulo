@@ -1,0 +1,35 @@
+mixin new-footer()
+	footer
+		.footer
+			.footer-container
+				.footer-content.row
+					.footer-brand.col-xs-12.col-md-3.col-lg-4
+						a.footer-link(href="#")
+							img.footer-icon(src="https://onecampus.laureate.net/assets/images/global/logo-onecampus-header.png", alt="")
+						a.footer-link(href="#")
+							img.footer-icon(src="https://onecampus.laureate.net/assets/images/homepage/laureate-footer-logo.svg", alt="")
+					.footer-nav.col-xs-12.col-md-3.col-lg-4
+						ul.navbar-nav
+							li.nav-item.active
+								a.nav-link(href='#') About
+							li.nav-item
+								a.nav-link(href='#') News
+							li.nav-item
+								a.nav-link(href='#') Help & Support
+							li.nav-item
+								a.nav-link(href='#') Terms & Conditions
+					.footer-leng.col-xs-12.col-md-3.col-lg-4
+						.dropdown.show
+							a#dropdownMenuLink.btn.btn-dropdown__light.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true') English
+							.dropdown-menu.show(aria-labelledby='dropdownMenuLink')
+								a.dropdown-item(href='#') Spanish
+								a.dropdown-item(href='#') Portuguesse
+				.footer-credits.col-xs-12.col-md-3.col-lg-4
+					p.text-credits © 2019 Laureate Education Inc. All rights reserved.
+						
+
+
+
+
+	script(src='https://code.jquery.com/jquery-3.4.1.min.js')
+	script(src='js/ux.js')
