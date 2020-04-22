@@ -131,10 +131,12 @@
     margin-right: 0px;
     margin-left: 0px;
   }
+
   @media screen and (min-width: 992px) {
     margin-left: -31px;
     margin-right: 9px;
   }
+
   @media screen and (min-width: 1200px) {
     margin-right: 48px;
   }
@@ -569,6 +571,7 @@ a {
   color: $darkest-color;
   text-decoration: none;
 }
+
 //  card--panel-score Global Styles
 
 .card-panel--score {
@@ -640,6 +643,13 @@ a {
 
       .card-panel__action {
         margin: 0 auto;
+
+        button {
+          @media screen and(max-width: 575px) {
+            width: 100%;
+          }
+        }
+
       }
     }
   }

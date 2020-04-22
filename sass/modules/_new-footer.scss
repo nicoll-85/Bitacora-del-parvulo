@@ -17,7 +17,7 @@ footer {
             justify-content: right;
 
             .footer-brand {
-				margin-top: 10px;
+                margin-top: 10px;
                 display: flex;
                 flex-direction: row;
                 justify-content: right;
@@ -30,7 +30,8 @@ footer {
             }
 
             .footer-nav {
-				margin-top: 10px;
+                margin-top: 10px;
+
                 .nav-item {
                     .nav-link {
                         color: $lightest-color;
@@ -46,7 +47,8 @@ footer {
             }
 
             .footer-leng {
-				margin-top: 10px;
+                margin-top: 10px;
+
                 .dropdown {
                     color: $lightest-color;
 
@@ -60,15 +62,20 @@ footer {
                         &:hover {
                             opacity: .6;
                         }
-					}
-					.dropdown-toggle{
-						&::after{
-							margin-left:30px ;
-						}
-					}
+                    }
+
+                    .dropdown-toggle {
+                        &::after {
+                            margin-left: 30px;
+                        }
+                    }
 
                     .dropdown-menu {
-                        background-color: transparent;
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        z-index: 1000;
+                        background-color: $darkest-color;
                         color: $lightest-color;
                         border: 1px solid $lightest-color;
                         border-radius: 12px;
@@ -76,8 +83,40 @@ footer {
                         font-weight: 400;
                         line-height: 21px;
 
+                        @media screen and(max-width:575px) {
+                            background-color: $lightest-color;
+                            color: $darkest-color;
+                            position: absolute;
+                            top: -37px;
+                            left: 0;
+                            z-index: 1000;
+                            width: 100%;
+                        }
+                        @media screen and(min-width:576px) {
+                            background-color: $lightest-color;
+                            color: $darkest-color;
+                            position: absolute;
+                            top: -37px;
+                            left: 0;
+                            z-index: 1000;
+                        }
+                        @media screen and(min-width:768px) {
+                            background-color: $lightest-color;
+                            color: $darkest-color;
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            z-index: 1000;
+                        }
+
                         .dropdown-item {
                             color: $lightest-color;
+                            @media screen and(max-width:575px) {
+                                color: $darkest-color;
+                            }
+                            @media screen and(min-width:576px) {
+                                color: $darkest-color;
+                            }
 
                             &:hover {
                                 background: $darkest-color;
@@ -88,16 +127,17 @@ footer {
                 }
 
             }
-		}
-		.footer-credits{
-			margin-top: 15px;
-			.text-credits{
-				color: $lightest-color;
-				opacity: .6;
-				font-size: 12px;
-				font-weight: 400;
-			}
-		}
+        }
+
+        .footer-credits {
+            margin-top: 15px;
+
+            .text-credits {
+                color: $lightest-color;
+                opacity: .6;
+                font-size: 12px;
+                font-weight: 400;
+            }
+        }
     }
 }
-
