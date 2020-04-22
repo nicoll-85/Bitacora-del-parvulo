@@ -1,0 +1,7 @@
+mixin badge-image(options)
+  - options = options || {};
+  - var badgeImage = options.badgeImage || 'Digital Marketer - color.svg';
+  - var badgeImageURL = 'images/Badges/' + badgeImage;
+  - var badgeDescription = options.badgeDescription || 'Digital Marketer Badge';
+
+  img.badge-image(src=badgeImageURL, alt=badgeDescription)&attributes(attributes)

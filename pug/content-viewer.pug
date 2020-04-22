@@ -20,10 +20,10 @@ body
 						.article__actions
 								button.article__action
 									svg(class="article__action-icon" role="img" aria-label="icon" aria-hidden=true)
-										use(xlink:href='images/icons/oc-icons.svg#oc-Play')
+										use(xlink:href='images/icons/oc-icons.svg#oc-heart')
 								button.article__action
 									svg(class="article__action-icon" role="img" aria-label="icon" aria-hidden=true)
-										use(xlink:href='images/icons/oc-icons.svg#oc-chevron-right')
+										use(xlink:href='images/icons/oc-icons.svg#oc-share')
 
 					.article__excerpt Everyone is aware of the exponential rise of automation. Several studies predict that up to 50% of the human workforce is gonna be replaced by software and robots in the next 20 years. Tim Leberecht discusses a big problem: organizations must be very careful with algorithms.They may do things right, but they don't do the right thing because they lack human intuiton.
 					.article__tags
@@ -31,6 +31,18 @@ body
 						+label("Entrepeneur")
 						+label("Making Decisions")
 						+label("Emerging Technology")
+					.article__badges
+						.article__badge-title Badges associated with this content
+						.article__badge-container
+							.badge-image-container
+								+badge-image()
+								+badge-image({badgeImage: 'Team Player - gray.svg'})
+								+badge-image({badgeImage: 'Tourist - color.svg'})
+								+badge-image({badgeImage: 'Internationality - color.svg'})
+								+badge-image({badgeImage: 'AI Pioneer - color.svg'})
+								+badge-image({badgeImage: 'Connector - color.svg'})
+								+badge-image({badgeImage: 'Explorer - color.svg'})
+
 
 				.comments-container Disqus widget goes here
 
@@ -38,7 +50,7 @@ body
 				.sidebar-layout__main-container
 					h1.sidebar-layout__title Recommended
 					.card.card--video-with-actions
-						.video-thumbnail(style={'background-image': 'url("images/card-image-01.png")'})
+						.video-thumbnail.video-thumbnail--9-21(style={'background-image': 'url("images/card-image-01.png")'})
 							button.video-thumbnail--play
 								svg(class="video-thumbnail-icon" role="img" aria-label="icon" aria-hidden=true)
 									use(xlink:href='images/icons/oc-icons.svg#oc-Play')
@@ -52,13 +64,13 @@ body
 							.card__footer-actions
 								button.card__action
 									svg(class="card__action-icon" role="img" aria-label="icon" aria-hidden=true)
-										use(xlink:href='images/icons/oc-icons.svg#oc-Play')
+										use(xlink:href='images/icons/oc-icons.svg#oc-heart')
 								button.card__action
 									svg(class="card__action-icon" role="img" aria-label="icon" aria-hidden=true)
-										use(xlink:href='images/icons/oc-icons.svg#oc-chevron-right')
+										use(xlink:href='images/icons/oc-icons.svg#oc-bookmark')
 					
 					.card.card--video-with-actions
-						.video-thumbnail(style={'background-image': 'url("images/card-image-02.png")'})
+						.video-thumbnail.video-thumbnail--9-21(style={'background-image': 'url("images/card-image-02.png")'})
 							button.video-thumbnail--play
 								svg(class="video-thumbnail-icon" role="img" aria-label="icon" aria-hidden=true)
 									use(xlink:href='images/icons/oc-icons.svg#oc-Play')
@@ -72,13 +84,13 @@ body
 							.card__footer-actions
 								button.card__action
 									svg(class="card__action-icon" role="img" aria-label="icon" aria-hidden=true)
-										use(xlink:href='images/icons/oc-icons.svg#oc-Play')
+										use(xlink:href='images/icons/oc-icons.svg#oc-heart')
 								button.card__action
 									svg(class="card__action-icon" role="img" aria-label="icon" aria-hidden=true)
-										use(xlink:href='images/icons/oc-icons.svg#oc-chevron-right')
+										use(xlink:href='images/icons/oc-icons.svg#oc-bookmark')
 					
 					.card.card--video-with-actions
-						.video-thumbnail(style={'background-image': 'url("images/card-image-03.png")'})
+						.video-thumbnail.video-thumbnail--9-21(style={'background-image': 'url("images/card-image-03.png")'})
 							button.video-thumbnail--play
 								svg(class="video-thumbnail-icon" role="img" aria-label="icon" aria-hidden=true)
 									use(xlink:href='images/icons/oc-icons.svg#oc-Play')
@@ -92,10 +104,10 @@ body
 							.card__footer-actions
 								button.card__action
 									svg(class="card__action-icon" role="img" aria-label="icon" aria-hidden=true)
-										use(xlink:href='images/icons/oc-icons.svg#oc-Play')
+										use(xlink:href='images/icons/oc-icons.svg#oc-heart')
 								button.card__action
 									svg(class="card__action-icon" role="img" aria-label="icon" aria-hidden=true)
-										use(xlink:href='images/icons/oc-icons.svg#oc-chevron-right')
+										use(xlink:href='images/icons/oc-icons.svg#oc-bookmark')
 
 				.sidebar-layout__main-container
 					h1.sidebar-layout__title Students viewed from...

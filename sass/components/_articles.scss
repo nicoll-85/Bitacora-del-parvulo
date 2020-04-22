@@ -60,4 +60,13 @@
 	.article__tags {
 		margin-top: 60px;
 	}
+	.article__badges {
+		margin-top: 60px;
+		.article__badge-title {
+			color: var(--darkest-color);
+			@include font-size(14px);
+			font-weight: 400;
+			opacity: 0.6;
+		}
+	}
 }

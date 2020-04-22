@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="86px" height="98px" viewBox="0 0 86 98" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Design Thinker - gray</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-43.1%" y="-35.2%" width="186.2%" height="170.4%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M58,8 L58,49.1017693 C58,51.8328094 56.6068092,54.3751602 54.3048862,55.8447623 L33.3048862,69.2516589 C30.6796556,70.9276682 27.3203444,70.9276682 24.6951138,69.2516589 L3.69511381,55.8447623 C1.39319075,54.3751602 0,51.8328094 0,49.1017693 L0,8 C0,3.581722 3.581722,0 8,0 L50,0 C54.418278,0 58,3.581722 58,8 Z" id="path-2"></path>
+    </defs>
+    <g id="Style-Guide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Badges-Copy" transform="translate(-217.000000, -307.000000)">
+            <g id="Design-Thinker---gray" filter="url(#filter-1)" transform="translate(231.000000, 321.000000)">
+                <g id="Badge/Shield">
+                    <g id="Badge/Shield/Grayscale">
+                        <g id="Rectangle-Copy-3">
+                            <g id="Mask" fill-rule="nonzero">
+                                <g id="path-1-link" fill="#000000">
+                                    <path d="M58,8 L58,49.1017693 C58,51.8328094 56.6068092,54.3751602 54.3048862,55.8447623 L33.3048862,69.2516589 C30.6796556,70.9276682 27.3203444,70.9276682 24.6951138,69.2516589 L3.69511381,55.8447623 C1.39319075,54.3751602 0,51.8328094 0,49.1017693 L0,8 C0,3.581722 3.581722,0 8,0 L50,0 C54.418278,0 58,3.581722 58,8 Z" id="path-1"></path>
+                                </g>
+                                <g id="path-1-link" fill="#D8D8D8">
+                                    <path d="M58,8 L58,49.1017693 C58,51.8328094 56.6068092,54.3751602 54.3048862,55.8447623 L33.3048862,69.2516589 C30.6796556,70.9276682 27.3203444,70.9276682 24.6951138,69.2516589 L3.69511381,55.8447623 C1.39319075,54.3751602 0,51.8328094 0,49.1017693 L0,8 C0,3.581722 3.581722,0 8,0 L50,0 C54.418278,0 58,3.581722 58,8 Z" id="path-1"></path>
+                                </g>
+                            </g>
+                            <g id="Rectangle-Copy-Clipped">
+                                <mask id="mask-3" fill="white">
+                                    <use xlink:href="#path-2"></use>
+                                </mask>
+                                <g id="path-1"></g>
+                                <path d="M19.1891892,9.9475983e-14 L39.1891892,9.9475983e-14 L39.1891892,66.1128439 L33.9824393,70.0093362 C31.1407484,72.1359271 27.23763,72.1359271 24.395939,70.0093362 L19.1891892,66.1128439 L19.1891892,66.1128439 L19.1891892,9.9475983e-14 Z" id="Rectangle-Copy" fill="#334652" fill-rule="nonzero" opacity="0.1" mask="url(#mask-3)"></path>
+                            </g>
+                        </g>
+                        <g id="Bdr-Copy-3" stroke-linecap="square" stroke-linejoin="round" stroke="#FFFFFF" stroke-width="4">
+                            <path d="M58,8 L58,49.1017693 C58,51.8328094 56.6068092,54.3751602 54.3048862,55.8447623 L33.3048862,69.2516589 C30.6796556,70.9276682 27.3203444,70.9276682 24.6951138,69.2516589 L3.69511381,55.8447623 C1.39319075,54.3751602 0,51.8328094 0,49.1017693 L0,8 C0,3.581722 3.581722,0 8,0 L50,0 C54.418278,0 58,3.581722 58,8 Z" id="path-4"></path>
+                        </g>
+                    </g>
+                </g>
+                <g id="Badge/Icon/Design-Thinker" opacity="0.5" transform="translate(11.000000, 12.000000)" fill="#334652" fill-rule="nonzero">
+                    <path d="M22,20 C22.5522847,20 23,20.4477153 23,21 L23,34 C23,34.5522847 22.5522847,35 22,35 L9,35 C8.4477153,35 8,34.5522847 8,34 L8,21 C8,20.4477153 8.4477153,20 9,20 L22,20 Z M28,1 C32.418278,1 36,4.8055796 36,9.5 C36,14.1944204 32.418278,18 28,18 C23.581722,18 20,14.1944204 20,9.5 C20,4.8055796 23.581722,1 28,1 Z M7.9999669,0 C8.273944,0 8.5303598,0.13912639 8.6855771,0.37199927 L8.6855771,0.37199927 L15.8856841,12.7498383 C16.0342962,13.0048869 16.0382701,13.322712 15.8960843,13.581629 C15.7540438,13.8401859 15.4881884,14 15.2000739,14 L15.2000739,14 L0.79985984,14 C0.511581,14 0.24562537,13.8399131 0.10368836,13.581101 C-0.03824865,13.3222889 -0.03421396,13.0047249 0.11424965,12.7498383 L0.11424965,12.7498383 L7.3143567,0.37199927 C7.469574,0.13912639 7.7259898,0 7.9999669,0 Z" id="Combined-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

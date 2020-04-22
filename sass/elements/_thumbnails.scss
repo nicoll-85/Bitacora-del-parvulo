@@ -4,6 +4,10 @@
 	background-position: center;
 	background-size: cover;
 	border-radius: 12px;
+
+	&.video-thumbnail--9-21 {
+		padding-top: 42.85%;
+	}
 	a.video-thumbnail--play,
 	button.video-thumbnail--play {
 		background: rgba($darkest-color,0.5);
