@@ -1,6 +1,6 @@
 include includes/head.pug
 body
-	//- +new-menu()
+	+new-menu()
 	.container.container--main
 		.row
 			.col-12
@@ -114,8 +114,6 @@ body
 		.col-12
 			+alert-message
 			+score-pill
-			.mt-2
-				+score-pill--full-width
 			.mt-2
 			+card--panel-score
 	+new-footer()

@@ -2,67 +2,49 @@
   position: relative;
   display: inline-block;
   max-width: 175px;
+  min-width: 175px;
   width: 100%;
-  background-color: rgba(58,134, 207, 0.05);
+  background-color: rgba(58, 134, 207, 0.05);
   border-radius: 40px;
-  .pill-content{
+
+  @media screen and (max-width:575px) {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .pill-content {
     display: flex;
     flex-direction: row;
     justify-content: left;
     padding: 12px 10px;
     align-items: center;
-    .media-pill{
-      width: 50px;
-    }
-    .pill-text{
-      font-family: var(--primary-font);
-      margin-left: 20px;
-      .pill-title{
-        color: $darkest-color;
-        font-size: 10px;
-        text-align: left;
-        font-weight: lighter;
-      }
-      .pill-label{
-        color: $primary-color;
-        font-size: 14px;
-        font-weight: 500;
-      }
-    }
-  }
-}
-// Full width styles
-.score-pill__full-width {
-  position: relative;
-  display: block;
-  max-width: 100%;
-  width: 100%;
-  background-color: rgba(58,134, 207, 0.05);
-  border-radius: 40px;
-  .pill-content{
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    padding: 3px 0px;
-    align-items: center;
-    .media-pill{
-      width: 50px;
-    }
-    .pill-text{
-      font-family: var(--primary-font);
-      margin-left: 20px;
-      .pill-title{
-        color: $darkest-color;
-        font-size: 10px;
-        text-align: left;
-        font-weight: lighter;
-      }
-      .pill-label{
-        color: $primary-color;
-        font-size: 14px;
-        font-weight: 500;
-      }
-    }
-  }
-}
 
+    @media screen and (max-width:575px) {
+      justify-content: end;
+      padding: 3px 0px;
+    }
+
+    .media-pill {
+      width: 50px;
+    }
+
+    .pill-text {
+      font-family: var(--primary-font);
+      margin-left: 20px;
+
+      .pill-title {
+        color: $darkest-color;
+        font-size: 10px;
+        text-align: left;
+        font-weight: lighter;
+      }
+
+      .pill-label {
+        color: $primary-color;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+}

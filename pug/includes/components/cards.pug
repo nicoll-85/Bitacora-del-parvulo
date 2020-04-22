@@ -48,10 +48,10 @@ mixin card--panel-score(options)
   .card-panel--score&attributes(attributes)
     .card-panel__body
       .card-panel__content
-        .col-md-3.col-12.col-xs-12
+        .col-md-4.col-12.col-xs-12
           //- 
           +score-pill
-        .col-md-7.col-12.col-xs-12
+        .col-md-6.col-12.col-xs-12
           .card-panel__descrip
             p.card-panel__title Learning & Self-Improvement
             +link
@@ -66,7 +66,7 @@ mixin card--panel-score(options)
               li.list-lite__item
                 img.list-lite__icon(src="", alt="")
                 p.list-lite__text Curabitur blandit mollis lacus. Proin faucibus arcu quis ante.  
-        .col-md-2.col-12.col-xs-12
+        .col-md-2.col-12
           .card-panel__action  
             +button({'buttonTitle': 'Try Again'}).button--ghost-primary
 
