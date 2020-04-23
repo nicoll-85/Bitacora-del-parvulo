@@ -105,8 +105,10 @@ mixin new-menu()
 
 			ul.navbar-nav
 				li.nav-item.dropdown
+					.dot-notifi
+						span.badge.badge-pill.dot-notification 12
 					a#notification.nav-link.dropdown-toggle-split(href='#')
-						img(src="./images/Icon/Bell.png", alt="Notification")
+					img(src="./images/Icon/Bell.png", alt="Notification")
 					.notification-menu.animated.slideInRight.show-menu(aria-labelledby='notification')
 						.notification-header
 							p.notification-menu__title Notifications
