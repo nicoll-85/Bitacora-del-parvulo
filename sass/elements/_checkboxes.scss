@@ -1,9 +1,7 @@
-
-
-
 .checkbox {
   min-width: 40px;
   display: flex;
+
   .checkbox-list {
     list-style: none;
     margin-top: 0;
@@ -12,25 +10,29 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     .checkbox__list-item {
       margin-right: 10px;
+
       .checkbox__button {
         color: var(--darkest-color);
         border: 1px solid;
         border-radius: 12px;
         background: 0 0;
-        font-family: canada-type-gibson,Helvetica,Arial,sans-serif;
+        font-family: canada-type-gibson, Helvetica, Arial, sans-serif;
         font-size: 15px;
         text-transform: uppercase;
         height: 25px;
         box-sizing: border-box;
         padding: 0 10px;
+
         &[aria-pressed=true] {
           border-color: var(--secondary-color);
           background: var(--secondary-color);
           color: $lightest-color;
         }
-        .checkbox__text{
+
+        .checkbox__text {
           display: inline;
         }
       }
@@ -43,6 +45,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
   .checkbox-container__icon,
   .checkbox-container__icon svg {
     width: 20px;
@@ -58,16 +61,18 @@
     .checkbox-container__icon svg {
       fill: var(--lightest-color);
     }
-    
+
     .checkbox {
       .checkbox__button {
         color: var(--lightest-color);
+
         &[aria-pressed=true] {
           border-color: var(--lightest-color);
           background: var(--lightest-color);
           color: var(--darkest-color);
         }
-        .checkbox__text{
+
+        .checkbox__text {
           display: inline;
         }
       }
@@ -75,3 +80,69 @@
   }
 }
 
+// Checkbox-search Global Styles
+.checkbox-default{
+  .custom-control {
+    position: relative;
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 1.5rem;
+    font-family: var(--primary-font);
+    color: $darkest-color;
+  
+    .custom-control-input {
+      position: absolute;
+      left: 0;
+      z-index: -1;
+      width: 1rem;
+      height: 1.25rem;
+      opacity: 0;
+      &:checked~.custom-control-label {
+        &::after {
+          background-image: url("../images/f-check.png");
+          width: 23px;
+        }
+      }
+    }
+  
+    .custom-control-label {
+      position: relative;
+      margin-bottom: 0;
+      vertical-align: top;
+      padding-left: 13px;
+      padding-top: 3px;
+  
+      &::before {
+        position: absolute;
+        top: .18rem;
+        left: -1.7rem;
+        display: block;
+        width: 24px;
+        height: 24px;
+        border-radius: 4px;
+        pointer-events: none;
+        content: "";
+        background-color: $lightest-color;
+        border: #D8D8D8 solid 3px;
+      }
+  
+      &::after {
+        position: absolute;
+        top: .28rem;
+        left: -1.7rem;
+        display: block;
+        width: 1rem;
+        height: 1rem;
+        content: "";
+        background: no-repeat 50%/50% 50%;
+      }
+    }
+  }
+}
+
+
+.custom-control-input:checked~.custom-control-label::before {
+  color: #fff;
+  border-color: $primary-color;
+  background-color: $primary-color;
+}

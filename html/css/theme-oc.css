@@ -4311,7 +4311,7 @@ input:checked + .slider:before {
         border: 1px solid;
         border-radius: 12px;
         background: 0 0;
-        font-family: canada-type-gibson,Helvetica,Arial,sans-serif;
+        font-family: canada-type-gibson, Helvetica, Arial, sans-serif;
         font-size: 15px;
         text-transform: uppercase;
         height: 25px;
@@ -4345,6 +4345,56 @@ input:checked + .slider:before {
       color: var(--darkest-color); }
     .checkbox-container--with-icon-left.checkbox--light .checkbox .checkbox__button .checkbox__text {
       display: inline; }
+
+.checkbox-default .custom-control {
+  position: relative;
+  display: block;
+  min-height: 1.5rem;
+  padding-left: 1.5rem;
+  font-family: var(--primary-font);
+  color: #334652; }
+  .checkbox-default .custom-control .custom-control-input {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    width: 1rem;
+    height: 1.25rem;
+    opacity: 0; }
+    .checkbox-default .custom-control .custom-control-input:checked ~ .custom-control-label::after {
+      background-image: url("../images/f-check.png");
+      width: 23px; }
+  .checkbox-default .custom-control .custom-control-label {
+    position: relative;
+    margin-bottom: 0;
+    vertical-align: top;
+    padding-left: 13px;
+    padding-top: 3px; }
+    .checkbox-default .custom-control .custom-control-label::before {
+      position: absolute;
+      top: .18rem;
+      left: -1.7rem;
+      display: block;
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+      pointer-events: none;
+      content: "";
+      background-color: #ffffff;
+      border: #D8D8D8 solid 3px; }
+    .checkbox-default .custom-control .custom-control-label::after {
+      position: absolute;
+      top: .28rem;
+      left: -1.7rem;
+      display: block;
+      width: 1rem;
+      height: 1rem;
+      content: "";
+      background: no-repeat 50%/50% 50%; }
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: #FF7C5F;
+  background-color: #FF7C5F; }
 
 /* Global Styles for Avatars
 **********************/
@@ -4540,6 +4590,63 @@ input:checked + .slider:before {
         color: #FF7C5F;
         font-size: 14px;
         font-weight: 500; }
+
+/* Global Styles for radio-buttons
+**************************/
+.radio-button--default .custom-control {
+  position: relative;
+  display: block;
+  min-height: 1.5rem;
+  padding-left: 1.5rem;
+  font-family: var(--primary-font);
+  color: #334652; }
+  .radio-button--default .custom-control .custom-control-input {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    width: 1rem;
+    height: 1.25rem;
+    opacity: 0; }
+    .radio-button--default .custom-control .custom-control-input:checked ~ .custom-control-label::after {
+      background-image: url("../images/select-radio.png");
+      width: 24px;
+      height: 24px; }
+  .radio-button--default .custom-control .custom-control-label {
+    position: relative;
+    margin-bottom: 0;
+    vertical-align: top;
+    padding-left: 13px;
+    padding-top: 3px; }
+    .radio-button--default .custom-control .custom-control-label::before {
+      position: absolute;
+      top: .18rem;
+      left: -1.7rem;
+      display: block;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      pointer-events: none;
+      content: "";
+      background-color: #ffffff;
+      border: #D8D8D8 solid 3px; }
+    .radio-button--default .custom-control .custom-control-label::after {
+      position: absolute;
+      top: .20rem;
+      left: -1.7rem;
+      display: block;
+      width: 1rem;
+      height: 1rem;
+      content: "";
+      background: no-repeat 50%/50% 50%; }
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: #FF7C5F;
+  background-color: #FF7C5F; }
+
+.radio-button--default .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+  background-image: url("../images/select-radio.png");
+  width: 23px; }
 
 ul.list {
   list-style-type: none;
@@ -7712,7 +7819,7 @@ footer {
                 footer .footer-container .footer-content .footer-leng .dropdown .dropdown-menu .dropdown-item {
                   color: #334652; } }
               footer .footer-container .footer-content .footer-leng .dropdown .dropdown-menu .dropdown-item:hover {
-                background: #334652;
+                color: #334652;
                 opacity: .4; }
     footer .footer-container .footer-credits {
       margin-top: 15px; }

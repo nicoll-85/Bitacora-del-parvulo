@@ -17,3 +17,9 @@ mixin checkbox--lang()
 			svg(class="icon" role="img" aria-label="icon" aria-hidden=true)
 				use(xlink:href='images/icons/oc-icons.svg#oc-logo')
 		+checkbox()
+
+mixin checkbox--default()
+	.checkbox-default
+		.custom-control.custom-checkbox&attributes(attributes)
+			input.custom-control-input#customCheck(type="checkbox",name="example1")
+			label.custom-control-label(for="customCheck") Hola
