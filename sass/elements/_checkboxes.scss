@@ -117,13 +117,13 @@
         top: .18rem;
         left: -1.7rem;
         display: block;
-        width: 24px;
-        height: 24px;
+        width: 20px;
+        height: 20px;
         border-radius: 4px;
         pointer-events: none;
         content: "";
         background-color: $lightest-color;
-        border: #D8D8D8 solid 3px;
+        border: #D8D8D8 solid 2px;
       }
   
       &::after {

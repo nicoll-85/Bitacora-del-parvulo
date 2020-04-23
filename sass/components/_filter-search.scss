@@ -1,0 +1,27 @@
+// Filter search Global Styles
+.filter-search{
+  position: relative;
+  display: inline-block;
+  max-width: 234px;
+  width: 100%;
+  .filter-title{
+    font-family: var(--primary-font);
+    color: $darkest-color;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .filter-list{
+    list-style-type:none;
+    margin-bottom: 40px;
+    padding-inline-start: 0px;
+    .filter-list__item{
+      font-family: var(--primary-font);
+      color: $darkest-color;
+      font-weight: normal;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  }
+}
