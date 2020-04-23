@@ -1,0 +1,29 @@
+.sidebar-layout {
+	width: 100%;
+	min-height: 10vh;
+	height: auto;
+	flex: 1 1 auto;
+	@include media(tablet) {
+		min-width: 200px;
+		width: 350px;
+		max-width: 40%;
+		height: auto;
+	}
+}
+
+.sidebar-layout__main-container {
+	background: var(--fourth-color);
+	border-radius: 12px;
+	padding: 20px;
+	margin-bottom: 24px;
+
+	* {
+		font-family: var(--primary-font);
+	}
+	h1.sidebar-layout__title {
+		color: var(--darkest-color);
+    @include font-size(16px);
+    font-weight: 400;
+    margin-bottom: 8px;
+	}
+}
