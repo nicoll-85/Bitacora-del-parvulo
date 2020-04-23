@@ -1,0 +1,80 @@
+
+/* Global Styles for radio-buttons
+**************************/
+.radio-button--default{
+  .custom-control {
+    position: relative;
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 1.5rem;
+    font-family: var(--primary-font);
+    color: $darkest-color;
+  
+    .custom-control-input {
+      position: absolute;
+      left: 0;
+      z-index: -1;
+      width: 1rem;
+      height: 1.25rem;
+      opacity: 0;
+      &:checked~.custom-control-label {
+        &::after {
+          background-image: url("../images/select-radio.png");
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  
+    .custom-control-label {
+      position: relative;
+      margin-bottom: 0;
+      vertical-align: top;
+      padding-left: 13px;
+      padding-top: 3px;
+  
+      &::before {
+        position: absolute;
+        top: .18rem;
+        left: -1.7rem;
+        display: block;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        pointer-events: none;
+        content: "";
+        background-color: $lightest-color;
+        border: #D8D8D8 solid 3px;
+      }
+  
+      &::after {
+        position: absolute;
+        top: .20rem;
+        left: -1.7rem;
+        display: block;
+        width: 1rem;
+        height: 1rem;
+        content: "";
+        background: no-repeat 50%/50% 50%;
+      }
+    }
+  }
+}
+.custom-control-input:checked~.custom-control-label::before {
+  color: #fff;
+  border-color: $primary-color;
+  background-color: $primary-color;
+}
+.radio-button--default{
+  .custom-checkbox {
+    .custom-control-input {
+      &:checked~.custom-control-label {
+        &::after {
+          background-image: url("../images/select-radio.png");
+          width: 23px;
+        }
+      }
+    }
+  }
+}
+
