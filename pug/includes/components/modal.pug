@@ -17,7 +17,7 @@ mixin modal-basic()
 mixin modal--primary()
 	.modal.modal--primary(tabindex="-1" role="dialog").modal--is-open
 		.modal-dialog(role="document")
-			.modal-content
+			.modal-content.modal--scrollable
 				.modal-header
 					h5.modal-title Hello, Sheyna! Welcome to OneCampus.
 					button.close(type="button" data-dismiss="modal" aria-label="Close")
