@@ -11,3 +11,48 @@ mixin modal-basic()
 				.modal-actions
 					+button({'buttonTitle': 'Secondary action'}).button--ghost-primary.mr-1
 					+button({'buttonTitle': 'Primary action'}).button--primary
+
+
+
+mixin modal--primary()
+	.modal.modal--primary(tabindex="-1" role="dialog").modal--is-open
+		.modal-dialog(role="document")
+			.modal-content.modal--scrollable
+				.modal-header
+					h5.modal-title Hello, Sheyna! Welcome to OneCampus.
+					button.close(type="button" data-dismiss="modal" aria-label="Close")
+						span(aria-hidden="true") &times;
+
+				.modal-body
+					ul.list.list--with-image-round
+						li.list-item
+							.list-item__content
+								.list-image(style={'background-image': 'url("images/lists/listImage01.png")'} alt="list image")
+								.list-text
+									.list-title Understand Your Strengths
+									.list-subtitle OneCampus helps you identify professional areas you can improve on based on the abilities that employers value most.
+						li.list-item
+							.list-item__content
+								.list-image(style={'background-image': 'url("images/lists/listImage02.png")'} alt="list image")
+								.list-text
+									.list-title Understand Your Strengths
+									.list-subtitle OneCampus helps you identify professional areas you can improve on based on the abilities that employers value most.
+						li.list-item
+							.list-item__content
+								.list-image(style={'background-image': 'url("images/lists/listImage03.png")'} alt="list image")
+								.list-text
+									.list-title Understand Your Strengths
+									.list-subtitle OneCampus helps you identify professional areas you can improve on based on the abilities that employers value most.
+
+				.modal-footer
+					+box(
+							{'boxTitle': 'Ready to get started?', 
+								'hideSubtitle': true, 
+								'boxSubtitle': 'Learning Series', 
+								'showIcon': false,
+								'showDescription': true, 
+								'boxDescription': 'Click to begin and Donec id elit non mi porta gravida at eget metus.',
+								'showAction': true, 
+								'boxAction': 'Get Started'
+							}).box--centered-content.box--condensed
+
