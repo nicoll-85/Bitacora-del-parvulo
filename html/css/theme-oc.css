@@ -3946,6 +3946,8 @@ output {
   --accent-color-04: #00AED6;
   --accent-color-05: #FF7900;
   --accent-color-06: #323e56;
+  --accent-color-07: #84C470;
+  --accent-color-08: #463B96;
   --lightest-color: #ffffff;
   --darkest-color: #334652; }
 
@@ -4224,6 +4226,14 @@ svg {
     border: 1px solid var(--primary-color); }
     .button.button--ghost-primary:hover, .button.button--ghost-primary:focus {
       text-decoration: none; }
+  .button.button--ghost-white {
+    color: var(--lightest-color);
+    background-color: transparent;
+    border: 1px solid var(--lightest-color); }
+    .button.button--ghost-white:hover, .button.button--ghost-white:focus {
+      text-decoration: none;
+      background-color: var(--lightest-color);
+      color: var(--darkest-color); }
 
 /* Buttons Variations
 **********************/
@@ -6129,6 +6139,53 @@ a {
   @media only screen and (min-width: 768px) {
     .banner.banner--featured-image .banner__image {
       min-height: 375px; } }
+  .banner.banner--boxed {
+    border-radius: 12px;
+    background: var(--darkest-color);
+    position: relative; }
+    .banner.banner--boxed .banner__content .banner__text .banner__title {
+      color: var(--lightest-color);
+      font-family: var(--primary-font);
+      font-weight: 600; }
+    .banner.banner--boxed .banner__content .banner__text .label__description {
+      color: var(--lightest-color);
+      font-family: var(--primary-font);
+      opacity: 0.85; }
+    .banner.banner--boxed .banner__content .banner__actions {
+      margin: 0px;
+      margin-top: 24px; }
+    .banner.banner--boxed .banner__image {
+      width: calc(100% - 580px);
+      height: 100%;
+      max-width: 100%;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      background-size: cover;
+      border-top-right-radius: 12px;
+      border-bottom-right-radius: 12px;
+      -webkit-mask: url("../images/masks/banner-mask.svg");
+      mask: url("../images/masks/banner-mask.svg");
+      mask-type: luminance;
+      -webkit-mask-position: center left;
+      mask-position: center left;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: cover;
+      mask-size: cover; }
+    .banner.banner--boxed .banner__inside-image {
+      background-size: cover;
+      background-position: center left;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      width: 100%;
+      height: 100%; }
+    .banner.banner--boxed.banner--accent-07 {
+      background: var(--accent-color-07); }
+    .banner.banner--boxed.banner--accent-08 {
+      background: var(--accent-color-08); }
 
 .banner--basic {
   padding: 34px;

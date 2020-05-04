@@ -56,6 +56,17 @@
       text-decoration: none;
     }
   }
+  &.button--ghost-white{
+    color: var(--lightest-color);
+    background-color: transparent;
+    border: 1px solid var(--lightest-color);
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      background-color: var(--lightest-color);
+      color: var(--darkest-color);
+    }
+  }
 }
 
 /* Buttons Variations
