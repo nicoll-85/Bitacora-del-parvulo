@@ -1,0 +1,44 @@
+mixin carousel-abilities()
+	.carousel-abilities&attributes(attributes)
+		#carouselExampleIndicators.carousel.slide(data-ride='carousel')
+			.carousel-inner
+				.carousel-item.active
+					.card-item.col-md-2
+						+card--small-bg
+					.card-item.col-md-2
+						+card--small-bg
+					.card-item.col-md-2
+						+card--small-bg
+					.card-item.col-md-2
+						+card--small-bg
+					.card-item.col-md-2
+						+card--small-bg
+						
+				.carousel-item
+					.card-item.col-md-2
+						+card--small-bg
+					.card-item.col-md-2
+						+card--small-bg
+					.card-item.col-md-2
+						+card--small-bg
+					.card-item.col-md-2
+						+card--small-bg
+					.card-item.col-md-2
+						+card--small-bg
+						
+				.carousel-item
+					.card-item.col-md-2
+						+card--small-bg
+					.card-item.col-md-2
+						+card--small-bg
+					.card-item.col-md-2
+						+card--small-bg
+					.card-item.col-md-2
+						+card--small-bg
+					.card-item.col-md-2
+						+card--small-bg
+						
+			a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+				img(src="./images/Button/Round Copy.svg", alt="Next")
+				//- span.carousel-control-next-icon(aria-hidden='true')
+				span.sr-only Next
