@@ -1,121 +1,125 @@
 include includes/head.pug
 body
 	+new-menu()
-	.container.container--main
-		.row
-			.col-12
-				+banner()
-		.row
-			.col-4
-				+box(
-					{'boxTitle': 'Key Behaviors',
-						'hideSubtitle': true,
-						'showDescription': true,
-						'boxDescription': 'Based on the Laureate Professional Assessment, we’ve broken this ability down into a few key behaviors and provided an example of what they mean.'
-					})
-			.col-8
-				.row
-					.col-6
-						+box(
-							{'boxTitle': 'Critical Thinking',
-								'hideSubtitle': true,
-								'showIcon': true,
-								'iconName': 'Bulb',
-								'showDescription': true,
-								'boxDescription': 'You look at information critically. You check your sources because knowing where the information comes from is just as important as what’s in it.'
-							})
-					.col-6
-						+box(
-							{'boxTitle': 'Critical Thinking',
-								'hideSubtitle': true,
-								'showIcon': true,
-								'iconName': 'Holistic',
-								'showDescription': true,
-								'boxDescription': 'You look at information critically. You check your sources because knowing where the information comes from is just as important as what’s in it.'
-							})
-					.col-6
-						+box(
-							{'boxTitle': 'Critical Thinking',
-								'hideSubtitle': true,
-								'showIcon': true,
-								'iconName': 'Synthesis',
-								'showDescription': true,
-								'boxDescription': 'You look at information critically. You check your sources because knowing where the information comes from is just as important as what’s in it.'
-							})
-					.col-6
-						+box(
-							{'boxTitle': 'Critical Thinking',
-								'hideSubtitle': true,
-								'showIcon': true,
-								'iconName': 'Pattern',
-								'showDescription': true,
-								'boxDescription': 'You look at information critically. You check your sources because knowing where the information comes from is just as important as what’s in it.'
-							})
+	.page
+		.page-content.container
+			.container--main
+				+banner--boxed--purple()
 				.row
 					.col-12
-						+card--featured()
-		.row
-			.col-lg-6.col-md-12.col-sm-12.col-12
-				+card--video()
-			.col-lg-6.col-md-12.col-sm-12.col-12
-				+box(
-					{'boxTitle': 'Want to improve this ability?',
-						'hideSubtitle': false,
-						'boxSubtitle': 'Learning Series',
-						'showIcon': false,
-						'showDescription': true,
-						'boxDescription': 'Gain more awareness about the key behaviors for Analyzing & Solving Problems.',
-						'showAction': true,
-						'boxAction': 'Start the Episode'
-					})
+						+banner()
+				.row
+					.col-4
+						+box(
+							{'boxTitle': 'Key Behaviors',
+								'hideSubtitle': true,
+								'showDescription': true,
+								'boxDescription': 'Based on the Laureate Professional Assessment, we’ve broken this ability down into a few key behaviors and provided an example of what they mean.'
+							})
+					.col-8
+						.row
+							.col-6
+								+box(
+									{'boxTitle': 'Critical Thinking',
+										'hideSubtitle': true,
+										'showIcon': true,
+										'iconName': 'Bulb',
+										'showDescription': true,
+										'boxDescription': 'You look at information critically. You check your sources because knowing where the information comes from is just as important as what’s in it.'
+									})
+							.col-6
+								+box(
+									{'boxTitle': 'Critical Thinking',
+										'hideSubtitle': true,
+										'showIcon': true,
+										'iconName': 'Holistic',
+										'showDescription': true,
+										'boxDescription': 'You look at information critically. You check your sources because knowing where the information comes from is just as important as what’s in it.'
+									})
+							.col-6
+								+box(
+									{'boxTitle': 'Critical Thinking',
+										'hideSubtitle': true,
+										'showIcon': true,
+										'iconName': 'Synthesis',
+										'showDescription': true,
+										'boxDescription': 'You look at information critically. You check your sources because knowing where the information comes from is just as important as what’s in it.'
+									})
+							.col-6
+								+box(
+									{'boxTitle': 'Critical Thinking',
+										'hideSubtitle': true,
+										'showIcon': true,
+										'iconName': 'Pattern',
+										'showDescription': true,
+										'boxDescription': 'You look at information critically. You check your sources because knowing where the information comes from is just as important as what’s in it.'
+									})
+						.row
+							.col-12
+								+card--featured()
+				.row
+					.col-lg-6.col-md-12.col-sm-12.col-12
+						+card--video()
+					.col-lg-6.col-md-12.col-sm-12.col-12
+						+box(
+							{'boxTitle': 'Want to improve this ability?',
+								'hideSubtitle': false,
+								'boxSubtitle': 'Learning Series',
+								'showIcon': false,
+								'showDescription': true,
+								'boxDescription': 'Gain more awareness about the key behaviors for Analyzing & Solving Problems.',
+								'showAction': true,
+								'boxAction': 'Start the Episode'
+							})
 
-		.container
-			.row
+				.container
+					.row
+						.col-12
+							+button({'buttonTitle': 'Mi botón','showIcon': true, 'iconName': 'Synthesis'}).button--secondary
+						.col-12
+							+button({'buttonTitle': 'Mi botón primario'}).button--primary
+						.col-12
+							+button({'buttonTitle': 'Ghost button'}).button--ghost
+					.row
+						.col
+							+card
+						.col
+							+card
+						.col
+							+card
+						.col
+							+card
 				.col-12
-					+button({'buttonTitle': 'Mi botón','showIcon': true, 'iconName': 'Synthesis'}).button--secondary
+					+card--panel
 				.col-12
-					+button({'buttonTitle': 'Mi botón primario'}).button--primary
+					.row
+						+chart
+						+chart
+						+chart
 				.col-12
-					+button({'buttonTitle': 'Ghost button'}).button--ghost
-			.row
-				.col
-					+card
-				.col
-					+card
-				.col
-					+card
-				.col
-					+card
-		.col-12
-			+card--panel
-		.col-12
-			.row
-				+chart
-				+chart
-				+chart
-		.col-12
-			+card--panel-start
-			+card--panel-complete
-		.section-background--secondary
-		.col-12
-			.row
-				.col
-					+card--small
-				.col
-					+card--small
-				.col
-					+card--small
-				.col
-					+card--small
-		.col-12
-			+modal-basic
-		.col-12
-			+chart--info
-		.col-12
-			+alert-message
-			+score-pill
-			.mt-2
-			+card--panel-score
-		.col-12
-			+filter-search
-	+new-footer()
+					+card--panel-start
+					+card--panel-complete
+				.section-background--secondary
+				.col-12
+					.row
+						.col
+							+card--small
+						.col
+							+card--small
+						.col
+							+card--small
+						.col
+							+card--small
+				.col-12
+					+modal-basic
+				.col-12
+					+chart--info
+				.col-12
+					+alert-message
+					+score-pill
+					.mt-2
+					+card--panel-score
+				.col-12
+					+filter-search
+		+new-footer()
+	+modal--primary()

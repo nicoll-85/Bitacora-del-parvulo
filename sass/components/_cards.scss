@@ -725,3 +725,58 @@ a {
   }
 }
 
+// Card small-bg Global Styles
+.card-small-bg {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  width: 158px;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  word-wrap: break-word;
+  background: url(../images/card-image-01.png) repeat rgba($darkest-color,0.5);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-clip: border-box;
+  border-radius: 12px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+  @media screen and (max-width: 575.98px){
+    width: 119px;
+  }
+  @media screen and (min-width: 768px){
+    width: 127px;
+  }
+  @media screen and (min-width: 992px){
+    width: 154px;
+  }
+  @media screen and (min-width: 1200px){
+    width: 175px;
+  }
+  
+  
+  .card-small__body{
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: .5rem 1rem .3rem 1rem;
+    margin: 0 auto;
+    @media screen and(max-width:575.98px) {
+      padding: .3rem .5rem .3rem .5rem;
+    }
+    @media screen and(min-width:768px) {
+      padding: .3rem .5rem .1rem .5rem;
+    }
+    .card-small__title{
+      font-size: 14px;
+      text-align: center;
+      color: $lightest-color;
+      font-weight: 600;
+      @media screen and(max-width:575.98px) {
+        font-size: 12px;
+      }
+      @media screen and (min-width: 575px){
+        font-size: 12px;
+      }
+    }
+  }
+}
+

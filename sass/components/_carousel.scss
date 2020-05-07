@@ -1,0 +1,111 @@
+.carousel-abilities{
+  display: block;
+  @media screen and(max-width:575.98px) {
+    display:none;
+  }
+  @media screen and(min-width:576px) {
+    display:none;
+  }
+  @media screen and(min-width:768px) {
+    display:block;
+  }
+  @media screen and(min-width:992px) {
+    display:block;
+  }
+  @media screen and(min-width:1200px) {
+    display:block;
+  }
+  .carousel-inner{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    @media screen and(min-width:1200px) {
+      width: 93%;
+    }
+    @media screen and(min-width:992px) {
+      width: 99%;
+    }
+  }
+  .carousel-item{
+    .card-item{
+      display: inline-block;
+      width: 100%;
+      height: auto;
+      margin-left:11px;
+      @media screen and (max-width:575px) {
+        width: 87%;
+      }
+    }
+  }
+  .carousel-control-next{
+    position: absolute;
+    top: 13px;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    transition: opacity .15s ease;
+    margin-right: 24px;
+    @media screen and (min-width:768px) {
+      margin-right: -38px;
+    }
+  }
+}
+// Carousel Abilities mobile version Global Styles
+.carousel-abilities__mobile{
+  display: block;
+  
+  @media screen and(min-width:576px) {
+    display:block;
+  }
+  @media screen and(min-width:768px) {
+    display:none;
+  }
+  @media screen and(min-width:992px) {
+    display:none;
+  }
+  @media screen and(min-width:1200px) {
+    display:none;
+  }
+  .carousel-inner{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  .carousel-item{
+    .card-item{
+      display: inline-block;
+      width: 100%;
+      height: auto;
+      margin-left:11px;
+      margin-right: 60px;
+      @media screen and(max-width:575.98px) {
+        margin-left: -19px;
+        margin-right: 70px;
+      }
+    }
+  }
+  .carousel-control-next{
+    position: absolute;
+    top: 13px;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    transition: opacity .15s ease;
+    margin-right: -25px;
+    @media screen and(max-width:575.98px) {
+      margin-right: 8px;
+    }
+  }
+}

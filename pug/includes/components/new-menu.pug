@@ -2,8 +2,107 @@ mixin new-menu()
 	nav.navbar.navbar-expand-lg.navbar-light.rounded&attributes(attributes)
 		a(href="#").navbar-brand
 			img(src="./images/Logo.png", alt="OneCampus logo")
-		button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarsExample10", aria-controls="navbarsExample10", aria-expanded="false", aria-label="Toggle navigation")
-			.navbar-toggler-icon
+
+		.navbar-mobile
+			//- Collapse button
+			button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarToggleExternalContent", aria-controls="navbarToggleExternalContent", aria-expanded="true", aria-label="Toggle navigation")
+				img(src="./images/Icon/360.svg", alt="menu")
+			a(href="#").navbar-brand-mobile
+				img(src="./images/Logo.png", alt="OneCampus logo")
+			//- Collapsible content
+			#navbarToggleExternalContent.menu-mobile.navbar-collapse.collapse.animated.slideInLeft
+				h3.close-header X
+				hr
+				#accordionExample.accordion
+					.mobile-item
+						#headingOne.mobile-link
+							h2.mb-0
+								button.btn.btn-link(type='button' data-toggle='collapse' data-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne') Dashboard
+					.mobile-item
+						#headingTwo.mobile-link
+							h2.mb-0
+								button.btn.btn-link(type='button' data-toggle='collapse' data-target='#Abilities' aria-expanded='true' aria-controls='Abilities') Abilities
+								img.icon-collapse(src="./images/Icon/Arrow - Down.png", alt="collapse-icon")
+						#Abilities.collapse(aria-labelledby='headingTwo' data-parent='#accordionExample')
+							ul.sub-menu
+								li.submenu-link
+									a(href="#") Accountability
+								li.submenu-link
+									a(href="#") Achieving Objetives
+								li.submenu-link
+									a(href="#") Adapting to Change
+								li.submenu-link
+									a(href="#") Analizing and Solving Problems
+								li.submenu-link
+									a(href="#") Ethics and Social Responsability
+								li.submenu-link
+									a(href="#") Generating Ideas & Renovating
+								li.submenu-link
+									a(href="#") Making Decisions
+								li.submenu-link
+									a(href="#") Planning & Organizing
+								li.submenu-link
+									a(href="#") Resilience
+								li.submenu-link
+									a(href="#") Strategic & Entrepreneurial Mindset
+							.header-descript
+								h6.title-submenu-section Assesment
+								p.submenu-description Sed cursus turpis vitae tortor. Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi.
+								+button({'buttonTitle': 'Try Again'}).button--primary
+					.mobile-item
+						#headingThree.mobile-link
+							h2.mb-0
+								button.btn.btn-link(type='button' data-toggle='collapse' data-target='#Learning' aria-expanded='true' aria-controls='Learning') Learning
+								img.icon-collapse(src="./images/Icon/Arrow - Down.png", alt="collapse-icon")
+						#Learning.collapse(aria-labelledby='headingThree' data-parent='#accordionExample')
+							ul.sub-menu
+								li.submenu-link
+									a(href="#") Accountability
+								li.submenu-link
+									a(href="#") Achieving Objetives
+								li.submenu-link
+									a(href="#") Adapting to Change
+					.mobile-item
+						#headingFour.mobile-link
+							h2.mb-0
+								button.btn.btn-link(type='button' data-toggle='collapse' data-target='#Community' aria-expanded='true' aria-controls='Community') Community
+								img.icon-collapse(src="./images/Icon/Arrow - Down.png", alt="collapse-icon")
+						#Community.collapse(aria-labelledby='headingFour' data-parent='#accordionExample')
+							ul.sub-menu
+								li.submenu-link
+									a(href="#") Accountability
+								li.submenu-link
+									a(href="#") Achieving Objetives
+								li.submenu-link
+									a(href="#") Adapting to Change
+			ul.navbar-nav
+				li.nav-item.dropdown
+					.dot-notifi
+						span.badge.badge-pill.dot-notification 12
+					a#notification.nav-link.dropdown-toggle-split(href='#')
+					img(src='./images/Icon/Bell.png' alt='Notification')
+				li.nav-item.dropdown
+					a#dropdown07.nav-link.dropdown-toggle
+						img.avatar-prof.rounded-circle(src='./images/Avatar/Image.png' alt='profile')
+					.dropdown-menu(aria-labelledby='dropdown07')
+						a.dropdown-item(href='#')
+							.dropdown-item__content
+								img.icon-item(src='./images/Icon/User.png' alt='icon')
+								p.text-item My Passport
+						a.dropdown-item(href='#')
+							.dropdown-item__content
+								img.icon-item(src='./images/Icon/Settings.png' alt='icon')
+								p.text-item Settings
+						a.dropdown-item(href='#')
+							.dropdown-item__content
+								img.icon-item(src='./images/Icon/Support.png' alt='icon')
+								p.text-item Help &amp; Support
+						a.dropdown-item(href='#')
+							.dropdown-item__content
+								img.icon-item(src='./images/Icon/Logout.png' alt='icon')
+								p.text-item Log Out
+
+
 		#navbarsExample10.collapse.navbar-collapse
 			ul.navbar-nav.mr-auto 
 				li.nav-item
@@ -141,7 +240,7 @@ mixin new-menu()
 								a.notification-link(href="#")
 									p.notification-link__title Title notification goes here
 									p.notification-link__description Curabitur a felis in nunc fringilla tristique. Nunc nec neque.
-						
+
 				li.nav-item.dropdown
 					a#dropdown07.nav-link.dropdown-toggle
 						img.avatar-prof.rounded-circle(src="./images/Avatar/Image.png", alt="profile")
