@@ -5116,7 +5116,6 @@ ol.list {
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 12px;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
-  height: 100%;
   font-size: 18px;
   font-size: 1.125rem; }
   .card .media--top {
@@ -6933,6 +6932,60 @@ a {
     @media screen and (max-width: 575.98px) {
       .carousel-abilities__mobile .carousel-control-next {
         margin-right: 8px; } }
+
+.carousel-featured {
+  width: 100%;
+  display: block; }
+  @media screen and (max-width: 575.98px) {
+    .carousel-featured {
+      display: none; } }
+  @media screen and (min-width: 576px) {
+    .carousel-featured {
+      display: none; } }
+  @media screen and (min-width: 768px) {
+    .carousel-featured {
+      display: block; } }
+  @media screen and (min-width: 992px) {
+    .carousel-featured {
+      display: block; } }
+  @media screen and (min-width: 1200px) {
+    .carousel-featured {
+      display: block; } }
+  .carousel-featured .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden; }
+    @media screen and (min-width: 1200px) {
+      .carousel-featured .carousel-inner {
+        width: 93%; } }
+    @media screen and (min-width: 992px) {
+      .carousel-featured .carousel-inner {
+        width: 99%; } }
+  .carousel-featured .carousel-item .card-item {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin-right: 182px; }
+    @media screen and (max-width: 575px) {
+      .carousel-featured .carousel-item .card-item {
+        width: 87%; } }
+  .carousel-featured .carousel-control-next {
+    position: absolute;
+    top: 13px;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    transition: opacity .15s ease;
+    margin-right: 24px; }
+    @media screen and (min-width: 768px) {
+      .carousel-featured .carousel-control-next {
+        margin-right: -38px; } }
 
 .topbar {
   background: #22262B;

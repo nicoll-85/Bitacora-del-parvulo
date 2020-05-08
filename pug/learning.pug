@@ -1,0 +1,21 @@
+include includes/head.pug
+body
+	+new-menu()
+	.page
+		section.section--partial-background.section--partial-background--left-top.section--partial-background--medium(style={'background-image': 'url("images/Polygon 6.png")'})
+			.container.container--main
+				.col-12
+					+carousel-abilities
+					+carousel-abilities--mobile
+		section.section--color-background.section--color-background--fourth
+			.container.container--main
+				.row
+					.col-6
+						.video-thumbnail.video-thumbnail--lg(style={'background-image': 'url("images/content-viewer-video.png")'})
+						button.video-thumbnail--play
+							svg(class="video-thumbnail-icon" role="img" aria-label="icon" aria-hidden=true)
+								use(xlink:href='images/icons/oc-icons.svg#oc-Play')
+					.col-6
+						+carousel-featured
+					
+	+new-footer()

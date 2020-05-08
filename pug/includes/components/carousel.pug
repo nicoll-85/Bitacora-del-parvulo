@@ -54,8 +54,6 @@ mixin carousel-abilities--mobile()
 							+card--small-bg
 						.card-item.col-2
 							+card--small-bg
-			
-					
 				.carousel-item
 					.row
 						.card-item.col-2
@@ -64,9 +62,6 @@ mixin carousel-abilities--mobile()
 							+card--small-bg
 						.card-item.col-2
 							+card--small-bg
-						
-					
-						
 				.carousel-item
 					.row
 						.card-item.col-2
@@ -75,11 +70,36 @@ mixin carousel-abilities--mobile()
 							+card--small-bg
 						.card-item.col-2
 							+card--small-bg
-						
-					
-
 						
 			a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
 				img(src="./images/Button/Round Copy.svg", alt="Next")
 				//- span.carousel-control-next-icon(aria-hidden='true')
+				span.sr-only Next
+
+mixin carousel-featured()
+	.carousel-featured&attributes(attributes)
+		#carouselExampleIndicators.carousel.slide(data-ride='carousel')
+			.carousel-inner
+				.carousel-item.active
+					.row
+						.card-item.col-2
+							+card
+						.card-item.col-2
+							+card
+				.carousel-item
+					.row
+						.card-item.col-2
+							+card
+						.card-item.col-2
+							+card
+						
+				.carousel-item
+					.row
+						.card-item.col-2
+							+card
+						.card-item.col-2
+							+card
+						
+			a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+				img(src="./images/Button/Round Copy.svg", alt="Next")
 				span.sr-only Next
