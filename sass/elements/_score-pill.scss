@@ -12,6 +12,21 @@
     max-width: 100%;
     width: 100%;
   }
+  @media screen and (min-width:576px) {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+  }
+  @media screen and (min-width:768px) {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+  }
+  @media screen and (min-width:992px) {
+    display: block;
+    max-width: 175px;
+    min-width: 175px;
+  }
 
   .pill-content {
     display: flex;
@@ -23,6 +38,18 @@
     @media screen and (max-width:575px) {
       justify-content: end;
       padding: 3px 0px;
+    }
+    @media screen and (min-width:576px) {
+      justify-content: end;
+      padding: 3px 0px;
+    }
+    @media screen and (min-width:768px) {
+      justify-content: end;
+      padding: 3px 0px;
+    }
+    @media screen and (min-width:992px) {
+      justify-content: left;
+      padding: 12px 10px;
     }
 
     .media-pill {
