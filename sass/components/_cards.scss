@@ -598,20 +598,41 @@ a {
       flex-direction: row;
       justify-content: space-between;
       flex-wrap: wrap;
-      text-align: center;
+      text-align: left;
 
       @media screen and (min-width: 576px) {
+        flex-wrap: nowrap;
+        text-align: center;
+      }
+      @media screen and (min-width: 576px) {
+        flex-wrap: nowrap;
+        text-align: center;
+      }
+      @media screen and (min-width: 768px) {
+        flex-wrap: nowrap;
+        text-align: center;
+      }
+      @media screen and (min-width: 992px) {
         flex-wrap: nowrap;
         text-align: left;
       }
 
-      .card-panel__img {
-        width: 100px;
-        height: 100px;
-        margin: 0 auto;
-
+      .card-panel__icon {
+        @media screen and (max-width: 575.98px) {
+          max-width: 100%;
+          flex: 0 0 100%;
+        }
         @media screen and (min-width: 576px) {
-          margin-right: 10px;
+          max-width: 100%;
+          flex: 0 0 100%;
+        }
+        @media screen and (min-width: 768px) {
+          max-width: 100%;
+          flex: 0 0 100%;
+        }
+        @media screen and (min-width: 992px) {
+          max-width: 30%;
+          flex: 0 0 30%;
         }
       }
 
@@ -619,6 +640,22 @@ a {
         font-family: var(--primary-font);
         color: $darkest-color;
         padding: 5px 15px;
+        @media screen and (max-width: 575.98px) {
+          max-width: 100%;
+          flex: 0 0 100%;
+        }
+        @media screen and (min-width: 576px) {
+          max-width: 100%;
+          flex: 0 0 100%;
+        }
+        @media screen and (min-width: 768px) {
+          max-width: 100%;
+          flex: 0 0 100%;
+        }
+        @media screen and (min-width: 992px) {
+          max-width: 50%;
+          flex: 0 0 50%;
+        }
 
         .card-panel__title {
           font-weight: 400;
@@ -639,10 +676,64 @@ a {
           display: flex;
           flex-direction: row;
         }
+        .list-lite{
+          list-style-type: none;
+          padding: 0px;
+          margin: 0px;
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          
+          li{
+            display: flex;
+            flex-direction: row;
+            @media screen and (min-width: 576px) {
+              justify-content: center;
+            }
+            @media screen and (min-width: 768px) {
+              justify-content: center;
+            }
+            @media screen and (min-width: 992px) {
+              justify-content: left;
+            }
+            span{
+              min-width: 5px;
+              width: 5px;
+              height: 5px;
+              margin-right: 10px;
+              border-radius: 50%;
+              background: var(--primary-color);
+              display: flex;
+              margin-top: 8px;
+            }
+            p{
+              color: $darkest-color;
+              opacity: .6;
+              font-size: 16px;
+              font-weight: 300;
+            }
+          }
+        }
       }
 
       .card-panel__action {
         margin: 0 auto;
+        @media screen and (max-width: 575.98px) {
+          max-width: 100%;
+          flex: 0 0 100%;
+        }
+        @media screen and (min-width: 576px) {
+          max-width: 100%;
+          flex: 0 0 100%;
+        }
+        @media screen and (min-width: 768px) {
+          max-width: 100%;
+          flex: 0 0 100%;
+        }
+        @media screen and (min-width: 992px) {
+          max-width: 20%;
+          flex: 0 0 20%;
+        }
 
         button {
           @media screen and(max-width: 575px) {
