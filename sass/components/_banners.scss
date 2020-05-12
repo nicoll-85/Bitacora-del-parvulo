@@ -173,22 +173,28 @@
 
     .banner__image {
       display: none;
+      height: 100%;
+      max-width: 100%;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      background-size: cover;
+      border-top-right-radius: 12px;
+      border-bottom-right-radius: 12px;
+      mask: url("../images/masks/banner-mask.svg");
+      mask-type: luminance;
+      mask-position: center left;
+      mask-repeat: no-repeat;
+      mask-size: cover;
+
       @include media(tablet) {
         display: flex;
+        width: calc(100% - 400px);
+      }
+
+      @include media(desktop-s) {
+        display: flex;
         width: calc(100% - 580px);
-        height: 100%;
-        max-width: 100%;
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        background-size: cover;
-        border-top-right-radius: 12px;
-        border-bottom-right-radius: 12px;
-        mask: url("../images/masks/banner-mask.svg");
-        mask-type: luminance;
-        mask-position: center left;
-        mask-repeat: no-repeat;
-        mask-size: cover;
       }
     }
 
