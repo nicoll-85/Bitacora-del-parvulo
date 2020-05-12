@@ -3967,6 +3967,14 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
+a {
+  color: var(--primary-color);
+  text-decoration: none; }
+
+p {
+  color: rgba(51, 70, 82, 0.7);
+  text-decoration: none; }
+
 svg {
   vertical-align: unset; }
 
@@ -5881,10 +5889,6 @@ ol.list {
     -webkit-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out; }
-
-a {
-  color: #334652;
-  text-decoration: none; }
 
 .card-panel--score {
   position: relative;

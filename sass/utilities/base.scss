@@ -50,6 +50,17 @@ body {
   min-height: 100vh;
   justify-content: space-between;
 }
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+p {
+  color: rgba($darkest-color, 0.7);
+  text-decoration: none;
+}
+
 svg {
   vertical-align: unset;
 }
