@@ -11,7 +11,7 @@
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-width: 250px;
+  min-width: 213px;
   font-family: var(--primary-font);
   word-wrap: break-word;
   background-color: $lightest-color;
@@ -20,6 +20,9 @@
   border-radius: 12px;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
   @include font-size(18px);
+  @media screen and (max-width:575.98px) {
+    min-width: 244px;
+  }
 
   .media--top {
     width: 100%;
@@ -677,44 +680,41 @@ a {
           flex-direction: row;
         }
         .list-lite{
-          list-style-type: none;
           padding: 0px;
           margin: 0px;
           display: flex;
           flex-direction: column;
           width: 100%;
-          
-          li{
-            display: flex;
-            flex-direction: row;
-            @media screen and (min-width: 576px) {
-              justify-content: center;
+          ul{
+            list-style-type: none;
             }
-            @media screen and (min-width: 768px) {
-              justify-content: center;
-            }
-            @media screen and (min-width: 992px) {
-              justify-content: left;
-            }
-            span{
-              min-width: 5px;
-              width: 5px;
-              height: 5px;
-              margin-right: 10px;
-              border-radius: 50%;
-              background: var(--primary-color);
-              display: flex;
-              margin-top: 8px;
-            }
-            p{
+            li{
               color: $darkest-color;
               opacity: .6;
               font-size: 16px;
               font-weight: 300;
+              &::marker{
+                color: $primary-color;
+              
+              @media screen and (min-width: 576px) {
+                justify-content: center;
+              }
+              @media screen and (min-width: 768px) {
+                justify-content: center;
+              }
+              @media screen and (min-width: 992px) {
+                justify-content: left;
+              }
             }
           }
         }
-      }
+        ol {list-style: none; counter-reset: li}
+          li::before { 
+            content: "•"; color:$primary-color;
+            display: inline-block; width: 1em;
+            margin-left: -1em}
+          li {counter-increment: li}
+              }
 
       .card-panel__action {
         margin: 0 auto;
@@ -815,6 +815,7 @@ a {
   }
 }
 
+
 // Card small-bg Global Styles
 .card-small-bg {
   position: relative;
@@ -870,3 +871,58 @@ a {
   }
 }
 
+// Card Large bg Global Styles
+.card-large-bg {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 320px;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  word-wrap: break-word;
+  background: url(../images/bg-collections.png) repeat rgba($darkest-color,0.5);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-clip: border-box;
+  border-radius: 12px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+  // @media screen and (max-width: 575.98px){
+  //   width: 119px;
+  // }
+  // @media screen and (min-width: 768px){
+  //   width: 127px;
+  // }
+  // @media screen and (min-width: 992px){
+  //   width: 154px;
+  // }
+  // @media screen and (min-width: 1200px){
+  //   width: 175px;
+  // }
+  
+  
+  .card-large__body{
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 2rem 1rem 2rem 1rem;
+    margin: 0 auto;
+    // @media screen and(max-width:575.98px) {
+    //   padding: .3rem .5rem .3rem .5rem;
+    // }
+    // @media screen and(min-width:768px) {
+    //   padding: .3rem .5rem .1rem .5rem;
+    // }
+    .card-large__title{
+      font-size: 21px;
+      text-align: center;
+      color: $lightest-color;
+      font-weight: 800;
+      // @media screen and(max-width:575.98px) {
+      //   font-size: 12px;
+      // }
+      // @media screen and (min-width: 575px){
+      //   font-size: 12px;
+      // }
+    }
+  }
+}
