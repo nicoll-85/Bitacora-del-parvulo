@@ -100,7 +100,6 @@
 .modal.modal--primary {
   &.modal--is-open {
     display: block;
-
   }
   .modal-dialog {
     max-width: 600px;
@@ -112,10 +111,13 @@
   }
   .modal-header {
     background: var(--primary-color);
-    padding: 32px 40px 44px 32px;
+    padding: 16px 40px 28px 32px;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     position: relative;
+    @include media(tablet) {
+      padding: 32px 40px 44px 32px;
+    }
 
     .modal-title {
       color: var(--lightest-color);
@@ -143,33 +145,52 @@
     }
   }
   .modal-body {
-    padding: 40px;
+    padding: 24px 40px;
     border-radius: 12px;
     margin-top: -12px;
     margin-bottom: -12px;
     background: var(--lightest-color);
     box-shadow: 0px 1px 1px rgba($darkest-color, 0.15);
+
+    @include media(tablet) {
+      padding: 40px;
+    }
   }
   .modal-footer {
-    padding: 32px 40px;
+    padding: 24px 32px 8px 32px;
     border: none;
+    @include media(tablet) {
+      padding: 32px 40px;
+    }
 
     .box {
       margin: 0px;
-      margin-top: 16px;
+      padding: 0px;
       display: flex;
       align-items: center;
+      @include media(tablet) {
+        margin-top: 16px;
+        padding: 15px 20px;
+      }
 
       .box__title {
         color: var(--darkest-color);
         font-weight: 400;
         @include font-size(20px);
+        margin: 0px;
+        @include media(tablet) {
+          margin-bottom: 10px;
+        }
       }
       .box__description {
         color: var(--darkest-color);
         @include font-size(14px);
         font-weight: 400;
         opacity: 0.5;
+        margin-bottom: 8px;
+        @include media(tablet) {
+          margin-bottom: 16px;
+        }
       }
     }
   }

@@ -1,0 +1,25 @@
+.carousel-abilities .carousel-item .card-item {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  margin-left: 11px; }
+
+.carousel-abilities .carousel-control-next {
+  position: absolute;
+  top: 13px;
+  bottom: 0;
+  z-index: 1;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  text-align: center;
+  -webkit-transition: opacity .15s ease;
+  -o-transition: opacity .15s ease;
+  transition: opacity .15s ease;
+  margin-right: 24px; }
