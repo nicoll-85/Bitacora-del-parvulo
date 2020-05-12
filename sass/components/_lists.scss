@@ -161,6 +161,11 @@ ol.list {
           background-size: cover;
           background-repeat: no-repeat;
           background-position: center;
+          display: none;
+
+          @include media(tablet) {
+            display: flex;
+          }
         }
         .list-text {
           .list-title {
