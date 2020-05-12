@@ -2,8 +2,8 @@ mixin card(options)
   .card&attributes(attributes)
     img.media--top(src="./images/Fill@3x.png", alt="video image") 
     .card__body
-      h5.card__title Design Thinking: The New Standard for Creative Probl…
-      p.card__text Some quick example text to build on the card title and make up the bulk of the content.
+      h5.card__title Design Thinking: The New Standard for Creative...
+      p.card__text Some quick example text to build on the card title and make...
 
 mixin card--video(options)
   .card-video&attributes(attributes)
@@ -56,18 +56,11 @@ mixin card--panel-score(options)
             p.card-panel__title Learning & Self-Improvement
             +link
             p.card-panel__text Fusce dapibus, tellus ac cursus commodo, tortor mauris condimen tum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit am et, consectetur adipiscing
-            .list-style
+            .list-lite
               ul
-                li
-                  span
-                  p Curabitur blandit mollis lacus. Proin faucibus arcu quis ante.
-                li
-                  span
-                  p Curabitur blandit mollis lacus. Proin faucibus arcu quis ante.
-                li
-                  span
-                  p Curabitur blandit mollis lacus. Proin faucibus arcu quis ante. 
-          
+                li  Curabitur blandit mollis lacus. Proin faucibus arcu quis ante.
+                li  Curabitur blandit mollis lacus. Proin faucibus arcu quis ante.
+                li  Curabitur blandit mollis lacus. Proin faucibus arcu quis ante.
           .card-panel__action  
               +button({'buttonTitle': 'Try Again'}).button--ghost-primary
 
@@ -126,4 +119,9 @@ mixin card--small-bg(options)
   a.card-small-bg.mt-2.mb-1(href="#")
     .card-small__body
       p.card-small__title Analizyng & Solving Problems
+
+mixin card--large-bg(options)
+  a.card-large-bg.mt-2.mb-1(href="#")
+    .card-large__body
+      p.card-large__title World of Business
       
