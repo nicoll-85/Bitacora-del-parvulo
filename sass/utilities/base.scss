@@ -54,11 +54,12 @@ body {
 a {
   color: var(--primary-color);
   text-decoration: none;
+  font-family: var(--primary-font);
 }
 
 p {
   color: rgba($darkest-color, 0.7);
-  text-decoration: none;
+  font-family: var(--primary-font);
 }
 
 svg {

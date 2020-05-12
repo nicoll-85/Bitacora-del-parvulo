@@ -3969,11 +3969,12 @@ body {
 
 a {
   color: var(--primary-color);
-  text-decoration: none; }
+  text-decoration: none;
+  font-family: var(--primary-font); }
 
 p {
   color: rgba(51, 70, 82, 0.7);
-  text-decoration: none; }
+  font-family: var(--primary-font); }
 
 svg {
   vertical-align: unset; }
@@ -5804,6 +5805,10 @@ ol.list {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column; }
+      .card-chart .card-chart__body .card-chart__content .card-chart__title {
+        color: var(--darkest-color);
+        opacity: 1;
+        font-weight: 500; }
       @media screen and (min-width: 576px) {
         .card-chart .card-chart__body .card-chart__content {
           -webkit-box-orient: horizontal;
