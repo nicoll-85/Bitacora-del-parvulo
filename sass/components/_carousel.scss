@@ -31,7 +31,7 @@
       display: inline-block;
       width: 100%;
       height: auto;
-      margin-left:11px;
+      margin-right:14px;
       @media screen and (max-width:575px) {
         width: 87%;
       }
@@ -82,8 +82,7 @@
       display: inline-block;
       width: 100%;
       height: auto;
-      margin-left:11px;
-      margin-right: 60px;
+      margin-right: 75px;
       @media screen and(max-width:575.98px) {
         margin-left: -19px;
         margin-right: 70px;
@@ -114,11 +113,11 @@
   width: 100%;
   display: block;
   @media screen and(max-width:575.98px) {
-    display:none;
+    display:block;
   }
   @media screen and(min-width:576px) {
     display:block;
-    margin-top: -163px;
+    margin-top: -2px;
   }
   @media screen and(min-width:768px) {
     display:none;
@@ -135,7 +134,7 @@
     width: 100%;
     overflow: hidden;
     @media screen and(max-width:575.98px) {
-      margin-top: -165px;
+      margin-top: -2px;
     }
     @media screen and(min-width:992px) {
       width: 99%;
@@ -149,18 +148,15 @@
       display: inline-block;
       width: 100%;
       height: auto;
-      margin-right: 182px;
-      @media screen and (max-width:576px) {
-        margin-right: 135px;
-      }
-      @media screen and (max-width:576px) {
-        width: 87%;
+      margin-right: -16px;
+      @media screen and (max-width:575.98px) {
+        margin-right: 0px;
       }
       @media screen and (min-width:576px) {
-        margin-right: 163px;
+        margin-right: 0px;
       }
       @media screen and (min-width:992px) {
-       margin-right: 137px;
+       margin-right: -16px;
       }
     }
   }
@@ -185,7 +181,7 @@
       margin-right: -6px;
     }
     @media screen and (min-width:768px) {
-      margin-right: 25px;
+      margin-right: -8px;
     }
   }
 }
@@ -201,11 +197,10 @@
   }
   @media screen and(min-width:768px) {
     display:block;
-    margin-top: -163px; 
+    margin-top: -2px; 
   }
   @media screen and(min-width:992px) {
-    display:none;
-    margin-top: -25px;  
+    display:none;  
   }
   @media screen and(min-width:1200px) {
     display:none;
@@ -259,7 +254,7 @@
   width: 100%;
   display: block;
   @media screen and(max-width:575.98px) {
-    display:block;
+    display:none;
   }
   @media screen and(min-width:576px) {
     display:none;
@@ -277,7 +272,7 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-    margin-top: -165px;
+    margin-top: -28px;
   }
   .carousel-item{
     .card-item{
@@ -408,6 +403,166 @@
   }
 }
 
+// Carousel Connections Global Styles
+.carousel-connections{
+  width: 100%;
+  display: block;
+  @media screen and(max-width:575.98px) {
+    display:none;
+  }
+  @media screen and(min-width:576px) {
+    display:none;
+  }
+  @media screen and(min-width:768px) {
+    display:none;
+  }
+  @media screen and(min-width:992px) {
+    display:block;  
+  }
+  @media screen and(min-width:1200px) {
+    display:block;
+  }
+  .carousel-inner{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    // @media screen and(max-width:575.98px) {
+    //   margin-top: -165px;
+    // }
+    // @media screen and(min-width:992px) {
+    //   width: 99%;
+    // }
+    // @media screen and(min-width:1200px) {
+    //   margin-top: 20px;
+    // }
+  }
+  .carousel-item{
+    .card-item{
+      display: inline-block;
+      width: 100%;
+      height: auto;
+      margin-right: 0px;
+      // @media screen and (max-width:576px) {
+      //   margin-right: 135px;
+      // }
+      // @media screen and (max-width:576px) {
+      //   width: 87%;
+      // }
+      // @media screen and (min-width:576px) {
+      //   margin-right: 163px;
+      // }
+      @media screen and (min-width:992px) {
+       margin-left: -2px;
+      }
+    }
+  }
+  .carousel-control-next{
+    position: absolute;
+    top: 13px;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    transition: opacity .15s ease;
+    margin-right: -59px;
+    // @media screen and (max-width:575.98px) {
+    //   margin-right: 3px;
+    // }
+    // @media screen and (min-width:576px) {
+    //   margin-right: -6px;
+    // }
+    // @media screen and (min-width:768px) {
+    //   margin-right: -8px;
+    // }
+  }
+}
+
+// Carousel Connections mobile Global Styles
+.carousel-connections__mobile{
+  width: 100%;
+  display: block;
+  @media screen and(max-width:575.98px) {
+    display:block;
+  }
+  @media screen and(min-width:576px) {
+    display:block;
+    // margin-top: -163px;
+  }
+  @media screen and(min-width:768px) {
+    display:block;
+  }
+  @media screen and(min-width:992px) {
+    display:none;
+    // margin-top: -25px;  
+  }
+  @media screen and(min-width:1200px) {
+    display:none;
+  }
+  .carousel-inner{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    // @media screen and(max-width:575.98px) {
+    //   margin-top: -165px;
+    // }
+    // @media screen and(min-width:992px) {
+    //   width: 99%;
+    // }
+    // @media screen and(min-width:1200px) {
+    //   margin-top: 20px;
+    // }
+  }
+  .carousel-item{
+    .card-item{
+      display: inline-block;
+      width: 100%;
+      height: auto;
+      margin-right: 0px;
+      // @media screen and (max-width:576px) {
+      //   margin-right: 135px;
+      // }
+      // @media screen and (max-width:576px) {
+      //   width: 87%;
+      // }
+      // @media screen and (min-width:576px) {
+      //   margin-right: 163px;
+      // }
+      @media screen and (min-width:992px) {
+       margin-left: -2px;
+      }
+    }
+  }
+  .carousel-control-next{
+    position: absolute;
+    top: 13px;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    transition: opacity .15s ease;
+    margin-right: -59px;
+    // @media screen and (max-width:575.98px) {
+    //   margin-right: 3px;
+    // }
+    // @media screen and (min-width:576px) {
+    //   margin-right: -6px;
+    // }
+    // @media screen and (min-width:768px) {
+    //   margin-right: -8px;
+    // }
+  }
+}
+
 .video-thumbnail {
 	position: relative;
 	padding-top: 56.25%;
@@ -471,4 +626,11 @@
 			}
 		}
 	}
+}
+
+.section-title__page{
+  font-family: var(--primary-font);
+  color: $darkest-color;
+  margin-bottom: 2px;
+  font-weight: 600;
 }
