@@ -82,22 +82,22 @@ mixin carousel-featured()
 			.carousel-inner
 				.carousel-item.active
 					.row
-						.card-item.col-2
+						.card-item.col-6
 							+card
-						.card-item.col-2
+						.card-item.col-6
 							+card
 				.carousel-item
 					.row
-						.card-item.col-2
+						.card-item.col-6
 							+card
-						.card-item.col-2
+						.card-item.col-6
 							+card
 						
 				.carousel-item
 					.row
-						.card-item.col-2
+						.card-item.col-6
 							+card
-						.card-item.col-2
+						.card-item.col-6
 							+card
 						
 			a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
@@ -220,6 +220,132 @@ mixin carousel-collections--mobile()
 						.card-item.col-6
 							+card--large-bg
 						
+						
+			a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+				img(src="./images/Button/Round Copy.svg", alt="Next")
+				span.sr-only Next
+	
+mixin carousel-connections()
+	.carousel-connections&attributes(attributes)
+		#carouselExampleIndicators.carousel.slide(data-ride='carousel')
+			.carousel-inner
+				.carousel-item.active
+					.row
+						.card-item.col-4
+							+card--v2
+						.card-item.col-4
+							+card--v2
+						.card-item.col-4
+							+card--v2
+				.carousel-item
+					.row
+						.card-item.col-4
+							+card--v2
+						.card-item.col-4
+							+card--v2
+						.card-item.col-4
+							+card--v2
+						
+				.carousel-item
+					.row
+						.card-item.col-4
+							+card--v2
+						.card-item.col-4
+							+card--v2
+						.card-item.col-4
+							+card--v2
+						
+			a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+				img(src="./images/Button/Round Copy.svg", alt="Next")
+				span.sr-only Next
+
+mixin carousel-connections--mobile()
+	.carousel-connections__mobile&attributes(attributes)
+		#carouselExampleIndicators.carousel.slide(data-ride='carousel')
+			.carousel-inner
+				.carousel-item.active
+					.row
+						.card-item.col-6
+							+card--v2
+						.card-item.col-6
+							+card--v2
+						
+				.carousel-item
+					.row
+						.card-item.col-6
+							+card--v2
+						.card-item.col-6
+							+card--v2
+						
+				.carousel-item
+					.row
+						.card-item.col-6
+							+card--v2
+						.card-item.col-6
+							+card--v2
+						
+			a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+				img(src="./images/Button/Round Copy.svg", alt="Next")
+				span.sr-only Next
+
+mixin carousel-recommended()
+	.carousel-connections&attributes(attributes)
+		#carouselExampleIndicators.carousel.slide(data-ride='carousel')
+			.carousel-inner
+				.carousel-item.active
+					.row
+						.card-item.col-4
+							+card--v3
+						.card-item.col-4
+							+card--v3
+						.card-item.col-4
+							+card--v3
+				.carousel-item
+					.row
+						.card-item.col-4
+							+card--v3
+						.card-item.col-4
+							+card--v3
+						.card-item.col-4
+							+card--v3
+						
+				.carousel-item
+					.row
+						.card-item.col-4
+							+card--v3
+						.card-item.col-4
+							+card--v3
+						.card-item.col-4
+							+card--v3
+						
+			a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+				img(src="./images/Button/Round Copy.svg", alt="Next")
+				span.sr-only Next
+
+mixin carousel-recommended--mobile()
+	.carousel-connections__mobile&attributes(attributes)
+		#carouselExampleIndicators.carousel.slide(data-ride='carousel')
+			.carousel-inner
+				.carousel-item.active
+					.row
+						.card-item.col-6
+							+card--v3
+						.card-item.col-6
+							+card--v3
+						
+				.carousel-item
+					.row
+						.card-item.col-6
+							+card--v3
+						.card-item.col-6
+							+card--v3
+						
+				.carousel-item
+					.row
+						.card-item.col-6
+							+card--v3
+						.card-item.col-6
+							+card--v3
 						
 			a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
 				img(src="./images/Button/Round Copy.svg", alt="Next")

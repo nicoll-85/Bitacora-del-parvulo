@@ -5,31 +5,34 @@ body
 		section.section--partial-background.section--partial-background--left-top.section--partial-background--medium(style={'background-image': 'url("images/Polygon 6.png")'})
 			.container.container--main
 				.col-12
+					h4.section-title__page.mb-5 Explore
+					h6.section-title__page.mt-3 Abilities
 					+carousel-abilities
 					+carousel-abilities--mobile
-		section.section--color-background.section--color-background--fourth
-			.container.container--main
-				.row
-					.col-md-12.col-lg-6.col-xl-6.col-sm-12.col-12
-						.video-thumbnail.video-thumbnail--lg(style={'background-image': 'url("images/content-viewer-video.png")'})
-						button.video-thumbnail--play
-							svg(class="video-thumbnail-icon" role="img" aria-label="icon" aria-hidden=true)
-								use(xlink:href='images/icons/oc-icons.svg#oc-Play')
-					.col-md-12.col-lg-6.col-xl-6.col-sm-12.col-12
-						+carousel-featured
-						+carousel-featured--mobile
-						+carousel-featured--mobile-xsmall
-				.col-12
-					+card--panel-score
-				//- .col-12
-				//- 	.row
-				//- 		+card--large-bg
-				//- 		+card--large-bg
-				//- 		+card--large-bg
-				.col-12
+				.col-12.mt-3
+					h6.section-title__page Recomended for you
+					+carousel-recommended
+					+carousel-recommended--mobile
+				.col-12.mt-3
+					h6.section-title__page.mb-3 Featured Content
+					.row
+						.col-md-12.col-lg-6.col-xl-6.col-sm-12.col-12
+							.video-thumbnail.video-thumbnail--lg(style={'background-image': 'url("images/content-viewer-video.png")'})
+							button.video-thumbnail--play
+								//- svg(class="video-thumbnail-icon" role="img" aria-label="icon" aria-hidden=true)
+								//- 	use(xlink:href='images/icons/oc-icons.svg#oc-Play')
+						.col-md-12.col-lg-6.col-xl-6.col-sm-12.col-12
+							+carousel-featured
+							+carousel-featured--mobile
+							+carousel-featured--mobile-xsmall
+				.col-12.mt-3
+					h6.section-title__page Collections
 					+carousel-collections
 					+carousel-collections--mobile
-
 		
-					
+				.col-12.mt-3
+					h6.section-title__page Connections
+					+carousel-connections
+					+carousel-connections--mobile
+		
 	+new-footer()
