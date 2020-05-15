@@ -77,15 +77,15 @@
       .left-actions{
         display: flex;
         .icon-actions{
-          width: 25px;
-          height: 25px;
+          width: 18px;
+          height: 18px;
           margin-right: 5px;
           background-color:$lightest-color;
           opacity: .4;
         }
         .counter{
           color: rgba($darkest-color,0.5);
-          font-size: 18px;
+          font-size: 16px;
           font-weight: 500;
         }
       }
@@ -93,8 +93,8 @@
         display: flex;
         margin-left: auto;
         .icon-actions{
-          width: 25px;
-          height: 25px;
+          width: 18px;
+          height: 18px;
           margin-right: 5px;
           background-color:$lightest-color;
           opacity: .4;

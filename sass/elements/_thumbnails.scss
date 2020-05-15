@@ -8,6 +8,33 @@
 	&.video-thumbnail--9-21 {
 		padding-top: 42.85%;
 	}
+	.icon-play--video{
+		width: 50px;
+		display: block;
+		margin-top: -178px;
+		margin-bottom: 50px;
+		margin-left: 194px;
+		@media screen and (min-width:576px) {
+			margin-top: -169px;
+			margin-bottom: 59px;
+			margin-left: 215px;
+		  }
+		@media screen and (min-width:768px) {
+			margin-top: -211px;
+			margin-bottom: 59px;
+			margin-left: 299px;
+		  }
+		@media screen and (min-width:992px) {
+			margin-top: -155px;
+			margin-bottom: 59px;
+			margin-left: 203px;
+		  }
+		@media screen and (min-width:1200px) {
+			margin-top: -174px;
+			margin-left: 240px;
+		  }
+	}
+	
 	a.video-thumbnail--play,
 	button.video-thumbnail--play {
 		background: rgba($darkest-color,0.5);
