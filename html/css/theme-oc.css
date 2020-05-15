@@ -4743,6 +4743,31 @@ input:checked + .slider:before {
   border-radius: 12px; }
   .video-thumbnail.video-thumbnail--9-21 {
     padding-top: 42.85%; }
+  .video-thumbnail .icon-play--video {
+    width: 50px;
+    display: block;
+    margin-top: -178px;
+    margin-bottom: 50px;
+    margin-left: 194px; }
+    @media screen and (min-width: 576px) {
+      .video-thumbnail .icon-play--video {
+        margin-top: -169px;
+        margin-bottom: 59px;
+        margin-left: 215px; } }
+    @media screen and (min-width: 768px) {
+      .video-thumbnail .icon-play--video {
+        margin-top: -211px;
+        margin-bottom: 59px;
+        margin-left: 299px; } }
+    @media screen and (min-width: 992px) {
+      .video-thumbnail .icon-play--video {
+        margin-top: -155px;
+        margin-bottom: 59px;
+        margin-left: 203px; } }
+    @media screen and (min-width: 1200px) {
+      .video-thumbnail .icon-play--video {
+        margin-top: -174px;
+        margin-left: 240px; } }
   .video-thumbnail a.video-thumbnail--play,
   .video-thumbnail button.video-thumbnail--play {
     background: rgba(51, 70, 82, 0.5);
@@ -5207,21 +5232,21 @@ ol.list {
       .card .card__body .card-footer__actions .left-actions {
         display: flex; }
         .card .card__body .card-footer__actions .left-actions .icon-actions {
-          width: 25px;
-          height: 25px;
+          width: 18px;
+          height: 18px;
           margin-right: 5px;
           background-color: #ffffff;
           opacity: .4; }
         .card .card__body .card-footer__actions .left-actions .counter {
           color: rgba(51, 70, 82, 0.5);
-          font-size: 18px;
+          font-size: 16px;
           font-weight: 500; }
       .card .card__body .card-footer__actions .right-actions {
         display: flex;
         margin-left: auto; }
         .card .card__body .card-footer__actions .right-actions .icon-actions {
-          width: 25px;
-          height: 25px;
+          width: 18px;
+          height: 18px;
           margin-right: 5px;
           background-color: #ffffff;
           opacity: .4; }
