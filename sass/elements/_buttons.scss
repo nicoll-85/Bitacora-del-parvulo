@@ -40,8 +40,11 @@
   }
   &.button--ghost {
     color: var(--darkest-color);
+    color: #334652;/*IE*/
     background-color: var(--lightest-color);
+    background-color: white;/*IE*/
     border: 1px solid var(--darkest-color);
+    border: 1px solid #334652;/*IE*/
     &:hover,
     &:focus {
       text-decoration: none;
@@ -49,22 +52,29 @@
   }
   &.button--ghost-primary{
     color: var(--primary-color);
+    color: #FF7C5F;/*IE*/
     background-color: var(--lightest-color);
+    background-color: white;/*IE*/
     border: 1px solid var(--primary-color);
+    border: 1px solid #FF7C5F; /*IE*/
     &:hover,
     &:focus {
       text-decoration: none;
     }
   }
   &.button--ghost-white{
+    color: white; /*IE*/
     color: var(--lightest-color);
     background-color: transparent;
     border: 1px solid var(--lightest-color);
+    border: 1px solid white; /*IE*/
     &:hover,
     &:focus {
       text-decoration: none;
       background-color: var(--lightest-color);
+      background-color: white; /*IE*/
       color: var(--darkest-color);
+      color: #334652;/*IE*/
     }
   }
 }
@@ -73,8 +83,11 @@
 **********************/
 .button--primary {
   background-color: var(--primary-color);
+  background-color: #FF7C5F; /*IE*/
   color: var(--lightest-color);
+  color: white;/*IE*/;
   border-color: var(--primary-color);
+  border-color: #FF7C5F; /*IE*/
   &:hover,
   &:focus,
   &:active {
@@ -85,7 +98,9 @@
   }
   &.button--ghost {
     color: var(--primary-color);
+    color: #FF7C5F; /*IE*/
     background-color: var(--lightest-color);
+    background-color:white;/*IE*/
     border: 1px solid var(--primary-color);
     &:hover,
     &:focus {
@@ -93,14 +108,18 @@
     }
     .icon {
       fill: var(--primary-color);
+      fill: #FF7C5F;/*IE*/
     }
   }
 }
 
 .button--secondary {
   background-color: var(--secondary-color);
+  background-color: #3A86CF; /*IE*/
   color: var(--lightest-color);
+  color: white;/*IE*/
   border-color: var(--secondary-color);
+  border-color: #3A86CF; /*IE*/
   &:hover,
   &:focus,
   &:active {
@@ -108,25 +127,33 @@
   }
   .icon {
     fill: var(--lightest-color);
+    fill: white;  /*IE*/
   }
   &.button--ghost {
     color: var(--secondary-color);
+    color: #3A86CF; /*IE*/
     background-color: var(--lightest-color);
+    background-color: white;  /*IE*/
     border: 1px solid var(--secondary-color);
+    border:1px solid #3A86CF; /*IE*/
     &:hover,
     &:focus {
       text-decoration: none;
     }
     .icon {
       fill: var(--secondary-color);
+      fill:  #3A86CF; /*IE*/
     }
   }
 }
 
 .button--third {
   background-color: var(--darkest-color);
+  background-color:  #334652;/*IE*/
   color: var(--lightest-color);
+  color: white;/*IE*/
   border-color: var(--darkest-color);
+  border-color:#334652;/*IE*/
   &:hover,
   &:focus,
   &:active {
@@ -137,14 +164,18 @@
   }
   &.button--ghost {
     color: var(--darkest-color);
+    color:  #334652;/*IE*/
     background-color: var(--lightest-color);
+    background-color: white;/*IE*/
     border: 1px solid var(--darkest-color);
+    border: 1px solid #334652;/*IE*/
     &:hover,
     &:focus {
       text-decoration: none;
     }
     .icon {
       fill: var(--darkest-color);
+      fill: #334652;/*IE*/
     }
   }
 }
@@ -201,6 +232,7 @@
   right: 0;
   bottom: 0;
   background-color: var(--accent-color-06);
+  background-color: #323e56;/*IE*/
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }

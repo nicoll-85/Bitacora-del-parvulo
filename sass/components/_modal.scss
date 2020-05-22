@@ -110,6 +110,7 @@
     box-shadow: 0px 4px 2px 1px rgba($darkest-color, 0.2);
   }
   .modal-header {
+    background-color: #FF7C5F; /*IE*/
     background: var(--primary-color);
     padding: 16px 40px 28px 32px;
     border-top-left-radius: 12px;
@@ -120,6 +121,7 @@
     }
 
     .modal-title {
+      color: white; /*IE*/
       color: var(--lightest-color);
       font-family: var(--primary-font);
       font-weight: 300;
