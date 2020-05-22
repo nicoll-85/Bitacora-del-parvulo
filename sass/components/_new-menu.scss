@@ -3,8 +3,10 @@
   display: flex;
   font-family: var(--primary-font);
   background-color: $lightest-color;
+  background-color: white;/*IE*/
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
   color: $darkest-color;
+  color: #334652;/*IE*/
   padding-left: 150px;
   padding-right: 150px;
 
@@ -72,6 +74,7 @@
     width: 80%;
     height: 100%;
     background: $lightest-color;
+    background: white;/*IE*/
     box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.05), 0px 16px 24px 0px rgba(0, 0, 0, 0.1);
     border: none;
     color: #334652;
@@ -95,7 +98,9 @@
 
     .mobile-item {
       background-color: $lightest-color;
+      background-color: white;/*IE*/
       color: $darkest-color;
+      color: #334652;/*IE*/
       border-bottom: 1px solid #EFEAEA;
       padding-bottom: 16px;
       padding-top: 10px;
@@ -106,6 +111,7 @@
 
         .btn-link {
           color: $darkest-color;
+          color: #334652;/*IE*/
           font-size: 18px;
         }
 
@@ -117,6 +123,7 @@
 
       .collapse {
         border-top: 2px solid $primary-color;
+        border-top: 2px solid #FF7C5F;/*IE*/
         background-color: rgba(51, 70, 82, .1);
         width: 100%;
         padding: 15px;
@@ -127,6 +134,7 @@
           font-size: 14px;
           list-style-type: none;
           color: $darkest-color;
+          color: #334652;/*IE*/
 
           .submenu-link {
             padding: 15px;
@@ -141,10 +149,12 @@
             font-size: 18px;
             font-weight: 500;
             color: $darkest-color;
+            color: #334652;/*IE*/
           }
 
           .submenu-description {
             color: $darkest-color;
+            color: #334652;/*IE*/
             opacity: .6;
             font-size: 18px;
           }
@@ -198,7 +208,9 @@
 
       .dot-notification {
         color: $lightest-color;
-        background-color: $primary-color
+        color: white;/*IE*/
+        background-color: $primary-color;
+        background-color:#FF7C5F;/*IE*/
       }
     }
   }
@@ -207,6 +219,7 @@
   .nav-link {
     position: relative;
     color: $darkest-color;
+    color: #334652;/*IE*/
     font-size: 16px;
     font-weight: 400;
     padding-left: 20px;
@@ -243,6 +256,7 @@
           font-family: var(--primary-font);
           font-weight: 400;
           color: $darkest-color;
+          color: #334652;/*IE*/
           opacity: .6;
           font-size: 15px;
         }
@@ -260,7 +274,9 @@
   width: auto;
   max-width: 100vw;
   background: var(--lightest-color);
+  background: white;/*IE*/
   color: var(--darkest-color);
+  color: #334652;/*IE*/
   box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, .05), 0px 16px 24px 0px rgba(0, 0, 0, .1);
   border: none;
   border-radius: 12px;
@@ -305,7 +321,9 @@
 
       &.dropdown__section--featured {
         background: var(--fourth-color);
+        background: #f2f4f5; /*IE*/
         border: 1px solid rgba($darkest-color, 0.15);
+        border: 1px solid rgba(51, 70, 82, .15);/*IE*/
       }
     }
   }
@@ -387,6 +405,7 @@
             width: 16px;
             height: 16px;
             fill: rgba($darkest-color, 0.5);
+            fill: rgba( 51, 70, 82, .5);
             margin-right: 8px;
           }
         }
@@ -419,6 +438,7 @@
             display: block;
             font-size: 12px;
             color: var(--darkest-color);
+            color: #334652; /*IE*/
             text-transform: none;
             padding-top: 16px;
           }
@@ -432,7 +452,9 @@
         &:focus,
         &:hover {
           background: var(--primary-color);
+          background: white;/*IE*/
           color: var(--lightest-color);
+          color: white;/*IE*/
           text-decoration: none;
           opacity: 1;
           border-radius: 12px;
@@ -460,7 +482,7 @@
         .dropdown__link:focus,
         .dropdown__link:hover {
           background: transparent;
-          color: var(--darkest-color);
+          color: #334652;/*IE*/
           text-decoration: none;
           opacity: 1;
           border-radius: 0px;
@@ -470,6 +492,7 @@
             .link__title,
             .link__subtitle {
               color: var(--darkest-color);
+              color: #334652;/*IE*/
               opacity: 0.5;
             }
           }
@@ -496,6 +519,7 @@
   width: 350px;
   height: 100%;
   background: $lightest-color;
+  background: white;/*IE*/
   box-shadow: 0 0 3px 0 rgba(0,0,0,0.05), 0 1px 1px 0 rgba(0,0,0,0.05);
   border: none;
   color: #334652;
@@ -519,6 +543,7 @@
       font-size: 14px;
       font-weight: 500;
       color: $darkest-color;
+      color: #334652;/*IE*/
     }
 
     .close-menu {
@@ -549,6 +574,7 @@
 
         .notification-link__title {
           color: $darkest-color;
+          color: #334652;/*IE*/
           font-weight: 400;
           margin-bottom: 1px;
         }
@@ -556,6 +582,7 @@
         .notification-link__description {
           font-weight: 400;
           color: $darkest-color;
+          color: #334652;/*IE*/
           opacity: .6;
         }
       }

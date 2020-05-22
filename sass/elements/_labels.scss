@@ -16,7 +16,10 @@
     //color:rgba(51, 70, 82, 0.5);
     //background-color:rgba(51, 70, 82, 0.1);
     color: var(--darkest-color);
+    color: #334652; /*IE*/
     color: rgba($darkest-color,0.7);
+    color: rgba(51, 70, 82, .7);/*IE*/
+
     background-color: #eef0f1;
   }
 }
@@ -24,6 +27,7 @@
 .label--outside-text {
   font-family: var(--primary-font);
   color: var(--darkest-color);
+  color: #334652; /*IE*/
   font-weight: 400;
   @include font-size(16px);
   line-height: 1.25;

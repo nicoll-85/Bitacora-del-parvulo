@@ -150,17 +150,20 @@
   &.banner--boxed {
     border-radius: 12px;
     background: var(--darkest-color);
+    background:#334652; /*IE*/
     position: relative;
 
     .banner__content {
       .banner__text {
         .banner__title {
           color: var(--lightest-color);
+          color: white;/*IE*/
           font-family: var(--primary-font);
           font-weight: 600;
         }
         .label__description {
           color: var(--lightest-color);
+          color: white;/*IE*/
           font-family: var(--primary-font);
           opacity: 0.85;
         }
@@ -212,9 +215,11 @@
 
     &.banner--accent-07 {
       background: var(--accent-color-07);
+      background: #84C470;/*IE*/
     }
     &.banner--accent-08 {
       background: var(--accent-color-08);
+      background: #463B96;;/*IE*/
     }
   }
 
