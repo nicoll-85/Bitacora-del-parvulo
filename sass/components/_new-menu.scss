@@ -452,7 +452,7 @@
         &:focus,
         &:hover {
           background: var(--primary-color);
-          background: white;/*IE*/
+          background: #FF7C5F;/*IE*/
           color: var(--lightest-color);
           color: white;/*IE*/
           text-decoration: none;
@@ -464,6 +464,7 @@
             .link__title,
             .link__subtitle {
               color: var(--lightest-color);
+              color: white;
               opacity: 1;
             }
           }

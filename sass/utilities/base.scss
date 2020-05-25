@@ -5,7 +5,7 @@
 /* Typography and Variables
 **********************/
 
-$primary-color: #FF7C5F;
+$primary-color: g;
 $secondary-color: #3A86CF;
 $third-color: #979797;
 $fourth-color: #f2f4f5;/*#F9F9FA*/
@@ -68,7 +68,7 @@ svg {
 }
 .page {
   flex: 1;
-  display: flex;
+  // display: flex;
   flex-direction: column;
 }
 .page-content {

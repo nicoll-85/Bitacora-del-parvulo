@@ -19,8 +19,11 @@
   line-height: 22px;
   cursor: pointer;
   color: var(--darkest-color);
+  color: #334652;
   background-color: var(--lightest-color);
+  background-color: white;
   border: 1px solid var(--darkest-color);
+  border: 1px solid #334652;
   border-radius: 8px;
   font-weight: 400;
   @include font-size(14px);
@@ -29,6 +32,7 @@
   &:focus {
     text-decoration: none;
     background-color: var(--fourth-color);
+    background-color: #f2f4f5;
   }
   .icon {
     width: 16px;
@@ -37,6 +41,7 @@
     vertical-align: text-bottom;
     font-size: 1.2rem;
     fill: var(--darkest-color);
+    fill: #334652;
   }
   &.button--ghost {
     color: var(--darkest-color);
