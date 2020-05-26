@@ -1,7 +1,8 @@
 mixin card(options)
   .card&attributes(attributes)
     img.media--top(src="./images/Fill@3x.png", alt="video image")
-    img.icon-play(src="./images/Button/Play.svg", alt="Play")
+    button
+      img.icon-play--video(src="./images/Button/Play.svg", alt="Play")
     .card__body
       h5.card__title Design Thinking: The New Standard for Creative...
       p.card__text Some quick example text to build on the card title and make...
@@ -9,7 +10,8 @@ mixin card(options)
 mixin card--v2(options)
   .card&attributes(attributes)
     img.media--top(src="./images/Fill@3x.png", alt="video image")
-    img.icon-play(src="./images/Button/Play.svg", alt="Play") 
+    button
+      img.icon-play--video(src="./images/Button/Play.svg", alt="Play") 
     .card__body
       img.avatar-prof__card.rounded-circle(src="./images/profile.png", alt="profile photo")
       h5.card__title Design Thinking: The New Standard for Creative...
@@ -19,13 +21,16 @@ mixin card--v2(options)
           img.icon-actions(src="./images/language.png", alt="Chat")
           p.counter 25
         .right-actions
-          img.icon-actions(src="./images/heartbeat.png", alt="like")
-          img.icon-actions(src="./images/bookmark.png", alt="Save")
+          a(href="#")
+            img.icon-actions(src="./images/heartbeat.png", alt="like")
+          a(href="#")
+            img.icon-actions(src="./images/bookmark.png", alt="Save")
 
 mixin card--v3(options)
   .card&attributes(attributes)
     img.media--top(src="./images/fill3.png", alt="video image")
-    img.icon-play(src="./images/Button/Play.svg", alt="Play") 
+    button
+      img.icon-play--video(src="./images/Button/Play.svg", alt="Play")  
     .card__body
       h5.card__title Design Thinking: The New Standard for Creative...
       p.card__text Some quick example text to build on the card title and make...
@@ -34,8 +39,21 @@ mixin card--v3(options)
           img.icon-actions(src="./images/language.png", alt="Chat")
           p.counter 25
         .right-actions
-          img.icon-actions(src="./images/heartbeat.png", alt="like")
-          img.icon-actions(src="./images/bookmark.png", alt="Save")
+          a(href="#")
+            img.icon-actions(src="./images/heartbeat.png", alt="like")
+          a(href="#")
+            img.icon-actions(src="./images/bookmark.png", alt="Save")
+
+mixin card--v4(options)
+  .card&attributes(attributes)
+    .card__header-badge
+      p.label-section Learning Series
+      img.badge-icon(src="./images/Badges/XLarge.svg", alt="badge")
+    .card__body
+      h5.card__title Design Thinking: The New Standard for Creative...
+      p.card__text Some quick example text to build on the card title and make...
+      .card-footer__actions
+        +button({'buttonTitle': 'Start Learning'}).button--ghost-primary
 
 mixin card--video(options)
   .card-video&attributes(attributes)
