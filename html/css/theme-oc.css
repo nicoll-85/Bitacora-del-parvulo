@@ -5272,11 +5272,11 @@ ol.list {
     justify-content: space-between;
     margin-bottom: -16px; }
     .card .card__header-badge .label-section {
-      font-size: 14px;
+      font-size: 12px;
       text-transform: uppercase; }
     .card .card__header-badge .badge-icon {
       display: block;
-      margin-top: -54px;
+      margin-top: -42px;
       width: 85px; }
   .card .media--top {
     width: 100%;
@@ -7761,6 +7761,150 @@ ol.list {
   color: #334652;
   margin-bottom: 2px;
   font-weight: 600; }
+
+.carousel-learning {
+  width: 100%;
+  display: block; }
+  @media screen and (max-width: 517.98px) {
+    .carousel-learning {
+      display: none; } }
+  @media screen and (min-width: 518px) {
+    .carousel-learning {
+      display: none; } }
+  @media screen and (min-width: 576px) {
+    .carousel-learning {
+      display: none; } }
+  @media screen and (min-width: 768px) {
+    .carousel-learning {
+      display: none; } }
+  @media screen and (min-width: 992px) {
+    .carousel-learning {
+      display: block; } }
+  @media screen and (min-width: 1200px) {
+    .carousel-learning {
+      display: block; } }
+  .carousel-learning .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden; }
+  .carousel-learning .carousel-item .card-item {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin-right: 0px; }
+    @media screen and (min-width: 992px) {
+      .carousel-learning .carousel-item .card-item {
+        margin-left: -2px; } }
+  .carousel-learning .carousel-control-next {
+    position: absolute;
+    top: 13px;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    transition: opacity .15s ease;
+    margin-right: -59px; }
+
+.carousel-learning__mobile {
+  width: 100%;
+  display: block; }
+  @media screen and (max-width: 517.98px) {
+    .carousel-learning__mobile {
+      display: none; } }
+  @media screen and (min-width: 518px) {
+    .carousel-learning__mobile {
+      display: block; } }
+  @media screen and (min-width: 576px) {
+    .carousel-learning__mobile {
+      display: block; } }
+  @media screen and (min-width: 768px) {
+    .carousel-learning__mobile {
+      display: block; } }
+  @media screen and (min-width: 992px) {
+    .carousel-learning__mobile {
+      display: none; } }
+  @media screen and (min-width: 1200px) {
+    .carousel-learning__mobile {
+      display: none; } }
+  .carousel-learning__mobile .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden; }
+  .carousel-learning__mobile .carousel-item .card-item {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin-right: 0px; }
+    @media screen and (min-width: 992px) {
+      .carousel-learning__mobile .carousel-item .card-item {
+        margin-left: -2px; } }
+  .carousel-learning__mobile .carousel-control-next {
+    position: absolute;
+    top: 13px;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    transition: opacity .15s ease;
+    margin-right: -59px; }
+
+.carousel-learning__xs-small {
+  width: 100%;
+  display: block; }
+  @media screen and (max-width: 517.98px) {
+    .carousel-learning__xs-small {
+      display: block; } }
+  @media screen and (min-width: 518px) {
+    .carousel-learning__xs-small {
+      display: none; } }
+  @media screen and (min-width: 576px) {
+    .carousel-learning__xs-small {
+      display: none; } }
+  @media screen and (min-width: 768px) {
+    .carousel-learning__xs-small {
+      display: none; } }
+  @media screen and (min-width: 992px) {
+    .carousel-learning__xs-small {
+      display: none; } }
+  @media screen and (min-width: 1200px) {
+    .carousel-learning__xs-small {
+      display: none; } }
+  .carousel-learning__xs-small .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden; }
+  .carousel-learning__xs-small .carousel-item .card-item {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin-right: 0px; }
+    @media screen and (min-width: 992px) {
+      .carousel-learning__xs-small .carousel-item .card-item {
+        margin-left: -2px; } }
+  .carousel-learning__xs-small .carousel-control-next {
+    position: absolute;
+    top: 13px;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    transition: opacity .15s ease;
+    margin-right: -9px; }
 
 .topbar {
   background: #22262B;

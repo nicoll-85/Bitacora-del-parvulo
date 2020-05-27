@@ -634,3 +634,172 @@
   margin-bottom: 2px;
   font-weight: 600;
 }
+
+// Carousel Learning Global Styles
+.carousel-learning{
+  width: 100%;
+  display: block;
+  @media screen and(max-width:517.98px) {
+    display:none;
+  }
+  @media screen and(min-width:518px) {
+    display:none;
+  }
+  @media screen and(min-width:576px) {
+    display:none;
+  }
+  @media screen and(min-width:768px) {
+    display:none;
+  }
+  @media screen and(min-width:992px) {
+    display:block;  
+  }
+  @media screen and(min-width:1200px) {
+    display:block;
+  }
+  .carousel-inner{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  .carousel-item{
+    .card-item{
+      display: inline-block;
+      width: 100%;
+      height: auto;
+      margin-right: 0px;
+      @media screen and (min-width:992px) {
+       margin-left: -2px;
+      }
+    }
+  }
+  .carousel-control-next{
+    position: absolute;
+    top: 13px;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    transition: opacity .15s ease;
+    margin-right: -59px;
+    
+  }
+}
+
+// Carousel learning mobile Global Styles
+.carousel-learning__mobile{
+  width: 100%;
+  display: block;
+  @media screen and(max-width:517.98px) {
+    display:none;
+  }
+  @media screen and(min-width:518px) {
+    display:block;
+  }
+  @media screen and(min-width:576px) {
+    display:block;
+    
+  }
+  @media screen and(min-width:768px) {
+    display:block;
+  }
+  @media screen and(min-width:992px) {
+    display:none;
+      
+  }
+  @media screen and(min-width:1200px) {
+    display:none;
+  }
+  .carousel-inner{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  .carousel-item{
+    .card-item{
+      display: inline-block;
+      width: 100%;
+      height: auto;
+      margin-right: 0px;
+      @media screen and (min-width:992px) {
+       margin-left: -2px;
+      }
+    }
+  }
+  .carousel-control-next{
+    position: absolute;
+    top: 13px;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    transition: opacity .15s ease;
+    margin-right: -59px;
+  }
+}
+// Carousel learning xs-small Global Styles
+.carousel-learning__xs-small{
+  width: 100%;
+  display: block;
+  @media screen and(max-width:517.98px) {
+    display:block;
+  }
+  @media screen and(min-width:518px) {
+    display:none;
+  }
+  @media screen and(min-width:576px) {
+    display:none;
+    // margin-top: -163px;
+  }
+  @media screen and(min-width:768px) {
+    display:none;
+  }
+  @media screen and(min-width:992px) {
+    display:none;
+    // margin-top: -25px;  
+  }
+  @media screen and(min-width:1200px) {
+    display:none;
+  }
+  .carousel-inner{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  .carousel-item{
+    .card-item{
+      display: inline-block;
+      width: 100%;
+      height: auto;
+      margin-right: 0px;
+      @media screen and (min-width:992px) {
+       margin-left: -2px;
+      }
+    }
+  }
+  .carousel-control-next{
+    position: absolute;
+    top: 13px;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    transition: opacity .15s ease;
+    margin-right:-9px;
+  }
+}
