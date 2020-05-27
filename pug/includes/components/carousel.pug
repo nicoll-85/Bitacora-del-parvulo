@@ -350,3 +350,86 @@ mixin carousel-recommended--mobile()
 			a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
 				img(src="./images/Button/Round Copy.svg", alt="Next")
 				span.sr-only Next
+
+mixin carousel-learning()
+	.carousel-learning&attributes(attributes)
+		#carouselExampleIndicators.carousel.slide(data-ride='carousel')
+			.carousel-inner
+				.carousel-item.active
+					.row
+						.card-item.col-4
+							+card--v4
+						.card-item.col-4
+							+card--v4
+						.card-item.col-4
+							+card--v4
+				.carousel-item
+					.row
+						.card-item.col-4
+							+card--v4
+						.card-item.col-4
+							+card--v4
+						.card-item.col-4
+							+card--v4
+						
+				.carousel-item
+					.row
+						.card-item.col-4
+							+card--v4
+						.card-item.col-4
+							+card--v4
+						.card-item.col-4
+							+card--v4
+						
+			a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+				img(src="./images/Button/Round Copy.svg", alt="Next")
+				span.sr-only Next
+
+mixin carousel-learning--mobile()
+	.carousel-learning__mobile&attributes(attributes)
+		#carouselExampleIndicators.carousel.slide(data-ride='carousel')
+			.carousel-inner
+				.carousel-item.active
+					.row
+						.card-item.col-6
+							+card--v4
+						.card-item.col-6
+							+card--v4
+						
+				.carousel-item
+					.row
+						.card-item.col-6
+							+card--v4
+						.card-item.col-6
+							+card--v4
+						
+				.carousel-item
+					.row
+						.card-item.col-6
+							+card--v4
+						.card-item.col-6
+							+card--v4
+						
+			a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+				img(src="./images/Button/Round Copy.svg", alt="Next")
+				span.sr-only Next
+
+	mixin carousel-learning--xs-small()
+		.carousel-learning__xs-small&attributes(attributes)
+			#carouselExampleIndicators.carousel.slide(data-ride='carousel')
+				.carousel-inner
+					.carousel-item.active
+						.card-item.col-12
+							+card--v4
+							
+					.carousel-item
+						.card-item.col-12
+							+card--v4
+							
+					.carousel-item
+						.card-item.col-12
+							+card--v4
+							
+				a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+					img(src="./images/Button/Round Copy.svg", alt="Next")
+					span.sr-only Next
