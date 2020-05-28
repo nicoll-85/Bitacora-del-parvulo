@@ -6,6 +6,12 @@
 	width: 94%;
 	height: 94%;
 	border-radius: 50em;
+
+	&.avatar--no-image-tag {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 }
 
 

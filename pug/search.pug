@@ -1,0 +1,21 @@
+include includes/head.pug
+body
+	+new-menu()
+	.page.page--light-gray
+		.page-content.container.page-content--with-sidebar
+			.sidebar-layout
+				.sidebar-layout__main-container.sidebar-layout__search-filters
+					+filter-search()
+
+			.container--with-sidebar.container--with-sidebar--left
+				+card--basic-horizontal()
+				+card--search-learning-series()
+				+card--search-learning-series-in-progress()
+				+card--video-with-actions--horizontal()
+				.card-profiles-container
+					+card--profile()
+					+card--profile()
+					+card--profile()
+					+card--profile()
+
+		+footer()
