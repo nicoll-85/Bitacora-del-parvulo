@@ -9,7 +9,7 @@ mixin card--video(options)
   .card-video&attributes(attributes)
     img.card-video__img(src="./images/Fill.png", alt="")
     .card-img-overlay
-      p.card-video__section-title LeARNING SERIES
+      p.card-video__section-title LEARNING SERIES
       h5.card-video__title Analyzing and Solving Problems: Instinct vs. Evidence
   .box-badge
     img.card-video__triangle(src="./images/Rectangle.png", alt="Tringle-badge")
@@ -124,4 +124,101 @@ mixin card--large-bg(options)
   a.card-large-bg.mt-2.mb-1(href="#")
     .card-large__body
       p.card-large__title World of Business
-      
+
+
+mixin card--basic-horizontal(options)
+  .card--basic-horizontal&attributes(attributes)
+    .card-panel__body
+      .card-panel__content
+        img.card-panel__img.rounded-circle(src="images/lists/listImage01.png", alt="")
+        .card-panel__descrip
+          h4.card-panel__title Learning Series
+          p.card-panel__text Fusce dapibus, tellus ac cursus commodo, tortor mauris condimen tum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit am et, consectetur adipiscing 
+
+mixin card--search-learning-series(options)
+  .card--horizontal-with-action&attributes(attributes)
+    .card-panel__body
+      .card-panel__content
+        .card-panel__icon
+          img.media-pill(src="./images/Badges/AI Pioneer - color.svg", alt="")
+        
+        .card-panel__descrip
+          p.card-panel__subtitle Learning path
+          p.card-panel__title Cras Vestibulum Ullamcorper Lorem Tristique Porta Nibh 
+          p.card-panel__text Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis
+        .card-panel__action  
+            +button({'buttonTitle': 'View Serie'}).button--ghost-primary
+
+mixin card--search-learning-series-in-progress(options)
+  .card--horizontal-with-action&attributes(attributes)
+    .card-panel__body
+      .card-panel__content
+        .card-panel__icon
+          img.media-pill(src="./images/Badges/Connector - gray.svg", alt="")
+        
+        .card-panel__descrip
+          p.card-panel__subtitle Learning path
+          p.card-panel__title Cras Vestibulum Ullamcorper Lorem Tristique Porta Nibh 
+          p.card-panel__text Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis
+          +progress-bar({'progressValue': '25'})
+        .card-panel__action  
+            +button({'buttonTitle': 'Continue'}).button--secondary.button--ghost
+
+mixin card--video-with-actions()
+  .card.card--video-with-actions
+    .video-thumbnail.video-thumbnail--9-21(style={'background-image': 'url("images/card-image-03.png")'})
+      button.video-thumbnail--play
+        svg(class="video-thumbnail-icon" role="img" aria-label="icon" aria-hidden=true)
+          use(xlink:href='images/icons/oc-icons.svg#oc-Play')
+    .card__title Etiam Condimentum Magna Egestas Sem
+    .card__description Donec id elit non mi porta gravida at eget metus. Cura bitur blandit tempus porttitor. Nullam quis risus eget  as mollis ornaLorem ipsum dolor sit amet, consectur…
+    .card__footer
+      .card__footer-stats
+        svg(class="card__stat-icon" role="img" aria-label="icon" aria-hidden=true)
+          use(xlink:href='images/icons/oc-icons.svg#oc-bubble')
+        span.card__footer-stats-text 1.1k
+      .card__footer-actions
+        button.card__action
+          svg(class="card__action-icon" role="img" aria-label="icon" aria-hidden=true)
+            use(xlink:href='images/icons/oc-icons.svg#oc-heart')
+        button.card__action
+          svg(class="card__action-icon" role="img" aria-label="icon" aria-hidden=true)
+            use(xlink:href='images/icons/oc-icons.svg#oc-bookmark')
+
+mixin card--video-with-actions--horizontal()
+  .card.card--video-with-actions.card--video--horizontal
+    .card__header
+      .video-thumbnail(style={'background-image': 'url("images/card-image-03.png")'})
+        button.video-thumbnail--play
+          svg(class="video-thumbnail-icon" role="img" aria-label="icon" aria-hidden=true)
+            use(xlink:href='images/icons/oc-icons.svg#oc-Play')
+    .card__body
+      .card__subtitle Section Title
+      .card__title Etiam Condimentum Magna Egestas Sem
+      .card__description Donec id elit non mi porta gravida at eget metus. Cura bitur blandit tempus porttitor. Nullam quis risus eget  as mollis ornaLorem ipsum dolor sit amet, consectur…
+      .card__footer
+        .card__footer-stats
+          svg(class="card__stat-icon" role="img" aria-label="icon" aria-hidden=true)
+            use(xlink:href='images/icons/oc-icons.svg#oc-bubble')
+          span.card__footer-stats-text 1.1k
+        .card__footer-actions
+          button.card__action
+            svg(class="card__action-icon" role="img" aria-label="icon" aria-hidden=true)
+              use(xlink:href='images/icons/oc-icons.svg#oc-heart')
+          button.card__action
+            svg(class="card__action-icon" role="img" aria-label="icon" aria-hidden=true)
+              use(xlink:href='images/icons/oc-icons.svg#oc-bookmark')
+
+mixin card--profile()
+  .card.card--profile
+    .card__header
+      .avatar.avatar--medium.avatar--no-image-tag(style={'background-image': 'url("images/Avatar/avatar-user-01.png")'})
+    .card__body
+      .card__title Helena Moriá Morteval Amorim
+      .card__description Student
+      img.card__institution-logo(src="images/logo-laureate.png")
+    .card__footer
+      +button({'buttonTitle': 'Conect'}).button--default.button--ghost
+      +button({'buttonTitle': 'Profile'}).button--default.button--ghost
+
+    
