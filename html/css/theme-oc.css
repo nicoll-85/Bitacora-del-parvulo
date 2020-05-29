@@ -3979,7 +3979,7 @@ svg {
     background-color: #F9F9FA; }
 
 .page-content {
-  width: 100%;
+  max-width: 100%;
   min-height: 100vh;
   margin-top: 60px;
   display: flex;
