@@ -1,45 +1,43 @@
 include includes/head.pug
 body
 	+new-menu()
-	.page
-		section.section--partial-background.section--partial-background--left-top.section--partial-background--medium(style={'background-image': 'url("images/Polygon 6.png")'})
-			.container.container--main
-				.col-12
-					h4.section-title__page.mb-5 Explore
-					h6.section-title__page.mt-3 Abilities
-					+carousel-abilities
-					+carousel-abilities--mobile
-				.col-12.mt-3
-					h6.section-title__page Recomended for you
-					+carousel-recommended
-					+carousel-recommended--mobile
-				.col-12.mt-3
-					h6.section-title__page Learning Series
-					+carousel-learning
-					+carousel-learning--mobile
-					+carousel-learning--xs-small
-				.col-12.mt-3
-					h6.section-title__page.mb-3 Featured Content
-					.row
-						.col-md-12.col-lg-6.col-xl-6.col-sm-12.col-12
-							.video-thumbnail.video-thumbnail--lg(style={'background-image': 'url("images/content-viewer-video.png")'})
-								button
-									img.icon-play--video(src="./images/Button/Play.svg", alt="Play")
-							//- button.video-thumbnail--play
-								//- svg(class="video-thumbnail-icon" role="img" aria-label="icon" aria-hidden=true)
-								//- 	use(xlink:href='images/icons/oc-icons.svg#oc-Play')
-						.col-md-12.col-lg-6.col-xl-6.col-sm-12.col-12
-							+carousel-featured
-							+carousel-featured--mobile
-							+carousel-featured--mobile-xsmall
-				.col-12.mt-3
-					h6.section-title__page Collections
-					+carousel-collections
-					+carousel-collections--mobile
-		
-				.col-12.mt-3
-					h6.section-title__page Connections
-					+carousel-connections
-					+carousel-connections--mobile
+	.page.section--partial-background.section--partial-background--left-top.section--partial-background--medium(style={'background-image': 'url("images/Polygon 6.png")'})
+		.page-content.container.page-content--with-sidebar
+			section
+				.container.container--main
+					.col-12
+						h4.section-title__page.mb-5 Explore
+						h6.section-title__page.mt-3 Abilities
+						+carousel-abilities
+						+carousel-abilities--mobile
+					.col-12.mt-3
+						h6.section-title__page Recomended for you
+						+carousel-recommended
+						+carousel-recommended--mobile
+					.col-12.mt-3
+						h6.section-title__page Learning Series
+						+carousel-learning
+						+carousel-learning--mobile
+						+carousel-learning--xs-small
+					.col-12.mt-3
+						h6.section-title__page.mb-3 Featured Content
+						.row
+							.col-md-12.col-lg-6.col-xl-6.col-sm-12.col-12
+								.video-thumbnail.video-thumbnail--lg(style={'background-image': 'url("images/content-viewer-video.png")'})
+									button
+										img.icon-play--video(src="./images/Button/Play.svg", alt="Play")
+							.col-md-12.col-lg-6.col-xl-6.col-sm-12.col-12
+								+carousel-featured
+								+carousel-featured--mobile
+								+carousel-featured--mobile-xsmall
+					.col-12.mt-3
+						h6.section-title__page Collections
+						+carousel-collections
+						+carousel-collections--mobile
+			
+					.col-12.mt-3
+						h6.section-title__page Connections
+						+carousel-connections
+						+carousel-connections--mobile
 		
 	+new-footer()
