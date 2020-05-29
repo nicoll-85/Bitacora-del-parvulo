@@ -10,6 +10,20 @@ mixin filter-search()
 				+checkbox--default
 			li.filter-list__item
 				+checkbox--default
+			li#accordion
+				#moreType.more-inf
+					button.collapse-button(data-toggle="collapse", data-target="#collapseType", aria-expanded="true", aria-controls="collapseOne")
+						img(src="./images/Icon/Arrow - Down.png", alt="collapse-icon")
+					p.filter-list__more More
+				ul#collapseType.collapse-more__list.collapse(aria-labelledby="moreType", data-parent="#accordion")
+					li.filter-list__item
+						+checkbox--default
+					li.filter-list__item
+						+checkbox--default
+					li.filter-list__item
+						+checkbox--default
+					li.filter-list__item
+						+checkbox--default
 		p.filter-title Topics
 		ul.filter-list
 			li.filter-list__item

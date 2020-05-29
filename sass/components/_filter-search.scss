@@ -25,3 +25,28 @@
     }
   }
 }
+
+.more-inf{
+  display: flex;
+  flex-direction: row;
+  margin-left: -5px;
+  align-items: flex-start;
+  
+  .collapse-button{
+    border: transparent;
+    background-color: transparent;
+  }
+
+  .filter-list__more{
+    font-family: var(--primary-font);
+    color: $darkest-color;
+    font-weight: normal;
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-left: 21px;
+  }
+
+}
+.collapse-more__list{
+  list-style-type: none;
+}

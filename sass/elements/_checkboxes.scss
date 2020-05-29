@@ -103,6 +103,11 @@
           width: 23px;
         }
       }
+      &:checked~.custom-control-label::before {
+        color: $lightest-color;
+        border-color: 1px solid $primary-color;
+        background-color: $primary-color;
+      }
     }
   
     .custom-control-label {
@@ -123,7 +128,7 @@
         pointer-events: none;
         content: "";
         background-color: $lightest-color;
-        border: #D8D8D8 solid 2px;
+        border: $third-color solid 2px;
       }
   
       &::after {
@@ -142,7 +147,7 @@
 
 
 .custom-control-input:checked~.custom-control-label::before {
-  color: #fff;
+  color: $lightest-color;
   border-color: $primary-color;
   background-color: $primary-color;
 }
