@@ -144,16 +144,16 @@ mixin carousel-featured--mobile-xsmall()
 			.carousel-inner
 				.carousel-item.active
 					.row
-						.card-item.col-2
+						.card-item.col-12
 							+card
 				.carousel-item
 					.row
-						.card-item.col-2
+						.card-item.col-12
 							+card
 						
 				.carousel-item
 					.row
-						.card-item.col-2
+						.card-item.col-12
 							+card
 						
 			a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
@@ -288,8 +288,28 @@ mixin carousel-connections--mobile()
 				img(src="./images/Button/Round Copy.svg", alt="Next")
 				span.sr-only Next
 
+mixin carousel-connections-xs-small()
+		.carousel-connections__xs-small&attributes(attributes)
+			#carouselExampleIndicators.carousel.slide(data-ride='carousel')
+				.carousel-inner
+					.carousel-item.active
+						.card-item.col-12
+							+card--v2
+							
+					.carousel-item
+						.card-item.col-12
+							+card--v2
+							
+					.carousel-item
+						.card-item.col-12
+							+card--v2
+							
+				a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+					img(src="./images/Button/Round Copy.svg", alt="Next")
+					span.sr-only Next
+
 mixin carousel-recommended()
-	.carousel-connections&attributes(attributes)
+	.carousel-recomended&attributes(attributes)
 		#carouselExampleIndicators.carousel.slide(data-ride='carousel')
 			.carousel-inner
 				.carousel-item.active
@@ -323,7 +343,7 @@ mixin carousel-recommended()
 				span.sr-only Next
 
 mixin carousel-recommended--mobile()
-	.carousel-connections__mobile&attributes(attributes)
+	.carousel-recomended__mobile&attributes(attributes)
 		#carouselExampleIndicators.carousel.slide(data-ride='carousel')
 			.carousel-inner
 				.carousel-item.active
@@ -350,6 +370,26 @@ mixin carousel-recommended--mobile()
 			a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
 				img(src="./images/Button/Round Copy.svg", alt="Next")
 				span.sr-only Next
+
+mixin carousel-recommended--xs-small()
+		.carousel-recomended__xs-small&attributes(attributes)
+			#carouselExampleIndicators.carousel.slide(data-ride='carousel')
+				.carousel-inner
+					.carousel-item.active
+						.card-item.col-12
+							+card--v3
+							
+					.carousel-item
+						.card-item.col-12
+							+card--v3
+							
+					.carousel-item
+						.card-item.col-12
+							+card--v3
+							
+				a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+					img(src="./images/Button/Round Copy.svg", alt="Next")
+					span.sr-only Next
 
 mixin carousel-learning()
 	.carousel-learning&attributes(attributes)
