@@ -113,7 +113,7 @@
   width: 100%;
   display: block;
   @media screen and(max-width:575.98px) {
-    display:block;
+    display:none;
   }
   @media screen and(min-width:576px) {
     display:block;
@@ -253,8 +253,9 @@
 .carousel-featured__mobile-xsmall{
   width: 100%;
   display: block;
+  margin-top: 24px;
   @media screen and(max-width:575.98px) {
-    display:none;
+    display:block;
   }
   @media screen and(min-width:576px) {
     display:none;
@@ -403,11 +404,14 @@
   }
 }
 
-// Carousel Connections Global Styles
+// Carousel connections Global Styles
 .carousel-connections{
   width: 100%;
   display: block;
-  @media screen and(max-width:575.98px) {
+  @media screen and(max-width:517.98px) {
+    display:none;
+  }
+  @media screen and(min-width:518px) {
     display:none;
   }
   @media screen and(min-width:576px) {
@@ -426,15 +430,6 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-    // @media screen and(max-width:575.98px) {
-    //   margin-top: -165px;
-    // }
-    // @media screen and(min-width:992px) {
-    //   width: 99%;
-    // }
-    // @media screen and(min-width:1200px) {
-    //   margin-top: 20px;
-    // }
   }
   .carousel-item{
     .card-item{
@@ -442,15 +437,6 @@
       width: 100%;
       height: auto;
       margin-right: 0px;
-      // @media screen and (max-width:576px) {
-      //   margin-right: 135px;
-      // }
-      // @media screen and (max-width:576px) {
-      //   width: 87%;
-      // }
-      // @media screen and (min-width:576px) {
-      //   margin-right: 163px;
-      // }
       @media screen and (min-width:992px) {
        margin-left: -2px;
       }
@@ -470,31 +456,82 @@
     text-align: center;
     transition: opacity .15s ease;
     margin-right: -59px;
-    // @media screen and (max-width:575.98px) {
-    //   margin-right: 3px;
-    // }
-    // @media screen and (min-width:576px) {
-    //   margin-right: -6px;
-    // }
-    // @media screen and (min-width:768px) {
-    //   margin-right: -8px;
-    // }
+    
   }
 }
 
-// Carousel Connections mobile Global Styles
+// Carousel connections mobile Global Styles
 .carousel-connections__mobile{
   width: 100%;
   display: block;
-  @media screen and(max-width:575.98px) {
+  @media screen and(max-width:517.98px) {
+    display:none;
+  }
+  @media screen and(min-width:518px) {
     display:block;
   }
   @media screen and(min-width:576px) {
     display:block;
-    // margin-top: -163px;
+    
   }
   @media screen and(min-width:768px) {
     display:block;
+  }
+  @media screen and(min-width:992px) {
+    display:none;
+      
+  }
+  @media screen and(min-width:1200px) {
+    display:none;
+  }
+  .carousel-inner{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  .carousel-item{
+    .card-item{
+      display: inline-block;
+      width: 100%;
+      height: auto;
+      margin-right: 0px;
+      @media screen and (min-width:992px) {
+       margin-left: -2px;
+      }
+    }
+  }
+  .carousel-control-next{
+    position: absolute;
+    top: 13px;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    transition: opacity .15s ease;
+    margin-right: -59px;
+  }
+}
+// Carousel Connections xs-small Global Styles
+.carousel-connections__xs-small{
+  width: 100%;
+  display: block;
+  @media screen and(max-width:517.98px) {
+    display:block;
+  }
+  @media screen and(min-width:518px) {
+    display:none;
+  }
+  @media screen and(min-width:576px) {
+    display:none;
+    // margin-top: -163px;
+  }
+  @media screen and(min-width:768px) {
+    display:none;
   }
   @media screen and(min-width:992px) {
     display:none;
@@ -507,15 +544,6 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-    // @media screen and(max-width:575.98px) {
-    //   margin-top: -165px;
-    // }
-    // @media screen and(min-width:992px) {
-    //   width: 99%;
-    // }
-    // @media screen and(min-width:1200px) {
-    //   margin-top: 20px;
-    // }
   }
   .carousel-item{
     .card-item{
@@ -523,15 +551,6 @@
       width: 100%;
       height: auto;
       margin-right: 0px;
-      // @media screen and (max-width:576px) {
-      //   margin-right: 135px;
-      // }
-      // @media screen and (max-width:576px) {
-      //   width: 87%;
-      // }
-      // @media screen and (min-width:576px) {
-      //   margin-right: 163px;
-      // }
       @media screen and (min-width:992px) {
        margin-left: -2px;
       }
@@ -550,16 +569,7 @@
     justify-content: center;
     text-align: center;
     transition: opacity .15s ease;
-    margin-right: -59px;
-    // @media screen and (max-width:575.98px) {
-    //   margin-right: 3px;
-    // }
-    // @media screen and (min-width:576px) {
-    //   margin-right: -6px;
-    // }
-    // @media screen and (min-width:768px) {
-    //   margin-right: -8px;
-    // }
+    margin-right:-9px;
   }
 }
 
@@ -803,3 +813,173 @@
     margin-right:-9px;
   }
 }
+
+// Carousel Recomended Global Styles
+.carousel-recomended{
+  width: 100%;
+  display: block;
+  @media screen and(max-width:517.98px) {
+    display:none;
+  }
+  @media screen and(min-width:518px) {
+    display:none;
+  }
+  @media screen and(min-width:576px) {
+    display:none;
+  }
+  @media screen and(min-width:768px) {
+    display:none;
+  }
+  @media screen and(min-width:992px) {
+    display:block;  
+  }
+  @media screen and(min-width:1200px) {
+    display:block;
+  }
+  .carousel-inner{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  .carousel-item{
+    .card-item{
+      display: inline-block;
+      width: 100%;
+      height: auto;
+      margin-right: 0px;
+      @media screen and (min-width:992px) {
+       margin-left: -2px;
+      }
+    }
+  }
+  .carousel-control-next{
+    position: absolute;
+    top: 13px;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    transition: opacity .15s ease;
+    margin-right: -59px;
+    
+  }
+}
+
+// Carousel recomended mobile Global Styles
+.carousel-recomended__mobile{
+  width: 100%;
+  display: block;
+  @media screen and(max-width:517.98px) {
+    display:none;
+  }
+  @media screen and(min-width:518px) {
+    display:block;
+  }
+  @media screen and(min-width:576px) {
+    display:block;
+    
+  }
+  @media screen and(min-width:768px) {
+    display:block;
+  }
+  @media screen and(min-width:992px) {
+    display:none;
+      
+  }
+  @media screen and(min-width:1200px) {
+    display:none;
+  }
+  .carousel-inner{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  .carousel-item{
+    .card-item{
+      display: inline-block;
+      width: 100%;
+      height: auto;
+      margin-right: 0px;
+      @media screen and (min-width:992px) {
+       margin-left: -2px;
+      }
+    }
+  }
+  .carousel-control-next{
+    position: absolute;
+    top: 13px;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    transition: opacity .15s ease;
+    margin-right: -59px;
+  }
+}
+// Carousel recomended xs-small Global Styles
+.carousel-recomended__xs-small{
+  width: 100%;
+  display: block;
+  @media screen and(max-width:517.98px) {
+    display:block;
+  }
+  @media screen and(min-width:518px) {
+    display:none;
+  }
+  @media screen and(min-width:576px) {
+    display:none;
+    // margin-top: -163px;
+  }
+  @media screen and(min-width:768px) {
+    display:none;
+  }
+  @media screen and(min-width:992px) {
+    display:none;
+    // margin-top: -25px;  
+  }
+  @media screen and(min-width:1200px) {
+    display:none;
+  }
+  .carousel-inner{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  .carousel-item{
+    .card-item{
+      display: inline-block;
+      width: 100%;
+      height: auto;
+      margin-right: 0px;
+      @media screen and (min-width:992px) {
+       margin-left: -2px;
+      }
+    }
+  }
+  .carousel-control-next{
+    position: absolute;
+    top: 13px;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    transition: opacity .15s ease;
+    margin-right:-9px;
+  }
+}
+
