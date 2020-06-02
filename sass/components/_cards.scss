@@ -465,6 +465,7 @@
 
 .card--basic-horizontal {
   .card-panel__body {
+    padding: 56px 64px;
     .card-panel__content {
       .card-panel__img {
         width: 150px;
@@ -674,8 +675,7 @@
 
 //  card--panel-score Global Styles
 
-.card-panel--score,
-.card--horizontal-with-action {
+.card-panel--score {
   position: relative;
   display: -ms-flexbox;
   display: flex;
@@ -851,9 +851,7 @@
 
 .card--horizontal-with-action {
   position: relative;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
@@ -870,65 +868,28 @@
 
     .card-panel__content {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-between;
       flex-wrap: wrap;
       text-align: left;
 
-      @media screen and (min-width: 576px) {
+      @include media(tablet-p) {
+        flex-direction: row;
         flex-wrap: nowrap;
-        text-align: center;
-      }
-      @media screen and (min-width: 576px) {
-        flex-wrap: nowrap;
-        text-align: center;
-      }
-      @media screen and (min-width: 768px) {
-        flex-wrap: nowrap;
-        text-align: center;
-      }
-      @media screen and (min-width: 992px) {
-        flex-wrap: nowrap;
-        text-align: left;
       }
 
       .card-panel__icon {
         padding-right: 16px;
-        @media screen and (max-width: 575.98px) {
-          max-width: 100%;
-          flex: 0 0 100%;
-        }
-        @media screen and (min-width: 576px) {
-          max-width: 100%;
-          flex: 0 0 100%;
-        }
-        @media screen and (min-width: 768px) {
-          max-width: 100%;
-          flex: 0 0 100%;
-        }
-        @media screen and (min-width: 992px) {
-          max-width: 30%;
-          flex: 0 0 auto;
-        }
+        max-width: 30%;
+        flex: 0 0 auto;
       }
 
       .card-panel__descrip {
         font-family: var(--primary-font);
         color: $darkest-color;
         padding: 5px 15px;
-        @media screen and (max-width: 575.98px) {
-          max-width: 100%;
-          flex: 0 0 100%;
-        }
-        @media screen and (min-width: 576px) {
-          max-width: 100%;
-          flex: 0 0 100%;
-        }
-        @media screen and (min-width: 768px) {
-          max-width: 100%;
-          flex: 0 0 100%;
-        }
-        @media screen and (min-width: 992px) {
+
+        @include media(tablet-p) {
           min-width: 60%;
           flex: 1 1 auto;
         }
@@ -949,83 +910,42 @@
           color: var(--darkest-color);
         }
 
-        .card-panel__help-text {
-          font-size: 12px;
-          opacity: 0.5;
-        }
-
         .card-panel__text {
           opacity: 0.75;
           font-weight: lighter;
         }
 
-        .card-panel__labels {
-          display: flex;
-          flex-direction: row;
-        }
-        .list-lite{
-          padding: 0px;
-          margin: 0px;
-          display: flex;
-          flex-direction: column;
-          width: 100%;
-          ul{
-            list-style-type: none;
-            }
-            li{
-              color: $darkest-color;
-              opacity: .6;
-              font-size: 16px;
-              font-weight: 300;
-              &::marker{
-                color: $primary-color;
-              
-              @media screen and (min-width: 576px) {
-                justify-content: center;
-              }
-              @media screen and (min-width: 768px) {
-                justify-content: center;
-              }
-              @media screen and (min-width: 992px) {
-                justify-content: left;
-              }
-            }
+        .progress-bar-container {
+          margin-bottom: 24px;
+          @include media(tablet-p) {
+            margin-bottom: 8px;
           }
         }
-        ol {list-style: none; counter-reset: li}
-          li::before { 
-            content: "•"; color:$primary-color;
-            display: inline-block; width: 1em;
-            margin-left: -1em}
-          li {counter-increment: li}
-              }
-
+      }
       .card-panel__action {
+        align-items: flex-start;
+        justify-content: center;
+        display: flex;
+        width: 100%;
         margin: 0 auto;
-        @media screen and (max-width: 575.98px) {
-          max-width: 100%;
-          flex: 0 0 100%;
-        }
-        @media screen and (min-width: 576px) {
-          max-width: 100%;
-          flex: 0 0 100%;
-        }
-        @media screen and (min-width: 768px) {
-          max-width: 100%;
-          flex: 0 0 100%;
-        }
-        @media screen and (min-width: 992px) {
-          flex: 1 1 auto;
-          margin: 0px;
+        flex: 1 1 auto;
+        margin-top: 16px;
+        padding: 0px;
+
+        .button {
+          min-width: 100%;
         }
 
-        button {
-          @media screen and(max-width: 575px) {
-            width: 100%;
+        @include media(tablet-p) {
+          margin: 0px;
+          flex: 0 1 auto;
+          justify-content: flex-end;
+          padding-left: 16px;
+          width: auto;
+
+          .button {
+            min-width: 100px;
           }
-        }
-        .button {
-          min-width: 100px;
         }
       }
     }
@@ -1102,22 +1022,38 @@
 
   &.card--video--horizontal {
     background-color: var(--lightest-color);
-    flex-direction: row;
+    flex-direction: column;
     border-radius: 12px;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+
+    @include media(tablet) {
+      flex-direction: row;
+    }
+
     .card__header {
       .video-thumbnail {
-        width: 310px;
-        height: 100%;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
+        width: 100%;
+        //min-width: 100%;
+        border-radius: 12px;
         margin: 0px;
+        height: 100%;
+
+        @include media(tablet) {
+          width: 310px;
+          border-top-right-radius: 0px;
+          border-bottom-right-radius: 0px;
+        }
       }
     }
     .card__body {
       margin: 0px;
-      margin-left: -12px;
+      margin-top: -24px;
       padding: 31px 36px;
+
+      @include media(tablet) {
+        margin: 0px;
+        margin-left: -12px;
+      }
 
       .card__subtitle {
         font-weight: 400;
@@ -1216,42 +1152,18 @@
   background-clip: border-box;
   border-radius: 12px;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
-  // @media screen and (max-width: 575.98px){
-  //   width: 119px;
-  // }
-  // @media screen and (min-width: 768px){
-  //   width: 127px;
-  // }
-  // @media screen and (min-width: 992px){
-  //   width: 154px;
-  // }
-  // @media screen and (min-width: 1200px){
-  //   width: 175px;
-  // }
-  
   
   .card-large__body{
     flex: 1 1 auto;
     min-height: 1px;
     padding: 2rem 1rem 2rem 1rem;
     margin: 0 auto;
-    // @media screen and(max-width:575.98px) {
-    //   padding: .3rem .5rem .3rem .5rem;
-    // }
-    // @media screen and(min-width:768px) {
-    //   padding: .3rem .5rem .1rem .5rem;
-    // }
+
     .card-large__title{
       font-size: 21px;
       text-align: center;
       color: $lightest-color;
       font-weight: 800;
-      // @media screen and(max-width:575.98px) {
-      //   font-size: 12px;
-      // }
-      // @media screen and (min-width: 575px){
-      //   font-size: 12px;
-      // }
     }
   }
 }
@@ -1261,8 +1173,12 @@
     padding: 24px;
     min-width: 200px;
     max-width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
 
     @include media(tablet) {
+      flex-direction: column;
+      flex-wrap: nowrap;
       max-width: 240px;
     }
 
@@ -1274,11 +1190,17 @@
 
     .card__body {
       margin: 0px;
+      margin-left: 24px;
       padding: 18px 0px 24px 0px;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
       justify-content: space-between;
+
+      @include media(tablet) {
+        align-items: center;
+        margin-left: 0px;
+      }
 
       .card__title {
         font-weight: 500;
@@ -1302,20 +1224,86 @@
       .card__institution-logo {
         width: 120px;
         height: auto;
+        display: none;
+
+        @include media(tablet) {
+          display: flex;
+        }
       }
     }
 
     .card__footer {
       display: flex;
+      padding-top: 16px;
       flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+      border-top: 1px solid rgba($darkest-color,0.1);
+
+      @include media(tablet) {
+        justify-content: space-between;
+        padding-top: 0px;
+        border-top: none;
+      }
 
       .button {
         min-width: 80px;
-        flex: 1 1 auto;
+        flex: 0 1 auto;
         margin-right: 8px;
+
+        @include media(tablet) {
+          flex: 1 1 auto;
+        }
 
         &:last-child {
           margin-right: 0px;
+        }
+      }
+
+      
+      .button--connect {
+        @extend .button--primary;
+      }
+      .button--profile {
+        @extend .button--ghost-primary;
+      }
+      .button {
+        &.button--connect,
+        &.button--profile {
+          min-width: 42px;
+          .button__title {
+            display: none;
+          }
+          @include media(tablet) {
+            opacity: 0.6;
+            color: var(--darkest-color);
+            background-color: var(--lightest-color);
+            border: 1px solid var(--darkest-color);
+            &:hover,
+            &:focus {
+              text-decoration: none;
+            }
+
+            .button__title {
+              display: block;
+            }
+            .icon {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .card__institution-logo {
+        display: flex;
+        width: 120px;
+        height: auto;
+        margin-right: auto;
+        flex: 0 1 auto;
+
+        @include media(tablet) {
+          display: none;
         }
       }
     }
@@ -1330,24 +1318,13 @@
 
 
   .card {
-    margin: 20px auto 40px auto;
-    @include media(desktop-s) {
-      margin-left: 0px;
-      margin-right: auto;
-      &:nth-child(2n) {
-        margin-right: 0px;
-      }
-    }
-    @include media(desktop-m) {
-      margin-left: 0px;
-      margin-right: auto;
-
-      &:nth-child(2n) {
-        margin-right: auto;
-      }
-      &:nth-child(3n) {
-        margin-right: 0px;
-      }
+    margin: 16px auto;
+    @include media(tablet) {
+      margin-left: 23px;
+      margin-right: 0px;
     }
   }
 }
+
+
+

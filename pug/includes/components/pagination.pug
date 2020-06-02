@@ -1,0 +1,11 @@
+mixin pagination()
+	.pagination
+		+button({'hideTitle': true,'showIcon': true,'iconName': 'arrow-left'}).button-arrow
+		+button({'buttonTitle': '1'}).button-number
+		+button({'buttonTitle': '2'}).button-number
+		+button({'buttonTitle': '3'}).button-number
+		+button({'buttonTitle': '4'}).button-number
+		+button({'buttonTitle': '5'}).button-number
+		+button({'buttonTitle': '...'}).button-number.button-number--disabled
+		+button({'buttonTitle': '25'}).button-number.button-number--active
+		+button({'hideTitle': true,'showIcon': true,'iconName': 'arrow-right'}).button-arrow.button-arrow--disabled

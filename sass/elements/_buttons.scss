@@ -66,6 +66,9 @@
     &:focus {
       text-decoration: none;
     }
+    .icon {
+      fill: var(--primary-color);
+    }
   }
   &.button--ghost-white{
     color: white; /*IE*/

@@ -238,7 +238,7 @@ mixin card--video-with-actions()
 mixin card--video-with-actions--horizontal()
   .card.card--video-with-actions.card--video--horizontal
     .card__header
-      .video-thumbnail(style={'background-image': 'url("images/card-image-03.png")'})
+      .video-thumbnail(style={'background-image': 'url(images/card-image-03.png)'})
         button.video-thumbnail--play
           svg(class="video-thumbnail-icon" role="img" aria-label="icon" aria-hidden=true)
             use(xlink:href='images/icons/oc-icons.svg#oc-Play')
@@ -262,13 +262,14 @@ mixin card--video-with-actions--horizontal()
 mixin card--profile()
   .card.card--profile
     .card__header
-      .avatar.avatar--medium.avatar--no-image-tag(style={'background-image': 'url("images/Avatar/avatar-user-01.png")'})
+      .avatar.avatar--medium.avatar--no-image-tag(style={'background-image': 'url(images/Avatar/avatar-user-01.png)'})
     .card__body
       .card__title Helena Moriá Morteval Amorim
       .card__description Student
       img.card__institution-logo(src="images/logo-laureate.png")
     .card__footer
-      +button({'buttonTitle': 'Conect'}).button--default.button--ghost
-      +button({'buttonTitle': 'Profile'}).button--default.button--ghost
+      img.card__institution-logo(src="images/logo-laureate.png")
+      +button({'buttonTitle': 'Connect','showIcon': true,'iconName': 'bubble'}).button--connect
+      +button({'buttonTitle': 'Profile','showIcon': true,'iconName': 'add-user'}).button--profile
 
     

@@ -9,6 +9,13 @@
 		max-width: 40%;
 		height: auto;
 	}
+
+	&.sidebar-search {
+		display: none;
+		@include media(tablet-p) {
+			display: flex;
+		}
+	}
 }
 
 .sidebar-layout__main-container {
