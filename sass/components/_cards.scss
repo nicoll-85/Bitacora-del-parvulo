@@ -1243,24 +1243,10 @@
 
 
   .card {
-    margin: 20px auto 40px auto;
-    @include media(desktop-s) {
-      margin-left: 0px;
-      margin-right: auto;
-      &:nth-child(2n) {
-        margin-right: 0px;
-      }
-    }
-    @include media(desktop-m) {
-      margin-left: 0px;
-      margin-right: auto;
-
-      &:nth-child(2n) {
-        margin-right: auto;
-      }
-      &:nth-child(3n) {
-        margin-right: 0px;
-      }
+    margin: 16px auto;
+    @include media(tablet) {
+      margin-left: 23px;
+      margin-right: 0px;
     }
   }
 }
