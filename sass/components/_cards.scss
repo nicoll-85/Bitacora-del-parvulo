@@ -1098,8 +1098,12 @@
     padding: 24px;
     min-width: 200px;
     max-width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
 
     @include media(tablet) {
+      flex-direction: column;
+      flex-wrap: nowrap;
       max-width: 240px;
     }
 
@@ -1111,11 +1115,17 @@
 
     .card__body {
       margin: 0px;
+      margin-left: 24px;
       padding: 18px 0px 24px 0px;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
       justify-content: space-between;
+
+      @include media(tablet) {
+        align-items: center;
+        margin-left: 0px;
+      }
 
       .card__title {
         font-weight: 500;
@@ -1139,20 +1149,86 @@
       .card__institution-logo {
         width: 120px;
         height: auto;
+        display: none;
+
+        @include media(tablet) {
+          display: flex;
+        }
       }
     }
 
     .card__footer {
       display: flex;
+      padding-top: 16px;
       flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+      border-top: 1px solid rgba($darkest-color,0.1);
+
+      @include media(tablet) {
+        justify-content: space-between;
+        padding-top: 0px;
+        border-top: none;
+      }
 
       .button {
         min-width: 80px;
-        flex: 1 1 auto;
+        flex: 0 1 auto;
         margin-right: 8px;
+
+        @include media(tablet) {
+          flex: 1 1 auto;
+        }
 
         &:last-child {
           margin-right: 0px;
+        }
+      }
+
+      
+      .button--connect {
+        @extend .button--primary;
+      }
+      .button--profile {
+        @extend .button--ghost-primary;
+      }
+      .button {
+        &.button--connect,
+        &.button--profile {
+          min-width: 42px;
+          .button__title {
+            display: none;
+          }
+          @include media(tablet) {
+            opacity: 0.6;
+            color: var(--darkest-color);
+            background-color: var(--lightest-color);
+            border: 1px solid var(--darkest-color);
+            &:hover,
+            &:focus {
+              text-decoration: none;
+            }
+
+            .button__title {
+              display: block;
+            }
+            .icon {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .card__institution-logo {
+        display: flex;
+        width: 120px;
+        height: auto;
+        margin-right: auto;
+        flex: 0 1 auto;
+
+        @include media(tablet) {
+          display: none;
         }
       }
     }

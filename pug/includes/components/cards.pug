@@ -218,7 +218,8 @@ mixin card--profile()
       .card__description Student
       img.card__institution-logo(src="images/logo-laureate.png")
     .card__footer
-      +button({'buttonTitle': 'Conect'}).button--default.button--ghost
-      +button({'buttonTitle': 'Profile'}).button--default.button--ghost
+      img.card__institution-logo(src="images/logo-laureate.png")
+      +button({'buttonTitle': 'Connect','showIcon': true,'iconName': 'bubble'}).button--connect
+      +button({'buttonTitle': 'Profile','showIcon': true,'iconName': 'add-user'}).button--profile
 
     
