@@ -3,16 +3,38 @@ mixin modal-basic()
 		+link(href="#open-modal") My modal
 	#open-modal.modal-window
 		.modal-box
-			.modal-header
-					a.modal-close(href="#",title="close") X
+			.modal-header__basic
+					a.modal-close__basic(href="#",title="close") X
 			.modal-body
-				.modal-content()
+				.modal-content__basic()
 					p Nullam dictum felis eu pede mollis pretium. Quisque id odio. Aenean imperdiet. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam.
 				.modal-actions
 					+button({'buttonTitle': 'Secondary action'}).button--ghost-primary.mr-1
 					+button({'buttonTitle': 'Primary action'}).button--primary
 
-
+mixin modal--IE()
+	.modal-container__ie&attributes(attributes)
+		+link(href="#open-modal-ie") My modal
+	#open-modal-ie.modal-window__ie
+		.modal-box__ie
+			.modal-header
+					a.modal-close(href="#",title="close") X
+			.modal-body
+				.modal-content__ie
+					img.header-img(src="./images/pc.svg", alt="pc")
+					.modal-description
+						img.label-title(src="./images/SVG/sorry.svg", alt="")
+						h5.subheadline-modal Your browser is not supported
+						p.description-modal 
+							|If you want to have a better experience in 
+							strong One Campus 
+							|these are the browsers we recommend:
+						.header-media
+							img.header-media__item(src="./images/1x/chrome.png", alt="Chrome")
+							img.header-media__item(src="./images/1x/firefox.png", alt="FireFox")
+							img.header-media__item(src="./images/1x/edge.png", alt="Edge")
+							img.header-media__item(src="./images/1x/safari.png", alt="Safari")
+						p.cr-text © 2020 Laureate Education Inc. 
 
 mixin modal--primary()
 	.modal.modal--primary(tabindex="-1" role="dialog").modal--is-open
