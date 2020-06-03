@@ -29,7 +29,7 @@
     position: absolute;
     top: 100%;
     left: 0;
-    z-index: 1000;
+    z-index: 1;
     background-color: $darkest-color;
     color: $lightest-color;
     border: 1px solid $lightest-color;
@@ -44,8 +44,6 @@
       color: $darkest-color;
       position: absolute;
       top: -37px;
-      left: 0;
-      z-index: 1000;
       width: 100%;
     }
     @media screen and(min-width:576px) {
@@ -53,17 +51,12 @@
       color: $darkest-color;
       position: absolute;
       top: -37px;
-      left: 0;
-      z-index: 1000;
     }
     @media screen and(min-width:768px) {
       background-color: $lightest-color;
       color: $darkest-color;
       position: absolute;
-      top: calc(100% + 4px);
-      left: 0;
-      z-index: 1000;
-    }
+      top: calc(100% + 4px);    }
 
     &.dropdown-menu--right {
       left: unset;
