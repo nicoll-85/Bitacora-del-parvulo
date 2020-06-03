@@ -215,7 +215,7 @@ svg {
       }
     }
 
-    &.input-search-control--searching {
+    &.input-search-control--active {
       .input-search-results {
         opacity: 1;
         visibility: visible;
