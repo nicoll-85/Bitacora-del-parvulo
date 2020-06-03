@@ -1,0 +1,26 @@
+.control-bar {
+	display: flex;
+	width: 100%;
+	padding: 12px 0px;
+	border-bottom: 1px solid rgba($darkest-color, 0.25);
+	justify-content: space-between;
+	align-items: flex-end;
+	.control-bar__result {
+		.control-bar__result-text {
+			font-size: 14px;
+		}
+	}
+	.button--filter-icon {
+    display: flex;
+    @include media(tablet) {
+      display: none;
+    }
+  }
+	.control-bar__actions {
+		display: none;
+		@include media(tablet) {
+			display: flex;
+		}
+		
+	}
+}

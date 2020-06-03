@@ -4013,6 +4013,8 @@ svg {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row; }
+  .page-content.page-content--no-min-height {
+    min-height: unset; }
 
 .container--main {
   padding-top: 40px;
@@ -4021,6 +4023,69 @@ svg {
     .container--main {
       padding-top: 80px;
       padding-bottom: 80px; } }
+
+.input-search-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 80px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+  @media only screen and (min-width: 992px) {
+    .input-search-container {
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      align-items: flex-end; } }
+  .input-search-container .input-search__text {
+    font-size: 24px;
+    font-weight: 600; }
+    .input-search-container .input-search__text span.input-search__title,
+    .input-search-container .input-search__text span.input-search__keywords {
+      display: inline-block; }
+    .input-search-container .input-search__text span.input-search__title {
+      margin-right: 8px; }
+  .input-search-container .button--search-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    @media only screen and (min-width: 992px) {
+      .input-search-container .button--search-icon {
+        display: none; } }
+  .input-search-container .input-search-control {
+    position: relative;
+    height: 40px;
+    min-width: 500px;
+    width: 500px;
+    display: none; }
+    @media only screen and (min-width: 992px) {
+      .input-search-container .input-search-control {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; } }
+    .input-search-container .input-search-control .input-search-control__icon {
+      position: absolute;
+      left: 11px;
+      top: 11px;
+      width: 18px;
+      height: 18px; }
+      .input-search-container .input-search-control .input-search-control__icon .icon {
+        width: 18px;
+        height: 18px;
+        fill: #334652; }
+    .input-search-container .input-search-control .input-search {
+      width: 100%;
+      height: 40px;
+      padding: 8px 24px 8px 40px;
+      border: 1px solid rgba(51, 70, 82, 0.25);
+      font-size: 14px;
+      font-weight: 500;
+      color: #334652;
+      border-radius: 8px; }
 
 .container--with-sidebar {
   padding: 0px;
@@ -4232,7 +4297,7 @@ svg {
     font-size: 1.2rem;
     fill: var(--darkest-color);
     fill: #334652; }
-  .button.button--ghost {
+  .button.button--ghost, .button.button--transparent {
     color: var(--darkest-color);
     color: #334652;
     /*IE*/
@@ -4242,9 +4307,9 @@ svg {
     border: 1px solid var(--darkest-color);
     border: 1px solid #334652;
     /*IE*/ }
-    .button.button--ghost:hover, .button.button--ghost:focus {
+    .button.button--ghost:hover, .button.button--transparent:hover, .button.button--ghost:focus, .button.button--transparent:focus {
       text-decoration: none; }
-  .button.button--ghost-primary, .card.card--profile .card__footer .button.button--profile {
+  .button.button--ghost-primary, .button.button--back, .card.card--profile .card__footer .button.button--profile {
     color: var(--primary-color);
     color: #FF7C5F;
     /*IE*/
@@ -4254,9 +4319,9 @@ svg {
     border: 1px solid var(--primary-color);
     border: 1px solid #FF7C5F;
     /*IE*/ }
-    .button.button--ghost-primary:hover, .card.card--profile .card__footer .button.button--profile:hover, .button.button--ghost-primary:focus, .card.card--profile .card__footer .button.button--profile:focus {
+    .button.button--ghost-primary:hover, .button.button--back:hover, .card.card--profile .card__footer .button.button--profile:hover, .button.button--ghost-primary:focus, .button.button--back:focus, .card.card--profile .card__footer .button.button--profile:focus {
       text-decoration: none; }
-    .button.button--ghost-primary .icon, .card.card--profile .card__footer .button.button--profile .icon {
+    .button.button--ghost-primary .icon, .button.button--back .icon, .card.card--profile .card__footer .button.button--profile .icon {
       fill: var(--primary-color); }
   .button.button--ghost-white {
     color: white;
@@ -4274,6 +4339,9 @@ svg {
       color: var(--darkest-color);
       color: #334652;
       /*IE*/ }
+  .button.button--disabled {
+    opacity: 0.5;
+    cursor: not-allowed; }
 
 /* Buttons Variations
 **********************/
@@ -4289,7 +4357,7 @@ svg {
   /*IE*/ }
   .button--primary .icon, .card.card--profile .card__footer .button--connect .icon {
     fill: var(--lightest-color); }
-  .button--primary.button--ghost, .card.card--profile .card__footer .button--ghost.button--connect {
+  .button--primary.button--ghost, .button--primary.button.button--transparent, .card.card--profile .card__footer .button.button--transparent.button--connect, .card.card--profile .card__footer .button--ghost.button--connect {
     color: var(--primary-color);
     color: #FF7C5F;
     /*IE*/
@@ -4297,9 +4365,9 @@ svg {
     background-color: white;
     /*IE*/
     border: 1px solid var(--primary-color); }
-    .button--primary.button--ghost:hover, .card.card--profile .card__footer .button--ghost.button--connect:hover, .button--primary.button--ghost:focus, .card.card--profile .card__footer .button--ghost.button--connect:focus {
+    .button--primary.button--ghost:hover, .button--primary.button.button--transparent:hover, .card.card--profile .card__footer .button.button--transparent.button--connect:hover, .card.card--profile .card__footer .button--ghost.button--connect:hover, .button--primary.button--ghost:focus, .button--primary.button.button--transparent:focus, .card.card--profile .card__footer .button.button--transparent.button--connect:focus, .card.card--profile .card__footer .button--ghost.button--connect:focus {
       text-decoration: none; }
-    .button--primary.button--ghost .icon, .card.card--profile .card__footer .button--ghost.button--connect .icon {
+    .button--primary.button--ghost .icon, .button--primary.button.button--transparent .icon, .card.card--profile .card__footer .button.button--transparent.button--connect .icon, .card.card--profile .card__footer .button--ghost.button--connect .icon {
       fill: var(--primary-color);
       fill: #FF7C5F;
       /*IE*/ }
@@ -4320,7 +4388,7 @@ svg {
     fill: var(--lightest-color);
     fill: white;
     /*IE*/ }
-  .button--secondary.button--ghost {
+  .button--secondary.button--ghost, .button--secondary.button.button--transparent {
     color: var(--secondary-color);
     color: #3A86CF;
     /*IE*/
@@ -4330,9 +4398,9 @@ svg {
     border: 1px solid var(--secondary-color);
     border: 1px solid #3A86CF;
     /*IE*/ }
-    .button--secondary.button--ghost:hover, .button--secondary.button--ghost:focus {
+    .button--secondary.button--ghost:hover, .button--secondary.button.button--transparent:hover, .button--secondary.button--ghost:focus, .button--secondary.button.button--transparent:focus {
       text-decoration: none; }
-    .button--secondary.button--ghost .icon {
+    .button--secondary.button--ghost .icon, .button--secondary.button.button--transparent .icon {
       fill: var(--secondary-color);
       fill: #3A86CF;
       /*IE*/ }
@@ -4351,7 +4419,7 @@ svg {
     background-color: #3d5362; }
   .button--third .icon {
     fill: var(--lightest-color); }
-  .button--third.button--ghost {
+  .button--third.button--ghost, .button--third.button.button--transparent {
     color: var(--darkest-color);
     color: #334652;
     /*IE*/
@@ -4361,12 +4429,16 @@ svg {
     border: 1px solid var(--darkest-color);
     border: 1px solid #334652;
     /*IE*/ }
-    .button--third.button--ghost:hover, .button--third.button--ghost:focus {
+    .button--third.button--ghost:hover, .button--third.button.button--transparent:hover, .button--third.button--ghost:focus, .button--third.button.button--transparent:focus {
       text-decoration: none; }
-    .button--third.button--ghost .icon {
+    .button--third.button--ghost .icon, .button--third.button.button--transparent .icon {
       fill: var(--darkest-color);
       fill: #334652;
       /*IE*/ }
+
+.button.button--transparent {
+  border-color: transparent;
+  background: transparent; }
 
 .button--rounded {
   border-radius: 50%; }
@@ -4388,8 +4460,44 @@ svg {
   height: 50px;
   padding: 0; }
 
+.button--only-icon--small {
+  min-width: 32px;
+  width: 32px;
+  max-width: 32px;
+  height: 32px;
+  padding: 0; }
+
 .button--icon .icon {
   font-size: 3rem; }
+
+.button--icon-left .button__icon {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+  margin-right: 8px; }
+
+.button--icon-left .button__title {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2; }
+
+.button.button--back {
+  min-width: 100px;
+  max-width: 120px;
+  text-align: left;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding-left: 0px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  font-size: 12px;
+  background-color: transparent;
+  border-color: transparent; }
+  .button.button--back .icon {
+    width: 12px;
+    height: 12px; }
 
 /* The switch - the box around the slider */
 .switch {
@@ -7562,6 +7670,83 @@ ol.list {
           color: var(--darkest-color);
           opacity: 0.5; }
 
+.dropdown--only {
+  color: #ffffff;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative; }
+  .dropdown--only .dropdown-toggle {
+    background-color: transparent;
+    color: #334652;
+    border: 1px solid rgba(51, 70, 82, 0.25);
+    padding: 8px 12px;
+    border-radius: 8px;
+    position: relative;
+    -webkit-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out; }
+    .dropdown--only .dropdown-toggle:hover {
+      border-color: #334652; }
+    .dropdown--only .dropdown-toggle::after {
+      margin-left: 30px; }
+  .dropdown--only .btn-dropdown__light {
+    color: #ffffff;
+    border: 1px solid #ffffff; }
+  .dropdown--only .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    background-color: #334652;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    -webkit-box-shadow: 1px 1px 8px 1px rgba(51, 70, 82, 0.2), 1px 8px 8px rgba(51, 70, 82, 0.1);
+    box-shadow: 1px 1px 8px 1px rgba(51, 70, 82, 0.2), 1px 8px 8px rgba(51, 70, 82, 0.1); }
+    @media screen and (max-width: 575px) {
+      .dropdown--only .dropdown-menu {
+        background-color: #ffffff;
+        color: #334652;
+        position: absolute;
+        top: -37px;
+        left: 0;
+        z-index: 1000;
+        width: 100%; } }
+    @media screen and (min-width: 576px) {
+      .dropdown--only .dropdown-menu {
+        background-color: #ffffff;
+        color: #334652;
+        position: absolute;
+        top: -37px;
+        left: 0;
+        z-index: 1000; } }
+    @media screen and (min-width: 768px) {
+      .dropdown--only .dropdown-menu {
+        background-color: #ffffff;
+        color: #334652;
+        position: absolute;
+        top: calc(100% + 4px);
+        left: 0;
+        z-index: 1000; } }
+    .dropdown--only .dropdown-menu.dropdown-menu--right {
+      left: unset;
+      right: 0px; }
+    .dropdown--only .dropdown-menu .dropdown-item {
+      color: #ffffff; }
+      @media screen and (max-width: 575px) {
+        .dropdown--only .dropdown-menu .dropdown-item {
+          color: #334652; } }
+      @media screen and (min-width: 576px) {
+        .dropdown--only .dropdown-menu .dropdown-item {
+          color: #334652; } }
+      .dropdown--only .dropdown-menu .dropdown-item:hover {
+        color: #334652;
+        opacity: .4; }
+
 .modal--scrollable.modal-content {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -7923,8 +8108,8 @@ ol.list {
       .navbar .navbar-mobile .navbar-nav .dropdown-menu {
         border: none;
         border-radius: 12px;
-        -webkit-box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.03), 0 16px 24px 0;
-        box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.03), 0 16px 24px 0;
+        -webkit-box-shadow: 1px 1px 8px 1px rgba(51, 70, 82, 0.2), 1px 8px 8px rgba(51, 70, 82, 0.1);
+        box-shadow: 1px 1px 8px 1px rgba(51, 70, 82, 0.2), 1px 8px 8px rgba(51, 70, 82, 0.1);
         padding-top: 15px;
         padding-left: 5px;
         padding-right: 5px;
@@ -8064,12 +8249,12 @@ ol.list {
   .navbar-nav .dropdown-menu {
     border: none;
     border-radius: 12px;
-    -webkit-box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.03), 0 16px 24px 0;
-    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.03), 0 16px 24px 0;
     padding-top: 15px;
     padding-left: 5px;
     padding-right: 5px;
-    left: -66px; }
+    left: -66px;
+    -webkit-box-shadow: 1px 1px 8px 1px rgba(51, 70, 82, 0.2), 1px 8px 8px rgba(51, 70, 82, 0.1);
+    box-shadow: 1px 1px 8px 1px rgba(51, 70, 82, 0.2), 1px 8px 8px rgba(51, 70, 82, 0.1); }
     .navbar-nav .dropdown-menu .dropdown-item {
       font-family: var(--primary-font); }
       .navbar-nav .dropdown-menu .dropdown-item .dropdown-item__content {
@@ -9564,6 +9749,36 @@ ol.list {
       .pagination .button.button-number.button-number--disabled {
         opacity: 0.6;
         cursor: not-allowed; }
+
+.control-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 12px 0px;
+  border-bottom: 1px solid rgba(51, 70, 82, 0.25);
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
+  .control-bar .control-bar__result .control-bar__result-text {
+    font-size: 14px; }
+  .control-bar .button--filter-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    @media only screen and (min-width: 768px) {
+      .control-bar .button--filter-icon {
+        display: none; } }
+  .control-bar .control-bar__actions {
+    display: none; }
+    @media only screen and (min-width: 768px) {
+      .control-bar .control-bar__actions {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; } }
 
 .topbar {
   background: #22262B;
