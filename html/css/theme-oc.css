@@ -8341,7 +8341,7 @@ ol.list {
   display: none;
   top: 100%;
   left: 0;
-  z-index: 1;
+  z-index: 1000;
   width: auto;
   max-width: 100vw;
   background: var(--lightest-color);
