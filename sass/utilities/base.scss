@@ -92,6 +92,7 @@ svg {
   }
   &.page-content--no-min-height {
     min-height: unset;
+    margin-top: 32px;
   }
 }
 
@@ -111,16 +112,16 @@ svg {
   justify-content: space-between;
   align-items: flex-start;
 
-  @include media(tablet-p) {
-    align-items: flex-end;
-  }
-
   .input-search__text {
     font-size: 24px;
     font-weight: 600;
     span.input-search__title, 
     span.input-search__keywords {
       display: inline-block;
+
+      @include media(tablet-p) {
+        display: inline;
+      }
     }
 
     span.input-search__title {
@@ -210,6 +211,10 @@ svg {
   background-origin: content-box;
   background-repeat: no-repeat;
   background-position: center;
+  &.section--partial-background--center-top {
+    background-position: center;
+    background-position-y: 0px;
+  }
   &.section--partial-background--left-top {
     background-position: left;
     background-position-y: 0px;
