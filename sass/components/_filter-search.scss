@@ -1,0 +1,52 @@
+// Filter search Global Styles
+.filter-search{
+  position: relative;
+  display: inline-block;
+  max-width: 234px;
+  width: 100%;
+  .filter-title{
+    font-family: var(--primary-font);
+    color: $darkest-color;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .filter-list{
+    list-style-type:none;
+    margin-bottom: 40px;
+    padding-inline-start: 0px;
+    .filter-list__item{
+      font-family: var(--primary-font);
+      color: $darkest-color;
+      font-weight: normal;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.more-inf{
+  display: flex;
+  flex-direction: row;
+  margin-left: -5px;
+  align-items: flex-start;
+  
+  .collapse-button{
+    border: transparent;
+    background-color: transparent;
+  }
+
+  .filter-list__more{
+    font-family: var(--primary-font);
+    color: $darkest-color;
+    font-weight: normal;
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-left: 21px;
+  }
+
+}
+.collapse-more__list{
+  list-style-type: none;
+}

@@ -1,22 +1,275 @@
 mixin card(options)
   .card&attributes(attributes)
-    img.media--top(src="./images/Fill@3x.png", alt="video image") 
+    img.media--top(src="./images/Fill@3x.png", alt="video image")
+    button
+      img.icon-play--video(src="./images/Button/Play.svg", alt="Play")
     .card__body
-      h5.card__title Design Thinking: The New Standard for Creative Probl…
-      p.card__text Some quick example text to build on the card title and make up the bulk of the content.
+      h5.card__title Design Thinking: The New Standard for Creative...
+      p.card__text Some quick example text to build on the card title and make...
 
-  .card-video
+mixin card--v2(options)
+  .card&attributes(attributes)
+    img.media--top(src="./images/Fill@3x.png", alt="video image")
+    button
+      img.icon-play--video(src="./images/Button/Play.svg", alt="Play") 
+    .card__body
+      img.avatar-prof__card.rounded-circle(src="./images/user--profile.png", alt="profile photo")
+      h5.card__title Design Thinking: The New Standard for Creative...
+      p.card__text Some quick example text to build on the card title and make...
+      .card-footer__actions
+        .left-actions
+          img.icon-actions(src="./images/language.png", alt="Chat")
+          p.counter 25
+        .right-actions
+          a(href="#")
+            img.icon-actions(src="./images/heartbeat.png", alt="like")
+          a(href="#")
+            img.icon-actions(src="./images/bookmark.png", alt="Save")
+
+mixin card--v3(options)
+  .card&attributes(attributes)
+    img.media--top(src="./images/fill3.png", alt="video image")
+    button
+      img.icon-play--video(src="./images/Button/Play.svg", alt="Play")  
+    .card__body
+      h5.card__title Design Thinking: The New Standard for Creative...
+      p.card__text Some quick example text to build on the card title and make...
+      .card-footer__actions
+        .left-actions
+          img.icon-actions(src="./images/language.png", alt="Chat")
+          p.counter 25
+        .right-actions
+          a(href="#")
+            img.icon-actions(src="./images/heartbeat.png", alt="like")
+          a(href="#")
+            img.icon-actions(src="./images/bookmark.png", alt="Save")
+
+mixin card--v4(options)
+  .card&attributes(attributes)
+    .card__header-badge
+      p.label-section Learning Series
+      img.badge-icon(src="./images/Badges/XLarge.svg", alt="badge")
+    .card__body
+      h5.card__title Design Thinking: The New Standard for Creative...
+      p.card__text Some quick example text to build on the card title and make...
+      .card-footer__actions
+        +button({'buttonTitle': 'Start Learning'}).button--ghost-primary
+
+mixin card--video(options)
+  .card-video&attributes(attributes)
     img.card-video__img(src="./images/Fill.png", alt="")
     .card-img-overlay
-      p.card-video__section-title LeARNING SERIES
+      p.card-video__section-title LEARNING SERIES
       h5.card-video__title Analyzing and Solving Problems: Instinct vs. Evidence
-      img.card-video__badge(src="./images/Badge.svg", alt="")
-  
-  .card-featured
+  .box-badge
+    img.card-video__triangle(src="./images/Rectangle.png", alt="Tringle-badge")
+    img.card-video__badge(src="./images/Badge.png", alt="Badge")
+
+mixin card--featured(options)
+  .card-featured&attributes(attributes)
     .card-featured__body
       img.card-featured__img(src="./images/Card Image.svg", alt="")
       .card-featured__content
         h4.card-featured__title How are you doing at Analyzing & Solving Problems?
         p.card-featured__text Answer a few short questions and get an idea of your current
                         ability level so you know where you can improve.
+mixin card--panel(options)
+  .card-panel&attributes(attributes)
+    .card-panel__body
+      .card-panel__content
+        img.card-panel__img(src="./images/Image/Circle/Fill.png", alt="")
+        .card-panel__descrip
+          h4.card-panel__title LPA: Resolución de problemas, cumplimiento de objetivos y trabajo en equipo
+          p.card-panel__help-text Duration 45 min
+          p.card-panel__text Fusce dapibus, tellus ac cursus commodo, tortor mauris condimen tum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit am et, consectetur adipiscing 
+          .card-panel__label.row
+            .col
+              +label({'labelTitle': 'Analyzing & Solving Problems'})
+            .col
+              +label({'labelTitle': 'Making decisions'})
+            .col
+              +label({'labelTitle': 'Analyzing & Solving Problems'})
+            .col
+              +label({'labelTitle': 'Making decisions'})
+        .card-panel__action  
+          +button({'buttonTitle': 'Enroll'}).button--primary
+
+mixin card--panel-score(options)
+  .card-panel--score&attributes(attributes)
+    .card-panel__body
+      .card-panel__content
+        .row.w-100
+          .card-panel__icon
+            +score-pill
+          
+          .card-panel__descrip
+            p.card-panel__title Learning & Self-Improvement
+            +link
+            p.card-panel__text Fusce dapibus, tellus ac cursus commodo, tortor mauris condimen tum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit am et, consectetur adipiscing
+            .list-lite
+              ul
+                li  Curabitur blandit mollis lacus. Proin faucibus arcu quis ante.
+                li  Curabitur blandit mollis lacus. Proin faucibus arcu quis ante.
+                li  Curabitur blandit mollis lacus. Proin faucibus arcu quis ante.
+          .card-panel__action  
+              +button({'buttonTitle': 'Try Again'}).button--ghost-primary
+
+mixin card--panel-start(options)
+  .card-panel--start&attributes(attributes)
+    .card-panel__body
+      .card-panel__content
+        img.card-panel__img.rounded-circle(src="./images/Image/Circle/Fill.png", alt="")
+        .card-panel__descrip
+          h4.card-panel__title LPA: Resolución de problemas, cumplimiento de objetivos y trabajo en equipo
+          .text-group
+            p.card-panel__help-text Duration 45 min
+            .pipe-separator
+            p.card_panel__end-text Due by March 23, 2020
+          p.card-panel__text Fusce dapibus, tellus ac cursus commodo, tortor mauris condimen tum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit am et, consectetur adipiscing 
+          .card-panel__labels
+            .col-12.col-sm-12.col-lg-4.col-md-6
+              +label({'labelTitle': 'Analyzing & Solving Problems'})
+            .col-12.col-sm-12.col-lg-4.col-md-6
+              +label({'labelTitle': 'Making decisions'})
+        .card-panel__action  
+          +button({'buttonTitle': 'Start Test'}).button--secondary
+
+mixin card--panel-complete(options)
+  .card-panel-complete&attributes(attributes)
+    .card-panel__body
+      .card-panel__content
+        img.card-panel__img(src="./images/Image/Circle/Fill.png", alt="")
+        .card-panel__descrip
+          h4.card-panel__title LPA: Resolución de problemas, cumplimiento de objetivos y trabajo en equipo
+          p.card_panel__end-text Completed on March 23,2020
+          p.card-panel__text Fusce dapibus, tellus ac cursus commodo, tortor mauris condimen tum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit am et, consectetur adipiscing 
+          .card-panel__labels
+            +label({'labelTitle': 'Analyzing & Solving Problems'})
+            +label({'labelTitle': 'Making decisions'})
+  .card-chart.mb-5
+    .card-chart__body
+      .card-chart__content
+        p.card-chart__title My Score
+        .row
+          .col
+            +chart
+          .col
+            +chart
+          .col
+            +chart
+
+mixin card--small(options)
+  a.card-small.mt-2.mb-1(href="#")
+    .card-small__body
+      .card-small__group
+        img.card-small__img(src="./images/user--profile.png", alt="")
+        p.card-small__text Analizyng & Solving Problems
+
+mixin card--small-bg(options)
+  a.card-small-bg.mt-2.mb-1(href="#")
+    .card-small__body
+      p.card-small__title Analizyng & Solving Problems
+
+mixin card--large-bg(options)
+  a.card-large-bg.mt-2.mb-1(href="#")
+    .card-large__body
+      p.card-large__title World of Business
+
+
+mixin card--basic-horizontal(options)
+  .card--basic-horizontal&attributes(attributes)
+    .card-panel__body
+      .card-panel__content
+        img.card-panel__img.rounded-circle(src="images/lists/listImage01.png", alt="")
+        .card-panel__descrip
+          h4.card-panel__title Learning Series
+          p.card-panel__text Fusce dapibus, tellus ac cursus commodo, tortor mauris condimen tum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit am et, consectetur adipiscing 
+
+mixin card--search-learning-series(options)
+  .card--horizontal-with-action&attributes(attributes)
+    .card-panel__body
+      .card-panel__content
+        .card-panel__icon
+          img.media-pill(src="./images/Badges/AI Pioneer - color.svg", alt="")
         
+        .card-panel__descrip
+          p.card-panel__subtitle Learning path
+          p.card-panel__title Cras Vestibulum Ullamcorper Lorem Tristique Porta Nibh 
+          p.card-panel__text Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis
+        .card-panel__action  
+            +button({'buttonTitle': 'View Serie'}).button--ghost-primary
+
+mixin card--search-learning-series-in-progress(options)
+  .card--horizontal-with-action&attributes(attributes)
+    .card-panel__body
+      .card-panel__content
+        .card-panel__icon
+          img.media-pill(src="./images/Badges/Connector - gray.svg", alt="")
+        
+        .card-panel__descrip
+          p.card-panel__subtitle Learning path
+          p.card-panel__title Cras Vestibulum Ullamcorper Lorem Tristique Porta Nibh 
+          p.card-panel__text Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis
+          +progress-bar({'progressValue': '25'})
+        .card-panel__action  
+            +button({'buttonTitle': 'Continue'}).button--secondary.button--ghost
+
+mixin card--video-with-actions()
+  .card.card--video-with-actions
+    .video-thumbnail.video-thumbnail--9-21(style={'background-image': 'url("images/card-image-03.png")'})
+      button.video-thumbnail--play
+        svg(class="video-thumbnail-icon" role="img" aria-label="icon" aria-hidden=true)
+          use(xlink:href='images/icons/oc-icons.svg#oc-Play')
+    .card__title Etiam Condimentum Magna Egestas Sem
+    .card__description Donec id elit non mi porta gravida at eget metus. Cura bitur blandit tempus porttitor. Nullam quis risus eget  as mollis ornaLorem ipsum dolor sit amet, consectur…
+    .card__footer
+      .card__footer-stats
+        svg(class="card__stat-icon" role="img" aria-label="icon" aria-hidden=true)
+          use(xlink:href='images/icons/oc-icons.svg#oc-bubble')
+        span.card__footer-stats-text 1.1k
+      .card__footer-actions
+        button.card__action
+          svg(class="card__action-icon" role="img" aria-label="icon" aria-hidden=true)
+            use(xlink:href='images/icons/oc-icons.svg#oc-heart')
+        button.card__action
+          svg(class="card__action-icon" role="img" aria-label="icon" aria-hidden=true)
+            use(xlink:href='images/icons/oc-icons.svg#oc-bookmark')
+
+mixin card--video-with-actions--horizontal()
+  .card.card--video-with-actions.card--video--horizontal
+    .card__header
+      .video-thumbnail(style={'background-image': 'url(images/card-image-03.png)'})
+        button.video-thumbnail--play
+          svg(class="video-thumbnail-icon" role="img" aria-label="icon" aria-hidden=true)
+            use(xlink:href='images/icons/oc-icons.svg#oc-Play')
+    .card__body
+      .card__subtitle Section Title
+      .card__title Etiam Condimentum Magna Egestas Sem
+      .card__description Donec id elit non mi porta gravida at eget metus. Cura bitur blandit tempus porttitor. Nullam quis risus eget  as mollis ornaLorem ipsum dolor sit amet, consectur…
+      .card__footer
+        .card__footer-stats
+          svg(class="card__stat-icon" role="img" aria-label="icon" aria-hidden=true)
+            use(xlink:href='images/icons/oc-icons.svg#oc-bubble')
+          span.card__footer-stats-text 1.1k
+        .card__footer-actions
+          button.card__action
+            svg(class="card__action-icon" role="img" aria-label="icon" aria-hidden=true)
+              use(xlink:href='images/icons/oc-icons.svg#oc-heart')
+          button.card__action
+            svg(class="card__action-icon" role="img" aria-label="icon" aria-hidden=true)
+              use(xlink:href='images/icons/oc-icons.svg#oc-bookmark')
+
+mixin card--profile()
+  .card.card--profile
+    .card__header
+      .avatar.avatar--medium.avatar--no-image-tag(style={'background-image': 'url(images/Avatar/avatar-user-01.png)'})
+    .card__body
+      .card__title Helena Moriá Morteval Amorim
+      .card__description Student
+      img.card__institution-logo(src="images/logo-laureate.png")
+    .card__footer
+      img.card__institution-logo(src="images/logo-laureate.png")
+      +button({'buttonTitle': 'Connect','showIcon': true,'iconName': 'bubble'}).button--connect
+      +button({'buttonTitle': 'Profile','showIcon': true,'iconName': 'add-user'}).button--profile
+
+    

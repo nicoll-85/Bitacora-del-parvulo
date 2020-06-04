@@ -1,0 +1,111 @@
+include includes/head.pug
+body
+	+topbar--closed-menu()
+	.page
+		.page-content
+			section.section--partial-background.section--partial-background--left-top.section--partial-background--medium(style='background-image:url(images/Polygon6.png)')
+				.container.container--main
+					.row
+						.col-sm-12
+							+banner()
+			section.section--partial-background.section--partial-background--left-center.section--partial-background--xsmall(style='background-image:url(images/Polygon7.png)')
+				.container.container--main
+					.row
+						.col-sm-12.col-md-4
+							+box(
+								{'boxTitle': 'Key Behaviors', 
+									'hideSubtitle': true,
+									'showDescription': true, 
+									'boxDescription': 'Based on the Laureate Professional Assessment, we’ve broken this ability down into a few key behaviors and provided an example of what they mean.'
+								}).box--key-behavior
+						.col-sm-12.col-md-8
+							.row.carousel--horizontal-scroll
+								.col-sm-12.col-md-6
+									+box(
+										{'boxTitle': 'Critical Thinking', 
+											'hideSubtitle': true, 
+											'showImage': true, 
+											'boxImage': 'images/keyBehavior01.png', 
+											'showDescription': true, 
+											'boxDescription': 'You look at information critically. You check your sources because knowing where the information comes from is just as important as what’s in it.'
+										}).box--carousel
+								.col-sm-12.col-md-6
+									+box(
+										{'boxTitle': 'Critical Thinking', 
+											'hideSubtitle': true, 
+											'showImage': true, 
+											'boxImage': 'images/keyBehavior02.png', 
+											'showDescription': true, 
+											'boxDescription': 'You look at information critically. You check your sources because knowing where the information comes from is just as important as what’s in it.'
+										}).box--carousel
+								.col-sm-12.col-md-6
+									+box(
+										{'boxTitle': 'Critical Thinking', 
+											'hideSubtitle': true, 
+											'showImage': true, 
+											'boxImage': 'images/keyBehavior03.png', 
+											'showDescription': true, 
+											'boxDescription': 'You look at information critically. You check your sources because knowing where the information comes from is just as important as what’s in it.'
+										}).box--carousel
+								.col-sm-12.col-md-6
+									+box(
+										{'boxTitle': 'Critical Thinking', 
+											'hideSubtitle': true, 
+											'showImage': true, 
+											'boxImage': 'images/keyBehavior04.png',  
+											'showDescription': true, 
+											'boxDescription': 'You look at information critically. You check your sources because knowing where the information comes from is just as important as what’s in it.'
+										}).box--carousel
+							.row
+								.col-12
+									+card--featured()
+			section.section--partial-background.section--partial-background--right-center.section--partial-background--tiny(style={'background-image': 'url("images/Polygon 8.png")'})
+				.container.container--main
+					.row
+						.col-sm-12.col-md-6
+							+card--video()
+						.col-sm-12.col-md-6
+							+box(
+								{'boxTitle': 'Want to improve this ability?', 
+									'hideSubtitle': false, 
+									'boxSubtitle': 'Learning Series', 
+									'showIcon': false,
+									'showDescription': true, 
+									'boxDescription': 'Gain more awareness about the key behaviors for Analyzing & Solving Problems.',
+									'showAction': true, 
+									'boxAction': 'Start the Episode'
+								}).box--episode-card
+			section.section--color-background.section--color-background--fourth.section--color-background-traslapped
+				.container.container--main
+					.row
+						.col-sm-12
+							+box(
+								{'boxTitle': 'More videos on analyzing & solving problems', 
+									'hideSubtitle': true,
+									'showDescription': true, 
+									'boxDescription': 'Checkout popular content to help you continue improving on this ability'
+								}).box--centered-content.box--condensed
+					.row.carousel--horizontal-scroll
+						.col
+							+card
+						.col
+							+card
+						.col
+							+card
+						.col
+							+card
+
+			section.section--partial-background.section--partial-background--bottom-center.section--partial-background--small(style={'background-image': 'url("images/Polygon 9.png")'})
+				.container.container--main
+					.row
+						.col-sm-12
+							+box(
+								{'boxTitle': '1,205+ Students', 
+									'hideSubtitle': true, 
+									'boxSubtitle': 'Learning Series', 
+									'showIcon': false,
+									'showDescription': true, 
+									'boxDescription': 'learning this ability on OneCampus',
+									'showAction': true, 
+									'boxAction': 'See Who’s Learning'
+								}).box--centered-content.box--condensed

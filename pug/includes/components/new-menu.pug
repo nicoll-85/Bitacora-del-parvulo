@@ -1,0 +1,263 @@
+mixin new-menu()
+	nav.navbar.navbar-expand-lg.navbar-light.rounded&attributes(attributes)
+		a(href="#").navbar-brand
+			img(src="./images/Logo.png", alt="OneCampus logo")
+
+		.navbar-mobile
+			//- Collapse button
+			button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarToggleExternalContent", aria-controls="navbarToggleExternalContent", aria-expanded="true", aria-label="Toggle navigation")
+				img(src="./images/Icon/360.svg", alt="menu")
+			a(href="#").navbar-brand-mobile
+				img(src="./images/Logo.png", alt="OneCampus logo")
+			//- Collapsible content
+			#navbarToggleExternalContent.menu-mobile.navbar-collapse.collapse.animated.slideInLeft
+				h3.close-header X
+				hr
+				#accordionExample.accordion
+					.mobile-item
+						#headingOne.mobile-link
+							h2.mb-0
+								button.btn.btn-link(type='button' data-toggle='collapse' data-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne') Dashboard
+					.mobile-item
+						#headingTwo.mobile-link
+							h2.mb-0
+								button.btn.btn-link(type='button' data-toggle='collapse' data-target='#Abilities' aria-expanded='true' aria-controls='Abilities') Abilities
+								img.icon-collapse(src="./images/Icon/Arrow - Down.png", alt="collapse-icon")
+						#Abilities.collapse.scroll-menu(aria-labelledby='headingTwo' data-parent='#accordionExample')
+							ul.sub-menu
+								li.submenu-link
+									a(href="#") Accountability
+								li.submenu-link
+									a(href="#") Achieving Objetives
+								li.submenu-link
+									a(href="#") Adapting to Change
+								li.submenu-link
+									a(href="#") Analizing and Solving Problems
+								li.submenu-link
+									a(href="#") Ethics and Social Responsability
+								li.submenu-link
+									a(href="#") Generating Ideas & Renovating
+								li.submenu-link
+									a(href="#") Making Decisions
+								li.submenu-link
+									a(href="#") Planning & Organizing
+								li.submenu-link
+									a(href="#") Resilience
+								li.submenu-link
+									a(href="#") Strategic & Entrepreneurial Mindset
+							.header-descript
+								h6.title-submenu-section Assesment
+								p.submenu-description Sed cursus turpis vitae tortor. Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi.
+								+button({'buttonTitle': 'Try Again'}).button--primary
+					.mobile-item
+						#headingThree.mobile-link
+							h2.mb-0
+								button.btn.btn-link(type='button' data-toggle='collapse' data-target='#Learning' aria-expanded='true' aria-controls='Learning') Learning
+								img.icon-collapse(src="./images/Icon/Arrow - Down.png", alt="collapse-icon")
+						#Learning.collapse.scroll-menu(aria-labelledby='headingThree' data-parent='#accordionExample')
+							ul.sub-menu
+								li.submenu-link
+									a(href="#") Accountability
+								li.submenu-link
+									a(href="#") Achieving Objetives
+								li.submenu-link
+									a(href="#") Adapting to Change
+					.mobile-item
+						#headingFour.mobile-link
+							h2.mb-0
+								button.btn.btn-link(type='button' data-toggle='collapse' data-target='#Community' aria-expanded='true' aria-controls='Community') Community
+								img.icon-collapse(src="./images/Icon/Arrow - Down.png", alt="collapse-icon")
+						#Community.collapse.scroll-menu(aria-labelledby='headingFour' data-parent='#accordionExample')
+							ul.sub-menu
+								li.submenu-link
+									a(href="#") Accountability
+								li.submenu-link
+									a(href="#") Achieving Objetives
+								li.submenu-link
+									a(href="#") Adapting to Change
+			ul.navbar-nav
+				li.nav-item.dropdown
+					.dot-notifi
+						span.badge.badge-pill.dot-notification 12
+					a#notification.nav-link.dropdown-toggle-split(href='#')
+					img(src='./images/Icon/Bell.png' alt='Notification')
+				li.nav-item.dropdown
+					a#dropdown07.nav-link.dropdown-toggle
+						img.avatar-prof.rounded-circle(src="./images/Avatar/Image.png", alt="profile")
+					.dropdown-menu.show(aria-labelledby='dropdown07')
+						a.dropdown-item(href='#',)
+							.dropdown-item__content
+								img.icon-item(src="./images/Icon/User.png", alt="icon")
+								p.text-item My Passport
+						a.dropdown-item(href='#')
+							.dropdown-item__content
+								img.icon-item(src="./images/Icon/Settings.png", alt="icon")
+								p.text-item Settings
+						a.dropdown-item(href='#')
+							.dropdown-item__content
+								img.icon-item(src="./images/Icon/Support.png", alt="icon")
+								p.text-item Help & Support
+						a.dropdown-item(href='#')
+							.dropdown-item__content
+								img.icon-item(src="./images/Icon/Logout.png", alt="icon")
+								p.text-item Log Out
+
+
+		#navbarsExample10.collapse.navbar-collapse
+			ul.navbar-nav.mr-auto 
+				li.nav-item
+					a(href="#").nav-link Dashboard
+				li.nav-item
+					a(href="#").nav-link Professional Abilities
+					nav.dropdown--mega-menu.is-open
+						.dropdown-content
+							.dropdown__section
+								.dropdown__header
+									.dropdown__header-text Learning Series
+									a.dropdown__header-link(href="#") View All
+
+								ul.dropdown__link-list
+									li.dropdown__link-list-item
+										a.dropdown__link(tabindex="0" href="#")
+											.dropdown__link-text
+												span.link__title Accountability
+									li.dropdown__link-list-item
+										a.dropdown__link(tabindex="0" href="#")
+											.dropdown__link-text
+												span.link__title Achieving Objectives
+									li.dropdown__link-list-item
+										a.dropdown__link(tabindex="0" href="#")
+											.dropdown__link-text
+												span.link__title Adapting to Change
+									li.dropdown__link-list-item
+										a.dropdown__link(tabindex="0" href="#")
+											.dropdown__link-text
+												span.link__title Analyzing & Solving Problems
+									li.dropdown__link-list-item
+										a.dropdown__link(tabindex="0" href="#")
+											.dropdown__link-text
+												span.link__title Ethics & Social Responsibility
+									li.dropdown__link-list-item
+										a.dropdown__link(tabindex="0" href="#")
+											.dropdown__link-text
+												span.link__title Generating Ideas & Innovating
+									li.dropdown__link-list-item
+										a.dropdown__link(tabindex="0" href="#")
+											.dropdown__link-text
+												span.link__title Global Mindset
+
+							.dropdown__section
+								.dropdown__header
+									.dropdown__header-text 
+
+								ul.dropdown__link-list
+									li.dropdown__link-list-item
+										a.dropdown__link(tabindex="0" href="#")
+											.dropdown__link-text
+												span.link__title Leading Others
+									li.dropdown__link-list-item
+										a.dropdown__link(tabindex="0" href="#")
+											.dropdown__link-text
+												span.link__title Learning & Self-Development
+									li.dropdown__link-list-item
+										a.dropdown__link(tabindex="0" href="#")
+											.dropdown__link-text
+												span.link__title Making Decisions
+									li.dropdown__link-list-item
+										a.dropdown__link(tabindex="0" href="#")
+											.dropdown__link-text
+												span.link__title Planning & Organizing
+									li.dropdown__link-list-item
+										a.dropdown__link(tabindex="0" href="#")
+											.dropdown__link-text
+												span.link__title Resilience
+									li.dropdown__link-list-item
+										a.dropdown__link(tabindex="0" href="#")
+											.dropdown__link-text
+												span.link__title Strategic & Entrepreneurial Mindset
+									li.dropdown__link-list-item
+										a.dropdown__link(tabindex="0" href="#")
+											.dropdown__link-text
+												span.link__title Working Well with Others
+
+							.dropdown__section.dropdown__section--featured
+								.dropdown__header
+									.dropdown__header-text Assessments
+
+								ul.dropdown__link-list
+									li.dropdown__link-list-item.dropdown__link-list-item--with-action
+										a.dropdown__link(tabindex="0" href="#")
+											.dropdown__link-text
+												span.link__title Fusce dapibus, tellus ac cursus commodo, tortor mauris
+											.dropdown__link-action
+												+button({'buttonTitle': 'Take Professional Assessment'}).button--primary
+									li.dropdown__link-list-item.dropdown__link-list-item--with-action
+										a.dropdown__link(tabindex="0" href="#")
+											.dropdown__link-text
+												span.link__title Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque
+											.dropdown__link-action
+												+button({'buttonTitle': 'Take Self Assessment'}).button--primary
+				li.nav-item
+					a(href="#").nav-link Learning
+				li.nav-item
+					a(href="#").nav-link Community
+
+			ul.navbar-nav
+				li.nav-item.dropdown
+					.dot-notifi
+						span.badge.badge-pill.dot-notification 12
+					a#notification.nav-link.dropdown-toggle-split(href='#')
+					img(src="./images/Icon/Bell.png", alt="Notification")
+					.notification-menu.animated.slideInRight.show-menu(aria-labelledby='notification')
+						.notification-header
+							p.notification-menu__title Notifications
+							span.close-menu x
+						hr
+						p.notification-date Today
+						.notification-body
+							.link-item
+								img.notif-icon(src="./images/Logo.png" alt="OneCampus logo")
+								a.notification-link(href="#")
+									p.notification-link__title Title notification goes here
+									p.notification-link__description Curabitur a felis in nunc fringilla tristique. Nunc nec neque.
+							.link-item
+								img.notif-icon(src="./images/Logo.png" alt="OneCampus logo")
+								a.notification-link(href="#")
+									p.notification-link__title Title notification goes here
+									p.notification-link__description Curabitur a felis in nunc fringilla tristique. Nunc nec neque.
+							.link-item
+								img.notif-icon(src="./images/Logo.png" alt="OneCampus logo")
+								a.notification-link(href="#")
+									p.notification-link__title Title notification goes here
+									p.notification-link__description Curabitur a felis in nunc fringilla tristique. Nunc nec neque.
+							.link-item
+								img.notif-icon(src="./images/Logo.png" alt="OneCampus logo")
+								a.notification-link(href="#")
+									p.notification-link__title Title notification goes here
+									p.notification-link__description Curabitur a felis in nunc fringilla tristique. Nunc nec neque.
+							.link-item
+								img.notif-icon(src="./images/Logo.png" alt="OneCampus logo")
+								a.notification-link(href="#")
+									p.notification-link__title Title notification goes here
+									p.notification-link__description Curabitur a felis in nunc fringilla tristique. Nunc nec neque.
+
+				li.nav-item.dropdown
+					a#dropdown07.nav-link.dropdown-toggle
+						img.avatar-prof.rounded-circle(src="./images/Avatar/Image.png", alt="profile")
+					.dropdown-menu.show(aria-labelledby='dropdown07')
+						a.dropdown-item(href='#',)
+							.dropdown-item__content
+								img.icon-item(src="./images/Icon/User.png", alt="icon")
+								p.text-item My Passport
+						a.dropdown-item(href='#')
+							.dropdown-item__content
+								img.icon-item(src="./images/Icon/Settings.png", alt="icon")
+								p.text-item Settings
+						a.dropdown-item(href='#')
+							.dropdown-item__content
+								img.icon-item(src="./images/Icon/Support.png", alt="icon")
+								p.text-item Help & Support
+						a.dropdown-item(href='#')
+							.dropdown-item__content
+								img.icon-item(src="./images/Icon/Logout.png", alt="icon")
+								p.text-item Log Out

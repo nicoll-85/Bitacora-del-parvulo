@@ -1,0 +1,20 @@
+include includes/head.pug
+body
+	+topbar--closed-menu()
+	.page
+		.page-content.container
+			.container--main
+				+banner--boxed()
+			.section-background--fourth
+				.col-12
+					h4 Available Test
+					+card--panel-start
+					+card--panel
+					+card--panel
+					+card--panel
+					+card--panel
+			.section-background--sixth
+				.col-12.mt-5.mb-5
+					h4 Completed
+					+card--panel-complete
+		+footer()

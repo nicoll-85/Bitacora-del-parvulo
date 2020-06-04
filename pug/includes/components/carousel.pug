@@ -1,0 +1,475 @@
+mixin carousel-abilities()
+	.carousel-abilities&attributes(attributes)
+		#carouselExampleIndicators.carousel.slide(data-ride='carousel')
+			.carousel-inner
+				.carousel-item.active
+					.card-item.col-md-2
+						+card--small-bg
+					.card-item.col-md-2
+						+card--small-bg
+					.card-item.col-md-2
+						+card--small-bg
+					.card-item.col-md-2
+						+card--small-bg
+					.card-item.col-md-2
+						+card--small-bg
+						
+				.carousel-item
+					.card-item.col-md-2
+						+card--small-bg
+					.card-item.col-md-2
+						+card--small-bg
+					.card-item.col-md-2
+						+card--small-bg
+					.card-item.col-md-2
+						+card--small-bg
+					.card-item.col-md-2
+						+card--small-bg
+						
+				.carousel-item
+					.card-item.col-md-2
+						+card--small-bg
+					.card-item.col-md-2
+						+card--small-bg
+					.card-item.col-md-2
+						+card--small-bg
+					.card-item.col-md-2
+						+card--small-bg
+					.card-item.col-md-2
+						+card--small-bg
+						
+			a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+				img(src="./images/Button/Round Copy.svg", alt="Next")
+				span.sr-only Next
+
+mixin carousel-abilities--mobile()
+	.carousel-abilities__mobile&attributes(attributes)
+		#carouselExampleIndicators.carousel.slide(data-ride='carousel')
+			.carousel-inner
+				.carousel-item.active
+					.row
+						.card-item.col-2
+							+card--small-bg
+						.card-item.col-2
+							+card--small-bg
+						.card-item.col-2
+							+card--small-bg
+				.carousel-item
+					.row
+						.card-item.col-2
+							+card--small-bg
+						.card-item.col-2
+							+card--small-bg
+						.card-item.col-2
+							+card--small-bg
+				.carousel-item
+					.row
+						.card-item.col-2
+							+card--small-bg
+						.card-item.col-2
+							+card--small-bg
+						.card-item.col-2
+							+card--small-bg
+						
+			a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+				img(src="./images/Button/Round Copy.svg", alt="Next")
+				//- span.carousel-control-next-icon(aria-hidden='true')
+				span.sr-only Next
+
+mixin carousel-featured()
+	.carousel-featured&attributes(attributes)
+		#carouselExampleIndicators.carousel.slide(data-ride='carousel')
+			.carousel-inner
+				.carousel-item.active
+					.row
+						.card-item.col-6
+							+card
+						.card-item.col-6
+							+card
+				.carousel-item
+					.row
+						.card-item.col-6
+							+card
+						.card-item.col-6
+							+card
+						
+				.carousel-item
+					.row
+						.card-item.col-6
+							+card
+						.card-item.col-6
+							+card
+						
+			a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+				img(src="./images/Button/Round Copy.svg", alt="Next")
+				span.sr-only Next
+
+mixin carousel-featured--mobile()
+	.carousel-featured__mobile&attributes(attributes)
+		#carouselExampleIndicators.carousel.slide(data-ride='carousel')
+			.carousel-inner
+				.carousel-item.active
+					.row
+						.card-item.col-2
+							+card
+						.card-item.col-2
+							+card
+						.card-item.col-2
+							+card
+				.carousel-item
+					.row
+						.card-item.col-2
+							+card
+						.card-item.col-2
+							+card
+						.card-item.col-2
+							+card
+						
+				.carousel-item
+					.row
+						.card-item.col-2
+							+card
+						.card-item.col-2
+							+card
+						.card-item.col-2
+							+card
+						
+			a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+				img(src="./images/Button/Round Copy.svg", alt="Next")
+				span.sr-only Next
+	
+mixin carousel-featured--mobile-xsmall()
+	.carousel-featured__mobile-xsmall&attributes(attributes)
+		#carouselExampleIndicators.carousel.slide(data-ride='carousel')
+			.carousel-inner
+				.carousel-item.active
+					.row
+						.card-item.col-12
+							+card
+				.carousel-item
+					.row
+						.card-item.col-12
+							+card
+						
+				.carousel-item
+					.row
+						.card-item.col-12
+							+card
+						
+			a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+				img(src="./images/Button/Round Copy.svg", alt="Next")
+				span.sr-only Next
+
+mixin carousel-collections()
+		.carousel-collections&attributes(attributes)
+			#carouselExampleIndicators.carousel.slide(data-ride='carousel')
+				.carousel-inner
+					.carousel-item.active
+						.row
+							.card-item.col-4
+								+card--large-bg
+							.card-item.col-4
+								+card--large-bg
+							.card-item.col-4
+								+card--large-bg
+					.carousel-item
+						.row
+							.card-item.col-4
+								+card--large-bg
+							.card-item.col-4
+								+card--large-bg
+							.card-item.col-4
+								+card--large-bg
+							
+					.carousel-item
+						.row
+							.card-item.col-4
+								+card--large-bg
+							.card-item.col-4
+								+card--large-bg
+							.card-item.col-4
+								+card--large-bg
+							
+				a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+					img(src="./images/Button/Round Copy.svg", alt="Next")
+					span.sr-only Next
+
+mixin carousel-collections--mobile()
+	.carousel-collections__mobile&attributes(attributes)
+		#carouselExampleIndicators.carousel.slide(data-ride='carousel')
+			.carousel-inner
+				.carousel-item.active
+					.row
+						.card-item.col-6
+							+card--large-bg
+						.card-item.col-6
+							+card--large-bg
+						
+				.carousel-item
+					.row
+						.card-item.col-6
+							+card--large-bg
+						.card-item.col-6
+							+card--large-bg
+						
+						
+				.carousel-item
+					.row
+						.card-item.col-6
+							+card--large-bg
+						.card-item.col-6
+							+card--large-bg
+						
+						
+			a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+				img(src="./images/Button/Round Copy.svg", alt="Next")
+				span.sr-only Next
+	
+mixin carousel-connections()
+	.carousel-connections&attributes(attributes)
+		#carouselExampleIndicators.carousel.slide(data-ride='carousel')
+			.carousel-inner
+				.carousel-item.active
+					.row
+						.card-item.col-4
+							+card--v2
+						.card-item.col-4
+							+card--v2
+						.card-item.col-4
+							+card--v2
+				.carousel-item
+					.row
+						.card-item.col-4
+							+card--v2
+						.card-item.col-4
+							+card--v2
+						.card-item.col-4
+							+card--v2
+						
+				.carousel-item
+					.row
+						.card-item.col-4
+							+card--v2
+						.card-item.col-4
+							+card--v2
+						.card-item.col-4
+							+card--v2
+						
+			a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+				img(src="./images/Button/Round Copy.svg", alt="Next")
+				span.sr-only Next
+
+mixin carousel-connections--mobile()
+	.carousel-connections__mobile&attributes(attributes)
+		#carouselExampleIndicators.carousel.slide(data-ride='carousel')
+			.carousel-inner
+				.carousel-item.active
+					.row
+						.card-item.col-6
+							+card--v2
+						.card-item.col-6
+							+card--v2
+						
+				.carousel-item
+					.row
+						.card-item.col-6
+							+card--v2
+						.card-item.col-6
+							+card--v2
+						
+				.carousel-item
+					.row
+						.card-item.col-6
+							+card--v2
+						.card-item.col-6
+							+card--v2
+						
+			a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+				img(src="./images/Button/Round Copy.svg", alt="Next")
+				span.sr-only Next
+
+mixin carousel-connections-xs-small()
+		.carousel-connections__xs-small&attributes(attributes)
+			#carouselExampleIndicators.carousel.slide(data-ride='carousel')
+				.carousel-inner
+					.carousel-item.active
+						.card-item.col-12
+							+card--v2
+							
+					.carousel-item
+						.card-item.col-12
+							+card--v2
+							
+					.carousel-item
+						.card-item.col-12
+							+card--v2
+							
+				a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+					img(src="./images/Button/Round Copy.svg", alt="Next")
+					span.sr-only Next
+
+mixin carousel-recommended()
+	.carousel-recomended&attributes(attributes)
+		#carouselExampleIndicators.carousel.slide(data-ride='carousel')
+			.carousel-inner
+				.carousel-item.active
+					.row
+						.card-item.col-4
+							+card--v3
+						.card-item.col-4
+							+card--v3
+						.card-item.col-4
+							+card--v3
+				.carousel-item
+					.row
+						.card-item.col-4
+							+card--v3
+						.card-item.col-4
+							+card--v3
+						.card-item.col-4
+							+card--v3
+						
+				.carousel-item
+					.row
+						.card-item.col-4
+							+card--v3
+						.card-item.col-4
+							+card--v3
+						.card-item.col-4
+							+card--v3
+						
+			a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+				img(src="./images/Button/Round Copy.svg", alt="Next")
+				span.sr-only Next
+
+mixin carousel-recommended--mobile()
+	.carousel-recomended__mobile&attributes(attributes)
+		#carouselExampleIndicators.carousel.slide(data-ride='carousel')
+			.carousel-inner
+				.carousel-item.active
+					.row
+						.card-item.col-6
+							+card--v3
+						.card-item.col-6
+							+card--v3
+						
+				.carousel-item
+					.row
+						.card-item.col-6
+							+card--v3
+						.card-item.col-6
+							+card--v3
+						
+				.carousel-item
+					.row
+						.card-item.col-6
+							+card--v3
+						.card-item.col-6
+							+card--v3
+						
+			a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+				img(src="./images/Button/Round Copy.svg", alt="Next")
+				span.sr-only Next
+
+mixin carousel-recommended--xs-small()
+		.carousel-recomended__xs-small&attributes(attributes)
+			#carouselExampleIndicators.carousel.slide(data-ride='carousel')
+				.carousel-inner
+					.carousel-item.active
+						.card-item.col-12
+							+card--v3
+							
+					.carousel-item
+						.card-item.col-12
+							+card--v3
+							
+					.carousel-item
+						.card-item.col-12
+							+card--v3
+							
+				a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+					img(src="./images/Button/Round Copy.svg", alt="Next")
+					span.sr-only Next
+
+mixin carousel-learning()
+	.carousel-learning&attributes(attributes)
+		#carouselExampleIndicators.carousel.slide(data-ride='carousel')
+			.carousel-inner
+				.carousel-item.active
+					.row
+						.card-item.col-4
+							+card--v4
+						.card-item.col-4
+							+card--v4
+						.card-item.col-4
+							+card--v4
+				.carousel-item
+					.row
+						.card-item.col-4
+							+card--v4
+						.card-item.col-4
+							+card--v4
+						.card-item.col-4
+							+card--v4
+						
+				.carousel-item
+					.row
+						.card-item.col-4
+							+card--v4
+						.card-item.col-4
+							+card--v4
+						.card-item.col-4
+							+card--v4
+						
+			a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+				img(src="./images/Button/Round Copy.svg", alt="Next")
+				span.sr-only Next
+
+mixin carousel-learning--mobile()
+	.carousel-learning__mobile&attributes(attributes)
+		#carouselExampleIndicators.carousel.slide(data-ride='carousel')
+			.carousel-inner
+				.carousel-item.active
+					.row
+						.card-item.col-6
+							+card--v4
+						.card-item.col-6
+							+card--v4
+						
+				.carousel-item
+					.row
+						.card-item.col-6
+							+card--v4
+						.card-item.col-6
+							+card--v4
+						
+				.carousel-item
+					.row
+						.card-item.col-6
+							+card--v4
+						.card-item.col-6
+							+card--v4
+						
+			a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+				img(src="./images/Button/Round Copy.svg", alt="Next")
+				span.sr-only Next
+
+	mixin carousel-learning--xs-small()
+		.carousel-learning__xs-small&attributes(attributes)
+			#carouselExampleIndicators.carousel.slide(data-ride='carousel')
+				.carousel-inner
+					.carousel-item.active
+						.card-item.col-12
+							+card--v4
+							
+					.carousel-item
+						.card-item.col-12
+							+card--v4
+							
+					.carousel-item
+						.card-item.col-12
+							+card--v4
+							
+				a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+					img(src="./images/Button/Round Copy.svg", alt="Next")
+					span.sr-only Next

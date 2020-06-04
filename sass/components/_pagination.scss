@@ -1,0 +1,79 @@
+.pagination {
+	display: flex;
+	margin-top: 24px;
+	justify-content: space-between;
+
+	@include media(tablet) {
+		justify-content: flex-start;
+	}
+
+	.button {
+		color: var(--lightest-color);
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    height: 32px;
+    min-width: 32px;
+    width: 32px;
+    max-width: 32px;
+    margin-right: 0px;
+
+    @include media(tablet) {
+    	margin-right: 8px;
+    }
+
+    .icon {
+      fill: var(--lightest-color);
+      margin: 0px;
+    }
+
+    &:active,
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+
+    &.button-arrow--disabled {
+  		opacity: 0.6;
+  		cursor: not-allowed;
+  	}
+
+    &.button-number {
+    	color: var(--darkest-color);
+	    background-color: transparent;
+	    border: 1px solid transparent;
+
+	    .icon {
+	      fill: var(--darkest-color);
+	    }
+
+	    &:active,
+	    &:hover,
+	    &:focus {
+	      text-decoration: none;
+	    	border: 1px solid var(--darkest-color);
+    	}
+
+    	&.button-number--active {
+    		color: var(--primary-color);
+
+		    .icon {
+		      fill: var(--primary-color);
+		      margin: 0px;
+		    }
+
+		    &:active,
+		    &:hover,
+		    &:focus {
+		      text-decoration: none;
+		    	border: 1px solid var(--primary-color);
+	    	}
+    	}
+
+    	&.button-number--disabled {
+    		opacity: 0.6;
+    		cursor: not-allowed;
+    	}
+    }
+	}
+}

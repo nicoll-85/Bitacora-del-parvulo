@@ -5,10 +5,10 @@
 	& *{
 		z-index: 1;
 	}
-	min-width: 200px;
+	min-width: 250px;
 	width: 100%;
 	max-width: 100%;
-	min-height: 120px;
+	min-height: 60px;
 	position: relative;
 	padding: 15px 20px;
 	margin: 10px auto;
@@ -20,45 +20,112 @@
 	border-radius: 5px;
 	justify-content: space-between;
 	border-radius: 5px;
-	background: var(--lightest-color);
-	color: var(--secondary-color);
-	box-shadow: 0 2px 8px rgba(0,0,0,.23);
+	background: transparent;
+	color: var(--darkest-color);
+	box-shadow: none;
 	font-family: var(--primary-font);
 	text-align: left;
 	line-height: 18px;
+	margin-top: 51px;
 	@include font-size(18px);
-	@include media(desktop-m) {
-		max-width: 400px;
-		min-height: 150px;
-	}
-
-	&:after{
-		content: " ";
-		position: absolute;
-		left: 0px;
-		top: 0px;
-		width: 100%;
-		height: 100%;
-		background: 100% 100%/auto 90px no-repeat;
-		background-image: url(https://onecampus.laureate.net/assets/images/global/card-watermark-default.svg);
-		z-index: 0;
+	@include media(tablet) {
+		max-width: 600px;
+		min-height: 100px;
 	}
 
 	.box__subtitle{
 		margin-bottom: 5px;
-		text-transform: uppercase;
+		text-transform: none;
 		letter-spacing: 1px;
-		color: lighten($secondary-color, 30%);
+		color: var(--primary-color);
 		font-weight: 600;
 		@include font-size(12px);
 	}
 
 	.box__title{
-		margin-bottom: 15px;
-		color: var(--secondary-color);
-		font-weight: 600;
-		@include font-size(18px);
+		margin: 0px 0px 32px 0px;
+		color: var(--darkest-color);
+		font-weight: 400;
+		@include font-size(16px);
+		line-height: 1.25;
 	}
+	.box__icon {
+    fill: var(--darkest-color);
+    width: 80px;
+    height: 80px;
+    padding: 24px;
+    background: lighten($secondary-color,44);
+    border-radius: 50%;
+    overflow: overlay;
+	}
+
+	.box__description {
+		@include font-size(14px);
+		font-weight: 400;
+		margin-bottom: 18px;
+		color: var(--darkest-color);
+		opacity: .4;
+	}
+
+	&.box--carousel {
+		background: lighten($secondary-color,44);
+
+		.box__description {
+			margin-bottom: 18px;
+			@include font-size(14px);
+			font-weight: 400;
+			color: var(--darkest-color);
+			opacity: .4;
+		}
+		@include media(tablet) {
+			background: transparent;
+		}
+	}
+
+	&.box--key-behavior {
+		.box__title{
+			font-weight: 600;
+			@include font-size(20px);
+			max-width: 60%;
+		}
+
+		.box__description {
+			font-style: italic;
+		}
+	}
+
+	&.box--episode-card {
+		.box__subtitle{
+			font-weight: 400;
+			@include font-size(14px);
+		}
+		.box__title{
+			font-weight: 600;
+			@include font-size(24px);
+		}
+
+		.box__description {
+			font-style: normal;
+		}
+	}
+	&.box--centered-content {
+    text-align: center;
+		.box__title{
+			font-weight: 600;
+			@include font-size(24px);
+		}
+
+		.box__description {
+			font-style: normal;
+			@include font-size(16px);
+		}
+  }
+	&.box--condensed {
+		.box__title{
+			margin: 0px;
+			margin-bottom: 10px;
+		}
+  }
 }
 
 .box__content {
@@ -72,20 +139,13 @@
 }
 
 .box__image {
-	height: 60px;
-	width: 60px;
-	min-width: 60px;
-}
-.box__title {
-	margin-top: 28px;
-	font-size: 18px;
-	font-weight: bold;
+	height: 80px;
+	width: 80px;
+	min-width: 80px;
+	margin-bottom: 30px;
 }
 .box__media {
 	text-align: left;
-}
-.box__description {
-	margin-bottom: 18px;
 }
 
 /* Variations

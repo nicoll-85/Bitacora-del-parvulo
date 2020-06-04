@@ -1,0 +1,77 @@
+.score-pill {
+  position: relative;
+  display: inline-block;
+  max-width: 175px;
+  min-width: 175px;
+  width: 100%;
+  background-color: rgba(58, 134, 207, 0.05);
+  border-radius: 40px;
+
+  @media screen and (max-width:575px) {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+  }
+  @media screen and (min-width:576px) {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+  }
+  @media screen and (min-width:768px) {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+  }
+  @media screen and (min-width:992px) {
+    display: block;
+    max-width: 175px;
+    min-width: 175px;
+  }
+
+  .pill-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding: 12px 10px;
+    align-items: center;
+
+    @media screen and (max-width:575px) {
+      justify-content: end;
+      padding: 3px 0px;
+    }
+    @media screen and (min-width:576px) {
+      justify-content: end;
+      padding: 3px 0px;
+    }
+    @media screen and (min-width:768px) {
+      justify-content: end;
+      padding: 3px 0px;
+    }
+    @media screen and (min-width:992px) {
+      justify-content: left;
+      padding: 12px 10px;
+    }
+
+    .media-pill {
+      width: 50px;
+    }
+
+    .pill-text {
+      font-family: var(--primary-font);
+      margin-left: 20px;
+
+      .pill-title {
+        color: $darkest-color;
+        font-size: 10px;
+        text-align: left;
+        font-weight: lighter;
+      }
+
+      .pill-label {
+        color: $primary-color;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+}

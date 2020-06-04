@@ -1,0 +1,29 @@
+.speaker-list{
+  display: block;
+  list-style-type: none;
+  font-family: var(--primary-font);
+  color: $darkest-color;
+  .speaker-prof__item{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    .speaker-img{
+      width: 60px;
+      height: 60px;
+      border-radius: 50px;
+    }
+    .speaker-description{
+      margin-left: 15px;
+      .speaker-name{
+        color: $darkest-color;
+        font-weight: 500;
+        margin-bottom: 0px;
+      }
+      .speaker-resume{
+        color: $darkest-color;
+        opacity: .6;
+        font-weight: 400;
+      }
+    }
+  }
+}

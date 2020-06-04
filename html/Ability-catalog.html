@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>One Campus Portal</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="images/logo-onecampus-white.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="css/theme-oc.css">
+    <link rel="stylesheet" href="https://www.glyphicons.com/">
+  </head>
+</html>
+<body>
+  <nav class="topbar">
+    <div class="topbar__menu">
+      <button class="topbar__menu-toggle">
+        <svg class="topbar__menu-icon" role="img" aria-label="icon" aria-hidden="aria-hidden">
+          <use xlink:href="images/icons/oc-icons.svg#oc-List"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="topbar__content topbar__content--left"><img class="topbar__logo" src="images/logo-onecampus-white.svg"/></div>
+    <div class="topbar__content topbar__content--right">
+      <div class="topbar__nav-item">
+        <button class="topbar__dropdown-button">
+          <svg class="topbar__menu-icon" role="img" aria-label="icon" aria-hidden="aria-hidden">
+            <use xlink:href="images/icons/oc-icons.svg#oc-search"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="topbar__nav-item">
+        <button class="topbar__dropdown-button topbar__dropdown-button--notification">
+          <svg class="topbar__menu-icon" role="img" aria-label="icon" aria-hidden="aria-hidden">
+            <use xlink:href="images/icons/oc-icons.svg#oc-bell"></use>
+          </svg>
+        </button>
+        <nav class="topbar__dropdown">
+          <div class="topbar__dropdown-content">
+            <div class="dropdown__header">
+              <div class="dropdown__header-text">Notificaciones</div><a class="dropdown__header-link" href="#">Ver todo</a>
+            </div>
+            <ul class="dropdown__link-list">
+              <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
+                  <div class="dropdown__link-media"><img class="link__image" src="images/user-2--profile.jpg" alt="key"/><img class="link__image link__image--left-overlapped" src="images/stamp-data-scientist.svg" alt="key"/></div>
+                  <div class="dropdown__link-text"><span class="link__title">Hi user, your connection, <b>userName</b>, earned...</span><span class="link__subtitle">hace 5 meses</span></div></a></li>
+              <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
+                  <div class="dropdown__link-media"><img class="link__image" src="images/user-2--profile.jpg" alt="key"/></div>
+                  <div class="dropdown__link-text"><span class="link__title">Hi user, your connection, <b>userName</b>, earned...</span><span class="link__subtitle">hace 5 meses</span></div></a></li>
+              <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#">
+                  <div class="dropdown__link-media"><img class="link__image" src="images/icon-onecampus.svg" alt="key"/></div>
+                  <div class="dropdown__link-text"><span class="link__title">OneCampus® by Laureate News! A new post was added....</span></div></a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="topbar__nav-item">
+        <button class="topbar__dropdown-button">
+          <div class="avatar" style="background-image:url('images/user--profile.png');"></div>
+        </button>
+        <nav class="topbar__dropdown">
+          <div class="topbar__dropdown-content">
+            <div class="dropdown__header">
+              <div class="dropdown__header-icon">
+                <svg class="icon" role="img" aria-label="icon" aria-hidden="aria-hidden">
+                  <use xlink:href="images/icons/oc-icons.svg#oc-passport"></use>
+                </svg>
+              </div>
+              <div class="dropdown__header-text">Pasaporte</div><a class="dropdown__header-link" href="#">Ver mi Pasaporte</a>
+            </div>
+            <div class="checkbox-container--with-icon-left">
+              <div class="checkbox-container__icon">
+                <svg class="icon" role="img" aria-label="icon" aria-hidden="aria-hidden">
+                  <use xlink:href="images/icons/oc-icons.svg#oc-logo"></use>
+                </svg>
+              </div>
+              <div class="checkbox">
+                <ul class="checkbox-list">
+                  <li class="checkbox__list-item">
+                    <button class="checkbox__button" aria-pressed="true"><span class="checkbox__text">ENG</span></button>
+                  </li>
+                  <li class="checkbox__list-item">
+                    <button class="checkbox__button"><span class="checkbox__text">ESP</span></button>
+                  </li>
+                  <li class="checkbox__list-item">
+                    <button class="checkbox__button"><span class="checkbox__text">POR</span></button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <ul class="dropdown__link-list">
+              <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#"><span>Configuraciones</span></a></li>
+              <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#"><span>Ayuda y reporte</span></a></li>
+              <li class="dropdown__link-list-item"><a class="dropdown__link" tabindex="0" href="#"><span>Cerrar sesión</span></a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </nav>
+  <div class="sidebar-menu">
+    <div class="sidebar-menu__search-box">
+      <label class="label-search">Search</label>
+      <input class="input-search" type="text"/>
+      <button class="button-search">
+        <svg class="icon" role="img" aria-label="icon" aria-hidden="aria-hidden">
+          <use xlink:href="images/icons/oc-icons.svg#oc-search"></use>
+        </svg>
+      </button>
+    </div>
+    <ul class="sidebar-menu__list">
+      <li class="sidebar-menu__list-item"><a class="sidebar-menu__list-action is-active" href="#">
+          <div class="list-action__text"><span class="list-action__title">Home</span><span class="list-action__subtitle">Access your personalized dashboard</span></div></a></li>
+      <li class="sidebar-menu__list-item"><a class="sidebar-menu__list-action" href="#">
+          <div class="list-action__text"><span class="list-action__title">Laureate Professional Assessment Testing</span><span class="list-action__subtitle">subtitle goes here</span></div>
+          <div class="list-action__icon">
+            <svg class="icon" role="img" aria-label="icon" aria-hidden="aria-hidden">
+              <use xlink:href="images/icons/oc-icons.svg#oc-chevron-right"></use>
+            </svg>
+          </div></a></li>
+      <li class="sidebar-menu__list-item"><a class="sidebar-menu__list-action" href="#">
+          <div class="list-action__text"><span class="list-action__title">Abilities</span><span class="list-action__subtitle">Subtitle goes here</span></div>
+          <div class="list-action__icon">
+            <svg class="icon" role="img" aria-label="icon" aria-hidden="aria-hidden">
+              <use xlink:href="images/icons/oc-icons.svg#oc-chevron-right"></use>
+            </svg>
+          </div></a></li>
+      <li class="sidebar-menu__list-item"><a class="sidebar-menu__list-action" href="#">
+          <div class="list-action__text"><span class="list-action__title">Professional Skills</span><span class="list-action__subtitle">Develop critical professional skills with curated learning experience</span></div>
+          <div class="list-action__icon">
+            <svg class="icon" role="img" aria-label="icon" aria-hidden="aria-hidden">
+              <use xlink:href="images/icons/oc-icons.svg#oc-chevron-right"></use>
+            </svg>
+          </div></a></li>
+      <li class="sidebar-menu__list-item"><a class="sidebar-menu__list-action" href="#">
+          <div class="list-action__text"><span class="list-action__title">Global Network</span><span class="list-action__subtitle">Connect and grow with students from across the globe</span></div>
+          <div class="list-action__icon">
+            <svg class="icon" role="img" aria-label="icon" aria-hidden="aria-hidden">
+              <use xlink:href="images/icons/oc-icons.svg#oc-chevron-right"></use>
+            </svg>
+          </div></a></li>
+      <li class="sidebar-menu__list-item"><a class="sidebar-menu__list-action" href="#">
+          <div class="list-action__text"><span class="list-action__title">Events</span><span class="list-action__subtitle">Engage in virtual events led by experts and industry leaders</span></div>
+          <div class="list-action__icon">
+            <svg class="icon" role="img" aria-label="icon" aria-hidden="aria-hidden">
+              <use xlink:href="images/icons/oc-icons.svg#oc-chevron-right"></use>
+            </svg>
+          </div></a></li>
+      <li class="sidebar-menu__list-item"><a class="sidebar-menu__list-action" href="#">
+          <div class="list-action__text"><span class="list-action__title">News</span><span class="list-action__subtitle">Stay current with the latest from OneCampus</span></div>
+          <div class="list-action__icon">
+            <svg class="icon" role="img" aria-label="icon" aria-hidden="aria-hidden">
+              <use xlink:href="images/icons/oc-icons.svg#oc-chevron-right"></use>
+            </svg>
+          </div></a></li>
+    </ul>
+    <div class="sidebar-menu sidebar-menu--level-02 is-active">
+      <ul class="sidebar-menu__list">
+        <li class="sidebar-menu__list-item sidebar-menu__list-item--icon-left"><a class="sidebar-menu__list-action" href="#">
+            <div class="list-action__icon">
+              <svg class="icon" role="img" aria-label="icon" aria-hidden="aria-hidden">
+                <use xlink:href="images/icons/oc-icons.svg#oc-chevron-left"></use>
+              </svg>
+            </div>
+            <div class="list-action__text"><span class="list-action__title">Back</span></div></a></li>
+        <li class="sidebar-menu__list-item">
+          <h1 class="sidebar-menu__list-action" href="#">
+            <div class="list-action__text"><span class="list-action__title">Abilities</span></div>
+          </h1>
+        </li>
+        <li class="sidebar-menu__list-item"><a class="sidebar-menu__list-action" href="#">
+            <div class="list-action__text"><span class="list-action__subtitle">Analyzing & solving problems</span></div></a></li>
+        <li class="sidebar-menu__list-item"><a class="sidebar-menu__list-action" href="#">
+            <div class="list-action__text"><span class="list-action__subtitle">Achieving Objectives</span></div></a></li>
+        <li class="sidebar-menu__list-item"><a class="sidebar-menu__list-action" href="#">
+            <div class="list-action__text"><span class="list-action__subtitle">Working Well with Others</span></div></a></li>
+        <li class="sidebar-menu__list-item"><a class="sidebar-menu__list-action" href="#">
+            <div class="list-action__text"><span class="list-action__subtitle">Adapting to Change</span></div></a></li>
+        <li class="sidebar-menu__list-item"><a class="sidebar-menu__list-action" href="#">
+            <div class="list-action__text"><span class="list-action__subtitle">Learning & Self-Development</span></div></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="page">
+    <div class="page-content">
+      <section class="section--partial-background section--partial-background--left-top section--partial-background--medium" style="background-image:url(images/Polygon6.png)">
+        <div class="container container--main">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="banner">
+                <div class="banner__content">
+                  <div class="banner__label">
+                    <svg class="icon" role="img" aria-label="icon" aria-hidden="aria-hidden">
+                      <use xlink:href="images/icons/oc-icons.svg#oc-Ability"></use>
+                    </svg><span class="label__text">Abilities</span>
+                  </div>
+                  <div class="banner__text">
+                    <h1 class="banner__title">Analyzing & Solving Problems</h1><span class="banner__description">Employers look for candidates who approach a situation by quickly assessing and efficiently applying their knowledge to influence it.</span>
+                  </div>
+                  <div class="banner__actions"></div>
+                </div>
+                <div class="banner__image" style="background-image:url(&quot;images/ability-analyzing-hero.svg&quot;);"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section--partial-background section--partial-background--left-center section--partial-background--xsmall" style="background-image:url(images/Polygon7.png)">
+        <div class="container container--main">
+          <div class="row">
+            <div class="col-sm-12 col-md-4">
+              <div class="box box--key-behavior">
+                <div class="box__media">
+                </div>
+                <div class="box__title">Key Behaviors</div>
+                <div class="box__description">Based on the Laureate Professional Assessment, we’ve broken this ability down into a few key behaviors and provided an example of what they mean.</div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-8">
+              <div class="row carousel--horizontal-scroll">
+                <div class="col-sm-12 col-md-6">
+                  <div class="box box--carousel">
+                    <div class="box__media"><img class="box__image" src="images/keyBehavior01.png" alt="key"/>
+                    </div>
+                    <div class="box__title">Critical Thinking</div>
+                    <div class="box__description">You look at information critically. You check your sources because knowing where the information comes from is just as important as what’s in it.</div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <div class="box box--carousel">
+                    <div class="box__media"><img class="box__image" src="images/keyBehavior02.png" alt="key"/>
+                    </div>
+                    <div class="box__title">Critical Thinking</div>
+                    <div class="box__description">You look at information critically. You check your sources because knowing where the information comes from is just as important as what’s in it.</div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <div class="box box--carousel">
+                    <div class="box__media"><img class="box__image" src="images/keyBehavior03.png" alt="key"/>
+                    </div>
+                    <div class="box__title">Critical Thinking</div>
+                    <div class="box__description">You look at information critically. You check your sources because knowing where the information comes from is just as important as what’s in it.</div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <div class="box box--carousel">
+                    <div class="box__media"><img class="box__image" src="images/keyBehavior04.png" alt="key"/>
+                    </div>
+                    <div class="box__title">Critical Thinking</div>
+                    <div class="box__description">You look at information critically. You check your sources because knowing where the information comes from is just as important as what’s in it.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="card-featured">
+                    <div class="card-featured__body"><img class="card-featured__img" src="./images/Card Image.svg" alt=""/>
+                      <div class="card-featured__content">
+                        <h4 class="card-featured__title">How are you doing at Analyzing & Solving Problems?</h4>
+                        <p class="card-featured__text">Answer a few short questions and get an idea of your current
+                          <ability>level so you know where you can improve.</ability>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section--partial-background section--partial-background--right-center section--partial-background--tiny" style="background-image:url(&quot;images/Polygon 8.png&quot;);">
+        <div class="container container--main">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <div class="card-video"><img class="card-video__img" src="./images/Fill.png" alt=""/>
+                <div class="card-img-overlay">
+                  <p class="card-video__section-title">LEARNING SERIES</p>
+                  <h5 class="card-video__title">Analyzing and Solving Problems: Instinct vs. Evidence</h5>
+                </div>
+              </div>
+              <div class="box-badge"><img class="card-video__triangle" src="./images/Rectangle.png" alt="Tringle-badge"/><img class="card-video__badge" src="./images/Badge.png" alt="Badge"/></div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <div class="box box--episode-card">
+                <div class="box__media">
+                </div>
+                <div class="box__subtitle">Learning Series</div>
+                <div class="box__title">Want to improve this ability?</div>
+                <div class="box__description">Gain more awareness about the key behaviors for Analyzing &amp; Solving Problems.</div>
+                <button class="button button--primary"><span class="button__title">Start the Episode</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section--color-background section--color-background--fourth section--color-background-traslapped">
+        <div class="container container--main">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="box box--centered-content box--condensed">
+                <div class="box__media">
+                </div>
+                <div class="box__title">More videos on analyzing &amp; solving problems</div>
+                <div class="box__description">Checkout popular content to help you continue improving on this ability</div>
+              </div>
+            </div>
+          </div>
+          <div class="row carousel--horizontal-scroll">
+            <div class="col">
+              <div class="card"><img class="media--top" src="./images/Fill@3x.png" alt="video image"/>
+                <button><img class="icon-play--video" src="./images/Button/Play.svg" alt="Play"/></button>
+                <div class="card__body">
+                  <h5 class="card__title">Design Thinking: The New Standard for Creative...</h5>
+                  <p class="card__text">Some quick example text to build on the card title and make...</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card"><img class="media--top" src="./images/Fill@3x.png" alt="video image"/>
+                <button><img class="icon-play--video" src="./images/Button/Play.svg" alt="Play"/></button>
+                <div class="card__body">
+                  <h5 class="card__title">Design Thinking: The New Standard for Creative...</h5>
+                  <p class="card__text">Some quick example text to build on the card title and make...</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card"><img class="media--top" src="./images/Fill@3x.png" alt="video image"/>
+                <button><img class="icon-play--video" src="./images/Button/Play.svg" alt="Play"/></button>
+                <div class="card__body">
+                  <h5 class="card__title">Design Thinking: The New Standard for Creative...</h5>
+                  <p class="card__text">Some quick example text to build on the card title and make...</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card"><img class="media--top" src="./images/Fill@3x.png" alt="video image"/>
+                <button><img class="icon-play--video" src="./images/Button/Play.svg" alt="Play"/></button>
+                <div class="card__body">
+                  <h5 class="card__title">Design Thinking: The New Standard for Creative...</h5>
+                  <p class="card__text">Some quick example text to build on the card title and make...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section--partial-background section--partial-background--bottom-center section--partial-background--small" style="background-image:url(&quot;images/Polygon 9.png&quot;);">
+        <div class="container container--main">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="box box--centered-content box--condensed">
+                <div class="box__media">
+                </div>
+                <div class="box__title">1,205+ Students</div>
+                <div class="box__description">learning this ability on OneCampus</div>
+                <button class="button button--primary"><span class="button__title">See Who’s Learning</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>

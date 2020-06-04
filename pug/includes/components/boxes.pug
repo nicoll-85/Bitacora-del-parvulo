@@ -2,19 +2,28 @@ mixin box(options)
   - options = options || {};
   - var showImage = options.showImage || false;
   - var showDescription = options.showDescription || false;
+  - var showAction = options.showAction || false;
   - var hideSubtitle = options.hideSubtitle || false;
   - var boxTitle = options.boxTitle || 'Coming in September, exclusively on OneCampus – World Business Forum London';
   - var boxSubtitle = options.boxSubtitle || 'World Business Forum London';
-  - var boxLink = options.boxLink || 'Discover Now';
+  - var boxAction = options.boxAction || 'Learn more';
   - var boxDescription = options.boxDescription || 'Morbi mattis ullamcorper velit. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Ut a nisl id ante tempus hendrerit. Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.';
-  - var boxImage = options.boxImage || '../assets/graphic-conversation.svg';
+  - var boxImage = options.boxImage || 'images/keyBehavior01.png';
+  - var showIcon = options.showIcon || false;
+  - var iconName = options.iconName || '';
+  - var iconUrl = 'images/icons/oc-icons.svg#oc-'+iconName;
+
   .box&attributes(attributes)
     .box__media
       if showImage
         img.box__image(src=boxImage alt='key')
+      if showIcon
+        svg(class="box__icon" role="img" aria-label="icon" aria-hidden=true)
+          use(xlink:href=iconUrl)
     unless hideSubtitle
       .box__subtitle #{boxSubtitle}
     .box__title #{boxTitle}
     if showDescription
       .box__description #{boxDescription}
-    +link(boxLink)
+    if showAction
+      +button({'buttonTitle': boxAction}).button--primary
