@@ -129,3 +129,11 @@ mixin banner--ability()
 				span.banner__description You go to school to learn technical skills like finance, journalist or engineering In dui magna, posuere eget, vestibulum et, tempor auctor, justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci. Maecenas malesuada.
 			.banner__actions
 		.banner__image(style={'background-image': 'url("./images/1.png")'})
+
+mixin banner--lg()
+	.banner-lg
+		.banner__content
+			p.banner__label-event Wobi event
+			h1.banner__title-event World of Business Ideas Forum Sydney
+			p.banner__date-event September 23, 2020
+			+button({'buttonTitle': 'Learn More'}).button--lightest

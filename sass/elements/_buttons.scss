@@ -157,6 +157,7 @@
       fill:  #3A86CF; /*IE*/
     }
   }
+  
 }
 
 .button--third {
@@ -330,3 +331,17 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+.button--lightest {
+  background-color: transparent;
+  color: var(--lightest-color);
+  border-color: $lightest-color;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: lighten($primary-color, 5%);
+  }
+  .icon {
+    fill: var(--lightest-color);
+    fill: white;  /*IE*/
+  }
+}
