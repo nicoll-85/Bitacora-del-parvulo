@@ -305,9 +305,10 @@
   background: url("../images/bg-banner.png") $darkest-color;
   background-size: cover;
   background-repeat: no-repeat;
-  // background-color: rgba(24,33,38,0.50);
+  background-color: rgba(24,33,38,0.50);
   height: 100%;
   max-height: 474px;
+  padding: 25px 15px 20px;
   z-index: 1;
   .banner__content{
     max-width: 460px;
@@ -330,6 +331,10 @@
       font-size: 14px;
       font-weight: 500;
     }
+    
+  }
+  .badge__container{
+    float: right;
   }
 
 }

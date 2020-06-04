@@ -6693,8 +6693,10 @@ ol.list {
   background: url("../images/bg-banner.png") #334652;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: rgba(24, 33, 38, 0.5);
   height: 100%;
   max-height: 474px;
+  padding: 25px 15px 20px;
   z-index: 1; }
   .banner-lg .banner__content {
     max-width: 460px;
@@ -6714,6 +6716,8 @@ ol.list {
       color: #FF7C5F;
       font-size: 14px;
       font-weight: 500; }
+  .banner-lg .badge__container {
+    float: right; }
 
 .sidebar-menu {
   transform: translateX(-100%);
