@@ -38,9 +38,22 @@ body
 				.control-bar__result
 					.control-bar__result-text 55 items found
 				+button({'hideTitle': true,'showIcon': true,'iconName': 'filter'}).button--transparent.button--only-icon--small.button--filter-icon
+				button.filter-icon__menu(type='button', data-toggle='modal', data-target='#exampleModalLongSC')
+				.filter-search__mobile
+					#exampleModalLongSC.modal.fade.top.show(tabindex='-1', role='dialog', aria-labelledby='exampleModalLongTitleSC', data-gtm-vis-first-on-screen-2340190_1302='1459744', data-gtm-vis-total-visible-time-2340190_1302='100', data-gtm-vis-has-fired-2340190_1302='1', style='display: none;', aria-modal='true')
+							.modal-dialog.modal-dialog-scrollable(role='document')
+								.modal-content
+									.modal-header
+										h5#exampleModalLongTitleSC.modal-title Filter by
+										button.close(type='button', data-dismiss='modal', aria-label='Close')
+										span(aria-hidden='true')
+											img(src="./images/ctrl-down.svg", alt="close")
+									.modal-body
+										+filter-search
 				.control-bar__actions
 					+button({'hideTitle': true,'showIcon': true,'iconName': 'list-unordered'}).button--transparent.button--only-icon--small
 					+button({'hideTitle': true,'showIcon': true,'iconName': 'Grid'}).button--transparent.button--only-icon--small.button--disabled
+					
 					.dropdown--only
 						a#dropdownSort.btn.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true') Most Relevant
 						.dropdown-menu.dropdown-menu--right.show(aria-labelledby='dropdownSort')
