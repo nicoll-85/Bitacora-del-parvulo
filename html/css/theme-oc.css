@@ -7946,6 +7946,39 @@ ol.list {
   .filter-search__mobile .modal-content .modal-header {
     border-bottom: transparent; }
 
+.button--search-icon {
+  background-image: url("../images/search.svg");
+  background-repeat: no-repeat;
+  width: 21px;
+  border: transparent;
+  height: 21px;
+  background-color: transparent;
+  margin-top: 13px;
+  margin-left: auto; }
+
+.searching-mobile .modal-content {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  outline: 0; }
+  .searching-mobile .modal-content .modal-header {
+    border-bottom: transparent; }
+
+.search-icon {
+  margin-bottom: 6px; }
+
+.cancel-text {
+  color: #FF7C5F;
+  font-weight: 400; }
+
 .article {
   padding-top: 40px; }
   .article .article__title {

@@ -233,18 +233,24 @@
       </button>
       <div class="input-search-container">
         <div class="input-search__text"><span class="input-search__title">Results for </span><span class="input-search__keywords">"Learning Paths"</span></div>
-        <button class="button button--transparent button--only-icon--small button--search-icon">
-          <svg class="icon" role="img" aria-label="icon" aria-hidden="aria-hidden">
-            <use xlink:href="images/icons/oc-icons.svg#oc-search"></use>
-          </svg>
-        </button>
-        <div class="input-search-control">
-          <div class="input-search-control__icon">
-            <svg class="icon" role="img" aria-label="icon" aria-hidden>
-              <use xlink:href="images/icons/oc-icons.svg#oc-search"></use>
-            </svg>
+        <button class="button--search-icon" type="button" data-toggle="modal" data-target="#Search"></button>
+        <div class="searching-mobile">
+          <div class="modal fade top show" id="Search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitleSC" data-gtm-vis-first-on-screen-2340190_1302="1459744" data-gtm-vis-total-visible-time-2340190_1302="100" data-gtm-vis-has-fired-2340190_1302="1" style="display: none;" aria-modal="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-titleHERE" id="exampleModalLongTitleSC">Here goes the input</h5>
+                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button><span aria-hidden="true">
+                    <p class="cancel-text">Cancel</p></span>
+                </div>
+                <div class="modal-body">...</div>
+              </div>
+            </div>
           </div>
-          <input class="input-search" type="text" placeholder="Search">
+        </div>
+        <div class="input-search-control">
+          <div class="input-search-control__icon"><img class="search-icon" src="./images/search.svg" alt="search-icon"></div>
+          <input class="input-search" type="search" placeholder="Search">
           <div class="input-search-results">
             <ul class="list-search-result">
               <li class="list-search-result__item-container"><a class="search-result__item"><span class="search-result__text search-result__text--highlighted">Busines</span><span class="search-result__text">s Etheria Vulputate</span></a></li>

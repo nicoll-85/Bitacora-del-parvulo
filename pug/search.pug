@@ -8,12 +8,23 @@ body
 				.input-search__text
 					span.input-search__title Results for 
 					span.input-search__keywords "Learning Paths"
-				+button({'hideTitle': true,'showIcon': true,'iconName': 'search'}).button--transparent.button--only-icon--small.button--search-icon
+				button.button--search-icon(type='button', data-toggle='modal', data-target='#Search')
+				.searching-mobile
+					#Search.modal.fade.top.show(tabindex='-1', role='dialog', aria-labelledby='exampleModalLongTitleSC', data-gtm-vis-first-on-screen-2340190_1302='1459744', data-gtm-vis-total-visible-time-2340190_1302='100', data-gtm-vis-has-fired-2340190_1302='1', style='display: none;', aria-modal='true')
+							.modal-dialog.modal-dialog-scrollable(role='document')
+								.modal-content
+									.modal-header
+										h5#exampleModalLongTitleSC.modal-titleHERE Here goes the input
+										button.close(type='button', data-dismiss='modal', aria-label='Close')
+										span(aria-hidden='true')
+											p.cancel-text Cancel
+									.modal-body ...
 				.input-search-control
 					.input-search-control__icon
-						svg(class="icon" role="img" aria-label="icon" aria-hidden=true)
-							use(xlink:href='images/icons/oc-icons.svg#oc-search')
-					input(type="text" placeholder="Search").input-search
+						//- svg(class="icon" role="img" aria-label="icon" aria-hidden=true)
+						//- 	use(xlink:href='images/icons/oc-icons.svg#oc-search')
+						img.search-icon(src="./images/search.svg", alt="search-icon")
+					input(type="search" placeholder="Search").input-search
 					.input-search-results
 						ul.list-search-result
 							li.list-search-result__item-container
