@@ -7979,6 +7979,9 @@ ol.list {
   color: #FF7C5F;
   font-weight: 400; }
 
+.clear-icon {
+  margin-left: auto; }
+
 .article {
   padding-top: 40px; }
   .article .article__title {
