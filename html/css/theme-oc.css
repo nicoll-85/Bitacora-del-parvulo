@@ -4171,6 +4171,23 @@ svg {
       flex-wrap: wrap;
       overflow: visible; } }
 
+.title-section__header {
+  font-family: var(--primary-font);
+  color: #334652;
+  font-weight: 800; }
+
+.description-section {
+  font-family: var(--primary-font);
+  color: #334652;
+  opacity: .7; }
+
+.subtitle-section {
+  font-family: var(--primary-font);
+  color: #334652;
+  font-weight: 600; }
+  .subtitle-section.subtile-section__lite {
+    font-weight: 400; }
+
 /* Global Styles for Heading
 **********************/
 .heading {
