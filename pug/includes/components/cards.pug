@@ -259,6 +259,27 @@ mixin card--video-with-actions--horizontal()
             svg(class="card__action-icon" role="img" aria-label="icon" aria-hidden=true)
               use(xlink:href='images/icons/oc-icons.svg#oc-bookmark')
 
+mixin card--with-actions--horizontal()
+  .card.card--video-with-actions.card--video--horizontal
+    .card__header
+      .video-thumbnail(style={'background-image': 'url(images/card-image-03.png)'})
+    .card__body
+      .card__subtitle Section Title
+      .card__title Etiam Condimentum Magna Egestas Sem
+      .card__description Donec id elit non mi porta gravida at eget metus. Cura bitur blandit tempus porttitor. Nullam quis risus eget  as mollis ornaLorem ipsum dolor sit amet, consectur…
+      .card__footer
+        .card__footer-stats
+          svg(class="card__stat-icon" role="img" aria-label="icon" aria-hidden=true)
+            use(xlink:href='images/icons/oc-icons.svg#oc-bubble')
+          span.card__footer-stats-text 1.1k
+        .card__footer-actions
+          button.card__action
+            svg(class="card__action-icon" role="img" aria-label="icon" aria-hidden=true)
+              use(xlink:href='images/icons/oc-icons.svg#oc-heart')
+          button.card__action
+            svg(class="card__action-icon" role="img" aria-label="icon" aria-hidden=true)
+              use(xlink:href='images/icons/oc-icons.svg#oc-bookmark')
+
 mixin card--profile()
   .card.card--profile
     .card__header
