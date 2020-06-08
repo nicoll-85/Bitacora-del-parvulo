@@ -1,0 +1,25 @@
+include includes/head.pug
+body
+	+new-menu()
+	.page
+		.page-content.container
+			h3.title-section__header.col-lg-8.col-md-8.col-sm-12.col-12 World of Business Events
+			p.description-section.col-lg-8.col-md-8.col-sm-12.col-12 Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean eu leo quam.
+			h5.subtitle-section.col-12.mt-5 Upcoming events
+			.card.card--video-with-actions.card--video--horizontal
+				.card__header
+					.video-thumbnail(style={'background-image': 'url(images/card-image-03.png)'})
+				.card__body
+					.card__title.mb-0 Etiam Condimentum Magna Egestas Sem
+					a.link(href="#") WATCH LIVE! ON SEPTEMBER 23, 2020
+					.card__description.mb-2 Donec id elit non mi porta gravida at eget metus. Cura bitur blandit tempus porttitor. Nullam quis risus eget  as mollis ornaLorem ipsum dolor sit amet, consectur…
+					.card__footer
+						+button({'buttonTitle': 'Get reminder'}).button--ghost-primary
+			h5.subtile-section__lite Past events  
+			+card--video-with-actions--horizontal
+			+card--video-with-actions--horizontal
+			+card--video-with-actions--horizontal
+			+card--video-with-actions--horizontal
+			+card--video-with-actions--horizontal
+
+		+new-footer()

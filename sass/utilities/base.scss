@@ -331,3 +331,25 @@ svg {
   }
 }
 
+.title-section__header{
+  font-family: var(--primary-font);
+  color: $darkest-color;
+  font-weight: 800;
+}
+
+.description-section{
+  font-family: var(--primary-font);
+  color: $darkest-color;
+  opacity: .7;
+}
+
+.subtitle-section{
+  font-family: var(--primary-font);
+  color: $darkest-color;
+  font-weight: 600;
+  &.subtile-section__lite{
+    font-weight: 400;
+  }
+}
+
+
