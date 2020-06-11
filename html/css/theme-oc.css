@@ -5661,6 +5661,36 @@ ol.list {
   .box--small.box--with-image .box__image {
     margin-right: 8px; }
 
+.block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+  .block.block--search-no-results {
+    margin-bottom: 32px; }
+    .block.block--search-no-results img.search-no-result__image {
+      height: 200px;
+      margin-bottom: 40px; }
+    .block.block--search-no-results .search-no-result__title {
+      color: #FF7C5F;
+      font-size: 24px;
+      font-weight: 200;
+      text-transform: capitalize; }
+    .block.block--search-no-results .search-no-result__description {
+      color: rgba(51, 70, 82, 0.65);
+      font-size: 16px;
+      font-weight: 200; }
+
 /* Global Styles for Cards
 **********************/
 .card {

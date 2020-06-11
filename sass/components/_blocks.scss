@@ -1,0 +1,27 @@
+.block {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	justify-content: flex-start;
+
+	&.block--search-no-results {
+		margin-bottom: 32px;
+		img.search-no-result__image {
+	    height: 200px;
+	    margin-bottom: 40px;
+		}
+		.search-no-result__title {
+			color: $primary-color;
+			font-size: 24px;
+			font-weight: 200;
+			text-transform: capitalize;
+		}
+		.search-no-result__description {
+	    color: rgba($darkest-color, 0.65);
+	    font-size: 16px;
+	    font-weight: 200;
+		}
+
+	}
+}
