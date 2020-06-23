@@ -1247,10 +1247,10 @@
         border-top: none;
       }
 
-      .button {
-        min-width: 80px;
-        flex: 0 1 auto;
-        margin-right: 8px;
+    .button {
+      min-width: 80px;
+      flex: 0 1 auto;
+      margin-right: 8px;
 
         @include media(tablet) {
           flex: 1 1 auto;
