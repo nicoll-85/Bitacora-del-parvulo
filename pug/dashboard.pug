@@ -1,0 +1,53 @@
+include includes/head.pug
+body
+	+new-menu()
+	.page.page--light-gray.section.section--partial-background.section--partial-background--left-top.section--partial-background--small(style={'background-image': 'url("images/Polygon 6.png")'})
+		.page-content.page-content--no-min-height
+
+
+		.page-content.container.page-content--with-sidebar
+
+			.container--with-sidebar
+				.carousel.carousel--stacked
+					+card--video-with-actions--horizontal()
+				+card--with-actions--horizontal--inverse()
+				+card--with-progressbar()
+				.card.card--score-pill
+					+score-pill--large-text()
+					+score-pill--large-text()
+					+score-pill--large-text()
+					+score-pill--large-text()
+					+score-pill--large-text()
+					+score-pill--large-text()
+
+				+card-simple--certificate()
+				+card-simple--achievement()
+				+card--basic--image-traslapped()
+				+card--basic--image-traslapped-v2()
+
+
+			.sidebar-layout.sidebar-dashboard
+
+				.block.block--align-left.block--sidebar.hide-tablet-p
+					.block-content
+						.block-content__title Achievements
+						.badge-image-container
+								+badge-image()
+								+badge-image({badgeImage: 'Pathfinder - color.svg'})
+								+badge-image({badgeImage: 'Tourist - color.svg'})
+								+badge-image({badgeImage: 'Internationality - color.svg'})
+								+badge-image({badgeImage: 'AI Pioneer - color.svg'})
+								+badge-image({badgeImage: 'Connector - color.svg'})
+								+badge-image({badgeImage: 'Problem Solver - color.svg'})
+						+link('See all')
+
+				.block.block--align-left.block--sidebar.hide-tablet-p
+					.block-content
+						.block-content__title Certificates
+						+card--certificate()
+						+card--certificate()
+						+card--certificate()
+						+link('See all')
+				
+
+		+new-footer()

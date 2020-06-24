@@ -7,6 +7,35 @@ mixin card(options)
       h5.card__title Design Thinking: The New Standard for Creative...
       p.card__text Some quick example text to build on the card title and make...
 
+mixin card--basic--image-traslapped(options)
+  .card.card--basic--image-traslapped&attributes(attributes)
+    .card__header
+    .card__body
+      img.badge-icon(src="./images/Badges/Badges-group.svg", alt="badge")
+      h5.card__title Design Thinking: The New Standard for Creative...
+      p.card__text Some quick example text to build on the card title and make...
+    .card__footer
+      +button({'buttonTitle': 'Earn a badge'}).button--primary
+
+mixin card--basic--image-traslapped-v2(options)
+  .card.card--basic--image-traslapped.card--basic--green&attributes(attributes)
+    .card__header
+    .card__body
+      img.badge-icon(src="./images/Badges/Certificates.svg", alt="Certificate icon")
+      h5.card__title Design Thinking: The New Standard for Creative...
+      p.card__text Some quick example text to build on the card title and make...
+    .card__footer
+      +button({'buttonTitle': 'Earn a badge'}).button--primary
+
+mixin card--with-progressbar(options)
+  .card.card--with-progressbar&attributes(attributes)
+    img.badge-icon(src="./images/Badges/XLarge.svg", alt="badge")
+    img.media--top(src="./images/Fill@3x.png", alt="video image")
+    .card__body
+      h5.card__title Design Thinking: The New Standard for Creative...
+    .card__footer
+      +progress-bar({'progressValue': '25'})
+
 mixin card--v2(options)
   .card&attributes(attributes)
     img.media--top(src="./images/Fill@3x.png", alt="video image")
@@ -280,6 +309,17 @@ mixin card--with-actions--horizontal()
             svg(class="card__action-icon" role="img" aria-label="icon" aria-hidden=true)
               use(xlink:href='https://gistcdn.githack.com/dantedubon/b12e56737577b5c16c4a53fd04e02c5f/raw/2f0ac4ff73632e9b17914ab760c34b1763d1d193/oc.svg#oc-bookmark')
 
+mixin card--with-actions--horizontal--inverse()
+  .card.card--video-with-actions.card--video--horizontal.card--video--horizontal--inverse
+    .card__header
+      .video-thumbnail(style={'background-image': 'url(images/card-image-03.png)'})
+    .card__body
+      .card__subtitle Card Subtitle
+      .card__title Etiam Condimentum Magna Egestas Sem
+      .card__description Donec id elit non mi porta gravida at eget metus. Cura bitur blandit tempus porttitor. Nullam quis risus eget  as mollis ornaLorem ipsum dolor sit amet, consectur…
+      .card__footer
+        +button({'buttonTitle': 'Find a learning Serie'}).button--primary
+        
 mixin card--profile()
   .card.card--profile
     .card__header
@@ -301,6 +341,19 @@ mixin card--certificate()
       img.card__img(src="./images/Card Image.svg", alt="Certificate icon")
     .card__footer
       .card__footer-text December 15, 2020
+
+
+mixin card-simple--certificate()
+  .card.card--simple
+    .card__body
+      img.card__img(src="./images/Card Image.svg", alt="Certificate icon")
+      .card__title Quam Vehicula Ultrices Sollicitudin
+
+mixin card-simple--achievement()
+  .card.card--simple
+    .card__body
+      img.card__img(src="./images/Badges/XLarge.svg", alt="Achievement icon")
+      .card__title Quam Vehicula Ultrices Sollicitudin
 
 
 

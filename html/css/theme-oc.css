@@ -6011,7 +6011,7 @@ ol.list {
 
 /* Global Styles for Cards
 **********************/
-.card {
+.card, .card.card--with-progressbar, .card.card--basic--image-traslapped, .card.card--score-pill, .card.card--simple {
   position: relative;
   max-width: 18rem;
   margin-bottom: 40px;
@@ -6035,7 +6035,7 @@ ol.list {
   font-size: 18px;
   font-size: 1.125rem; }
   @media screen and (max-width: 575.98px) {
-    .card {
+    .card, .card.card--with-progressbar, .card.card--basic--image-traslapped, .card.card--score-pill, .card.card--simple {
       min-width: 244px; } }
   .card .card__header-badge {
     display: -webkit-box;
@@ -7113,6 +7113,65 @@ ol.list {
         font-weight: lighter;
         font-size: 16px;
         color: #334652; }
+  .card.card--video-with-actions.card--video--horizontal--inverse {
+    background-color: #ffffff;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border-radius: 12px;
+    -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1px 0 rgba(0, 0, 0, 0.05); }
+    @media only screen and (min-width: 768px) {
+      .card.card--video-with-actions.card--video--horizontal--inverse {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row; } }
+    @media only screen and (min-width: 768px) {
+      .card.card--video-with-actions.card--video--horizontal--inverse .card__header {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2; } }
+    .card.card--video-with-actions.card--video--horizontal--inverse .card__header .video-thumbnail {
+      width: 100%;
+      border-radius: 12px;
+      margin: 0px;
+      height: 100%; }
+      @media only screen and (min-width: 768px) {
+        .card.card--video-with-actions.card--video--horizontal--inverse .card__header .video-thumbnail {
+          width: 310px;
+          border-top-left-radius: 0px;
+          border-bottom-left-radius: 0px; } }
+    .card.card--video-with-actions.card--video--horizontal--inverse .card__body {
+      margin: 0px;
+      margin-top: -24px;
+      padding: 31px 36px; }
+      @media only screen and (min-width: 768px) {
+        .card.card--video-with-actions.card--video--horizontal--inverse .card__body {
+          -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+          order: 1;
+          margin: 0px;
+          margin-right: -12px; } }
+      .card.card--video-with-actions.card--video--horizontal--inverse .card__body .card__subtitle {
+        font-weight: 400;
+        opacity: 0.6;
+        text-transform: uppercase;
+        font-size: 12px;
+        margin: 0px;
+        color: #334652; }
+      .card.card--video-with-actions.card--video--horizontal--inverse .card__body .card__title {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1;
+        margin: 4px 0px 16px 0px;
+        color: #334652; }
+      .card.card--video-with-actions.card--video--horizontal--inverse .card__body .card__description {
+        opacity: 0.75;
+        font-weight: lighter;
+        font-size: 16px;
+        color: #334652; }
 
 .card-small-bg {
   background: url("../images/card-image-01.png") repeat rgba(51, 70, 82, 0.5);
@@ -7201,7 +7260,7 @@ ol.list {
       color: #ffffff;
       font-weight: 800; }
 
-.card.card--profile {
+.card.card--profile, .card--profile.card.card--with-progressbar, .card--profile.card.card--basic--image-traslapped, .card--profile.card.card--score-pill, .card--profile.card.card--simple {
   padding: 24px;
   min-width: 200px;
   max-width: 100%;
@@ -7212,7 +7271,7 @@ ol.list {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
   @media only screen and (min-width: 768px) {
-    .card.card--profile {
+    .card.card--profile, .card--profile.card.card--with-progressbar, .card--profile.card.card--basic--image-traslapped, .card--profile.card.card--score-pill, .card--profile.card.card--simple {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -7220,7 +7279,7 @@ ol.list {
       -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
       max-width: 240px; } }
-  .card.card--profile .card__header {
+  .card.card--profile .card__header, .card--profile.card.card--with-progressbar .card__header, .card--profile.card.card--basic--image-traslapped .card__header, .card--profile.card.card--score-pill .card__header, .card--profile.card.card--simple .card__header {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -7231,7 +7290,7 @@ ol.list {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
-  .card.card--profile .card__body {
+  .card.card--profile .card__body, .card--profile.card.card--with-progressbar .card__body, .card--profile.card.card--basic--image-traslapped .card__body, .card--profile.card.card--score-pill .card__body, .card--profile.card.card--simple .card__body {
     margin: 0px;
     margin-left: 24px;
     padding: 18px 0px 24px 0px;
@@ -7249,7 +7308,7 @@ ol.list {
     -ms-flex-pack: justify;
     justify-content: space-between; }
     @media only screen and (min-width: 768px) {
-      .card.card--profile .card__body {
+      .card.card--profile .card__body, .card--profile.card.card--with-progressbar .card__body, .card--profile.card.card--basic--image-traslapped .card__body, .card--profile.card.card--score-pill .card__body, .card--profile.card.card--simple .card__body {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
@@ -7278,7 +7337,7 @@ ol.list {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex; } }
-  .card.card--profile .card__footer {
+  .card.card--profile .card__footer, .card--profile.card.card--with-progressbar .card__footer, .card--profile.card.card--basic--image-traslapped .card__footer, .card--profile.card.card--score-pill .card__footer, .card--profile.card.card--simple .card__footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7296,7 +7355,7 @@ ol.list {
     width: 100%;
     border-top: 1px solid rgba(51, 70, 82, 0.1); }
     @media only screen and (min-width: 768px) {
-      .card.card--profile .card__footer {
+      .card.card--profile .card__footer, .card--profile.card.card--with-progressbar .card__footer, .card--profile.card.card--basic--image-traslapped .card__footer, .card--profile.card.card--score-pill .card__footer, .card--profile.card.card--simple .card__footer {
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between;
@@ -7393,6 +7452,85 @@ ol.list {
       font-size: 0.625rem;
       font-weight: 200;
       opacity: 0.65; }
+
+.card--with-progressbar.card img.badge-icon {
+  position: absolute;
+  left: -32px;
+  top: -32px; }
+
+.card--with-progressbar.card .card__footer {
+  padding: 16px;
+  border-top: 1px solid rgba(51, 70, 82, 0.1); }
+
+.card--basic--image-traslapped.card .card__header {
+  background: rgba(0, 174, 214, 0.5);
+  height: 60px;
+  border-radius: 12px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px; }
+
+.card--basic--image-traslapped.card .card__body {
+  position: relative;
+  padding-top: 40px; }
+  .card--basic--image-traslapped.card .card__body img.badge-icon {
+    position: absolute;
+    top: -24px;
+    left: 16px; }
+
+.card--basic--image-traslapped.card .card__footer {
+  padding: 16px;
+  border-top: 1px solid rgba(51, 70, 82, 0); }
+
+.card--basic--image-traslapped.card--basic--green.card .card__header {
+  background: rgba(132, 196, 112, 0.5); }
+
+.card--score-pill.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 100%;
+  padding: 24px; }
+  .card--score-pill.card .score-pill.score-pill--large-text {
+    background: transparent;
+    margin: 4px; }
+    .card--score-pill.card .score-pill.score-pill--large-text .pill-content img.media-pill {
+      -webkit-box-shadow: 0px 0px 0px 5px rgba(58, 134, 207, 0.05);
+      box-shadow: 0px 0px 0px 5px rgba(58, 134, 207, 0.05);
+      padding: 0px;
+      border-radius: 50%; }
+    .card--score-pill.card .score-pill.score-pill--large-text .pill-content .pill-text .pill-label {
+      font-size: 12px; }
+    .card--score-pill.card .score-pill.score-pill--large-text .pill-content .pill-text .pill-title {
+      font-size: 14px;
+      font-weight: 400; }
+
+.card--simple.card {
+  -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+  border: none; }
+  .card--simple.card .card__body {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .card--simple.card .card__body img.card__img {
+      margin-right: 8px;
+      -webkit-filter: drop-shadow(2px 4px 6px rgba(51, 70, 82, 0.2));
+      filter: drop-shadow(2px 4px 6px rgba(51, 70, 82, 0.2)); }
 
 .card-profiles-container {
   display: -webkit-box;
