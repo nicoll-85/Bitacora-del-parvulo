@@ -4,10 +4,19 @@
 .link{
   display: inline-block;
   margin-bottom: 5px;
-  color: var(--primary-color);
+  color: $primary-color;
   text-decoration: none;
-  font-family: var(--primary-font);
+  font-family: $primary-font;
   font-weight: 400;
   @include font-size(14px);
   cursor: pointer;
+
+  &.link--inline {
+  	margin: 0px 8px;
+  }
+
+  &.link--dark {
+  	color: $darkest-color;
+  	font-weight: 600;
+  }
 }

@@ -1,0 +1,7 @@
+mixin avatar(options)
+  - options = options || {};
+  - var avatarImage = options.avatarImage || 'Image.png';
+  - var avatarImageURL = 'images/Avatar/' + avatarImage;
+  - var avatarDescription = options.avatarDescription || 'User Photo';
+
+  .avatar.avatar--no-image-tag(style={'background-image': 'url("'+avatarImageURL+'")'}, alt=avatarDescription role="image")&attributes(attributes)

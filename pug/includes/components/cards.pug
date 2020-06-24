@@ -264,7 +264,7 @@ mixin card--with-actions--horizontal()
     .card__header
       .video-thumbnail(style={'background-image': 'url(images/card-image-03.png)'})
     .card__body
-      .card__subtitle ,ierda
+      .card__subtitle Card Subtitle
       .card__title Etiam Condimentum Magna Egestas Sem
       .card__description Donec id elit non mi porta gravida at eget metus. Cura bitur blandit tempus porttitor. Nullam quis risus eget  as mollis ornaLorem ipsum dolor sit amet, consectur…
       .card__footer
@@ -292,5 +292,16 @@ mixin card--profile()
       img.card__institution-logo(src="images/logo-laureate.png")
       +button({'buttonTitle': 'Connect','showIcon': true,'iconName': 'bubble'}).button--connect
       +button({'buttonTitle': 'Profile','showIcon': true,'iconName': 'add-user'}).button--profile
+
+
+mixin card--certificate()
+  .card.card--certificate
+    .card__body
+      .card__title Quam Vehicula Ultrices Sollicitudin
+      img.card__img(src="./images/Card Image.svg", alt="Certificate icon")
+    .card__footer
+      .card__footer-text December 15, 2020
+
+
 
     

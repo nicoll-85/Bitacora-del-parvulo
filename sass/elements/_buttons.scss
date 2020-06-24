@@ -18,12 +18,9 @@
   text-transform: none;
   line-height: 22px;
   cursor: pointer;
-  color: var(--darkest-color);
-  color: #334652;
-  background-color: var(--lightest-color);
-  background-color: white;
-  border: 1px solid var(--darkest-color);
-  border: 1px solid #334652;
+  color: $darkest-color;
+  background-color: $lightest-color;
+  border: 1px solid $darkest-color;
   border-radius: 8px;
   font-weight: 400;
   @include font-size(14px);
@@ -31,8 +28,7 @@
   &:hover,
   &:focus {
     text-decoration: none;
-    background-color: var(--fourth-color);
-    background-color: #f2f4f5;
+    background-color: $fourth-color;
   }
   .icon {
     width: 16px;
@@ -40,49 +36,39 @@
     margin: 4px;
     vertical-align: text-bottom;
     font-size: 1.2rem;
-    fill: var(--darkest-color);
-    fill: #334652;
+    fill: $darkest-color;
   }
   &.button--ghost {
-    color: var(--darkest-color);
-    color: #334652;/*IE*/
-    background-color: var(--lightest-color);
-    background-color: white;/*IE*/
-    border: 1px solid var(--darkest-color);
-    border: 1px solid #334652;/*IE*/
+    color: $darkest-color;
+    background-color: $lightest-color;
+    border: 1px solid $darkest-color;
     &:hover,
     &:focus {
       text-decoration: none;
     }
   }
   &.button--ghost-primary{
-    color: var(--primary-color);
-    color: #FF7C5F;/*IE*/
-    background-color: var(--lightest-color);
-    background-color: white;/*IE*/
-    border: 1px solid var(--primary-color);
-    border: 1px solid #FF7C5F; /*IE*/
+    color: $primary-color;
+    background-color: $lightest-color;
+    border: 1px solid $primary-color;
     &:hover,
     &:focus {
       text-decoration: none;
+      background-color: $lightest-color;
     }
     .icon {
-      fill: var(--primary-color);
+      fill: $primary-color;
     }
   }
   &.button--ghost-white{
-    color: white; /*IE*/
-    color: var(--lightest-color);
+    color: $lightest-color;
     background-color: transparent;
-    border: 1px solid var(--lightest-color);
-    border: 1px solid white; /*IE*/
+    border: 1px solid $lightest-color;
     &:hover,
     &:focus {
       text-decoration: none;
-      background-color: var(--lightest-color);
-      background-color: white; /*IE*/
-      color: var(--darkest-color);
-      color: #334652;/*IE*/
+      background-color: $lightest-color;
+      color: $darkest-color;
     }
   }
   &.button--disabled {
@@ -94,101 +80,82 @@
 /* Buttons Variations
 **********************/
 .button--primary {
-  background-color: var(--primary-color);
-  background-color: #FF7C5F; /*IE*/
-  color: var(--lightest-color);
-  color: white;/*IE*/;
-  border-color: var(--primary-color);
-  border-color: #FF7C5F; /*IE*/
+  background-color: $primary-color;
+  color: $lightest-color;
+  border-color: $primary-color;
   &:hover,
   &:focus,
   &:active {
-    // background-color: lighten($primary-color, 5%);
+    background-color: lighten($primary-color, 5%);
   }
   .icon {
-    fill: var(--lightest-color);
+    fill: $lightest-color;
   }
   &.button--ghost {
-    color: var(--primary-color);
-    color: #FF7C5F; /*IE*/
-    background-color: var(--lightest-color);
-    background-color:white;/*IE*/
-    border: 1px solid var(--primary-color);
+    color: $primary-color;
+    background-color: $lightest-color;
+    border: 1px solid $primary-color;
     &:hover,
     &:focus {
       text-decoration: none;
+      background-color: $lightest-color;
     }
     .icon {
-      fill: var(--primary-color);
-      fill: #FF7C5F;/*IE*/
+      fill: $primary-color;
     }
   }
 }
 
 .button--secondary {
-  background-color: var(--secondary-color);
-  background-color: #3A86CF; /*IE*/
-  color: var(--lightest-color);
-  color: white;/*IE*/
-  border-color: var(--secondary-color);
-  border-color: #3A86CF; /*IE*/
+  background-color: $secondary-color;
+  color: $lightest-color;
+  border-color: $secondary-color;
   &:hover,
   &:focus,
   &:active {
     background-color: lighten($secondary-color, 5%);
   }
   .icon {
-    fill: var(--lightest-color);
-    fill: white;  /*IE*/
+    fill: $lightest-color;
   }
   &.button--ghost {
-    color: var(--secondary-color);
-    color: #3A86CF; /*IE*/
-    background-color: var(--lightest-color);
-    background-color: white;  /*IE*/
-    border: 1px solid var(--secondary-color);
-    border:1px solid #3A86CF; /*IE*/
+    color: $secondary-color;
+    background-color: $lightest-color;
+    border: 1px solid $secondary-color;
     &:hover,
     &:focus {
       text-decoration: none;
     }
     .icon {
-      fill: var(--secondary-color);
-      fill:  #3A86CF; /*IE*/
+      fill: $secondary-color;
     }
   }
   
 }
 
 .button--third {
-  background-color: var(--darkest-color);
-  background-color:  #334652;/*IE*/
-  color: var(--lightest-color);
-  color: white;/*IE*/
-  border-color: var(--darkest-color);
-  border-color:#334652;/*IE*/
+  background-color: $darkest-color;
+
+  color: $lightest-color;
+  border-color: $darkest-color
   &:hover,
   &:focus,
   &:active {
     background-color: lighten($darkest-color, 5%);
   }
   .icon {
-    fill: var(--lightest-color);
+    fill: $lightest-color;
   }
   &.button--ghost {
-    color: var(--darkest-color);
-    color:  #334652;/*IE*/
-    background-color: var(--lightest-color);
-    background-color: white;/*IE*/
-    border: 1px solid var(--darkest-color);
-    border: 1px solid #334652;/*IE*/
+    color: $darkest-color;
+    background-color: $lightest-color;
+    border: 1px solid $darkest-color;
     &:hover,
     &:focus {
       text-decoration: none;
     }
     .icon {
-      fill: var(--darkest-color);
-      fill: #334652;/*IE*/
+      fill: $darkest-color;
     }
   }
 }
@@ -231,6 +198,14 @@
   width: 32px;
   max-width: 32px;
   height: 32px;
+  padding: 0;
+}
+
+.button--only-icon--xsmall {
+  min-width: 24px;
+  width: 24px;
+  max-width: 24px;
+  height: 24px;
   padding: 0;
 }
 
@@ -287,8 +262,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--accent-color-06);
-  background-color: #323e56;/*IE*/
+  background-color: $accent-color-06;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -300,13 +274,13 @@
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
+  background-color: $lightest-color;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 input.default:checked + .slider {
-  background-color: var(--accent-color-06);
+  background-color: $accent-color-06;
 }
 input.private:checked + .slider {
   background-color: #f44336;
@@ -333,7 +307,7 @@ input:checked + .slider:before {
 
 .button--lightest {
   background-color: transparent;
-  color: var(--lightest-color);
+  color: $lightest-color;
   border-color: $lightest-color;
   &:hover,
   &:focus,
@@ -341,7 +315,31 @@ input:checked + .slider:before {
     background-color: lighten($primary-color, 5%);
   }
   .icon {
-    fill: var(--lightest-color);
-    fill: white;  /*IE*/
+    fill: $lightest-color;
   }
 }
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  .button {
+    flex: 1 1 auto;
+    margin-right: 8px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+
+  &.button-group--float {
+    position: absolute;
+    margin: 0px;
+
+    &.button-group--float-right {
+      top: 0px;
+      right: 0px;
+    }
+  }
+}
+

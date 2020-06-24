@@ -12,7 +12,7 @@
   -ms-flex-direction: column;
   flex-direction: column;
   min-width: 213px;
-  font-family: var(--primary-font);
+  font-family: $primary-font;
   word-wrap: break-word;
   background-color: $lightest-color;
   background-clip: border-box;
@@ -25,7 +25,7 @@
   }
   .card__header-badge{
     display: flex;
-    background-color: #ffffff;
+    background-color: $lightest-color;
     flex-direction: row;
     flex: 1 1 auto;
     padding-top: 1rem;
@@ -73,25 +73,25 @@
       display: block;
       width: 45px;
       height: 45px;
-      border: 2px solid #ffffff;
+      border: 2px solid $lightest-color;
       margin-left: auto;
       margin-top: -40px;
       margin-bottom: 10px;
     }
     .card__title {
-      font-family: var(--secondary-font);
+      font-family: $secondary-font;
       font-size: 14px;
       font-weight: 600;
-      color: var(--accent-color-06);
+      color: $accent-color-06;
       letter-spacing: 0;
       line-height: 20px;
     }
 
     .card__text {
       opacity: 0.5;
-      font-family: var(--secondary-font);
+      font-family: $secondary-font;
       font-size: 14px;
-      color: var(--accent-color-06);
+      color: $accent-color-06;
       letter-spacing: 0;
       line-height: 20px;
     }
@@ -146,7 +146,7 @@
   max-width: 496px;
   margin-top: 35px;
   margin-bottom: 40px;
-  font-family: var(--primary-font);
+  font-family: $primary-font;
   -ms-flex-direction: column;
   flex-direction: column;
   min-width: 0;
@@ -181,7 +181,7 @@
     .card-video__title {
       width: 50%;
       margin-bottom: 0.75rem;
-      font-family: var(--primary-font);
+      font-family: $primary-font;
       font-weight: 700;
       color: $lightest-color;
       text-align: left;
@@ -241,7 +241,7 @@
     flex: 1 1 auto;
     padding: 32px 36px;
     border-radius: 12px;
-    color: var(--darkest-color);
+    color: $darkest-color;
     margin-top: -8px;
     text-align: center;
     justify-content: center;
@@ -322,7 +322,7 @@
       }
 
       .card-panel__descrip {
-        font-family: var(--primary-font);
+        font-family: $primary-font;
         color: $darkest-color;
         padding: 5px 15px;
 
@@ -397,7 +397,7 @@
       }
 
       .card-panel__descrip {
-        font-family: var(--primary-font);
+        font-family: $primary-font;
         color: $darkest-color;
         padding: 5px 15px;
 
@@ -477,12 +477,12 @@
         }
       }
       .card-panel__descrip {
-        font-family: var(--primary-font);
+        font-family: $primary-font;
         color: $darkest-color;
         padding: 5px 15px;
 
         .card-panel__title {
-          font-family: var(--primary-font);
+          font-family: $primary-font;
           font-weight: 600;
         }
       }
@@ -535,7 +535,7 @@
       }
 
       .card-panel__descrip {
-        font-family: var(--primary-font);
+        font-family: $primary-font;
         color: $darkest-color;
         padding: 5px 15px;
 
@@ -594,13 +594,13 @@
       flex-direction: column;
 
       .card-chart__title {
-        color: var(--darkest-color);
+        color: $darkest-color;
         opacity: 1;
         font-weight: 500;
       }
       @media screen and (min-width: 576px) {
         flex-direction: row;
-        color: var(--primary-font);
+        color: $primary-font;
         align-items: center;
         justify-content: space-between;
         flex-wrap: nowrap;
@@ -740,7 +740,7 @@
         }
   
         .card-panel__descrip {
-          font-family: var(--primary-font);
+          font-family: $primary-font;
           color: $darkest-color;
           padding: 5px 15px;
           @media screen and (max-width: 575.98px) {
@@ -885,7 +885,7 @@
       }
 
       .card-panel__descrip {
-        font-family: var(--primary-font);
+        font-family: $primary-font;
         color: $darkest-color;
         padding: 5px 15px;
 
@@ -900,14 +900,14 @@
           text-transform: uppercase;
           font-size: 12px;
           margin: 0px;
-          color: var(--darkest-color);
+          color: $darkest-color;
         }
         .card-panel__title {
           font-weight: 500;
           font-size: 18px;
           line-height: 1;
           margin: 4px 0px 16px 0px;
-          color: var(--darkest-color);
+          color: $darkest-color;
         }
 
         .card-panel__text {
@@ -970,13 +970,13 @@
   }
 
   .card__title {
-    color: var(--darkest-color);
+    color: $darkest-color;
     @include font-size(14px);
     font-weight: 600;
     margin-bottom: 8px;
   }
   .card__description {
-    color: var(--darkest-color);
+    color: $darkest-color;
     @include font-size(12px);
     font-weight: 400;
     opacity: 0.5;
@@ -992,12 +992,12 @@
       .card__stat-icon {
         width: 14px;
         height: 14px;
-        fill: var(--third-color);
+        fill: $third-color;
         opacity: 0.9;
         margin-right: 4px;
       }
       .card__footer-stats-text {
-        color: var(--third-color);
+        color: $third-color;
         @include font-size(12px);
         font-weight: 400;
         opacity: 0.9;
@@ -1013,7 +1013,7 @@
         .card__action-icon {
           width: 14px;
           height: 14px;
-          fill: var(--accent-color-06);
+          fill: $accent-color-06;
           opacity: 0.6;
         }
       }
@@ -1021,7 +1021,7 @@
   }
 
   &.card--video--horizontal {
-    background-color: var(--lightest-color);
+    background-color: $lightest-color;
     flex-direction: column;
     border-radius: 12px;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
@@ -1061,7 +1061,7 @@
         text-transform: uppercase;
         font-size: 12px;
         margin: 0px;
-        color: var(--darkest-color);
+        color: $darkest-color;
       }
 
       .card__title {
@@ -1069,14 +1069,14 @@
         font-size: 18px;
         line-height: 1;
         margin: 4px 0px 16px 0px;
-        color: var(--darkest-color);
+        color: $darkest-color;
       }
 
       .card__description {
         opacity: 0.75;
         font-weight: lighter;
         font-size: 16px;
-        color: var(--darkest-color);
+        color: $darkest-color;
       }
     }
   }
@@ -1207,7 +1207,7 @@
         font-size: 18px;
         line-height: 1;
         margin: 4px 0px 16px 0px;
-        color: var(--darkest-color);
+        color: $darkest-color;
         text-align: center;
         margin-bottom: 8px;
       }
@@ -1216,7 +1216,7 @@
         opacity: 0.75;
         font-weight: lighter;
         font-size: 16px;
-        color: var(--darkest-color);
+        color: $darkest-color;
         text-align: center;
         margin-bottom: 24px;
       }
@@ -1277,9 +1277,9 @@
           }
           @include media(tablet) {
             opacity: 0.6;
-            color: var(--darkest-color);
-            background-color: var(--lightest-color);
-            border: 1px solid var(--darkest-color);
+            color: $darkest-color;
+            background-color: $lightest-color;
+            border: 1px solid $darkest-color;
             &:hover,
             &:focus {
               text-decoration: none;
@@ -1305,6 +1305,49 @@
         @include media(tablet) {
           display: none;
         }
+      }
+    }
+  }
+}
+
+.card {
+  &.card--certificate {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 16px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+    margin-bottom: 16px;
+
+    .card__body {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      padding: 0px;
+      padding-bottom: 16px;
+
+      .card__title {
+        font-family: var(--primary-font);
+        color: $darkest-color;
+        @include font-size(12px);
+        font-weight: 400;
+        padding-right: 24px;
+      }
+      img.card__img {
+        width: 56px;
+        height: 56px;
+        filter: drop-shadow(2px 4px 6px rgba($darkest-color, 0.2));
+      }
+    }
+    .card__footer {
+      display: flex;
+      .card__footer-text {
+        font-family: var(--primary-font);
+        color: $darkest-color;
+        @include font-size(10px);
+        font-weight: 200;
+        opacity: 0.65;
       }
     }
   }

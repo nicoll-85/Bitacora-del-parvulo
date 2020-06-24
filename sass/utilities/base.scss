@@ -20,6 +20,8 @@ $accent-color-07: #84C470;
 $accent-color-08: #463B96;
 $lightest-color: #ffffff;
 $darkest-color: #334652;
+$primary-font: "canada-type-gibson", "Helvetica Neue", Arial, sans-serif;
+$secondary-font: "Lato", "Helvetica Neue", Arial, sans-serif;
 
 :root {
   --primary-font: "canada-type-gibson", "Helvetica Neue", Arial, sans-serif;
@@ -44,7 +46,7 @@ $darkest-color: #334652;
 
 body {
   position: relative;
-  background-color: var(--lightest-color);
+  background-color: $lightest-color;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -53,14 +55,14 @@ body {
 }
 
 a {
-  color: var(--primary-color);
+  color: $primary-color;
   text-decoration: none;
-  font-family: var(--primary-font);
+  font-family: $primary-font;
 }
 
 p {
   color: rgba($darkest-color, 0.7);
-  font-family: var(--primary-font);
+  font-family: $primary-font;
 }
 
 svg {
@@ -83,7 +85,7 @@ svg {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  @include media(tablet) {
+  @include media(tablet-p) {
     flex-wrap: nowrap;
   }
 
@@ -93,6 +95,11 @@ svg {
   &.page-content--no-min-height {
     min-height: unset;
     margin-top: 32px;
+  }
+  &.divider--primary-gradient {
+    background-image: linear-gradient(-45deg, $primary-color, #FFCB76);
+    min-height: 120px;
+    margin-top: 0px;
   }
 }
 
@@ -235,13 +242,13 @@ svg {
   width: 100%;
   transition: all 0.25s ease-in-out;
 
-  @include media(tablet) {
+  @include media(tablet-p) {
     padding: 0px;
     padding-right: 56px;
   }
 
   &.container--with-sidebar--left {
-    @include media(tablet) {
+    @include media(tablet-p) {
       padding: 0px;
       padding-left: 56px;
     }
@@ -332,23 +339,35 @@ svg {
 }
 
 .title-section__header{
-  font-family: var(--primary-font);
+  font-family: $primary-font;
   color: $darkest-color;
   font-weight: 800;
 }
 
 .description-section{
-  font-family: var(--primary-font);
+  font-family: $primary-font;
   color: $darkest-color;
   opacity: .7;
 }
 
 .subtitle-section{
-  font-family: var(--primary-font);
+  font-family: $primary-font;
   color: $darkest-color;
   font-weight: 600;
   &.subtile-section__lite{
     font-weight: 400;
+  }
+}
+
+.hide-tablet-p {
+  @include media(tablet-p--down) {
+    display: none !important;
+  }
+}
+.show-tablet-p-down {
+  display: flex;
+  @include media(tablet-p) {
+    display: none !important;
   }
 }
 

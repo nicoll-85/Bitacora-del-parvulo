@@ -22,12 +22,26 @@
 
     background-color: #eef0f1;
   }
+
+  &.label--primary {
+    color: rgba($lightest-color,0.85);
+    background-color: $primary-color;
+  }
+
+  &.label--light {
+    color: rgba($darkest-color,0.65);
+    background-color: $lightest-color;
+  }
+  &.label--medium {
+    @include font-size(14px);
+    padding: 5px 12px;
+    margin: 4px;
+  }
 }
 
 .label--outside-text {
   font-family: var(--primary-font);
-  color: var(--darkest-color);
-  color: #334652; /*IE*/
+  color: $darkest-color;
   font-weight: 400;
   @include font-size(16px);
   line-height: 1.25;
