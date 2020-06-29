@@ -8,27 +8,33 @@ body
 		.page-content.container.page-content--with-sidebar
 
 			.container--with-sidebar
-				.carousel.carousel--stacked
-					+card--video-with-actions--horizontal()
-				+card--with-actions--horizontal--inverse()
-				+card--with-progressbar()
+				.col-12
+				h5.mb-5 Learning Series
+					.block-content--card
+						+card--with-progressbar().mr-1
+						+card--with-progressbar().mr-1
+						+card--with-progressbar()
+						+card--with-progressbar().mr-1
+						+card--with-progressbar().mr-1
+						+card--with-progressbar()
+				h5 My Skills check
 				.card.card--score-pill
-					+score-pill--large-text()
-					+score-pill--large-text()
-					+score-pill--large-text()
-					+score-pill--large-text()
-					+score-pill--large-text()
-					+score-pill--large-text()
-
-				+card-simple--certificate()
-				+card-simple--achievement()
-				+card--basic--image-traslapped()
-				+card--basic--image-traslapped-v2()
-
+					.col
+						+score-pill--large-text()
+					.col
+						+score-pill--large-text()
+					.col
+						+score-pill--large-text()
+					.col
+						+score-pill--large-text()
+					.col
+						+score-pill--large-text()
+					.col
+						+score-pill--large-text()
+					
 
 			.sidebar-layout.sidebar-dashboard
-
-				.block.block--align-left.block--sidebar.hide-tablet-p
+				.block.block--align-left
 					.block-content
 						.block-content__title Achievements
 						.badge-image-container

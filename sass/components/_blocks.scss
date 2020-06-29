@@ -11,6 +11,9 @@
 
 	&.block--align-left {
 		align-items: flex-start;
+		@media screen and(max-width:575.98px) {
+			align-items: center;
+		}
 	}
 
 	&.block--align-right {
@@ -285,6 +288,12 @@
 			}
 		}
 	}
+}
+.block-content--card{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 
