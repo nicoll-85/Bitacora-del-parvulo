@@ -128,13 +128,13 @@
     }
   }
 
-  [type="button"]:not(:disabled),
-  [type="reset"]:not(:disabled),
-  [type="submit"]:not(:disabled),
-  button:not(:disabled) {
-    cursor: pointer;
-    background-color: transparent;
-  }
+  // [type="button"]:not(:disabled),
+  // [type="reset"]:not(:disabled),
+  // [type="submit"]:not(:disabled),
+  // button:not(:disabled) {
+  //   cursor: pointer;
+  //   background-color: transparent;
+  // }
 }
 
 // Card video Global styles
@@ -1420,6 +1420,7 @@
 
 .card {
   &.card--with-progressbar {
+    max-width: 16rem;
     @extend .card;
 
     img.badge-icon {
