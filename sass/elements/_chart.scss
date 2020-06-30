@@ -17,6 +17,12 @@
   justify-content: start;
   height: auto;
   margin-top: 20px;
+  @media screen and (max-width:575.98px){
+    margin: auto;
+  }
+  @media screen and (min-width:576px)and(max-width:767.99px){
+    margin: auto;
+  }
 
   .chart-img {
     .circle-chart {
@@ -41,6 +47,7 @@
     opacity: 0.4;
     margin-top: 20px;
     margin-left: 8px;
+    font-size: 14px;
   }
 }
 
