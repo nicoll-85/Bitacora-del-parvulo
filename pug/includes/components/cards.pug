@@ -355,6 +355,54 @@ mixin card-simple--achievement()
       img.card__img(src="./images/Badges/XLarge.svg", alt="Achievement icon")
       .card__title Quam Vehicula Ultrices Sollicitudin
 
+mixin lpa--card()
+  .card.lpa--card
+    .card-header
+      .header-body
+        .container-img
+          img.media-header(src="./images/Icon/Calendar.svg", alt="calendar icon")
+        .description-header
+          p Take a LPA Test: Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras justo odio,Take a LPA Test: Pellentesque ornare sem lacinia quam venenatis vestibulum.
+        .action-header
+          +button({'buttonTitle': 'View Serie'}).button--primary    
+    .card-body
+      .row
+        .chart
+          .chart-img
+            svg.circle-chart(xmlns='http://www.w3.org/2000/svg', style='width:60px', viewBox='0 0 33.83098862 33.83098862')
+              circle.circle-chart__background(cx='16.915', cy='16.915', r='15.915', fill='none', stroke='#efefef', stroke-width='2')
+              circle.circle-chart__circle(cx='16.915', cy='16.915', r='15.915', fill='none', stroke='#37b896', stroke-dasharray='62,60', stroke-linecap='round', stroke-width='2',stroke-dashoffset="170")
+              g.circle-chart__info(text-anchor='middle')
+                text.circle-chart__percent(y='17', x='15.5', alignment-baseline='central', font-size='8') 7
+                text.circle-chart__subline(y='17', x='20.5', alignment-baseline='central', font-size='2')
+          .chart-title Analizing & Solving Problems
 
+        .chart
+          .chart-img
+            svg.circle-chart(xmlns='http://www.w3.org/2000/svg', style='width:60px', viewBox='0 0 33.83098862 33.83098862')
+              circle.circle-chart__background(cx='16.915', cy='16.915', r='15.915', fill='none', stroke='#efefef', stroke-width='2')
+              circle.circle-chart__circle(cx='16.915', cy='16.915', r='15.915', fill='none', stroke='#E93E3E', stroke-dasharray='62,60', stroke-linecap='round', stroke-width='2',stroke-dashoffset="170")
+              g.circle-chart__info(text-anchor='middle')
+                text.circle-chart__percent(y='17', x='15.5', alignment-baseline='central', font-size='8') 7
+                text.circle-chart__subline(y='17', x='20.5', alignment-baseline='central', font-size='2')
+          .chart-title Analizing & Solving Problems
 
-    
+        .chart
+          .chart-img
+            svg.circle-chart(xmlns='http://www.w3.org/2000/svg', style='width:60px', viewBox='0 0 33.83098862 33.83098862')
+              circle.circle-chart__background(cx='16.915', cy='16.915', r='15.915', fill='none', stroke='#efefef', stroke-width='2')
+              circle.circle-chart__circle(cx='16.915', cy='16.915', r='15.915', fill='none', stroke='#F9C035', stroke-dasharray='62,60', stroke-linecap='round', stroke-width='2',stroke-dashoffset="170")
+              g.circle-chart__info(text-anchor='middle')
+                text.circle-chart__percent(y='17', x='15.5', alignment-baseline='central', font-size='8') 7
+                text.circle-chart__subline(y='17', x='20.5', alignment-baseline='central', font-size='2')
+          .chart-title Analizing & Solving Problems
+
+        .chart
+          .chart-img
+            svg.circle-chart(xmlns='http://www.w3.org/2000/svg', style='width:60px', viewBox='0 0 33.83098862 33.83098862')
+              circle.circle-chart__background(cx='16.915', cy='16.915', r='15.915', fill='none', stroke='#efefef', stroke-width='2')
+              circle.circle-chart__circle(cx='16.915', cy='16.915', r='15.915', fill='none', stroke='#E93E3E', stroke-dasharray='62,60', stroke-linecap='round', stroke-width='2',stroke-dashoffset="170")
+              g.circle-chart__info(text-anchor='middle')
+                text.circle-chart__percent(y='17', x='15.5', alignment-baseline='central', font-size='8') 7
+                text.circle-chart__subline(y='17', x='20.5', alignment-baseline='central', font-size='2')
+          .chart-title Analizing & Solving Problems

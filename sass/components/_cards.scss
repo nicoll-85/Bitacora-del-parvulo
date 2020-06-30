@@ -1420,7 +1420,7 @@
 
 .card {
   &.card--with-progressbar {
-    max-width: 16rem;
+    max-width: 14rem;
     @extend .card;
 
     img.badge-icon {
@@ -1538,6 +1538,95 @@
     @include media(tablet) {
       margin-left: 23px;
       margin-right: 0px;
+    }
+  }
+}
+.card{
+  &.lpa--card{
+    max-width: 100%;
+    border: none;
+    
+    
+    .card-header{
+      padding: 20px 20px 40px 20px;
+      background-image:url("../images/header-bg.png") ;
+      background-size: cover;
+      background-repeat: no-repeat;
+      
+      .header-body{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        text-align: left;
+        @media screen and (max-width:575.98px){
+          flex-wrap: wrap;
+          text-align: center;
+        }
+        @media screen and (min-width:576px) and (max-width:767.99px){
+          flex-wrap: wrap;
+          text-align: left;
+        }
+        .container-img{
+          flex: 0 0 20%;
+            max-width: 20%;
+            @media screen and (max-width:575.98px){
+              max-width: 100%; 
+              margin: auto;
+            }   
+          .media-header{ 
+            width: 45px;
+          }
+        }
+        
+        .description-header{
+          color:$darkest-color;
+          font-weight: 400;
+          font-size: 16px;
+          max-width: 50%;
+          @media screen and (max-width:575.98px){
+            max-width: 100%;
+            
+          }
+          @media screen and (min-width:576px) and (max-width:767.99px){
+            max-width: 80%;
+          }
+        }
+        .action-header{
+          display: block;
+          max-width: 30%;
+          @media screen and (max-width:575.98px){
+            margin: auto;
+            width: 100%;
+          }
+          @media screen and (min-width:576px) and (max-width:767.99px){
+            margin: auto;
+            width: 100%;
+          }
+          button{
+            @media screen and (max-width:575.98px){
+              width: 100%;
+            }
+            @media screen and (min-width:576px) and (max-width:767.99px){
+              width: 100%;
+            }
+          }
+        }
+      }
+      
+    }
+    .card-body{
+      flex: 1 1 auto;
+      min-height: 1px;
+      padding: 1.25rem;
+      margin-top: -20px;
+      position: relative;
+      padding-top: 40px;
+      margin-top: -34px;
+      background-color: white;
+      border-radius: 12px;
+      z-index: 1;
+      box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
     }
   }
 }
