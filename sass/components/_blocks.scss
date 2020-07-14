@@ -294,6 +294,9 @@
 	flex-direction: row;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	@media screen and (max-width:575.98px) {
+		justify-content: center;
+	}
 }
 .block-content--show-mobile{
 	display: none;

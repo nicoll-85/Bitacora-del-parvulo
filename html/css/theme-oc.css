@@ -4831,9 +4831,10 @@ input:checked + .slider:before {
   .chart .chart-title {
     color: #334652;
     opacity: 0.4;
-    margin-top: 20px;
+    margin-top: auto;
     margin-left: 8px;
-    font-size: 14px; }
+    font-size: 14px;
+    margin-bottom: auto; }
 
 .circle-chart__circle--negative {
   transform: rotate(-90deg) scale(1, -1);
@@ -5745,6 +5746,9 @@ ol.list {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap; }
+  @media screen and (max-width: 575.98px) {
+    .block-content--card {
+      justify-content: center; } }
 
 .block-content--show-mobile {
   display: none;
