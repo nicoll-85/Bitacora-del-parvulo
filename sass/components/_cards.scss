@@ -1384,6 +1384,12 @@
     border: none;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
     margin-bottom: 16px;
+    @media screen and (max-width:575.98px) {
+      margin:16px auto;
+    }
+    @media screen and (min-width:576px)and(max-width:767.99px){
+      margin: 16px auto;
+    }
 
     .card__body {
       display: flex;
@@ -1559,6 +1565,7 @@
         flex-wrap: nowrap;
         justify-content: space-between;
         text-align: left;
+        align-items: center;
         @media screen and (max-width:575.98px){
           flex-wrap: wrap;
           text-align: center;
