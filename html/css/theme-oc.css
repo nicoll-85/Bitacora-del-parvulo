@@ -4938,7 +4938,7 @@ input:checked + .slider:before {
     align-items: center; }
     @media screen and (max-width: 575px) {
       .score-pill .pill-content {
-        justify-content: end;
+        justify-content: center;
         padding: 3px 0px; } }
     @media screen and (min-width: 576px) {
       .score-pill .pill-content {
@@ -5745,6 +5745,17 @@ ol.list {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap; }
+
+.block-content--show-mobile {
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  @media screen and (max-width: 575.99px) {
+    .block-content--show-mobile {
+      display: flex; } }
+  @media screen and (min-width: 576px) and (max-width: 768.99px) {
+    .block-content--show-mobile {
+      display: flex; } }
 
 /* Global Styles for Cards
 **********************/
@@ -6808,6 +6819,12 @@ ol.list {
   border: none;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
   margin-bottom: 16px; }
+  @media screen and (max-width: 575.98px) {
+    .card.card--certificate {
+      margin: 16px auto; } }
+  @media screen and (min-width: 576px) and (max-width: 767.99px) {
+    .card.card--certificate {
+      margin: 16px auto; } }
   .card.card--certificate .card__body {
     display: flex;
     flex-direction: row;
@@ -6836,7 +6853,7 @@ ol.list {
       opacity: 0.65; }
 
 .card--with-progressbar.card {
-  max-width: 16rem; }
+  max-width: 14rem; }
   .card--with-progressbar.card img.badge-icon {
     position: absolute;
     left: -32px;
@@ -6923,7 +6940,8 @@ ol.list {
       flex-direction: row;
       flex-wrap: nowrap;
       justify-content: space-between;
-      text-align: left; }
+      text-align: left;
+      align-items: center; }
       @media screen and (max-width: 575.98px) {
         .card.lpa--card .card-header .header-body {
           flex-wrap: wrap;

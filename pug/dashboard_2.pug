@@ -9,15 +9,15 @@ body
 
 			.container--with-sidebar
 				.col-12
-					h5.mb-5 Learning Series
-						.block-content--card
+					h6 Learning Series
+						.block-content--card.mt-3
 							+card--with-progressbar().mr-1
 							+card--with-progressbar().mr-1
 							+card--with-progressbar()
 							+card--with-progressbar().mr-1
 							+card--with-progressbar().mr-1
 							+card--with-progressbar()
-					h5 My Skills check
+					h6 My Skills check
 					.card.card--score-pill
 						.col
 							+score-pill--large-text()
@@ -36,7 +36,7 @@ body
 			.sidebar-layout.sidebar-dashboard
 				.block.block--align-left
 					.block-content
-						.block-content__title Achievements
+						.block-content__title.ml-1 Achievements
 						.badge-image-container
 								+badge-image()
 								+badge-image({badgeImage: 'Pathfinder - color.svg'})
@@ -45,14 +45,26 @@ body
 								+badge-image({badgeImage: 'AI Pioneer - color.svg'})
 								+badge-image({badgeImage: 'Connector - color.svg'})
 								+badge-image({badgeImage: 'Problem Solver - color.svg'})
-						+link('See all')
+						+link.ml-1('See all')
 
-				.block.block--align-left.block--sidebar.hide-tablet-p
-					.block-content
-						.block-content__title Certificates
-						+card--certificate()
-						+card--certificate()
-						+card--certificate()
+				.block.block--align-left.block--sidebar
+					.block-content.hide-tablet-p 
+						.block-content__title.text-left.ml-1 Certificates
+						.col-12.col-sm-12.col-md-6
+							+card--certificate()
+						.col-12.col-sm-12.col-md-6
+							+card--certificate()
+						.col-12.col-sm-12.col-md-6
+							+card--certificate()
+						+link('See all')
+					.block-content--show-mobile
+						.block-content__title.text-left.ml-1 Certificates
+						.col-12.col-sm-12.col-md-6.pl-0.pr-0
+							+card--certificate()
+						.col-12.col-sm-12.col-md-6.pl-0.pr-0
+							+card--certificate()
+						.col-12.col-sm-12.col-md-6.pl-0.pr-0
+							+card--certificate()
 						+link('See all')
 				
 

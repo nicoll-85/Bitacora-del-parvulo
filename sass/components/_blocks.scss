@@ -295,7 +295,17 @@
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
-
+.block-content--show-mobile{
+	display: none;
+    flex-direction: row;
+	flex-wrap: wrap;
+	@media screen and (max-width:575.99px) {
+		display: flex;
+	}
+	@media screen and (min-width:576px)and(max-width:768.99px){
+		display: flex;
+	}
+}
 
 
 
