@@ -4537,7 +4537,8 @@ input:checked + .slider:before {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  margin-left: auto; }
+  margin-left: auto;
+  margin-top: 15px; }
 
 /* Global Styles for Links
 **************************/
