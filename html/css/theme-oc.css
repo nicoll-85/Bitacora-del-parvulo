@@ -4533,6 +4533,12 @@ input:checked + .slider:before {
       top: 0px;
       right: 0px; }
 
+.button-group--float-right {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-left: auto; }
+
 /* Global Styles for Links
 **************************/
 .link {

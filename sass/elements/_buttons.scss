@@ -342,4 +342,10 @@ input:checked + .slider:before {
     }
   }
 }
+.button-group--float-right{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-left: auto;
+}
 
