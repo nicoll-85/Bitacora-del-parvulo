@@ -7,6 +7,7 @@
 **********************/
 @import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i");
 @import url("https://use.typekit.net/izn7pnw.css");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @-ms-viewport {
   width: device-width; }
 
@@ -5185,6 +5186,12 @@ progress[value]::-webkit-progress-value,
   color: #fff;
   opacity: 1; }
 
+.label-pill-checkbox input[type="checkbox"]:checked + .subpill-text {
+  background-color: #FF7C5F;
+  border: 1px solid #FF7C5F;
+  color: #fff;
+  opacity: 1; }
+
 .pill-text {
   border: 1px solid #334652;
   border-radius: 20px;
@@ -5194,11 +5201,29 @@ progress[value]::-webkit-progress-value,
   opacity: .6;
   text-decoration: none; }
 
+.subpill-text {
+  border: 1px solid #FF7C5F;
+  background-color: rgba(255, 124, 95, 0.4);
+  border-radius: 20px;
+  color: #334652;
+  font-weight: 600;
+  display: block;
+  padding: 7px 16px;
+  text-decoration: none; }
+
+.label-pill-checkbox input[type="checkbox"]:checked + .subpill-text .Icon--checkLight {
+  display: inline-block; }
+
 .label-pill-checkbox input[type="checkbox"]:checked + .pill-text .Icon--checkLight {
   display: inline-block; }
 
 .label-pill-checkbox input[type="checkbox"]:checked + .pill-text .Icon--addLight,
 .pill-text .Icon--checkLight,
+.PillList-children {
+  display: none; }
+
+.label-pill-checkbox input[type="checkbox"]:checked + .subpill-text .Icon--addLight,
+.subpill-text .Icon--checkLight,
 .PillList-children {
   display: none; }
 
