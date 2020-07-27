@@ -1,164 +1,41 @@
 include includes/head.pug
 body
-	+new-menu()
-	+lms-navbar
-	.page.page--light-gray.section.section--partial-background.section--partial-background--left-top.section--partial-background--small(style={'background-image': 'url("images/Polygon 6.png")'})
-		.page-content.page-content--no-min-height.divider--primary-gradient
-
-		.page-content.container.page-content--with-sidebar
-			.sidebar-layout.sidebar-passport
-				.block.block--align-left.block--sidebar
-					+avatar({'avatarImage': 'avatar-user-02.png'}).avatar--large.avatar--with-status.avatar--status-online
-					img.institution-logo(src="images/logo-laureate.png")
-					.block-content
-						.block-content__main-title 
-							span Helena Moriá Morteval Amorim
-							.button-group.button-group--float.button-group--float-right
-								+button({'hideTitle': true,'showIcon': true,'iconName': 'edit'}).button--primary.button--only-icon--xsmall.button--float-right
-						p.block-content__description Faculty member, Executive Director, Product Management
-					.block-content
-						.block-content__title.m-0 Languages
-						p.block-content__description Portuguese, English, Spanish, Amharic
-					.button-group
-						+button({'buttonTitle': 'Connect'}).button--primary
-						+button({'buttonTitle': 'Message'}).button--primary.button--ghost-primary
-
-				.block.block--align-left.block--sidebar.hide-tablet-p
-					.block-content
-						.block-content__title Achievements
-						.badge-image-container
-								+badge-image()
-								+badge-image({badgeImage: 'Pathfinder - color.svg'})
-								+badge-image({badgeImage: 'Tourist - color.svg'})
-								+badge-image({badgeImage: 'Internationality - color.svg'})
-								+badge-image({badgeImage: 'AI Pioneer - color.svg'})
-								+badge-image({badgeImage: 'Connector - color.svg'})
-								+badge-image({badgeImage: 'Problem Solver - color.svg'})
-						+link('See more')
-
-				.block.block--align-left.block--sidebar.hide-tablet-p
-					.block-content
-						.block-content__title Certificates
-						+card--certificate()
-						+card--certificate()
-						+card--certificate()
-						+link('See more')
-
-			.container--with-sidebar.container--with-sidebar--left
-
-				.block.block--align-left.block--no-mobile-changes
-					.block-content
-						.block-content__title About
-						.block-content__description.block-content__description--boxed.block-content__description--with-action
-							span.text Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget as a lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia inia biben
-								+link('...See more').link--inline.link--dark
-							+button({'hideTitle': true,'showIcon': true,'iconName': 'edit'}).button--primary.button--only-icon--xsmall.button--float-right
-
-				.block.block--align-left.block--no-mobile-changes
-					.block-content
-						.block-content__title Goals
-						.block-content__description.block-content__description--boxed.block-content__description--with-action.block-content__description--editing
-							span.text(contentEditable="true") Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget as a lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia inia biben
-							+button({'hideTitle': true,'showIcon': true,'iconName': 'check'}).button--primary.button--only-icon--xsmall.button--float-right
-				
-				.block.block--align-left.block--no-mobile-changes
-					.block-content
-						.block-content__title Top Abilities
-						.row.chart-container
-							.col
-								+chart
-							.col
-								+chart
-							.col
-								+chart
-
-				.block.block--align-left.block--no-mobile-changes
-					.block-content
-						.block-content__title 
-							span Professional Interests
-							.button-group.button-group--float.button-group--float-right
-								+button({'hideTitle': true,'showIcon': true,'iconName': 'add'}).button--primary.button--only-icon--xsmall.button--float-right
-								+button({'hideTitle': true,'showIcon': true,'iconName': 'edit'}).button--primary.button--only-icon--xsmall.button--float-right
-						.label__tags
-							.label.label--light.label--medium Innovation
-							.label.label--light.label--medium Entrepeneur
-							.label.label--light.label--medium Making Decisions
-							.label.label--light.label--medium Emerging Technology
-							.label.label--light.label--medium Innovation
-							.label.label--light.label--medium Entrepeneur
-							.label.label--light.label--medium Making Decisions
-							.label.label--light.label--medium Emerging Technology
-
-				.block.block--align-left.block--no-mobile-changes
-					.block-content
-						.block-content__title Degrees
-					.block-content.block-content--boxed
-						.block-content--list
-							.block-content__title 
-								span Career
-								.button-group.button-group--float.button-group--float-right
-									+button({'hideTitle': true,'showIcon': true,'iconName': 'add'}).button--primary.button--only-icon--xsmall.button--float-right
-									+button({'hideTitle': true,'showIcon': true,'iconName': 'edit'}).button--primary.button--only-icon--xsmall.button--float-right
-							.block-content__subtitle--small University
-							.block-content__subtitle--secondary Mar 2010 - Jun 2012
-
-				.block.block--align-left.block--no-mobile-changes
-					.block-content
-						.block-content__title Work Experience
-					.block-content.block-content--boxed
-						.block-content--list
-							.block-content__title 
-								span Vestibulum Lorem Risus Commodo Sollicitudin
-								.button-group.button-group--float.button-group--float-right
-									+button({'hideTitle': true,'showIcon': true,'iconName': 'add'}).button--primary.button--only-icon--xsmall.button--float-right
-									+button({'hideTitle': true,'showIcon': true,'iconName': 'edit'}).button--primary.button--only-icon--xsmall.button--float-right
-							.block-content__subtitle Company · Position
-							.block-content__subtitle--secondary Mar 2010 - Jun 2012
-							.block-content__subtitle--small City
-							.block-content__description
-								span.text Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget as a lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia inia biben
-									+link('...See more').link--inline.link--dark
-
-						.block-content--list
-							.block-content__title 
-								span Vestibulum Lorem Risus Commodo Sollicitudin
-							.block-content__subtitle Company · Position
-							.block-content__subtitle--secondary Mar 2010 - Jun 2012
-							.block-content__subtitle--small City
-							.block-content__description
-								span.text Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget as a lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia inia biben
-									+link('...See more').link--inline.link--dark
-
-						.block-content--list
-							.block-content__title 
-								span Vestibulum Lorem Risus Commodo Sollicitudin
-							.block-content__subtitle Company · Position
-							.block-content__subtitle--secondary Mar 2010 - Jun 2012
-							.block-content__subtitle--small City
-							.block-content__description
-								span.text Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget as a lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia inia biben
-									+link('...See more').link--inline.link--dark
-
-				.block.block--align-left.block--no-mobile-changes.show-tablet-p-down
-					.block-content
-						.block-content__title Achievements
-						.badge-image-container
-								+badge-image()
-								+badge-image({badgeImage: 'Pathfinder - color.svg'})
-								+badge-image({badgeImage: 'Tourist - color.svg'})
-								+badge-image({badgeImage: 'Internationality - color.svg'})
-								+badge-image({badgeImage: 'AI Pioneer - color.svg'})
-								+badge-image({badgeImage: 'Connector - color.svg'})
-								+badge-image({badgeImage: 'Problem Solver - color.svg'})
-						+link('See more')
-
-				.block.block--align-left.block--no-mobile-changes.show-tablet-p-down
-					.block-content
-						.block-content__title Certificates
-						+card--certificate()
-						+card--certificate()
-						+card--certificate()
-						+link('See more')
-				
-
-		+new-footer()
+	.page.bg-section--lms
+		+lms-navbar
+		.page-content.container
+			.banner.banner--boxed.banner--accent-09
+				.banner__content
+					.banner__text
+						p.label-light--text Quiz
+						h4.banner__title Data Science Insights
+						p.label__description Quickly and easily check your skill level in the five areas employers say are most important for the success of new employees.
+						a.link.link--light(href="") Skip Quiz
+				.banner__image(style={'background-image': 'url("images/banner--boxed-02.png")'})
+					.banner__inside-image(style={'background-image': 'url("images/masks/banner-mask--yellow.svg")'})
+			.card.card--full-size
+				.card-body
+					.block
+						p.label-dark--text QUIZ
+						h6.title-lms Why would looking at the history of where the data came from be so important when gathering it to solve a problem?
+						.bg__main-container
+							.checkbox-container
+								.checkbox-custom--item
+									.checkbox-custom
+										input#checkOne.checkbox-custom--input(type='checkbox', value='value1')
+										label.checkbox-custom--label(for='checkOne')
+									p.checkbox-custom--text Data you are using may have been gathered without with different goals in mind or might be old and irrelevant to your cause.
+								.checkbox-container
+									.checkbox-custom--item
+										.checkbox-custom
+											input#checkOne.checkbox-custom--input(type='checkbox', value='value1')
+											label.checkbox-custom--label(for='checkOne')
+										p.checkbox-custom--text Data you are using may have been gathered without with different goals in mind or might be old and irrelevant to your cause.
+								.checkbox-container
+									.checkbox-custom--item
+										.checkbox-custom
+											input#checkOne.checkbox-custom--input(type='checkbox', value='value1')
+											label.checkbox-custom--label(for='checkOne')
+										p.checkbox-custom--text Data you are using may have been gathered without with different goals in mind or might be old and irrelevant to your cause.
+		.controls-layout--lms
+			a.control-back--lms(href="#") Back
+			a.control-next--lms(href="#") Next

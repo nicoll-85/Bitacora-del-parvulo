@@ -6,7 +6,7 @@ const multiDest = require('gulp-multi-dest');
 const sourcemaps = require('gulp-sourcemaps');
 const browserSync = require('browser-sync').create();
 const buildCssCore = function (done) {
-    src(['./sass/theme-oc.scss'])
+    src(['./sass/theme-oc.scss', './sass/**/*.scss', './sass/*.scss'])
         .pipe(count({
             getFileCount: function (fileCount) {
                 console.log(`SASS files to process ${fileCount}`);

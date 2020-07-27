@@ -1,10 +1,70 @@
 mixin lms-navbar(options)
-  nav.lms-nav&attributes(attributes)
-    .navbar
-      .nav-actions
-        button
-          img(src="", alt="")
-        .nav-title
-          h6 Title goes here
-      .nav-controls
-        
+  nav.lms-nav.navbar&attributes(attributes)
+    .nav-actions
+      button.btn(type='button', data-toggle='modal', data-target='#myModal')
+        img(src="./images/Icon/List - Unordered.svg", alt="")
+      .nav-title
+        h6 "Data Science" in: Introduction
+    .nav-controls
+      a.mr-3(href="#")
+        img(src="./images/Icon/Arrow - Ctrl Right Copy.svg", alt="")
+      p 2 of 6
+      a.ml-3(href="#")
+        img(src="./images/Icon/Arrow - Ctrl Right.svg", alt="")
+    .nav-exit
+        button.button.button--ghost-white-small Exit Series
+        button.btn.button--mobile x
+    #myModal.modal
+      .modal-dialog.modal-left.modal-full--height
+        .modal-content
+          .modal-header
+            button.btn(data-toggle='collapse', data-target='#collapseOne', aria-expanded='true', aria-controls='collapseOne') Data Science
+            button.close(type='button', data-dismiss='modal')
+              span x
+          #collapseOne.modal-body.collapse.show(aria-labelledby='headingOne', data-parent='#accordion')
+            a.item-episode(href="#")
+              img.check-icon(src="./images/Toggle/Checkmark/Default.svg", alt="check icon")
+              .media-episode.card.bg-episode
+              .text-episode
+                h6.title-episode Introduction
+                p.descrip-episode Sed consequat, leo eget bibendum sodales.
+            a.item-episode.item-episode--selected(href="#")
+              img.check-icon(src="./images/Toggle/Checkmark/Default.svg", alt="check icon")
+              .media-episode.card.bg-episode 
+              .text-episode
+                h6.title-episode Different is better
+                p.descrip-episode Sed consequat, leo eget bibendum sodales.
+            a.item-episode.item-episode--non-viewed(href="#")
+              img.check-icon(src="./images/Toggle/Checkmark/no-check.png", alt="check icon")
+              .media-episode.card.bg-episode 
+              .text-episode
+                h6.title-episode Quiz
+                p.descrip-episode Sed consequat, leo eget bibendum sodales.
+            a.item-episode.item-episode--non-viewed(href="#")
+              img.check-icon(src="./images/Toggle/Checkmark/no-check.png", alt="check icon")
+              .media-episode.card.bg-episode 
+              .text-episode
+                h6.title-episode Article
+                p.descrip-episode Sed consequat, leo eget bibendum sodales.
+            a.item-episode.item-episode--non-viewed(href="#")
+              img.check-icon(src="./images/Toggle/Checkmark/no-check.png", alt="check icon")
+              .media-episode.card.bg-episode 
+              .text-episode
+                h6.title-episode Quote
+                p.descrip-episode Sed consequat, leo eget bibendum sodales.
+            a.item-episode.item-episode--non-viewed(href="#")
+              img.check-icon(src="./images/Toggle/Checkmark/no-check.png", alt="check icon")
+              .media-episode.card.bg-episode 
+              .text-episode
+                h6.title-episode Quote
+                p.descrip-episode Sed consequat, leo eget bibendum sodales.
+            a.item-episode.item-episode--non-viewed(href="#")
+              img.check-icon(src="./images/Toggle/Checkmark/no-check.png", alt="check icon")
+              .media-episode.card.bg-episode 
+              .text-episode
+                h6.title-episode Quote
+                p.descrip-episode Sed consequat, leo eget bibendum sodales.
+          
+  script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q', crossorigin='anonymous')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl', crossorigin='anonymous')
