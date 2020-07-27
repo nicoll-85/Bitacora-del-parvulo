@@ -367,4 +367,17 @@ input:checked + .slider:before {
     }
   }
 }
+.button-group--float-right{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-left: auto;
+  margin-top: 15px;
+  @media screen and (max-width:575.98px){
+    justify-content: center;
+  }
+  @media screen and (min-width:576px) and (max-width:767.99px){
+    justify-content: center;
+  }
+}
 

@@ -1,0 +1,129 @@
+include includes/head.pug
+body
+	+new-menu()
+	.page
+		.page-content.container
+			.block
+				.interest-content
+					+link('Back to Passport')
+					h4.mt-2 Edit your Interests
+					p Providing your interests improves your recommendations and helps us match you with other students around the world.
+					h6 Academics Interests
+					.pill-checkboxes-container
+						.pill-checkbox-item
+							label.label-pill-checkbox
+								input(type='checkbox', name='feature', value='1', data-toggle="collapse", href="#ArtsandHumanities", role="button" aria-expanded="false", aria-controls="collapseExample")
+								span.pill-text
+									| Arts and Humanities +
+									
+						#ArtsandHumanities.collapse
+							.content-collapsed
+								.pill-checkboxes-container
+									.pill-checkbox-item
+										label.label-pill-checkbox
+											input(type='checkbox', name='feature', value='1')
+											span.subpill-text
+												| Applied Arts
+									.pill-checkbox-item
+											label.label-pill-checkbox
+												input(type='checkbox', name='feature', value='1')
+												span.subpill-text
+													| History
+									.pill-checkbox-item
+											label.label-pill-checkbox
+												input(type='checkbox', name='feature', value='1')
+												span.subpill-text
+													| Languages
+									.pill-checkbox-item
+											label.label-pill-checkbox
+												input(type='checkbox', name='feature', value='1')
+												span.subpill-text
+													| Linguistics
+								
+						.pill-checkbox-item
+							label.label-pill-checkbox
+								input(type='checkbox', name='feature', value='1', data-toggle="collapse", href="#Business", role="button" aria-expanded="false", aria-controls="collapseExample")
+								span.pill-text
+									| Business +
+						#Business.collapse
+							.content-collapsed
+								.pill-checkboxes-container
+									.pill-checkbox-item
+										label.label-pill-checkbox
+											input(type='checkbox', name='feature', value='1')
+											span.subpill-text
+												| Accounting
+									.pill-checkbox-item
+											label.label-pill-checkbox
+												input(type='checkbox', name='feature', value='1')
+												span.subpill-text
+													| Economics
+									.pill-checkbox-item
+											label.label-pill-checkbox
+												input(type='checkbox', name='feature', value='1')
+												span.subpill-text
+													| Entrepreneurship
+									.pill-checkbox-item
+											label.label-pill-checkbox
+												input(type='checkbox', name='feature', value='1')
+												span.subpill-text
+													| Finance
+									.pill-checkbox-item
+											label.label-pill-checkbox
+												input(type='checkbox', name='feature', value='1')
+												span.subpill-text
+													| Human Resources
+									.pill-checkbox-item
+											label.label-pill-checkbox
+												input(type='checkbox', name='feature', value='1')
+												span.subpill-text
+													| Leadership
+						.pill-checkbox-item
+							label.label-pill-checkbox
+								input(type='checkbox', name='feature', value='1')
+								span.pill-text
+									| Engineering +
+						.pill-checkbox-item
+							label.label-pill-checkbox
+								input(type='checkbox', name='feature', value='1')
+								span.pill-text
+									| Health Science +
+						.pill-checkbox-item
+							label.label-pill-checkbox
+								input(type='checkbox', name='feature', value='1')
+								span.pill-text
+									| Information Technology +
+						.pill-checkbox-item
+							label.label-pill-checkbox
+								input(type='checkbox', name='feature', value='1')
+								span.pill-text
+									| Professional Skills +
+						.pill-checkbox-item
+							label.label-pill-checkbox
+								input(type='checkbox', name='feature', value='1')
+								span.pill-text
+									| Social Sciences +
+						.pill-checkbox-item
+							label.label-pill-checkbox
+								input(type='checkbox', name='feature', value='1')
+								span.pill-text
+									| Professional and Applied Sciences +
+						.pill-checkbox-item
+							label.label-pill-checkbox
+								input(type='checkbox', name='feature', value='1')
+								span.pill-text
+									| Architecture and Design +
+						.pill-checkbox-item
+							label.label-pill-checkbox
+								input(type='checkbox', name='feature', value='1')
+								span.pill-text
+									| Counseling +
+									
+					
+					.button-group(style='margin-top: 50px;')
+						+button({'buttonTitle': 'Save'}).button--primary
+						+button({'buttonTitle': 'Cancel'}).button--ghost-primary.button--transparent
+					
+								
+
+		+new-footer()
