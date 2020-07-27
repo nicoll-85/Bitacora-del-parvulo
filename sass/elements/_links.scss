@@ -19,4 +19,8 @@
   	color: $darkest-color;
   	font-weight: 600;
   }
+  &.link--light {
+  	color: $lightest-color;
+  	font-weight: 400;
+  }
 }

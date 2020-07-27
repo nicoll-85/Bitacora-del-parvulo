@@ -221,6 +221,10 @@
       background: var(--accent-color-08);
       background: #463B96;;/*IE*/
     }
+    &.banner--accent-09 {
+      background: $accent-color-09;
+      background: #F9C035;/*IE*/
+    }
   }
 
 }
@@ -339,4 +343,18 @@
     float: right;
   }
 
+}
+.label-light--text{
+  color: $lightest-color;
+  font-size: 14px;
+  font-weight: 400;
+}
+.label-dark--text{
+  color: $darkest-color;
+  font-size: 14px;
+  font-weight: 400;
+  margin-right: auto;
+}
+.title-lms{
+  font-weight: 600;
 }

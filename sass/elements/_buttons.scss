@@ -160,6 +160,31 @@
   }
 }
 
+.button--ghost-white-small {
+  background-color: transparent;
+  padding: 7px 10px;
+  color: $lightest-color;
+  border-color: $lightest-color;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: lighten($lightest-color, 5%);
+    color: $darkest-color;
+  }
+ 
+  &.button--ghost {
+    color: $darkest-color;
+    background-color: $lightest-color;
+    border: 1px solid $darkest-color;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+    .icon {
+      fill: $darkest-color;
+    }
+  }
+}
 
 .button.button--transparent {
   @extend .button--ghost;

@@ -23,6 +23,13 @@
   @media screen and (max-width:575.98px) {
     min-width: 244px;
   }
+  &.card--full-size{
+    max-width: 100%;
+    min-width: 100%;
+    .card-body{
+      padding: 4rem;
+    }
+  }
   .card__header-badge{
     display: flex;
     background-color: $lightest-color;

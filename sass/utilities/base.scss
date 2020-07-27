@@ -19,6 +19,7 @@ $accent-color-05: #FF7900;
 $accent-color-06: #323e56;
 $accent-color-07: #84C470;
 $accent-color-08: #463B96;
+$accent-color-09: #F9C035;
 $lightest-color: #ffffff;
 $darkest-color: #334652;
 $primary-font: "canada-type-gibson", "Helvetica Neue", Arial, sans-serif;
@@ -371,5 +372,30 @@ svg {
     display: none !important;
   }
 }
+.bg__main-container {
+  background: var(--fourth-color);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+  width: 100%;
+  max-width: 700px;
+  min-width: 300px;
+  margin-top: 30px;
+}
 
-
+.controls-layout--lms{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  .control-back--lms{
+    color: $lightest-color;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .control-next--lms{
+    color: $lightest-color;
+    font-weight: 600;
+    font-size: 16px;
+  }
+}

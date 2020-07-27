@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/List - Unordered</title>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.7">
+        <g id="Video-LMS" transform="translate(-24.000000, -24.000000)" fill="#000000">
+            <g id="Nav" transform="translate(8.000000, 8.000000)">
+                <g id="Icon/List---Unordered" transform="translate(12.000000, 12.000000)">
+                    <path d="M6,16 C7.1045695,16 8,16.8954305 8,18 C8,19.1045695 7.1045695,20 6,20 C4.8954305,20 4,19.1045695 4,18 C4,16.8954305 4.8954305,16 6,16 Z M20,17 L20,19 L10,19 L10,17 L20,17 Z M6,10 C7.1045695,10 8,10.8954305 8,12 C8,13.1045695 7.1045695,14 6,14 C4.8954305,14 4,13.1045695 4,12 C4,10.8954305 4.8954305,10 6,10 Z M20,11 L20,13 L10,13 L10,11 L20,11 Z M6,4 C7.1045695,4 8,4.8954305 8,6 C8,7.1045695 7.1045695,8 6,8 C4.8954305,8 4,7.1045695 4,6 C4,4.8954305 4.8954305,4 6,4 Z M20,5 L20,7 L10,7 L10,5 L20,5 Z" id="Fill"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
