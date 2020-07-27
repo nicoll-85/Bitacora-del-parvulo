@@ -399,3 +399,9 @@ svg {
     font-size: 16px;
   }
 }
+.text__description {
+  font-family: $primary-font;
+  color: $darkest-color;
+  opacity: .6;
+  font-weight: 400;
+}

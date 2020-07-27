@@ -4227,6 +4227,12 @@ svg {
     font-weight: 600;
     font-size: 16px; }
 
+.text__description {
+  font-family: "canada-type-gibson", "Helvetica Neue", Arial, sans-serif;
+  color: #334652;
+  opacity: .6;
+  font-weight: 400; }
+
 /* Global Styles for Heading
 **********************/
 .heading {
@@ -7493,8 +7499,13 @@ ol.list {
   font-weight: 400;
   margin-right: auto; }
 
-.title-lms {
+.title-lms--center {
   font-weight: 600; }
+
+.title-lms--left {
+  text-align: left;
+  font-weight: 600;
+  margin-right: auto; }
 
 .sidebar-menu {
   transform: translateX(-100%);
