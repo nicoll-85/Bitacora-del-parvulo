@@ -123,6 +123,34 @@ mixin card--panel(options)
         .card-panel__action  
           +button({'buttonTitle': 'Enroll'}).button--primary
 
+mixin card--panel-badge(options)
+  .card-panel&attributes(attributes)
+    .card-panel__body
+      .badge-container--mobile
+            img(src="./images/stamp-internationality.svg", alt="")
+      .card-panel__content
+        img.card-panel__img(src="./images/Image/Circle/Fill.png", alt="")
+        .card-panel__descrip
+          h5.card-panel__title LPA: Resolución de problemas, cumplimiento de objetivos y trabajo en equipo
+          p.card-panel__date In Progress
+          p.card-panel__text Fusce dapibus, tellus ac cursus commodo, tortor mauris condimen tum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit am et, consectetur adipiscing 
+          .card-panel__label.row
+            .col
+              +label({'labelTitle': 'Analyzing & Solving Problems'})
+            .col
+              +label({'labelTitle': 'Making decisions'})
+            .col
+              +label({'labelTitle': 'Analyzing & Solving Problems'})
+            .col
+              +label({'labelTitle': 'Making decisions'})
+          .mt-2.mb-2
+            +progress-bar({'progressValue': '25'})
+        .card-panel__action
+          .badge-container
+            img(src="./images/stamp-internationality.svg", alt="")
+          +button({'buttonTitle': 'Enroll'}).button--primary
+
+
 mixin card--panel-score(options)
   .card-panel--score&attributes(attributes)
     .card-panel__body

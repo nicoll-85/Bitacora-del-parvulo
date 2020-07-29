@@ -1,0 +1,15 @@
+.nav-landing{
+  background-color: $lightest-color;
+  .navbar-nav{
+    .nav-item{
+      .nav-link{
+        padding-left: 20px;
+        padding-right: 20px;
+        color: $darkest-color;
+        &:hover{
+          border-bottom: 4px solid $accent-color-09;
+        }
+      }
+    }
+  }
+}

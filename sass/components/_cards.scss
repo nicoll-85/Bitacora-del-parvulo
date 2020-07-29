@@ -299,12 +299,26 @@
   background-clip: border-box;
   border-radius: 12px;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
-  margin-bottom: 30px;
+  margin-bottom: 57px;
 
   .card-panel__body {
     flex: 1 1 auto;
     min-height: 1px;
     padding: 31px 36px;
+    .badge-container--mobile{
+      display: block;
+      width: 65px;
+      margin: -66px 0px 20px auto;
+      @media screen and (max-width:575.99px){
+        display: block;
+      }
+      @media screen and (min-width: 576px)and(max-width: 767.98px) {
+        display: block;
+      }
+      @media screen and (min-width:768px){
+        display: none;
+      }
+    }
 
     .card-panel__content {
       display: flex;
@@ -313,7 +327,11 @@
       flex-wrap: wrap;
       text-align: center;
 
-      @media screen and (min-width: 576px) {
+      @media screen and (min-width: 576px)and(max-width: 767.98px) {
+        flex-wrap: wrap;
+        text-align: center;
+      }
+      @media screen and (min-width: 768px){
         flex-wrap: nowrap;
         text-align: left;
       }
@@ -322,10 +340,6 @@
         width: 100px;
         height: 100px;
         margin: 0 auto;
-
-        @media screen and (min-width: 576px) {
-          margin-right: 10px;
-        }
       }
 
       .card-panel__descrip {
@@ -334,7 +348,13 @@
         padding: 5px 15px;
 
         .card-panel__title {
-          font-weight: 800;
+          font-weight: 600;
+        }
+        .card-panel__date{
+          font-size: 12px;
+          color: $primary-color;
+          font-weight: 400;
+
         }
 
         .card-panel__help-text {
@@ -354,6 +374,20 @@
 
       .card-panel__action {
         margin: 0 auto;
+        .badge-container{
+          display: block;
+          width: 65px;
+          margin: -66px auto 20px;
+          @media screen and (max-width:575.99px){
+            display: none;
+          }
+          @media screen and (min-width: 576px)and(max-width: 767.98px) {
+            display: none;
+          }
+          @media screen and (min-width:768px){
+            display: block;
+          }
+        }
       }
     }
   }
