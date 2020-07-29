@@ -7,10 +7,10 @@ body
 				.banner.banner--boxed.banner--accent-09
 					.banner__content
 						.banner__text
-							p.label-light--text Article
-							h4.banner__title Data Science Insights
+							p.label-light--text 
+							h4.banner__title Learning Series
 							p.label__description Quickly and easily check your skill level in the five areas employers say are most important for the success of new employees.
-							a.link.link--light(href="") Skip Quiz
+							a.link.link--light(href="") Go back
 					.banner__image(style={'background-image': 'url("images/banner--boxed-02.png")'})
 						.banner__inside-image(style={'background-image': 'url("images/masks/banner-mask--yellow.svg")'})
 				+nav-landing--lms
@@ -25,20 +25,45 @@ body
 							.card-panel__content
 								img.card-panel__img(src="./images/Image/Circle/Fill.png", alt="")
 								.card-panel__descrip
-									h4.card-panel__title LPA: Resolución de problemas, cumplimiento de objetivos y trabajo en equipo
+									h4.card-panel__title LPA: Problem solving, meeting objectives and teamwork
 									p.card-panel__date Not Started
 									p.card-panel__text Fusce dapibus, tellus ac cursus commodo, tortor mauris condimen tum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit am et, consectetur adipiscing 
 									.card-panel__label.row
-										.col
-											+label({'labelTitle': 'Analyzing & Solving Problems'})
-										.col
-											+label({'labelTitle': 'Making decisions'})
-										.col
-											+label({'labelTitle': 'Analyzing & Solving Problems'})
-										.col
-											+label({'labelTitle': 'Making decisions'})
+										a.label(href="#")
+											.label.label__default Making decisions
+									
+										a.label(href="#")
+											.label.label__default Analyzing & Solving Problems
+									
+										a.label(href="#")
+											.label.label__default Making decisions
 									.mt-2.mb-2
-										+progress-bar({'progressValue': '25'})
+										+progress-bar
+								.card-panel__action
+									.badge-container
+										img(src="./images/stamp-internationality.svg", alt="")
+									+button({'buttonTitle': 'Continue'}).button--secondary
+					.card-panel
+						.card-panel__body
+							.badge-container--mobile
+								img(src="./images/stamp-data-scientist.svg", alt="")
+							.card-panel__content
+								img.card-panel__img(src="./images/Image/Circle/Fill.png", alt="")
+								.card-panel__descrip
+									h4.card-panel__title LPA: Communication Skills in Context: Interviewing for a Job
+									p.card-panel__date In progress
+									p.card-panel__text Fusce dapibus, tellus ac cursus commodo, tortor mauris condimen tum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit am et, consectetur adipiscing 
+									.card-panel__label.row
+										a.label(href="#")
+											.label.label__default Making decisions
+									
+										a.label(href="#")
+											.label.label__default Analyzing & Solving Problems
+									
+										a.label(href="#")
+											.label.label__default Making decisions
+									.mt-2.mb-2
+										+progress-bar({'progressValue': '50'})
 								.card-panel__action
 									.badge-container
 										img(src="./images/stamp-interview-grey.svg", alt="")
