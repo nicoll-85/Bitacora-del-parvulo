@@ -131,18 +131,18 @@ mixin card--panel-badge(options)
       .card-panel__content
         img.card-panel__img(src="./images/Image/Circle/Fill.png", alt="")
         .card-panel__descrip
-          h5.card-panel__title LPA: Resolución de problemas, cumplimiento de objetivos y trabajo en equipo
+          h5.card-panel__title LPA: Communication
           p.card-panel__date In Progress
           p.card-panel__text Fusce dapibus, tellus ac cursus commodo, tortor mauris condimen tum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit am et, consectetur adipiscing 
           .card-panel__label.row
-            .col
-              +label({'labelTitle': 'Analyzing & Solving Problems'})
-            .col
-              +label({'labelTitle': 'Making decisions'})
-            .col
-              +label({'labelTitle': 'Analyzing & Solving Problems'})
-            .col
-              +label({'labelTitle': 'Making decisions'})
+            a.label(href="#")
+              .label.label__default Making decisions
+									
+            a.label(href="#")
+              .label.label__default Analyzing & Solving Problems
+          
+            a.label(href="#")
+              .label.label__default Making decisions
           .mt-2.mb-2
             +progress-bar({'progressValue': '25'})
         .card-panel__action

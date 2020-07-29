@@ -9950,6 +9950,9 @@ ol.list {
     .nav-landing .navbar-nav .nav-item .nav-link:hover {
       border-bottom: 4px solid #F9C035; }
 
+.selected {
+  border-bottom: 4px solid #F9C035; }
+
 .topbar {
   background: #22262B;
   color: var(--lightest-color);
