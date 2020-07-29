@@ -6222,18 +6222,35 @@ ol.list {
   background-clip: border-box;
   border-radius: 12px;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
-  margin-bottom: 30px; }
+  margin-bottom: 57px; }
   .card-panel .card-panel__body {
     flex: 1 1 auto;
     min-height: 1px;
     padding: 31px 36px; }
+    .card-panel .card-panel__body .badge-container--mobile {
+      display: block;
+      width: 65px;
+      margin: -66px 0px 20px auto; }
+      @media screen and (max-width: 575.99px) {
+        .card-panel .card-panel__body .badge-container--mobile {
+          display: block; } }
+      @media screen and (min-width: 576px) and (max-width: 767.98px) {
+        .card-panel .card-panel__body .badge-container--mobile {
+          display: block; } }
+      @media screen and (min-width: 768px) {
+        .card-panel .card-panel__body .badge-container--mobile {
+          display: none; } }
     .card-panel .card-panel__body .card-panel__content {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       flex-wrap: wrap;
       text-align: center; }
-      @media screen and (min-width: 576px) {
+      @media screen and (min-width: 576px) and (max-width: 767.98px) {
+        .card-panel .card-panel__body .card-panel__content {
+          flex-wrap: wrap;
+          text-align: center; } }
+      @media screen and (min-width: 768px) {
         .card-panel .card-panel__body .card-panel__content {
           flex-wrap: nowrap;
           text-align: left; } }
@@ -6241,15 +6258,16 @@ ol.list {
         width: 100px;
         height: 100px;
         margin: 0 auto; }
-        @media screen and (min-width: 576px) {
-          .card-panel .card-panel__body .card-panel__content .card-panel__img {
-            margin-right: 10px; } }
       .card-panel .card-panel__body .card-panel__content .card-panel__descrip {
         font-family: "canada-type-gibson", "Helvetica Neue", Arial, sans-serif;
         color: #334652;
         padding: 5px 15px; }
         .card-panel .card-panel__body .card-panel__content .card-panel__descrip .card-panel__title {
-          font-weight: 800; }
+          font-weight: 600; }
+        .card-panel .card-panel__body .card-panel__content .card-panel__descrip .card-panel__date {
+          font-size: 12px;
+          color: #FF7C5F;
+          font-weight: 400; }
         .card-panel .card-panel__body .card-panel__content .card-panel__descrip .card-panel__help-text {
           font-size: 12px;
           opacity: 0.5; }
@@ -6260,6 +6278,19 @@ ol.list {
           flex-direction: row; }
       .card-panel .card-panel__body .card-panel__content .card-panel__action {
         margin: 0 auto; }
+        .card-panel .card-panel__body .card-panel__content .card-panel__action .badge-container {
+          display: block;
+          width: 65px;
+          margin: -66px auto 20px; }
+          @media screen and (max-width: 575.99px) {
+            .card-panel .card-panel__body .card-panel__content .card-panel__action .badge-container {
+              display: none; } }
+          @media screen and (min-width: 576px) and (max-width: 767.98px) {
+            .card-panel .card-panel__body .card-panel__content .card-panel__action .badge-container {
+              display: none; } }
+          @media screen and (min-width: 768px) {
+            .card-panel .card-panel__body .card-panel__content .card-panel__action .badge-container {
+              display: block; } }
 
 .card-panel--start,
 .card--basic-horizontal {
@@ -9909,6 +9940,15 @@ ol.list {
   background-image: linear-gradient(to top, #c7a13c -24%, rgba(0, 0, 0, 0.7) 79%), url("../images/bg-lms.jpg");
   background-size: cover;
   background-position: center center; }
+
+.nav-landing {
+  background-color: #ffffff; }
+  .nav-landing .navbar-nav .nav-item .nav-link {
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #334652; }
+    .nav-landing .navbar-nav .nav-item .nav-link:hover {
+      border-bottom: 4px solid #F9C035; }
 
 .topbar {
   background: #22262B;

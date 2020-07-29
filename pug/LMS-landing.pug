@@ -1,0 +1,47 @@
+include includes/head.pug
+body
+	+new-menu
+	.page
+		.page-content.container
+			.container--main
+				.banner.banner--boxed.banner--accent-09
+					.banner__content
+						.banner__text
+							p.label-light--text Article
+							h4.banner__title Data Science Insights
+							p.label__description Quickly and easily check your skill level in the five areas employers say are most important for the success of new employees.
+							a.link.link--light(href="") Skip Quiz
+					.banner__image(style={'background-image': 'url("images/banner--boxed-02.png")'})
+						.banner__inside-image(style={'background-image': 'url("images/masks/banner-mask--yellow.svg")'})
+				+nav-landing--lms
+			.section-background--fourth
+				.col-12
+					h5 Available Test
+					+card--panel-badge
+					.card-panel
+						.card-panel__body
+							.badge-container--mobile
+								img(src="./images/stamp-internationality.svg", alt="")
+							.card-panel__content
+								img.card-panel__img(src="./images/Image/Circle/Fill.png", alt="")
+								.card-panel__descrip
+									h4.card-panel__title LPA: Resolución de problemas, cumplimiento de objetivos y trabajo en equipo
+									p.card-panel__date Not Started
+									p.card-panel__text Fusce dapibus, tellus ac cursus commodo, tortor mauris condimen tum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit am et, consectetur adipiscing 
+									.card-panel__label.row
+										.col
+											+label({'labelTitle': 'Analyzing & Solving Problems'})
+										.col
+											+label({'labelTitle': 'Making decisions'})
+										.col
+											+label({'labelTitle': 'Analyzing & Solving Problems'})
+										.col
+											+label({'labelTitle': 'Making decisions'})
+									.mt-2.mb-2
+										+progress-bar({'progressValue': '25'})
+								.card-panel__action
+									.badge-container
+										img(src="./images/stamp-interview-grey.svg", alt="")
+									+button({'buttonTitle': 'Enroll'}).button--primary
+		
+		+new-footer()
