@@ -5383,6 +5383,88 @@ progress[value]::-webkit-progress-value,
   position: relative;
   width: 100%; }
 
+/* Global Styles for audio container
+**********************/
+.audio-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .audio-container .audio-container--img {
+    max-width: 500px;
+    margin: 0 auto 72px; }
+    .audio-container .audio-container--img .bg-audio {
+      background-image: url("../images/Bitmap-audio.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 500px;
+      height: 500px;
+      opacity: .5;
+      margin-top: 92px;
+      margin-bottom: 108px; }
+      @media screen and (max-width: 575.98px) {
+        .audio-container .audio-container--img .bg-audio {
+          width: 250px;
+          height: 250px; } }
+    .audio-container .audio-container--img .play-audio--link {
+      text-align: center;
+      display: block; }
+      .audio-container .audio-container--img .play-audio--link .play-audio--img {
+        width: 70px;
+        margin-top: -148%; }
+        @media screen and (max-width: 575.98px) {
+          .audio-container .audio-container--img .play-audio--link .play-audio--img {
+            width: 49px;
+            margin-top: -196%; } }
+  .audio-container .audio-title {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: -87px; }
+  .audio-container .progress-container--audio {
+    margin: auto; }
+    .audio-container .progress-container--audio .progress-bar-container {
+      position: relative;
+      width: 100%;
+      height: 30px;
+      padding-top: 15px; }
+      .audio-container .progress-container--audio .progress-bar-container .progress-bar__marker {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        padding: 5px;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        top: 18px;
+        border: 1px solid rgba(51, 70, 82, 0.1);
+        border-radius: 50%;
+        background-color: var(--lightest-color);
+        box-shadow: 0px 0px 1px 1px rgba(51, 70, 82, 0.02), 0px 4px 6px 1px rgba(51, 70, 82, 0.06);
+        z-index: 1; }
+      .audio-container .progress-container--audio .progress-bar-container progress[value],
+      .audio-container .progress-container--audio .progress-bar-container .progress-bar--fallback {
+        appearance: none;
+        border: none;
+        width: 100%;
+        height: 10px;
+        background-color: #F5F6F6;
+        border-radius: 100px;
+        box-shadow: none;
+        color: var(--primary-color);
+        position: relative;
+        margin: 0 0 1.5em; }
+      .audio-container .progress-container--audio .progress-bar-container progress[value]::-webkit-progress-bar {
+        background-color: #F5F6F6;
+        border-radius: 100px;
+        box-shadow: none; }
+      .audio-container .progress-container--audio .progress-bar-container progress[value]::-webkit-progress-value,
+      .audio-container .progress-container--audio .progress-bar-container .progress-bar__value {
+        height: 10px;
+        background-color: var(--primary-color);
+        border-radius: 100px;
+        box-shadow: none; }
+
 ol.list,
 ul.list {
   list-style-type: none;
