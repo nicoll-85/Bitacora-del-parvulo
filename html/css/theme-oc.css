@@ -8279,6 +8279,87 @@ ol.list {
             font-weight: 400;
             opacity: .7; }
 
+.modal-container__crop {
+  display: grid;
+  margin-top: 50px; }
+
+.modal-window__crop {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.25);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none; }
+  .modal-window__crop:target {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.5s ease-in-out; }
+  .modal-window__crop .modal-box__crop {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    pointer-events: auto;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border-radius: 12px;
+    outline: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+    max-width: 500px;
+    min-width: 300px;
+    width: 100%; }
+    .modal-window__crop .modal-box__crop .modal-header {
+      font-weight: 400;
+      padding-top: 7px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border-bottom: transparent; }
+      .modal-window__crop .modal-box__crop .modal-header .container-img-info {
+        padding: 10px 20px; }
+        .modal-window__crop .modal-box__crop .modal-header .container-img-info .instruction-text {
+          font-weight: 700;
+          margin-bottom: 0px; }
+        .modal-window__crop .modal-box__crop .modal-header .container-img-info .img-info {
+          font-size: 14px;
+          margin-bottom: 0px; }
+      .modal-window__crop .modal-box__crop .modal-header .modal-close {
+        display: block;
+        margin-left: auto;
+        color: #979797;
+        font-weight: 400;
+        float: right;
+        position: relative; }
+    .modal-window__crop .modal-box__crop .modal-body {
+      position: relative;
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      padding: 1rem;
+      font-family: var(--primary-font);
+      color: #334652; }
+      .modal-window__crop .modal-box__crop .modal-body .container-crop-img {
+        width: 100%;
+        max-width: 400px;
+        max-height: 400px;
+        border: 2px dotted grey;
+        margin: auto; }
+    .modal-window__crop .modal-box__crop .modal-footer {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap; }
+
 .navbar {
   position: relative;
   display: flex;

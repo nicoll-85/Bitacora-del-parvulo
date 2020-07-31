@@ -35,6 +35,23 @@ mixin modal--IE()
 							img.header-media__item(src="./images/1x/edge.png", alt="Edge")
 							img.header-media__item(src="./images/1x/safari.png", alt="Safari")
 						p.cr-text © 2020 Laureate Education Inc. 
+mixin modal--crop()
+	.modal-container__crop&attributes(attributes)
+		+link(href="#open-modalCrop") My modal
+	#open-modalCrop.modal-window__crop
+		.modal-box__crop
+			.modal-header
+				.container-img-info
+					h6.instruction-text Select Photo
+					p.img-info new-photo.jpg
+				a.modal-close(href="#",title="close") X
+			.modal-body
+				.container-crop-img
+					img.img-fluid(src="./images/bg-intro.jpg", alt="crop-image")
+				
+			.modal-footer
+				+button({'buttonTitle': 'Cancel'}).button--ghost-primary.mr-1
+				+button({'buttonTitle': 'Save'}).button--primary
 
 mixin modal--primary()
 	.modal.modal--primary(tabindex="-1" role="dialog").modal--is-open
@@ -77,4 +94,8 @@ mixin modal--primary()
 								'showAction': true, 
 								'boxAction': 'Get Started'
 							}).box--centered-content.box--condensed
-
+//- mixin modal--crop()
+	
+script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q', crossorigin='anonymous')
+script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl', crossorigin='anonymous')
