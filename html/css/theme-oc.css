@@ -4260,6 +4260,11 @@ svg {
 .warning-message {
   color: #F9C035; }
 
+.empty-icon {
+  width: 122px;
+  margin: auto;
+  display: block; }
+
 /* Global Styles for Heading
 **********************/
 .heading {
