@@ -4233,6 +4233,33 @@ svg {
   opacity: .6;
   font-weight: 400; }
 
+.center-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; }
+
+.multi-column {
+  display: flex;
+  flex-direction: row;
+  justify-content: start; }
+
+.item-column {
+  color: #334652; }
+  .item-column h6 {
+    font-weight: 600; }
+  .item-column p {
+    opacity: .6;
+    font-weight: 400; }
+
+.icon-verified {
+  display: block; }
+  .icon-verified img {
+    width: 30px; }
+
+.warning-message {
+  color: #F9C035; }
+
 /* Global Styles for Heading
 **********************/
 .heading {

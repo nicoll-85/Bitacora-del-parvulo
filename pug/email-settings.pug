@@ -1,0 +1,82 @@
+include includes/head.pug
+body
+	+new-menu()
+	.page
+		.page-content.container
+			.block
+				.center-column
+					+link('Back to Passport')
+					h4.mt-2 Email and Notifications Settings
+					p The address you mark as your preferred is where we will send all email notifications
+				.container
+					hr
+					table.table.table-borderless
+						thead
+							tr
+								th(scope='col-4') 
+								th.text-center(scope='col-4') Verified
+								th.text-center(scope='col-4') Prefered Email
+						tbody
+							tr
+								th(scope='row')
+									.item-column
+										h6 Institutional Email
+										p nadia@email.com
+								td.text-center
+								td.text-center
+									.checkbox-default
+										.custom-control.custom-checkbox
+											input.custom-control-input#customCheck3(type="checkbox",name="example1")
+											label.custom-control-label(for="customCheck3")
+							tr
+								th(scope='row') 
+									.item-column
+										h6 Alternative Emails
+										p nadia@email.com
+								td.text-center
+									.icon-verified
+										img(src="./images/check-mark.svg", alt="verified")
+		
+								td.text-center
+									.checkbox-default
+										.custom-control.custom-checkbox
+											input.custom-control-input#customCheck2(type="checkbox",name="example1")
+											label.custom-control-label(for="customCheck2")
+							tr
+								th(scope='row') 
+									.item-column
+										p nicoll@email.com
+								td.text-center
+									.icon-verified
+										img(src="./images/check-mark.svg", alt="verified")
+		
+								td.text-center
+									.checkbox-default
+										.custom-control.custom-checkbox
+											input.custom-control-input#customCheck1(type="checkbox",name="example1")
+											label.custom-control-label(for="customCheck1")
+							tr
+								th(scope='row') 
+									.item-column
+										p user@email.com
+								td.text-center
+									p.warning-message Waiting to verify. Resend email confirmation.
+		
+								td.text-center
+									.checkbox-default
+										.custom-control.custom-checkbox
+											input.custom-control-input#customCheck(type="checkbox",name="example1")
+											label.custom-control-label(for="customCheck")
+					hr
+					.form-group.mt-2.col-12.col-sm-6.col-md-6.col-lg-6.col-xl-6
+							label(for="field3") Add alternative email
+							input.form-control(type="text" id="field3")
+							small.form-text.text-danger The email already exists
+					hr.mt-3.mb-3
+				.center-column
+					.button-group.col-6
+							+button({'buttonTitle': 'Save'}).button--primary
+							+button({'buttonTitle': 'Cancel'}).button--ghost-primary.button--transparent
+									
+
+		+new-footer()
