@@ -405,3 +405,33 @@ svg {
   opacity: .6;
   font-weight: 400;
 }
+.center-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.multi-column{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+.item-column{
+  color:$darkest-color;
+  h6{
+    font-weight: 600;
+  }
+  p{
+    opacity: .6;
+    font-weight: 400;
+  }
+}
+.icon-verified{
+  display: block;
+  img{
+    width: 30px;
+  }
+}
+.warning-message{
+  color:#F9C035 ;
+}
