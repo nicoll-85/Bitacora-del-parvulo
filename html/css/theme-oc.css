@@ -10138,12 +10138,17 @@ ol.list {
 
 .nav-landing {
   background-color: #ffffff; }
-  .nav-landing .navbar-nav .nav-item .nav-link {
-    padding-left: 20px;
-    padding-right: 20px;
-    color: #334652; }
-    .nav-landing .navbar-nav .nav-item .nav-link:hover {
-      border-bottom: 4px solid #F9C035; }
+  .nav-landing .navbar-nav {
+    display: flex;
+    position: relative;
+    flex-wrap: nowrap;
+    flex-direction: row; }
+    .nav-landing .navbar-nav .nav-item .nav-link {
+      padding-left: 20px;
+      padding-right: 20px;
+      color: #334652; }
+      .nav-landing .navbar-nav .nav-item .nav-link:hover {
+        border-bottom: 4px solid #F9C035; }
 
 .selected {
   border-bottom: 4px solid #F9C035; }

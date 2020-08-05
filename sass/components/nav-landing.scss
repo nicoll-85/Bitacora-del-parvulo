@@ -1,6 +1,10 @@
 .nav-landing{
   background-color: $lightest-color;
   .navbar-nav{
+    display: flex;
+    position: relative;
+    flex-wrap: nowrap;
+    flex-direction: row;
     .nav-item{
       .nav-link{
         padding-left: 20px;
