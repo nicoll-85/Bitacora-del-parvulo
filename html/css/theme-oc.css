@@ -5439,14 +5439,16 @@ progress[value]::-webkit-progress-value,
           height: 250px; } }
     .audio-container .audio-container--img .play-audio--link {
       text-align: center;
-      display: block; }
+      display: block;
+      position: relative;
+      z-index: 1; }
       .audio-container .audio-container--img .play-audio--link .play-audio--img {
         width: 70px;
-        margin-top: -148%; }
+        margin-top: -79%; }
         @media screen and (max-width: 575.98px) {
           .audio-container .audio-container--img .play-audio--link .play-audio--img {
             width: 49px;
-            margin-top: -196%; } }
+            margin-top: -102%; } }
   .audio-container .audio-title {
     color: #ffffff;
     font-size: 16px;

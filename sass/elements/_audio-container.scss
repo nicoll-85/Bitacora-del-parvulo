@@ -26,12 +26,14 @@
 		.play-audio--link{
 			text-align: center;
 			display: block;
+			position: relative;
+    		z-index: 1;
 			.play-audio--img{
 				width: 70px;
-				margin-top: -148%;
+				margin-top: -79%;
 				@media screen and (max-width:575.98px){
 					width: 49px;
-					margin-top: -196%;
+					margin-top: -102%;
 				}
 			}
 		}
