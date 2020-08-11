@@ -139,3 +139,13 @@ mixin banner--lg()
 			+button({'buttonTitle': 'Learn More'}).button--lightest
 		.badge__container
 				+badge-image()
+
+mixin banner--about06()
+	.banner.banner--lite.banner--featured-image
+		.banner__content
+			.banner__text
+				h1.banner__title Turn Learning into Employability
+				span.banner__description This is your place for becoming a smarter, more connected professional.
+		.banner__image.rounded-circle(style={'background-image': 'url("https://liuwagtailprod.blob.core.windows.net/lni-wagtail-prod/images/Toma-de-Decisiones-square.original.format-jpeg.jpg")', 'max-width':'300px'})
+			button.play-button.btn
+				img(src="./images/play-blue.svg", alt="play video")
