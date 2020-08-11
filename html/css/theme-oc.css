@@ -7463,11 +7463,36 @@ ol.list {
       font-size: 14px;
       color: var(--primary-color);
       text-decoration: underline; }
+  @media screen and (max-width: 575.99px) {
+    .banner.banner--lite .banner__content {
+      text-align: center; } }
   .banner.banner--lite .banner__content .banner__text h1 {
     font-size: 34px;
     line-height: 47px;
     font-weight: 800;
     margin-bottom: 32px; }
+  .banner.banner--lite .banner__image {
+    flex: 1 1 30%;
+    width: 30%;
+    min-width: 150px;
+    min-height: 150px;
+    max-width: 300px;
+    max-height: 300px;
+    background: center/cover no-repeat; }
+    .banner.banner--lite .banner__image .play-button {
+      position: relative;
+      top: 267px; }
+      @media screen and (max-width: 575.99px) {
+        .banner.banner--lite .banner__image .play-button {
+          top: 88px; } }
+      @media screen and (min-width: 576px) and (max-width: 767.99px) {
+        .banner.banner--lite .banner__image .play-button {
+          top: 94px; } }
+      .banner.banner--lite .banner__image .play-button img {
+        width: 100%; }
+        @media screen and (min-width: 576px) and (max-width: 767.99px) {
+          .banner.banner--lite .banner__image .play-button img {
+            width: 64px; } }
   @media only screen and (min-width: 768px) {
     .banner.banner--image-left .banner__content {
       order: 2;
