@@ -440,3 +440,32 @@ svg {
     margin: auto;
     display: block;
 }
+.alert-msg{
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: $primary-font;
+  color: $darkest-color;
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  width: 100%;
+  .alert-body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    .alert-icon{
+      width: 60px;
+    }
+  }
+  &.alert-msg--warning{
+    background-color:#F9C035 ;
+  }
+  &.alert-msg--error{
+    background-color:#E93E3E ;
+  }
+  &.alert-msg--error{
+    background-color:#38CC96 ;
+  }
+}
