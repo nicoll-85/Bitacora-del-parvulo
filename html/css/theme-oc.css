@@ -4274,16 +4274,19 @@ svg {
   padding: .75rem 1.25rem;
   margin-bottom: 1rem;
   border-radius: 12px;
-  width: 100%; }
+  max-width: 100%; }
   .alert-msg .alert-body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center; }
+    .alert-msg .alert-body p {
+      margin-bottom: 0px; }
     .alert-msg .alert-body .alert-icon {
-      width: 60px; }
+      width: 30px; }
   .alert-msg.alert-msg--warning {
-    background-color: #F9C035; }
+    background-color: rgba(249, 192, 53, 0.6);
+    border: 1px solid #F9C035; }
   .alert-msg.alert-msg--error {
     background-color: #E93E3E; }
   .alert-msg.alert-msg--error {
@@ -7495,6 +7498,15 @@ ol.list {
     line-height: 47px;
     font-weight: 800;
     margin-bottom: 32px; }
+  .banner.banner--lite .banner__content .banner__actions {
+    display: flex;
+    justify-content: left; }
+    @media screen and (max-width: 575.99px) {
+      .banner.banner--lite .banner__content .banner__actions {
+        justify-content: center; } }
+    @media screen and (min-width: 576px) and (max-width: 767.99px) {
+      .banner.banner--lite .banner__content .banner__actions {
+        justify-content: center; } }
   .banner.banner--lite .banner__image {
     flex: 1 1 30%;
     width: 30%;

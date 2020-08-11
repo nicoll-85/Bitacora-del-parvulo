@@ -449,18 +449,22 @@ svg {
   padding: .75rem 1.25rem;
   margin-bottom: 1rem;
   border-radius: 12px;
-  width: 100%;
+  max-width: 100%;
   .alert-body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    p{
+      margin-bottom: 0px;
+    }
     .alert-icon{
-      width: 60px;
+      width: 30px;
     }
   }
   &.alert-msg--warning{
-    background-color:#F9C035 ;
+    background-color:rgba(249, 192, 53, .6) ;
+    border: 1px solid #F9C035;
   }
   &.alert-msg--error{
     background-color:#E93E3E ;
