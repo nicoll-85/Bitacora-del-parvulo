@@ -122,6 +122,16 @@
           margin-bottom: 32px;
         }
       }
+      .banner__actions{
+        display: flex;
+        justify-content: left;
+        @media screen and (max-width:575.99px){
+          justify-content: center;
+        }
+        @media screen and (min-width:576px) and (max-width:767.99px) {
+          justify-content: center;
+        }
+      }
     }
     .banner__image{
       flex: 1 1 30%;
