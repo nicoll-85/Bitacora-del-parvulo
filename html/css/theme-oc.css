@@ -4265,7 +4265,7 @@ svg {
   margin: auto;
   display: block; }
 
-.alert-msg {
+.alert-msg-box {
   position: relative;
   font-size: 16px;
   font-weight: 500;
@@ -4274,23 +4274,29 @@ svg {
   padding: .75rem 1.25rem;
   margin-bottom: 1rem;
   border-radius: 12px;
+  width: 100%;
   max-width: 100%; }
-  .alert-msg .alert-body {
+  .alert-msg-box .alert-body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center; }
-    .alert-msg .alert-body p {
+    .alert-msg-box .alert-body p {
       margin-bottom: 0px; }
-    .alert-msg .alert-body .alert-icon {
-      width: 30px; }
-  .alert-msg.alert-msg--warning {
+    .alert-msg-box .alert-body .alert-icon {
+      width: 30px;
+      margin-right: 20px; }
+    .alert-msg-box .alert-body .close {
+      margin-left: auto; }
+  .alert-msg-box.alert-msg-box--warning {
     background-color: rgba(249, 192, 53, 0.6);
     border: 1px solid #F9C035; }
-  .alert-msg.alert-msg--error {
-    background-color: #E93E3E; }
-  .alert-msg.alert-msg--error {
-    background-color: #38CC96; }
+  .alert-msg-box.alert-msg-box--error {
+    background-color: rgba(233, 62, 62, 0.6);
+    border: 1px solid #E93E3E; }
+  .alert-msg-box.alert-msg-box--success {
+    background-color: rgba(56, 204, 150, 0.6);
+    border: 1px solid #38CC96; }
 
 /* Global Styles for Heading
 **********************/

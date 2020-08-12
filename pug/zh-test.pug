@@ -35,10 +35,23 @@ body
 		
 			+card--profile
 			+banner--about06
-			.alert-msg.alert-msg--warning
+			.alert-msg-box.alert-msg-box--warning
 				.alert-body
-					img.alert-icon(src="./images/Icon/Warning.svg", alt="")
+					img.alert-icon(src="./images/Icon/Announcement.svg", alt="")
 					p This a warning alert message!
-					
+					button.close(type='button', data-dismiss='alert', aria-label='Close')
+						span(aria-hidden='true') ×
+			.alert-msg-box.alert-msg-box--error
+				.alert-body
+					img.alert-icon(src="./images/Icon/Announcement.svg", alt="")
+					p This a error alert message!
+					button.close(type='button', data-dismiss='alert', aria-label='Close')
+						span(aria-hidden='true') ×
+			.alert-msg-box.alert-msg-box--success
+				.alert-body
+					img.alert-icon(src="./images/Icon/Announcement.svg", alt="")
+					p This a success alert message!
+					button.close(type='button', data-dismiss='alert', aria-label='Close')
+						span(aria-hidden='true') ×
 			
 	+new-footer()
