@@ -94,7 +94,25 @@ mixin modal--primary()
 								'showAction': true, 
 								'boxAction': 'Get Started'
 							}).box--centered-content.box--condensed
-//- mixin modal--crop()
+
+mixin modal--alerts()
+	+link('Modal warning')(type='button', data-toggle='modal', data-target='#modalWarning')
+		
+	#modalWarning.modal.modal-alert.modal-alert__warning.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+		.modal-dialog(role='document')
+			.modal-content
+				.modal-header
+					span 
+						img.icon-alert(src="./images/Icon/Alert.svg", alt="")
+					p#exampleModalLabel.modal-title.text-center There are 1+ alerts, dismiss this one and see what's next
+					button.close(type='button', data-dismiss='modal', aria-label='Close')
+						span(aria-hidden='true') ×
+				.modal-body
+					p.date-modal Aired on July 31, 2020. 6:00 p.m. to August 31, 2020, 6:00 p.m.
+					h6 Blackboard System Maintenance
+					P.text-modal Please note that Blackboard maintenance will be done on July 31, 2020 at 6:00 pm (CLST) through August 31 at 6:00 pm. During this time, students who participate in courses will not have access to their Blackboard platforms.
+				.modal-footer
+					+button({'buttonTitle': 'Dismiss this alert'})(type='button', data-dismiss='modal').button--ghost-secondary.mx-auto
 	
 script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')
 script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q', crossorigin='anonymous')

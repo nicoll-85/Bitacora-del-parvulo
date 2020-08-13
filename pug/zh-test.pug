@@ -53,5 +53,41 @@ body
 					p This a success alert message!
 					button.close(type='button', data-dismiss='alert', aria-label='Close')
 						span(aria-hidden='true') ×
+			+modal--alerts
+			+link('Modal error')(type='button', data-toggle='modal', data-target='#modalError')
+				
+			#modalError.modal.modal-alert.modal-alert__error.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+				.modal-dialog(role='document')
+					.modal-content
+						.modal-header
+							span 
+								img.icon-alert(src="./images/Icon/Alert.svg", alt="")
+							p#exampleModalLabel.modal-title.text-center There are 1+ alerts, dismiss this one and see what's next
+							button.close(type='button', data-dismiss='modal', aria-label='Close')
+								span(aria-hidden='true') ×
+						.modal-body
+							p.date-modal Aired on July 31, 2020. 6:00 p.m. to August 31, 2020, 6:00 p.m.
+							h6 Blackboard System Maintenance
+							P.text-modal Please note that Blackboard maintenance will be done on July 31, 2020 at 6:00 pm (CLST) through August 31 at 6:00 pm. During this time, students who participate in courses will not have access to their Blackboard platforms.
+						.modal-footer
+							+button({'buttonTitle': 'Dismiss this alert'})(type='button', data-dismiss='modal').button--ghost-secondary.mx-auto
+			
+			+link('Modal success')(type='button', data-toggle='modal', data-target='#modalSuccess')
+				
+			#modalSuccess.modal.modal-alert.modal-alert__success.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+				.modal-dialog(role='document')
+					.modal-content
+						.modal-header
+							span 
+								img.icon-alert(src="./images/Icon/Alert.svg", alt="")
+							p#exampleModalLabel.modal-title.text-center There are 1+ alerts, dismiss this one and see what's next
+							button.close(type='button', data-dismiss='modal', aria-label='Close')
+								span(aria-hidden='true') ×
+						.modal-body
+							p.date-modal Aired on July 31, 2020. 6:00 p.m. to August 31, 2020, 6:00 p.m.
+							h6 Blackboard System Maintenance
+							P.text-modal Please note that Blackboard maintenance will be done on July 31, 2020 at 6:00 pm (CLST) through August 31 at 6:00 pm. During this time, students who participate in courses will not have access to their Blackboard platforms.
+						.modal-footer
+							+button({'buttonTitle': 'Dismiss this alert'})(type='button', data-dismiss='modal').button--ghost-secondary.mx-auto
 			
 	+new-footer()
