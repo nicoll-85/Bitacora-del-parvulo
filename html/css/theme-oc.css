@@ -8461,6 +8461,57 @@ ol.list {
       flex-direction: row;
       flex-wrap: nowrap; }
 
+.modal-alert .modal-dialog {
+  max-width: 700px; }
+  .modal-alert .modal-dialog .modal-content {
+    border-radius: 12px; }
+    .modal-alert .modal-dialog .modal-content .modal-header {
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px; }
+      .modal-alert .modal-dialog .modal-content .modal-header .icon-alert {
+        width: 28px;
+        margin-right: 20px; }
+    .modal-alert .modal-dialog .modal-content .modal-body {
+      padding: 20px 30px;
+      text-align: center; }
+      .modal-alert .modal-dialog .modal-content .modal-body .date-modal {
+        color: #334652;
+        opacity: .6;
+        font-size: 14px; }
+      .modal-alert .modal-dialog .modal-content .modal-body .text-modal {
+        color: #334652;
+        opacity: .7;
+        font-weight: 400; }
+    .modal-alert .modal-dialog .modal-content .modal-footer {
+      background-color: rgba(249, 192, 53, 0.6);
+      border: 1px solid #F9C035;
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 12px; }
+
+.modal-alert.modal-alert__warning .modal-dialog .modal-content .modal-header {
+  background-color: rgba(249, 192, 53, 0.6);
+  border: 1px solid #F9C035; }
+
+.modal-alert.modal-alert__warning .modal-dialog .modal-content .modal-footer {
+  background-color: rgba(249, 192, 53, 0.6);
+  border: 1px solid #F9C035; }
+
+.modal-alert.modal-alert__error .modal-dialog .modal-content .modal-header {
+  background-color: rgba(233, 62, 62, 0.6);
+  border: 1px solid #E93E3E; }
+
+.modal-alert.modal-alert__error .modal-dialog .modal-content .modal-footer {
+  background-color: rgba(233, 62, 62, 0.6);
+  border: 1px solid #E93E3E; }
+
+.modal-alert.modal-alert__success .modal-dialog .modal-content .modal-header {
+  background-color: rgba(56, 204, 150, 0.6);
+  border: 1px solid #38CC96; }
+
+.modal-alert.modal-alert__success .modal-dialog .modal-content .modal-footer {
+  background-color: rgba(56, 204, 150, 0.6);
+  border: 1px solid #38CC96; }
+
 .navbar {
   position: relative;
   display: flex;
