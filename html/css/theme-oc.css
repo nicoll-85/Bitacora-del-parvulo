@@ -7564,6 +7564,12 @@ ol.list {
       /*IE*/
       font-family: var(--primary-font);
       opacity: 0.85; }
+      .banner.banner--boxed .banner__content .banner__text .label__description p {
+        color: var(--lightest-color);
+        color: white;
+        /*IE*/
+        font-family: var(--primary-font);
+        opacity: 0.85; }
     .banner.banner--boxed .banner__content .banner__actions {
       margin: 0px;
       margin-top: 24px; }
@@ -10132,17 +10138,22 @@ ol.list {
     flex-direction: row;
     align-items: center;
     flex-wrap: nowrap; }
+    .lms-nav .nav-actions .nav-title h6 {
+      font-size: 14px; }
   .lms-nav .nav-controls {
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex-wrap: nowrap; }
+    flex-wrap: nowrap;
+    justify-content: center; }
     @media screen and (max-width: 575.99px) {
       .lms-nav .nav-controls {
         display: none; } }
     @media screen and (min-width: 576px) and (max-width: 767.99px) {
       .lms-nav .nav-controls {
         display: none; } }
+  .lms-nav .nav-exit button {
+    margin-left: auto; }
   .lms-nav .modal .modal-dialog {
     margin-top: 68px;
     border-radius: 12px; }
