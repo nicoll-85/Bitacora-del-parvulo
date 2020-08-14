@@ -204,6 +204,12 @@
           color: white;/*IE*/
           font-family: var(--primary-font);
           opacity: 0.85;
+          p{
+            color: var(--lightest-color);
+            color: white;/*IE*/
+            font-family: var(--primary-font);
+            opacity: 0.85;
+          }
         }
       }
       .banner__actions {
