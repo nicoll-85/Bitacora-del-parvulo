@@ -6,7 +6,7 @@ body
 			.block
 				.center-column
 					+link('Back to Passport')
-					h4.mt-2 Email and Notifications Settings
+					h4.mt-2 Email Settings
 					p The address you mark as your preferred is where we will send all email notifications
 				.container
 					hr
@@ -67,12 +67,94 @@ body
 										.custom-control.custom-checkbox
 											input.custom-control-input#customCheck(type="checkbox",name="example1")
 											label.custom-control-label(for="customCheck")
+				
 					hr
 					.form-group.mt-2.col-12.col-sm-6.col-md-6.col-lg-6.col-xl-6
 							label(for="field3") Add alternative email
 							input.form-control(type="text" id="field3")
 							small.form-text.text-danger The email already exists
-					hr.mt-3.mb-3
+				.center-column
+					h4.mt-2 Notifications Settings
+					p Select a preferred language for email notifications:
+				
+				.container
+					hr
+					.form-group.col-12.col-sm-6.col-md-6.col-lg-6.col-xl-6
+							label(for="field4") Languages
+							input.form-control(type="text" id="field4" placeholder="Choose language")
+							small.form-text.text-warning Helper Text
+
+				.center-column
+					h4.mt-2.mb-5 Notifications Preferences
+				.container
+					table.table.table-borderless
+						thead
+							tr
+								th(scope='col-4') Notification name
+								th.text-center(scope='col-4') By Email
+								th.text-center(scope='col-4') By Portal
+						tbody
+							tr
+								th(scope='row')
+									.item-column
+										p Connection earned a Stamp
+								td.text-center
+									.checkbox-default
+										.custom-control.custom-checkbox
+											input.custom-control-input#customCheck5(type="checkbox",name="example1")
+											label.custom-control-label(for="customCheck5")
+								
+								td.text-center
+									.checkbox-default
+										.custom-control.custom-checkbox
+											input.custom-control-input#customCheck7(type="checkbox",name="example1")
+											label.custom-control-label(for="customCheck7")
+							tr
+								th(scope='row') 
+									.item-column
+										p Earned Stamp
+								td.text-center
+									.checkbox-default
+										.custom-control.custom-checkbox
+											input.custom-control-input#customCheck6(type="checkbox",name="example1")
+											label.custom-control-label(for="customCheck6")
+		
+								td.text-center
+									.checkbox-default
+										.custom-control.custom-checkbox
+											input.custom-control-input#customCheck8(type="checkbox",name="example1")
+											label.custom-control-label(for="customCheck8")
+							tr
+								th(scope='row') 
+									.item-column
+										p OneCampus® News
+								td.text-center
+									.checkbox-default
+										.custom-control.custom-checkbox
+											input.custom-control-input#customCheck9(type="checkbox",name="example1")
+											label.custom-control-label(for="customCheck9")
+		
+								td.text-center
+									.checkbox-default
+										.custom-control.custom-checkbox
+											input.custom-control-input#customCheck01(type="checkbox",name="example1")
+											label.custom-control-label(for="customCheck01")
+							tr
+								th(scope='row') 
+									.item-column
+										p Reminder to complete a episode
+								td.text-center
+									.checkbox-default
+										.custom-control.custom-checkbox
+											input.custom-control-input#customCheck02(type="checkbox",name="example1")
+											label.custom-control-label(for="customCheck02")
+		
+								td.text-center
+									.checkbox-default
+										.custom-control.custom-checkbox
+											input.custom-control-input#customCheck(type="checkbox",name="example1")
+											label.custom-control-label(for="customCheck")
+					hr
 				.center-column
 					.button-group.col-6
 							+button({'buttonTitle': 'Save'}).button--primary
