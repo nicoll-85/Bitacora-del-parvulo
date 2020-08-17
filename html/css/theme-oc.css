@@ -4298,6 +4298,41 @@ svg {
     background-color: rgba(56, 204, 150, 0.6);
     border: 1px solid #38CC96; }
 
+.biography-autor {
+  margin-top: 25px;
+  color: #334652;
+  opacity: .6; }
+  .biography-autor .name-autor {
+    font-size: 21px;
+    font-weight: 600; }
+    @media screen and (max-width: 575.98px) {
+      .biography-autor .name-autor {
+        font-size: 18px; } }
+
+.link-box {
+  position: relative;
+  display: block;
+  background-color: rgba(249, 192, 53, 0.8);
+  border-radius: 12px; }
+  .link-box .link-box__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px 25px; }
+    .link-box .link-box__container .link-icon {
+      width: 50px;
+      margin-right: 15px; }
+      @media screen and (max-width: 575.99px) {
+        .link-box .link-box__container .link-icon {
+          margin: auto; } }
+      @media screen and (min-width: 576px) and (max-width: 767.99px) {
+        .link-box .link-box__container .link-icon {
+          margin: auto; } }
+    .link-box .link-box__container .link-text-container {
+      text-align: left; }
+      .link-box .link-box__container .link-text-container h6 {
+        font-weight: 600; }
+
 /* Global Styles for Heading
 **********************/
 .heading {
@@ -5907,6 +5942,20 @@ ol.list {
   .box--small.box--with-image .box__image {
     margin-right: 8px; }
 
+.box-quotes {
+  position: relative;
+  display: block;
+  border-radius: 12px;
+  background-color: rgba(249, 192, 53, 0.4);
+  width: 80%;
+  margin: auto; }
+  .box-quotes .box-body {
+    padding: 50px 70px;
+    color: #334652; }
+    .box-quotes .box-body .quote-text {
+      font-weight: 600;
+      font-size: 28px; }
+
 .block {
   display: flex;
   flex-direction: column;
@@ -6165,6 +6214,16 @@ ol.list {
     min-width: 100%; }
     .card.card--full-size .card-body {
       padding: 4rem; }
+      @media screen and (max-width: 575.98px) {
+        .card.card--full-size .card-body {
+          padding: 20px; } }
+  .card.card--image {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 350px;
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover; }
   .card .card__header-badge {
     display: flex;
     background-color: #ffffff;

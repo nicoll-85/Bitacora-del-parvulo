@@ -28,7 +28,18 @@
     min-width: 100%;
     .card-body{
       padding: 4rem;
+      @media screen and (max-width:575.98px){
+        padding: 20px;
+      }
     }
+  }
+  &.card--image{
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 350px;
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
   }
   .card__header-badge{
     display: flex;
