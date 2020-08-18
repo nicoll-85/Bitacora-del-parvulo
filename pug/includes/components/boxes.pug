@@ -27,3 +27,9 @@ mixin box(options)
       .box__description #{boxDescription}
     if showAction
       +button({'buttonTitle': boxAction}).button--primary
+mixin box-quotes()
+  .box-quotes
+    .box-body
+      img.float-left(src="https://storage.googleapis.com/portal-assets/assets/images/images/quote.svg", alt="")
+      h2.text-center Data Science are kind of like the new reinaissance folks, because data science is inherently multidisciplinary.
+      img.float-right(src="https://storage.googleapis.com/portal-assets/assets/images/images/quote.svg", alt="")

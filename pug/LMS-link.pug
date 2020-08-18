@@ -1,0 +1,22 @@
+include includes/head.pug
+body
+	.page.bg-section--lms
+		+lms-navbar
+		.page-content.container
+			.card.card--image(style={'background-image': 'url("images/banner--boxed-02.png")'})
+
+			.card.card--full-size
+				.card-body
+					p.label-dark--text Link
+					h4.title-lms--center Sustainability and Data Science
+					p.text__description How do we tackle sustainability questions with the help of data and data science? What is sustainability research?.
+					.link-box
+						.link-box__container
+							img.link-icon(src="./images/link.svg", alt="")
+							.link-text-container
+								h6 Join and explore about DATA SCIENCE
+								+link(' https://datacon-live.coriniumintelligence.com/')
+
+		.controls-layout--lms
+			a.control-back--lms(href="#") Back
+			a.control-next--lms(href="#") Next

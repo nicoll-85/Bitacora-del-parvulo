@@ -243,3 +243,19 @@
 	}
 }
 
+.box-quotes{
+	position: relative;
+	display: block;
+	border-radius: 12px;
+	background-color:rgba(249, 192, 53, .4) ;
+	width: 80%;
+	margin: auto;
+	.box-body{
+		padding: 50px 70px;
+		color: $darkest-color;
+		.quote-text{
+			font-weight: 600;
+			font-size: 28px;
+		}
+	}
+}
