@@ -4229,8 +4229,7 @@ svg {
 
 .text__description {
   font-family: "canada-type-gibson", "Helvetica Neue", Arial, sans-serif;
-  color: #334652;
-  opacity: .6;
+  color: rgba(51, 70, 82, 0.6);
   font-weight: 400; }
 
 .center-column {
@@ -7474,6 +7473,14 @@ ol.list {
     z-index: 1;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1px 0 rgba(0, 0, 0, 0.05); }
 
+.card-embed {
+  height: 700px; }
+
+.card-iframe {
+  height: 100%;
+  width: 100%;
+  border: transparent; }
+
 .banner {
   padding: 32px;
   display: flex;
@@ -10284,8 +10291,6 @@ ol.list {
       .item-episode.item-episode--selected .text-episode .descrip-episode {
         font-weight: 400;
         opacity: .4; }
-  .item-episode.item-episode--non-viewed {
-    opacity: .2; }
 
 .bg-episode {
   width: 100%;
