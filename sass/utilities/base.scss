@@ -401,8 +401,7 @@ svg {
 }
 .text__description {
   font-family: $primary-font;
-  color: $darkest-color;
-  opacity: .6;
+  color: rgba(51, 70, 82, .6);
   font-weight: 400;
 }
 .center-column{
@@ -520,5 +519,4 @@ svg {
       }
     }
   }
-
 }
