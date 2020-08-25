@@ -380,4 +380,55 @@ input:checked + .slider:before {
     justify-content: center;
   }
 }
+.button-pill{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  padding: 1rem;
+  margin-bottom: 10px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: none;
+  line-height: 22px;
+  cursor: pointer;
+  color: $darkest-color;
+  background-color: $lightest-color;
+  border: 1px solid $primary-color;
+  border-radius: 42px;
+  font-weight: 400;
+  @include font-size(14px);
+  transition: all 0.25s ease-in-out;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    background-color: $primary-color;
+    color: $lightest-color;
+  }
+  .button-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    .icon-pill {
+      width: 36px;
+      height: 36px;
+      vertical-align: text-bottom;
+      font-size: 1.2rem;
+      fill: $lightest-color;
+      margin-right:20px ;
+    }
+    .text-pill{
+      color: $darkest-color;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+  
+}
 

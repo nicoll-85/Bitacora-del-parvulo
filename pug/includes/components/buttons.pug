@@ -12,3 +12,9 @@ mixin button(options)
 		if showIcon
 			svg(class="icon" role="img" aria-label="icon" aria-hidden=true)
 				use(xlink:href=iconUrl)
+
+mixin button-pill()
+	button.button-pill&attributes(attributes)
+		.button-container
+			img.icon-pill(src="./images/SVG/chat.svg", alt="chat")
+			.text-pill Chat

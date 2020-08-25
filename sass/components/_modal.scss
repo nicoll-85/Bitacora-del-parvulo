@@ -448,6 +448,9 @@
       .modal-body{
         padding: 20px 30px;
         text-align: center;
+        &.modal-body--chat{
+          text-align: left;
+        }
         .date-modal{
           color: $darkest-color;
           opacity: .6;
@@ -464,6 +467,10 @@
         border: 1px solid #F9C035;
         border-bottom-left-radius: 12px;
         border-bottom-right-radius: 12px;
+        &.modal-footer--chat{
+          background-color: #EABBB9;
+          border: transparent;
+        }
       }
     }
   }
@@ -511,4 +518,39 @@
     } 
   }
 }
+.modal-container--support{
+  position: relative;
+  float: right;
+  .modal{
+    .modal-dialog{
+      max-width: 400px;
+      .modal-content{
+        .modal-header{
+          background-image: url("../images/Polygon orange.svg");
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+    .modal-dialog--bottom{
+      position:fixed;
+      top:auto;
+      right:0;
+      left:auto;
+      bottom:0;
+    }
+  }
+}
+.support-btn{
+  display: block;
+  position: fixed;
+  width: 110px;
+  height: 110px;
+  z-index: 501;
+  cursor: pointer;
+  bottom: 0;
+  right: 1;
+}
+
+
 
