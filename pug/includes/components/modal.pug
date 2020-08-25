@@ -113,6 +113,59 @@ mixin modal--alerts()
 					P.text-modal Please note that Blackboard maintenance will be done on July 31, 2020 at 6:00 pm (CLST) through August 31 at 6:00 pm. During this time, students who participate in courses will not have access to their Blackboard platforms.
 				.modal-footer
 					+button({'buttonTitle': 'Dismiss this alert'})(type='button', data-dismiss='modal').button--ghost-secondary.mx-auto
+mixin modal--support()
+	.modal-container--support
+		button.support-btn.btn.float-right(type='button', data-toggle='modal', data-target='#modalSupport')
+			img(src="./images/SVG/help-sup.svg", alt="Support image")
+			
+		#modalSupport.modal.modal-alert.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+			.modal-dialog.modal-dialog--bottom(role='document')
+				.modal-content
+					.modal-header
+						p#exampleModalLabel.modal-title.text-center Help Service
+						button.close(type='button', data-dismiss='modal', aria-label='Close')
+							span(aria-hidden='true') ×
+					.modal-body
+						h6.text-title How can I help you?
+						P.text-modal Please select one of the following options:
+						button.button-pill(type='button', data-toggle='modal', data-target='#modalChat')
+							.button-container
+								img.icon-pill(src="./images/SVG/chat.svg", alt="chat")
+								.text-pill Chat
+						#modalChat.modal.modal-alert.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+							.modal-dialog.modal-dialog--bottom(role='document')
+								.modal-content
+									.modal-header
+										p#exampleModalLabel.modal-title.text-center Chat | Support | Soporte | Suporte
+										button.close(type='button', data-dismiss='modal', aria-label='Close')
+											span(aria-hidden='true') ×
+									.modal-body.modal-body--chat
+										P.text-modal Sorry, we aren't online at the moment. Leave a message and we'll get back to you.
+										.profile-form
+											.form-group.mt-2
+												label(for="field1") Name
+												input.form-control(type="text" id="field1" placeholder="Enter field name")
+												small.form-text.text-muted Helper Text
+
+											.form-group.mt-2
+												label(for="field2") Email
+												input.form-control(type="text" id="field2" placeholder="Enter field email")
+												small.form-text.text-success Helper Text
+											.form-group.mt-2
+												label(for="field1") Message
+												textarea.form-control
+												small.form-text.text-muted Helper Text
+									.modal-footer.modal-footer--chat
+										+button({'buttonTitle': 'Send Message'})(type='button', data-dismiss='modal').button--primary.mx-auto
+
+						button.button-pill
+							.button-container
+								img.icon-pill(src="./images/SVG/service.svg", alt="chat")
+								.text-pill Self Service
+						button.button-pill
+							.button-container
+								img.icon-pill(src="./images/SVG/mail.svg", alt="chat")
+								.text-pill Send Email
 	
 script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')
 script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q', crossorigin='anonymous')

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="148px" height="148px" viewBox="0 0 148 148" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 20</title>
+    <defs>
+        <filter x="-9.2%" y="-9.2%" width="118.5%" height="118.5%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <polygon id="path-2" points="0 0.225556436 129.774495 0.225556436 129.774495 130 0 130"></polygon>
+        <polygon id="path-4" points="0 130 130 130 130 0 0 0"></polygon>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Learning-Series---Quiz" transform="translate(-973.000000, -686.000000)">
+            <g id="Group-20" filter="url(#filter-1)" transform="translate(982.000000, 695.000000)">
+                <g id="Group-3">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M64.8872475,0.225556436 C100.723485,0.225556436 129.774495,29.2765663 129.774495,65.112804 C129.774495,100.949042 100.723485,130.000051 64.8872475,130.000051 C29.0510099,130.000051 0,100.949042 0,65.112804 C0,29.2765663 29.0510099,0.225556436 64.8872475,0.225556436" id="Fill-1" fill="#E1E6E8" mask="url(#mask-3)"></path>
+                </g>
+                <path d="M114.949506,115.173756 L111.695025,89.534057 C115.559398,82.0641306 118,73.5848863 118,64.7019661 C117.796789,35.0244828 93.7966739,11 63.8985234,11 C34.0001148,11 10,35.0244828 10,64.5 C10,93.9755172 34.2035843,118 63.8985234,118 C73.0507813,118 81.5931469,115.779142 88.9154697,111.741614 L114.949506,115.173756 Z" id="Fill-4" fill="#F05F50"></path>
+                <path d="M64,13.0364102 C35.4908386,13.0364102 12.0725158,36.2456409 12.0725158,64.5002562 C12.0725158,92.7548715 35.4908386,115.964102 64,115.964102 C72.3490063,115.964102 80.6982711,113.945897 88.2326709,110.111384 C88.6398449,109.909487 89.0472774,109.909487 89.4544514,109.909487 L112.669058,112.735025 L109.818064,89.727692 C109.818064,89.3244097 109.818064,88.9203587 110.021781,88.5168202 C113.890839,81.251333 115.927226,72.9768714 115.927226,64.5005124 C115.927226,36.2453847 92.7128777,13.0364102 64,13.0364102 M64,120 C33.2507352,120 8,95.176359 8,64.5 C8,33.823641 33.2509937,9 64,9 C94.9527226,9 120,33.823641 120,64.5 C120,73.1782564 117.963613,82.0581539 113.890839,89.7274358 L116.94529,114.752974 C116.94529,115.35841 116.741574,115.963846 116.3344,116.367641 C115.927226,116.771435 115.316335,116.973077 114.705187,116.973077 L89.4539344,113.945897 C81.7163354,117.982051 72.9601551,120 64,120" id="Fill-6" fill="#183651"></path>
+                <path d="M63.5,110 C38.4244376,110 18,89.5753057 18,64.5 C18,39.4244376 38.4244376,19 63.5,19 C88.5755624,19 109,39.4244376 109,64.5 C109,75.622188 105.360123,82.6998973 102.528937,87.9576682 L104.753477,105.75322 L86.957925,103.52868 C83.3177915,105.551176 75.633436,110 63.5,110" id="Fill-8" fill="#FFFFFF"></path>
+                <polygon id="Fill-10" fill="#F05F50" points="58 31 58 66.1495334 61.1032898 78 66.689474 78 70 66.1495334 70 31"></polygon>
+                <mask id="mask-5" fill="white">
+                    <use xlink:href="#path-4"></use>
+                </mask>
+                <g id="Clip-13"></g>
+                <polygon id="Fill-12" fill="#F05F50" mask="url(#mask-5)" points="58 97 70 97 70 85 58 85"></polygon>
+                <polygon id="Fill-14" fill="#183651" mask="url(#mask-5)" points="36 51 40 51 40 47 36 47"></polygon>
+                <polygon id="Fill-15" fill="#183651" mask="url(#mask-5)" points="36 66 40 66 40 62 36 62"></polygon>
+                <polygon id="Fill-16" fill="#183651" mask="url(#mask-5)" points="36 81 40 81 40 77 36 77"></polygon>
+                <polygon id="Fill-17" fill="#183651" mask="url(#mask-5)" points="88 51 92 51 92 47 88 47"></polygon>
+                <polygon id="Fill-18" fill="#183651" mask="url(#mask-5)" points="88 66 92 66 92 62 88 62"></polygon>
+                <polygon id="Fill-19" fill="#183651" mask="url(#mask-5)" points="88 81 92 81 92 77 88 77"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
