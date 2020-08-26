@@ -4332,6 +4332,11 @@ svg {
       .link-box .link-box__container .link-text-container h6 {
         font-weight: 600; }
 
+.congrats-img {
+  width: 100%;
+  min-width: 234px;
+  max-width: 400px; }
+
 /* Global Styles for Heading
 **********************/
 .heading {
@@ -6261,6 +6266,14 @@ ol.list {
       padding: 4rem; }
       @media screen and (max-width: 575.98px) {
         .card.card--full-size .card-body {
+          padding: 20px; } }
+  .card.card--mid-size {
+    max-width: 70%;
+    min-width: 70%; }
+    .card.card--mid-size .card-body {
+      padding: 4rem; }
+      @media screen and (max-width: 575.98px) {
+        .card.card--mid-size .card-body {
           padding: 20px; } }
   .card.card--image {
     max-width: 100%;
@@ -8654,8 +8667,8 @@ ol.list {
 .support-btn {
   display: block;
   position: fixed;
-  width: 120px;
-  height: 120px;
+  width: 125px;
+  height: 125px;
   z-index: 501;
   cursor: pointer;
   bottom: 0;
