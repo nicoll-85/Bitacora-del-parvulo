@@ -4337,6 +4337,23 @@ svg {
   min-width: 234px;
   max-width: 400px; }
 
+iframe {
+  width: 100%;
+  min-height: 550px;
+  border-radius: 12px; }
+
+.bg-section--lms .page-content {
+  max-width: 100%;
+  min-height: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
+  @media screen and (min-width: 992px) {
+    .bg-section--lms .page-content {
+      flex-wrap: nowrap; } }
+
 /* Global Styles for Heading
 **********************/
 .heading {

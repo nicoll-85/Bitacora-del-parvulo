@@ -388,6 +388,7 @@ svg {
   flex-direction: row;
   justify-content: space-between;
   padding: 20px;
+
   .control-back--lms{
     color: $lightest-color;
     font-weight: 600;
@@ -525,4 +526,23 @@ svg {
   width: 100%;
   min-width: 234px;
   max-width: 400px;
+}
+iframe{
+  width: 100%;
+  min-height: 550px;
+  border-radius: 12px;
+}
+.bg-section--lms{
+  .page-content{
+    max-width: 100%;
+    min-height: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    @media screen and (min-width:992px){
+      flex-wrap: nowrap;
+    }
+  }
 }
