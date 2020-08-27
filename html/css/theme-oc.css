@@ -8253,6 +8253,23 @@ ol.list {
         color: #334652;
         opacity: .4; }
 
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  background-color: #334652;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  box-shadow: 1px 1px 8px 1px rgba(51, 70, 82, 0.2), 1px 8px 8px rgba(51, 70, 82, 0.1); }
+  .dropdown-menu.dropdown-menu--rounded {
+    border-radius: 8px;
+    background-color: #ffffff; }
+
 .modal--scrollable.modal-content {
   justify-content: space-between;
   max-height: calc(100vh - 1rem); }
