@@ -611,6 +611,148 @@
         </div>
       </div>
     </div>
+    <div class="modal-container"><a class="link" href="#open-modal">My link</a>
+    </div>
+    <div class="modal-window" id="open-modal">
+      <div class="modal-box">
+        <div class="modal-header__basic"><a class="modal-close__basic" href="#" title="close">X</a></div>
+        <div class="modal-body">
+          <div class="modal-content__basic">
+            <p>Nullam dictum felis eu pede mollis pretium. Quisque id odio. Aenean imperdiet. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam.</p>
+          </div>
+          <div class="modal-actions">
+            <button class="button button--ghost-primary mr-1"><span class="button__title">Secondary action</span>
+            </button>
+            <button class="button button--primary"><span class="button__title">Primary action</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-container__crop"><a class="link" href="#open-modalCrop">My link</a>
+    </div>
+    <div class="modal-window__crop" id="open-modalCrop">
+      <div class="modal-box__crop">
+        <div class="modal-header">
+          <div class="container-img-info">
+            <h6 class="instruction-text">Select Photo</h6>
+            <p class="img-info">new-photo.jpg</p>
+          </div><a class="modal-close" href="#" title="close">X</a>
+        </div>
+        <div class="modal-body">
+          <div class="container-crop-img"><img class="img-fluid" src="./images/bg-intro.jpg" alt="crop-image"/></div>
+        </div>
+        <div class="modal-footer">
+          <button class="button button--ghost-primary mr-1"><span class="button__title">Cancel</span>
+          </button>
+          <button class="button button--primary"><span class="button__title">Save</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal--primary modal--is-open" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content modal--scrollable">
+          <div class="modal-header">
+            <h5 class="modal-title">Hello, Sheyna! Welcome to OneCampus.</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <ul class="list list--with-image-round">
+              <li class="list-item">
+                <div class="list-item__content">
+                  <div class="list-image" style="background-image:url(&quot;images/lists/listImage01.png&quot;);" alt="list image"></div>
+                  <div class="list-text">
+                    <div class="list-title">Understand Your Strengths</div>
+                    <div class="list-subtitle">OneCampus helps you identify professional areas you can improve on based on the abilities that employers value most.</div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-item">
+                <div class="list-item__content">
+                  <div class="list-image" style="background-image:url(&quot;images/lists/listImage02.png&quot;);" alt="list image"></div>
+                  <div class="list-text">
+                    <div class="list-title">Understand Your Strengths</div>
+                    <div class="list-subtitle">OneCampus helps you identify professional areas you can improve on based on the abilities that employers value most.</div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-item">
+                <div class="list-item__content">
+                  <div class="list-image" style="background-image:url(&quot;images/lists/listImage03.png&quot;);" alt="list image"></div>
+                  <div class="list-text">
+                    <div class="list-title">Understand Your Strengths</div>
+                    <div class="list-subtitle">OneCampus helps you identify professional areas you can improve on based on the abilities that employers value most.</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <div class="box box--centered-content box--condensed">
+              <div class="box__media">
+              </div>
+              <div class="box__title">Ready to get started?</div>
+              <div class="box__description">Click to begin and Donec id elit non mi porta gravida at eget metus.</div>
+              <button class="button button--primary"><span class="button__title">Get Started</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><a class="link" href="#" type="button" data-toggle="modal" data-target="#modalWarning">Modal warning</a>
+    <div class="modal modal-alert modal-alert__warning fade" id="modalWarning" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header"><span> <img class="icon-alert" src="./images/Icon/Alert.svg" alt=""/></span>
+            <p class="modal-title text-center" id="exampleModalLabel">There are 1+ alerts, dismiss this one and see what's next</p>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">
+            <p class="date-modal">Aired on July 31, 2020. 6:00 p.m. to August 31, 2020, 6:00 p.m.</p>
+            <h6>Blackboard System Maintenance</h6>
+            <P class="text-modal">Please note that Blackboard maintenance will be done on July 31, 2020 at 6:00 pm (CLST) through August 31 at 6:00 pm. During this time, students who participate in courses will not have access to their Blackboard platforms.</P>
+          </div>
+          <div class="modal-footer">
+            <button class="button button--ghost-secondary mx-auto" type="button" data-dismiss="modal"><span class="button__title">Dismiss this alert</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-container--support">
+      <button class="support-btn btn float-right" type="button" data-toggle="modal" data-target="#modalSupport"><img src="./images/SVG/spanish-help_1.svg" alt="Support image"/></button>
+      <div class="modal modal-alert fade" id="modalSupport" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog--bottom" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p class="modal-title text-center" id="exampleModalLabel">Help Service</p>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            </div>
+            <div class="modal-body">
+              <h6 class="text-title">How can I help you?</h6>
+              <P class="text-modal">Please select one of the following options:</P>
+              <button class="button-pill">
+                <div class="button-container"><img class="icon-pill" src="./images/SVG/service.svg" alt="chat"/>
+                  <div class="text-pill">Self Service</div>
+                </div>
+              </button>
+              <button class="button-pill">
+                <div class="button-container"><img class="icon-pill" src="./images/SVG/mail.svg" alt="chat"/>
+                  <div class="text-pill">Send Email</div>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="checkbox-default">
+      <div class="custom-control custom-checkbox">
+        <input class="custom-control-input" id="customCheck" type="checkbox" name="example1"/>
+        <label class="custom-control-label" for="customCheck">Label goes here</label>
+      </div>
+    </div>
   </div>
   <footer>
     <div class="footer">
