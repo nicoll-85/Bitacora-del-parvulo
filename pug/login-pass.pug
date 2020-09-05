@@ -1,0 +1,29 @@
+include includes/head.pug
+body
+	.page
+		.login-container
+			.media-container
+			.login-form
+				.login-block
+					.profile-form
+						img.logo-brand.text-left(src="./images/Logo.png", alt="logo")
+						h4.text-left Log In
+						p Please enter your credentials to continue
+						.media-validation
+							img.campus-img(src="https://unifidcdn.azureedge.net/institutions/cibertec/logo-cibertec.png", alt="")
+							h5 Username @laureate.net
+						.form-group.mt-2
+							label(for="field1") Enter your password
+							input.form-control(type="text" id="field1" placeholder="Enter your password")
+							small.form-text.text-muted Helper Text
+
+						+button({'buttonTitle': 'Save'}).button--primary.button--fullwidth
+						.block.mt-3
+							.link Sign in with another user
+							.link Having trouble logging in?
+							small.mt-3 © 2020 Laureate Education Inc. All rights reserved.
+							.link Terms and Conditions of Use
+
+
+	
+
