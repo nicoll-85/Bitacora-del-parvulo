@@ -546,3 +546,19 @@ iframe{
     }
   }
 }
+.package-iframe{
+  iframe{
+    width: 100%;
+    min-height: 697px;
+    border-radius: 12px;
+    @media screen and (max-width:575.99px) {
+      min-height: 637px;
+    }
+    @media screen and (min-width:768px) {
+      min-height: 637px;
+    }
+    @media screen and (min-width:992px) {
+      min-height: 697px;
+    }
+  }
+}
