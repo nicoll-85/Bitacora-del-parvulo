@@ -4354,6 +4354,20 @@ iframe {
     .bg-section--lms .page-content {
       flex-wrap: nowrap; } }
 
+.package-iframe iframe {
+  width: 100%;
+  min-height: 697px;
+  border-radius: 12px; }
+  @media screen and (max-width: 575.99px) {
+    .package-iframe iframe {
+      min-height: 637px; } }
+  @media screen and (min-width: 768px) {
+    .package-iframe iframe {
+      min-height: 637px; } }
+  @media screen and (min-width: 992px) {
+    .package-iframe iframe {
+      min-height: 697px; } }
+
 /* Global Styles for Heading
 **********************/
 .heading {
@@ -10382,9 +10396,9 @@ ol.list {
     margin-bottom: 16px; }
   .item-episode .media-episode {
     display: block;
-    max-width: 164px;
-    min-width: 164px;
-    height: 72px; }
+    max-width: 140px;
+    min-width: 140px;
+    height: 80px; }
     @media screen and (max-width: 575.99px) {
       .item-episode .media-episode {
         margin: auto; } }
