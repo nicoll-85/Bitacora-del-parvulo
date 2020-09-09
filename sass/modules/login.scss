@@ -42,10 +42,41 @@
 			height: 100vh;
 			.profile-form{
 				min-width: 400px;
-				max-width: 550px;
 				display: flex;
 				flex-direction: column;
 				align-items: center;
+				@media screen and (max-width:575.99px) {
+					min-width: 300px;	
+				}
+				ul.list-lite {
+					list-style-type: none;
+					padding: 0px;
+					margin: 0px;
+					display: flex;
+					flex-direction: column;
+					width: 100%;
+				  
+					.list-lite__item {
+					  display: flex;
+					  flex-direction: row;
+					  .list-lite__icon {
+						min-width: 5px;
+						width: 5px;
+						height: 5px;
+						margin-right: 10px;
+						border-radius: 50%;
+						background: var(--primary-color);
+						display: flex;
+						margin-top: 8px;
+					  }
+					  .list-lite__text{
+						color: $darkest-color;
+						opacity: .6;
+						font-size: 16px;
+						font-weight: 300;
+					  }
+					}
+				  }
 
 				.logo-brand{
 					width: 60px;
@@ -63,4 +94,25 @@
 			
 		}	
 	}
+}
+
+.reset-img{
+	max-height: 60px;
+	min-height: 60px;
+	height: 60px;
+	display: block;
+	margin: 1em auto;
+}
+.counter{
+	color: $primary-color;
+	font-weight: 800;
+}
+.redirect-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	margin-top: 200px;
+	min-width: 300px;
+	
 }
