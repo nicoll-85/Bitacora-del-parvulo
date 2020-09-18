@@ -428,6 +428,11 @@ input:checked + .slider:before {
       font-weight: 600;
     }
   }
-  
 }
+.button{
+  select:focus {
+    outline-color: purple;
+  }
+}
+
 
