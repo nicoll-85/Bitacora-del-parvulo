@@ -4368,6 +4368,32 @@ iframe {
     .package-iframe iframe {
       min-height: 697px; } }
 
+.error-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 133px;
+  min-width: 300px; }
+
+.jumbo-error {
+  font-size: 70px;
+  font-weight: 900; }
+
+.error-msg {
+  font-weight: 800; }
+
+.error-img {
+  width: 100%;
+  min-width: 500px; }
+  @media screen and (max-width: 575.98px) {
+    .error-img {
+      min-width: 250px; } }
+  @media screen and (min-width: 576px) and (max-width: 767.99px) {
+    .error-img {
+      min-width: 350px; } }
+
 /* Global Styles for Heading
 **********************/
 .heading {
@@ -10480,11 +10506,13 @@ ol.list {
     flex-wrap: nowrap;
     flex-direction: row; }
     .nav-landing .navbar-nav .nav-item .nav-link {
-      padding-left: 20px;
-      padding-right: 20px;
-      color: #334652; }
+      padding-left: 0px;
+      padding-right: 0px;
+      color: #334652;
+      margin-right: 20px; }
       .nav-landing .navbar-nav .nav-item .nav-link:hover {
-        border-bottom: 4px solid #F9C035; }
+        border-bottom: 4px solid #F9C035;
+        padding-right: 0px; }
 
 .selected {
   border-bottom: 4px solid #F9C035; }
@@ -12165,13 +12193,13 @@ footer {
       align-items: center;
       height: 100vh; }
       .login-container .login-form .login-block .profile-form {
-        min-width: 400px;
+        min-width: 350px;
         display: flex;
         flex-direction: column;
         align-items: center; }
         @media screen and (max-width: 575.99px) {
           .login-container .login-form .login-block .profile-form {
-            min-width: 300px; } }
+            min-width: 235px; } }
         .login-container .login-form .login-block .profile-form ul.list-lite {
           list-style-type: none;
           padding: 0px;
