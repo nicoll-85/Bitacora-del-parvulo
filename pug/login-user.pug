@@ -17,7 +17,14 @@ body
 						+button({'buttonTitle': 'Save'}).button--primary.button--fullwidth
 						.block
 							small.mt-3 © 2020 Laureate Education Inc. All rights reserved.
-							.link Terms and Conditions of Use
+							.link.mb-3 Terms and Conditions of Use
+						.btn-group.show.mt-5
+							button.button.button--ghost-primary.btn-sm.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+								| Select language
+							.dropdown-menu.dropdown-menu--rounded.show(x-placement='bottom-start', style='position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;')
+								a.dropdown-item(href='#') English
+								a.dropdown-item(href='#') Spanish
+								a.dropdown-item(href='#') Portuguesse
 
 
 	
