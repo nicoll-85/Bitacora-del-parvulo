@@ -4394,6 +4394,16 @@ iframe {
     .error-img {
       min-width: 350px; } }
 
+.redirect-img {
+  width: 100%;
+  min-width: 400px; }
+  @media screen and (max-width: 575.98px) {
+    .redirect-img {
+      min-width: 200px; } }
+  @media screen and (min-width: 576px) and (max-width: 767.99px) {
+    .redirect-img {
+      min-width: 350px; } }
+
 /* Global Styles for Heading
 **********************/
 .heading {

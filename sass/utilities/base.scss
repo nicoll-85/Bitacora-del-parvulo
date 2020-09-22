@@ -588,6 +588,13 @@ iframe{
     min-width: 350px;
   }
 }
-.link-LMS{
-  
+.redirect-img{
+  width: 100%;
+  min-width: 400px;
+  @media screen and (max-width:575.98px){
+    min-width: 200px;
+  }
+  @media screen and (min-width:576px) and (max-width:767.99px){
+    min-width: 350px;
+  }
 }
