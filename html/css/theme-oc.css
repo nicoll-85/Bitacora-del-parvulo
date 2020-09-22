@@ -4823,6 +4823,9 @@ input:checked + .slider:before {
   .link.link--light {
     color: #ffffff;
     font-weight: 400; }
+  .link.link--yellow {
+    color: #F9C035;
+    font-weight: 400; }
 
 .institution-logo {
   width: 120px;
