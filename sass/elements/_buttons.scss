@@ -75,6 +75,32 @@
     opacity: 0.5;
     cursor: not-allowed;
   }
+  &.button--primary--of{
+    color:  $lightest-color;
+    background-color: $darkest-color;
+    border: 1px solid  $darkest-color;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      background-color: lighten( $darkest-color, 5%);
+    }
+    .icon {
+      fill: $lightest-color;
+    }
+  }
+  &.button--ghost-primary--of{
+    color: $darkest-color;
+    background-color: $lightest-color;
+    border: 1px solid $darkest-color;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      background-color: $lightest-color;
+    }
+    .icon {
+      fill: $darkest-color;
+    }
+  }
 }
 
 /* Buttons Variations
