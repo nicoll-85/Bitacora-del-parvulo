@@ -1,0 +1,24 @@
+include includes/head.pug
+body
+	.page.page--light-gray.section.section--partial-background.section--partial-background--left-top.section--partial-background--small(style={'background-image': 'url("images/Polygon 6.png")'})
+		.page-content.page-content--no-min-height
+
+		.page-content.container
+				.block
+					.terms-container
+						img.logo(src="./images/logo-onecampus-full.svg", alt="")
+						h3.text-center.mb-5 Portal del estudiante de One Campus
+						h5.text-center Términos y condiciones generales del sitio
+						p PORFAVOR LEER CUIDADOSAMENTE LOS SIGUIENTES TÉRMINOS Y CONDICIONES. SI USTED NO ACEPTA CUMPLIR CON LOS SIGUIENTES TÉRMINOS Y CONDICIONES, NO PODRÁ ACCEDER AL PORTAL DEL ESTUDIANTE DE ONE CAMPUS Y LOS OTROS SITIOS DE LAUREATE A LOS QUE ENLAZA (COLECTIVAMENTE EL "sitio web”). EL SITIO ES UN SITIO WEB DE LAUREATE EDUCATION, INC. EL ACCESO ESTÁ RESTRINGIDO SOLAMENTE A LOS ESTUDIANTES DE LAS INSTITUCIONES DE LA RED LAUREATE.
+						p Este sitio web se ha establecido y mantenido por Laureate Education, Inc. en nombre de sí mismo y sus afiliados (juntos, "Laureate"). Acceso a este sitio esta a su disposición por Laureate. La distribución del material en este sitio puede ser restringido por leyes y regulaciones del país desde el que accede a este sitio. Donde existen tales restricciones, esta información no está destinada para distribución, o uso por, cualquier persona o entidad en tal jurisdicción en incumplimiento de las leyes y regulaciones, y las personas accediendo a estas páginas están requeridas que deben informarse sobre y observar dichas restricciones.
+						.checkbox-default
+							.custom-control.custom-checkbox
+								input.custom-control-input#customCheck(type="checkbox",name="example1")
+								label.custom-control-label(for="customCheck") He leído y estoy de acuerdo con los términos y condiciones presentadas anteriormente
+
+						.button-group.mt-3
+							+button({'buttonTitle': 'Aceptar'}).button--primary
+							+button({'buttonTitle': 'Volver'}).button--ghost-primary.button--transparent
+							
+				
+		+new-footer()
