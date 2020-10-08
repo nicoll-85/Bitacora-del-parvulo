@@ -6440,14 +6440,14 @@ ol.list {
       font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
       font-size: 14px;
       font-weight: 600;
-      color: #323e56;
+      color: #334652;
       letter-spacing: 0;
       line-height: 20px; }
     .card .card__body .card__text {
       opacity: 0.5;
       font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
       font-size: 14px;
-      color: #323e56;
+      color: #334652;
       letter-spacing: 0;
       line-height: 20px; }
     .card .card__body .card-footer__actions {
@@ -8804,13 +8804,10 @@ ol.list {
   position: relative;
   display: flex;
   font-family: var(--primary-font);
-  background-color: #ffffff;
-  background-color: white;
+  background: #ffffff;
   /*IE*/
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
   color: #334652;
-  color: #334652;
-  /*IE*/
   padding-left: 150px;
   padding-right: 150px; }
   @media screen and (min-width: 575px) {
@@ -8972,17 +8969,24 @@ ol.list {
         background-color: #FF7C5F;
         background-color: #FF7C5F;
         /*IE*/ }
-  .navbar-nav .nav-link {
+  .navbar-nav .navbar-link {
     position: relative;
     color: #334652;
-    color: #334652;
-    /*IE*/
     font-size: 16px;
     font-weight: 400;
     padding-left: 20px;
     padding-right: 20px; }
-    .navbar-nav .nav-link .avatar-prof {
+    .navbar-nav .navbar-link .avatar-prof {
       width: 35px; }
+  .navbar-nav .navbar-nav .navbar-link {
+    color: #334652; }
+    .navbar-nav .navbar-nav .navbar-link:hover, .navbar-nav .navbar-nav .navbar-link:focus {
+      color: #334652; }
+  .navbar-nav .navbar-nav .show > .navbar-link,
+  .navbar-nav .navbar-nav .active > .navbar-link k,
+  .navbar-nav .navbar-nav .navbar-link k.show,
+  .navbar-nav .navbar-nav .navbar-link .active {
+    color: #334652; }
   .navbar-nav .dropdown-menu {
     border: none;
     border-radius: 12px;

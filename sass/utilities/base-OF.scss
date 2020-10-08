@@ -1,49 +1,52 @@
-// @import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i");
-// @import url("https://use.typekit.net/izn7pnw.css");
-// @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i");
+@import url("https://use.typekit.net/izn7pnw.css");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 
-// /* Typography and Variables
-// **********************/
+/* Typography and Variables
+**********************/
 
-// $primary-color: #3B3145;
-// $secondary-color: #09B3E3;
-// $third-color: #B5B2B9;
-// $fourth-color: #f2f4f5;/*#F9F9FA*/
-// $fifth-color: #0d1733;
-// $accent-color-01: #18298C;
-// $accent-color-02: #04BF8A;
-// $accent-color-03: #B167FB;
-// $accent-color-04: #1FCECB;
-// $accent-color-05: #070606;
-// $accent-color-06: #C9463D;
-// $accent-color-07: #04756F;
-// $accent-color-08: #A73E5C;
-// $accent-color-09: #FBD273;
-// $lightest-color: #ffffff;
-// $darkest-color: #334652;
-// $primary-font: "canada-type-gibson", "Helvetica Neue", Arial, sans-serif;
+$primary-color:  #334652;
+$secondary-color: #09B3E3;
+$third-color: #B5B2B9;
+$fourth-color: #f2f4f5;/*#F9F9FA*/
+$fifth-color: #0d1733;
+$accent-color-01: #18298C;
+$accent-color-02: #04BF8A;
+$accent-color-03: #B167FB;
+$accent-color-04: #1FCECB;
+$accent-color-05: #070606;
+$accent-color-06: #C9463D;
+$accent-color-07: #04756F;
+$accent-color-08: #A73E5C;
+$accent-color-09: #FBD273;
+$lightest-color: #ffffff;
+$darkest-color:  #3B3145;
+$header-text-color: #ffffff;
+$header-bg-color: rgb(122,47,95) linear-gradient(90deg, rgba(122,47,95,1) 0%, rgba(108,91,123,1) 35%, rgba(10,43,71,1) 100%);
+// $gradient-color: linear-gradient(90deg, rgba(122,47,95,1) 0%, rgba(108,91,123,1) 35%, rgba(10,43,71,1) 100%);
+$primary-font: "canada-type-gibson", "Helvetica Neue", Arial, sans-serif;
 
-// :root {
-//   --primary-font: "canada-type-gibson", "Helvetica Neue", Arial, sans-serif;
+:root {
+  --primary-font: "canada-type-gibson", "Helvetica Neue", Arial, sans-serif;
 
-//   --primary-color: #3B3145;
-//   --secondary-color: #09B3E3;
-//   --third-color: #B5B2B9;
-//   --fourth-color: #f2f4f5;
-//   --fifth-color: #0d1733;
-//   --accent-color-01: #18298C;
-//   --accent-color-02: #04BF8A;
-//   --accent-color-03: #B167FB;
-//   --accent-color-04: #1FCECB;
-//   --accent-color-05: #070606;
-//   --accent-color-06: #C9463D;
-//   --accent-color-07: #04756F;
-//   --accent-color-08: #A73E5C;
-//   --accent-color-09: #FBD273;
-//   --lightest-color: #ffffff;
-//   --darkest-color: #334652;
-//   --primary-font: "canada-type-gibson", "Helvetica Neue", Arial, sans-serif;
+  --primary-color: #3B3145;
+  --secondary-color: #09B3E3;
+  --third-color: #B5B2B9;
+  --fourth-color: #f2f4f5;
+  --fifth-color: #0d1733;
+  --accent-color-01: #18298C;
+  --accent-color-02: #04BF8A;
+  --accent-color-03: #B167FB;
+  --accent-color-04: #1FCECB;
+  --accent-color-05: #070606;
+  --accent-color-06: #C9463D;
+  --accent-color-07: #04756F;
+  --accent-color-08: #A73E5C;
+  --accent-color-09: #FBD273;
+  --lightest-color: #ffffff;
+  --darkest-color: #334652;
+  --primary-font: "canada-type-gibson", "Helvetica Neue", Arial, sans-serif;
   
-// }
+}
 
