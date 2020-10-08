@@ -79,10 +79,10 @@ mixin new-menu()
 				li.nav-item.dropdown
 					.dot-notifi
 						span.badge.badge-pill.dot-notification 12
-					a#notification.nav-link.dropdown-toggle-split(href='#')
+					a#notification.navbar-link.dropdown-toggle-split(href='#')
 					img(src='./images/Icon/Bell.png' alt='Notification')
 				li.nav-item.dropdown
-					a#dropdown07.nav-link.dropdown-toggle
+					a#dropdown07.navbar-link.dropdown-toggle
 						img.avatar-prof.rounded-circle(src="./images/Avatar/Image.png", alt="profile")
 					.dropdown-menu.show(aria-labelledby='dropdown07')
 						a.dropdown-item(href='#',)
@@ -106,9 +106,9 @@ mixin new-menu()
 		#navbarsExample10.collapse.navbar-collapse
 			ul.navbar-nav.mr-auto 
 				li.nav-item
-					a(href="#").nav-link Dashboard
+					a(href="#").navbar-link Dashboard
 				li.nav-item
-					a(href="#").nav-link Professional Abilities
+					a(href="#").navbar-link Professional Abilities
 					nav.dropdown--mega-menu.is-open
 						.dropdown-content
 							.dropdown__section
@@ -198,15 +198,15 @@ mixin new-menu()
 											.dropdown__link-action
 												+button({'buttonTitle': 'Take Self Assessment'}).button--primary
 				li.nav-item
-					a(href="#").nav-link Learning
+					a(href="#").navbar-link Learning
 				li.nav-item
-					a(href="#").nav-link Community
+					a(href="#").navbar-link Community
 
 			ul.navbar-nav
 				li.nav-item.dropdown
 					.dot-notifi
 						span.badge.badge-pill.dot-notification 12
-					a#notification.nav-link.dropdown-toggle-split(href='#')
+					a#notification.navbar-link.dropdown-toggle-split(href='#')
 					img(src="./images/Icon/Bell.png", alt="Notification")
 					//- .notification-menu.animated.slideInRight.show-menu(aria-labelledby='notification')
 					//- 	.notification-header
@@ -242,7 +242,7 @@ mixin new-menu()
 					//- 				p.notification-link__description Curabitur a felis in nunc fringilla tristique. Nunc nec neque.
 
 				li.nav-item.dropdown
-					a#dropdown07.nav-link.dropdown-toggle
+					a#dropdown07.navbar-link.dropdown-toggle
 						img.avatar-prof.rounded-circle(src="./images/Avatar/Image.png", alt="profile")
 					//- .dropdown-menu.show(aria-labelledby='dropdown07')
 					//- 	a.dropdown-item(href='#',)
