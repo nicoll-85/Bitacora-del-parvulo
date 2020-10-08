@@ -4406,21 +4406,32 @@ iframe {
 
 .terms-container {
   min-width: 200px;
-  max-width: 500px;
+  max-width: 80%;
   display: flex;
   flex-direction: column;
-  align-items: center; }
-  @media screen and (max-width: 575.98px) {
-    .terms-container {
-      max-width: 200px; } }
+  align-items: center;
+  height: 550px;
+  overflow: auto; }
   .terms-container .logo {
     width: 300px; }
     @media screen and (max-width: 575.98px) {
       .terms-container .logo {
         width: 250px; } }
-  @media screen and (max-width: 575.98px) {
-    .terms-container .button-group {
-      flex-wrap: wrap; } }
+
+.footer-terms {
+  position: fixed;
+  bottom: 0;
+  background-color: #ffffff;
+  width: inherit;
+  padding: 20px; }
+  .footer-terms .checkbox-default {
+    text-align: center; }
+  .footer-terms .button-group {
+    width: fit-content;
+    margin: auto; }
+    @media screen and (max-width: 575.98px) {
+      .footer-terms .button-group {
+        flex-wrap: wrap; } }
 
 /* Global Styles for Heading
 **********************/
