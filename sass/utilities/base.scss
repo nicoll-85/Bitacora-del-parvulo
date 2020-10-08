@@ -603,20 +603,33 @@ iframe{
 
 .terms-container {
   min-width: 200px;
-  max-width: 500px;
+  max-width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media screen and (max-width:575.98px){
-    max-width: 200px;
-  }
+  height: 550px;
+  overflow: auto;
+  
   .logo{
     width: 300px;
     @media screen and (max-width:575.98px){
       width: 250px;
     }
   }
+}
+.footer-terms{
+  position: fixed;
+  // left: 0;
+  bottom: 0;
+  background-color:$lightest-color;
+  width: inherit;
+  padding: 20px;
+  .checkbox-default{
+    text-align: center;
+  }
   .button-group{
+    width: fit-content;
+    margin: auto;
     @media screen and (max-width:575.98px){
       flex-wrap: wrap;
     }
