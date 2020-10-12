@@ -607,8 +607,11 @@ iframe{
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 550px;
+  height: 500px;
   overflow: auto;
+  @media screen and (max-width:575.98px){
+    height: 428px; 
+  }
   
   .logo{
     width: 300px;
