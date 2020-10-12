@@ -6360,7 +6360,7 @@ ol.list {
 .card, .card.card--with-progressbar, .card.card--basic--image-traslapped, .card.card--score-pill, .card.card--simple {
   position: relative;
   max-width: 18rem;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   margin-top: 20px;
   display: -ms-flexbox;
   display: flex;
@@ -10478,11 +10478,12 @@ ol.list {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  padding: 10px; }
+  padding: 0px 5px; }
   @media screen and (max-width: 575.99px) {
     .item-episode {
       flex-wrap: wrap;
-      text-align: center; } }
+      text-align: center;
+      padding: 5px; } }
   .item-episode .check-icon {
     max-width: 20px;
     margin-right: 10px;
@@ -10500,12 +10501,15 @@ ol.list {
     color: #334652;
     font-size: 14px;
     margin-bottom: 38px;
-    padding: 10px; }
+    padding: 0px;
+    width: 150px;
+    margin-left: 30px; }
     @media screen and (max-width: 575.99px) {
       .item-episode .text-episode {
         text-align: center;
         margin-left: auto;
-        margin-right: auto; } }
+        margin-right: auto;
+        padding: 5px; } }
     .item-episode .text-episode .title-episode {
       font-weight: 400; }
     .item-episode .text-episode .descrip-episode {
