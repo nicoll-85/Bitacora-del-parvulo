@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>bell</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <g id="Icon/Bell/Glyph" transform="translate(-3.000000, -3.000000)" fill-rule="nonzero" stroke-width="2">
+            <g id="bell" transform="translate(4.000000, 4.000000)">
+                <path d="M12.5,5.296 L12.5,5 C12.5,2.515 10.485,0.5 8,0.5 L8,0.5 C5.515,0.5 3.5,2.515 3.5,5 L3.5,5.296 C3.5,6.719 2.743,8.042 1.508,8.75 C0.867,9.118 0.5,9.544 0.5,10 C0.5,11.381 3.858,12.5 8,12.5 C12.142,12.5 15.5,11.381 15.5,10 C15.5,9.544 15.133,9.118 14.492,8.75 C13.257,8.043 12.5,6.719 12.5,5.296 Z" id="Path" stroke="#FDFDFE" fill="#FFFEFE"></path>
+                <path d="M11.0194113,12.9758042 C11.0194113,15.5 9.025,15.5 8,15.5 C6.975,15.5 4.99161447,15.0842707 4.99161447,12.9758042" id="Path" stroke="#F7F9FB"></path>
+            </g>
+        </g>
+    </g>
+</svg>

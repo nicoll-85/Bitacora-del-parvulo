@@ -23,7 +23,8 @@ $accent-color-09: #F9C035;
 $lightest-color: #ffffff;
 $darkest-color: #334652;
 $header-bg-color:  #ffffff;
-$header-text-color:#334652;
+$link-color:#FF7C5F;
+$pass-bg-color: rgb(255,124,95)linear-gradient(90deg, rgba(255,124,95,1) 0%, rgba(253,200,115,1) 100%);
 $primary-font: "canada-type-gibson", "Helvetica Neue", Arial, sans-serif;
 $secondary-font: "Lato", "Helvetica Neue", Arial, sans-serif;
 
@@ -101,7 +102,7 @@ svg {
     margin-top: 32px;
   }
   &.divider--primary-gradient {
-    background-image: linear-gradient(-45deg, $primary-color, #FFCB76);
+    background:$pass-bg-color;
     min-height: 120px;
     margin-top: 0px;
   }
@@ -610,7 +611,10 @@ iframe{
   height: 500px;
   overflow: auto;
   @media screen and (max-width:575.98px){
-    height: 428px; 
+    height: 400px; 
+  }
+  @media screen and(max-height:375px){
+    height: 200px; 
   }
   
   .logo{
