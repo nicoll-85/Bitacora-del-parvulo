@@ -428,6 +428,8 @@ input:checked + .slider:before {
   font-weight: 400;
   @include font-size(14px);
   transition: all 0.25s ease-in-out;
+  font-size: 16px;
+  font-weight: 600;
   &:hover,
   &:focus {
     text-decoration: none;
@@ -448,11 +450,11 @@ input:checked + .slider:before {
       fill: $lightest-color;
       margin-right:20px ;
     }
-    .text-pill{
-      color: $darkest-color;
-      font-size: 16px;
-      font-weight: 600;
-    }
+    // .text-pill{
+    //   color: $darkest-color;
+    //   font-size: 16px;
+    //   font-weight: 600;
+    // }
   }
 }
 .button{
