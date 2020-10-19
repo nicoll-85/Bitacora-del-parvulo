@@ -4441,6 +4441,46 @@ iframe {
       .footer-terms .button-group {
         flex-wrap: wrap; } }
 
+.radio-button-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 20px; }
+
+.radio-container-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 5px; }
+  .radio-container-group img {
+    width: 87px;
+    height: 35px; }
+
+.bg-select {
+  background: rgba(59, 49, 69, 0.3); }
+
+.bg-purple {
+  background: rgba(59, 49, 69, 0.2); }
+
+.bg-yellow {
+  background: rgba(251, 210, 115, 0.6); }
+
+.bg-blue {
+  background: rgba(51, 70, 82, 0.6); }
+
+.resource-footer {
+  padding: 15px;
+  color: #ffffff; }
+
+.resource-footer--purple {
+  background-color: #3B3145; }
+
+.resource-footer--blue {
+  background-color: #334652; }
+
+.resource-footer--yellow {
+  background-color: #C9463D; }
+
 /* Global Styles for Heading
 **********************/
 .heading {
@@ -6139,7 +6179,8 @@ ol.list {
   align-items: center;
   justify-content: flex-start; }
   .block .profile-form {
-    max-width: 400px; }
+    max-width: 400px;
+    min-width: 250px; }
   .block.block--align-left {
     align-items: flex-start; }
     @media screen and (max-width: 575.98px) {
@@ -6360,6 +6401,17 @@ ol.list {
   @media screen and (min-width: 576px) and (max-width: 768.99px) {
     .block-content--show-mobile {
       display: flex; } }
+
+.block-content__portfolio-container {
+  max-width: 252px;
+  height: 152px;
+  display: block; }
+  .block-content__portfolio-container img {
+    width: 252px; }
+
+.block-content--port {
+  padding-bottom: 16px;
+  margin-bottom: 24px; }
 
 /* Global Styles for Cards
 **********************/
@@ -8816,6 +8868,22 @@ ol.list {
   cursor: pointer;
   bottom: 0;
   right: 1; }
+
+.modal .modal-dialog-portfolio {
+  max-width: 550px; }
+  .modal .modal-dialog-portfolio .modal-content .modal-header {
+    border-bottom: transparent; }
+  .modal .modal-dialog-portfolio .modal-content .modal-body {
+    text-align: left; }
+  .modal .modal-dialog-portfolio .modal-content .modal-footer-passport {
+    padding: 20px;
+    margin: auto; }
+    @media screen and (max-width: 375.98px) {
+      .modal .modal-dialog-portfolio .modal-content .modal-footer-passport {
+        margin: auto; } }
+    @media screen and (max-width: 375.98px) {
+      .modal .modal-dialog-portfolio .modal-content .modal-footer-passport button {
+        width: 100%; } }
 
 .navbar {
   position: relative;
