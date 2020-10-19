@@ -144,32 +144,12 @@ body
 						.block-content__title Portfolio
 					.block-content.block-content--boxed
 						.block-content--port
-							.block-content__title.d-flex
-								h6.mr-1 Portfolio Resources
-								+button({'buttonTitle': '?'}).button--primary.button--only-icon--xsmall.button--float-right(type='button', data-toggle='modal', data-target='#modalPortabout')
-									
+							.block-content__title
+								h6.mr-1 Portfolio Resources			
 								.button-group.button-group--float.button-group--float-right
 									+button({'hideTitle': true,'showIcon': true,'iconName': 'edit'}).button--primary.button--only-icon--xsmall.button--float-right(type='button', data-toggle='modal', data-target='#modalPortfolio')
-							#modalPortabout.modal.modal-alert.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
-								.modal-dialog.modal-dialog--bottom.modal-dialog-portfolio(role='document')
-									.modal-content
-										.modal-header
-											button.close(type='button', data-dismiss='modal', aria-label='Close')
-												span(aria-hidden='true') ×
-										.modal-body
-											h4.text-title.text-center Portfolio Resources
-											p The Portfolio Resources area allows you to add web links to materials you would like to share with other students/colleagues. Examples of the kinds of links you might add include:
-											.list-lite
-												ul
-													li  A link to a GoogleDrive site with documents you would like to share
-													li  A link to your YouTube channel
-													li  A link to a public profile (such as your Google Scholar page or SCOPUS ORCID record).
-													li 	Any other links to sites containing material you have created and are able to share publicly
-								
-							.block-content__portfolio-container
-								img.bg-purple(src="https://onefaculty.laureate.net/assets/images/resources/media-purple.svg", alt="")
-								.resource-footer.resource-footer--purple
-									h6 Nadia Portfolio
+							.block-content__description
+								span.text The Portfolio Resources area allows you to add web links to materials you would like to share with other students/colleagues. 
 							
 						#modalPortfolio.modal.modal-alert.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
 							.modal-dialog.modal-dialog--bottom.modal-dialog-portfolio(role='document')
