@@ -551,6 +551,32 @@
   bottom: 0;
   right: 1;
 }
+.modal{
+  .modal-dialog-portfolio{
+    max-width: 550px;
+    .modal-content{
+      .modal-header{
+        border-bottom: transparent;
+      }
+      .modal-body{
+        text-align: left;
+      }
+      .modal-footer-passport{
+        padding: 20px;
+        margin: auto;
+        @media screen and (max-width:375.98px){
+          margin: auto;
+        }
+        button{
+          @media screen and (max-width:375.98px){
+            width: 100%;;
+          }
+        }
+      }
+    }
+  }
+}
+
 
 
 

@@ -139,6 +139,90 @@ body
 							.block-content__description
 								span.text Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget as a lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia inia biben
 									+link('...See more').link--inline.link--dark
+				.block.block--align-left.block--no-mobile-changes
+					.block-content
+						.block-content__title Portfolio
+					.block-content.block-content--boxed
+						.block-content--port
+							.block-content__title.d-flex
+								h6.mr-1 Portfolio Resources
+								+button({'buttonTitle': '?'}).button--primary.button--only-icon--xsmall.button--float-right(type='button', data-toggle='modal', data-target='#modalPortabout')
+									
+								.button-group.button-group--float.button-group--float-right
+									+button({'hideTitle': true,'showIcon': true,'iconName': 'edit'}).button--primary.button--only-icon--xsmall.button--float-right(type='button', data-toggle='modal', data-target='#modalPortfolio')
+								
+							.block-content__portfolio-container
+								img.bg-purple(src="https://onefaculty.laureate.net/assets/images/resources/media-purple.svg", alt="")
+								.resource-footer.resource-footer--purple
+									h6 Nadia Portfolio
+							
+						#modalPortfolio.modal.modal-alert.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+							.modal-dialog.modal-dialog--bottom.modal-dialog-portfolio(role='document')
+								.modal-content
+									.modal-header
+										button.close(type='button', data-dismiss='modal', aria-label='Close')
+											span(aria-hidden='true') ×
+									.modal-body
+										h4.text-title.text-center Add a Portfolio Resource
+										.profile-form.mx-auto
+											.form-group.mt-2
+												label(for="field1") Resource name
+												input.form-control(type="text" id="field1" placeholder="")
+												
+											.form-group.mt-2
+												label(for="field2") Link
+												input.form-control(type="text" id="field2" placeholder="")
+											h6.mr-auto Select color pallete theme
+											.radio-button-group
+												.radio-container-group.mr-2
+													.radio-button--default
+														.custom-control.custom-radio
+															input.custom-control-input#customRadio1(type="radio",name="example1",value="customEX")
+															label(for="customRadio1").custom-control-label
+													img(src="./images/blue-resource.svg", alt="")
+												.radio-container-group.mr-2
+													.radio-button--default
+														.custom-control.custom-radio
+															input.custom-control-input#customRadio2(type="radio",name="example1",value="customEX")
+															label(for="customRadio2").custom-control-label
+													img(src="./images/purple-resource.svg", alt="") 
+												.radio-container-group.mr-2
+													.radio-button--default
+														.custom-control.custom-radio
+															input.custom-control-input#customRadio3(type="radio",name="example1",value="customEX")
+															label(for="customRadio3").custom-control-label
+													img(src="./images/yellow-resource.svg", alt="")
+											.radio-button-group.mt-3
+												.radio-container-group.mr-2
+													.radio-button--default
+														.custom-control.custom-radio
+															input.custom-control-input#customRadio4(type="radio",name="example1",value="customEX")
+															label(for="customRadio4").custom-control-label
+													img.bg-select(src="https://onefaculty.laureate.net/assets/images/resources/directory-blue.svg", alt="")
+												.radio-container-group.mr-2
+													.radio-button--default
+														.custom-control.custom-radio
+															input.custom-control-input#customRadio5(type="radio",name="example1",value="customEX")
+															label(for="customRadio5").custom-control-label
+													img.bg-select(src="https://onefaculty.laureate.net/assets/images/resources/document-blue.svg", alt="") 
+												.radio-container-group.mr-2
+													.radio-button--default
+														.custom-control.custom-radio
+															input.custom-control-input#customRadio6(type="radio",name="example1",value="customEX")
+															label(for="customRadio6").custom-control-label
+													img.bg-select(src="https://onefaculty.laureate.net/assets/images/resources/media-blue.svg", alt="")
+												.radio-container-group.mr-2
+													.radio-button--default
+														.custom-control.custom-radio
+															input.custom-control-input#customRadio7(type="radio",name="example1",value="customEX")
+															label(for="customRadio7").custom-control-label
+													img.bg-select(src="https://onefaculty.laureate.net/assets/images/resources/website-blue.svg", alt="")
+									.modal-footer-passport.mx-auto
+										+button({'buttonTitle': 'Cancel'}).button--ghost-primary.mr-1
+										+button({'buttonTitle': 'Save'}).button--primary
+											
+
+												
 
 				.block.block--align-left.block--no-mobile-changes.show-tablet-p-down
 					.block-content
