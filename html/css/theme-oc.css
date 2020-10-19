@@ -8875,6 +8875,8 @@ ol.list {
     border-bottom: transparent; }
   .modal .modal-dialog-portfolio .modal-content .modal-body {
     text-align: left; }
+    .modal .modal-dialog-portfolio .modal-content .modal-body .text-title {
+      margin-top: -20px; }
   .modal .modal-dialog-portfolio .modal-content .modal-footer-passport {
     padding: 20px;
     margin: auto; }
