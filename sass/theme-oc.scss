@@ -8,8 +8,8 @@
 @import "utilities/bootstrapBase/spacing";
 @import "utilities/bootstrapBase/bootstrap_reboot";
 @import "utilities/typography";
-// @import "utilities/base";
-@import "utilities/base-OF.scss";
+@import "utilities/base";
+// @import "utilities/base-OF.scss";
 @import "utilities/headings";
 
 @import "elements/buttons";
@@ -26,6 +26,7 @@
 @import "elements/progress-bar";
 @import "elements/pill-checkbox";
 @import "elements/audio-container";
+@import "elements/spinner";
 
 @import "components/lists";
 @import "components/forms";

@@ -70,6 +70,9 @@ p {
   color: rgba($darkest-color, 0.7);
   font-family: $primary-font;
 }
+h2,h3,h4{
+  color: $darkest-color;
+}
 
 svg {
   vertical-align: unset;
