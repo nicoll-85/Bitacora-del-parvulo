@@ -6753,7 +6753,8 @@ ol.list {
       .card--basic-horizontal .card-panel__body .card-panel__content .card-panel__img {
         width: 100px;
         height: 100px;
-        margin: 0 auto; }
+        margin: 0 auto;
+        object-fit: cover; }
         @media screen and (min-width: 576px) {
           .card-panel--start .card-panel__body .card-panel__content .card-panel__img,
           .card--basic-horizontal .card-panel__body .card-panel__content .card-panel__img {
@@ -10588,10 +10589,13 @@ ol.list {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap; }
+    .item-episode .text-episode--collapse .title-episode {
+      font-weight: 600;
+      margin-top: 19px; }
     .item-episode .text-episode--collapse img {
       width: 11px;
       height: 6px;
-      margin-top: 8px;
+      margin-top: 28px;
       margin-left: 5px; }
     .item-episode .text-episode--collapse .text-episode--subitem {
       text-align: left; }
