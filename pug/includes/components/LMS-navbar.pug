@@ -91,7 +91,6 @@ mixin lms-navbar--with-collapse(options)
           #accordion.modal-body
             a.item-episode(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
               img.check-icon(src="./images/Toggle/Checkmark/Default.svg", alt="check icon")
-              .media-episode.card.bg-episode
               .text-episode--collapse
                 h6.title-episode Introduction
                 img(src="./images/Icon/Arrow - Down.png", alt="")
@@ -100,16 +99,15 @@ mixin lms-navbar--with-collapse(options)
                   img.check-icon(src="./images/Toggle/Checkmark/no-check.png", alt="check icon")
                   .media-episode-collapse.card.bg-episode 
                   .text-episode
-                    h6.title-episode Introduction 1.1
+                    h6.title-episode.mt-3 Introduction 1.1
                 a.item-episode.item-episode--collapse(href="#")
                   img.check-icon(src="./images/Toggle/Checkmark/no-check.png", alt="check icon")
                   .media-episode-collapse.card.bg-episode 
                   .text-episode
-                    h6.title-episode Introduction 1.2
+                    h6.title-episode.mt-3 Introduction 1.2
                 
             a.item-episode.item-episode--selected(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample2')
-              img.check-icon(src="./images/Toggle/Checkmark/Default.svg", alt="check icon")
-              .media-episode.card.bg-episode 
+              img.check-icon(src="./images/Toggle/Checkmark/Default.svg", alt="check icon") 
               .text-episode--collapse
                 h6.title-episode Different is better
                 img(src="./images/Icon/Arrow - Down.png", alt="")
@@ -118,12 +116,12 @@ mixin lms-navbar--with-collapse(options)
                   img.check-icon(src="./images/Toggle/Checkmark/no-check.png", alt="check icon")
                   .media-episode-collapse.card.bg-episode 
                   .text-episode
-                    h6.title-episode Different is better 2.1
+                    h6.title-episode.mt-3 Different is better 2.1
                 a.item-episode.item-episode--collapse(href="#")
                   img.check-icon(src="./images/Toggle/Checkmark/no-check.png", alt="check icon")
                   .media-episode-collapse.card.bg-episode 
                   .text-episode
-                    h6.title-episode Different is better 2.2
+                    h6.title-episode.mt-3 Different is better 2.2
                 
             a.item-episode(href="#")
               img.check-icon(src="./images/Toggle/Checkmark/no-check.png", alt="check icon")
