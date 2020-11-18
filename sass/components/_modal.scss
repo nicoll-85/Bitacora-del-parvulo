@@ -62,8 +62,9 @@
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
 
     .modal-header__basic {
+      display: flex;
       font-weight: 400;
-      padding-top: 7px;
+      padding-top: 1.5rem;
       padding-left: 20px;
       padding-right: 20px;
       border-bottom: transparent;
@@ -76,6 +77,15 @@
         float: right;
         position: relative;
       }
+      &.modal-header__bg{
+        background-color: $darkest-color;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        h5{
+          color: $lightest-color;
+          margin-left: auto;
+        }
+      }
     }
 
     .modal-body {
@@ -83,7 +93,7 @@
       -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
       flex: 1 1 auto;
-      padding: 1rem;
+      padding: 1.5rem;
       font-family: var(--primary-font);
       color: $darkest-color;
 
@@ -97,7 +107,14 @@
         float: right;
       }
     }
+    &.modal-box__large{
+      max-width: 700px;
+      min-width: 300px;
+      width: 100%;
+    }
+    
   }
+  
 }
 
 

@@ -11,6 +11,46 @@ mixin modal-basic()
 				.modal-actions
 					+button({'buttonTitle': 'Secondary action'}).button--ghost-primary.mr-1
 					+button({'buttonTitle': 'Primary action'}).button--primary
+mixin modal-basic--large()
+	.modal-container&attributes(attributes)
+		+link(href="#open-modal") My modal
+	#open-modal.modal-window
+		.modal-box.modal-box__large
+			.modal-header__basic.modal-header__bg
+				h5 Module Registration Form
+				a.modal-close__basic(href="#",title="close") X
+			.modal-body
+				.modal-content__basic()
+					h4.text-center Hello Nadia Aguilar
+					p.text-center.mb-0 Complete the following information to complete your registreation in:
+					h6.text-center Introduction to Digital Teaching and Learning
+					
+					.form-row
+						.form-group.mt-2.col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6
+							label(for="field1") Company
+							input.form-control(type="text" id="field1" placeholder="Enter company name")
+							small.form-text.text-muted If your campus is not in the list, please contact
+								span.link.ml-1 here
+
+
+						.form-group.mt-2.col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6
+							label(for="field2") Employee/ Teacher ID
+							input.form-control(type="text" id="field2" placeholder="Enter field name")
+							small.form-text.text-success Helper Text
+					.form-row
+						.form-group.mt-2.col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6
+							label(for="field1") Adittional Email address
+							input.form-control(type="text" id="field1" placeholder="Enter company name")
+							small.form-text.text-muted Helper Text
+
+						.form-group.mt-2.col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6
+							label(for="field2") Phone Number
+							input.form-control(type="text" id="field2" placeholder="Enter field name")
+							small.form-text.text-success Helper Textt
+
+				.modal-actions
+					+button({'buttonTitle': 'Cancel'}).button--ghost-primary.mr-1
+					+button({'buttonTitle': 'Send Information'}).button--primary
 
 mixin modal--IE()
 	.modal-container__ie&attributes(attributes)
@@ -137,6 +177,22 @@ mixin modal--support()
 							.button-container
 								img.icon-pill(src="./images/SVG/mail.svg", alt="chat")
 								.text-pill Send Email
+mixin modal--form()
+	.col-12
+		+link('Modal Form')(type='button', data-toggle='modal', data-target='#exampleModalCenter')
+		#exampleModalCenter.modal.fade.show(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' style='display: block; padding-right: 15px;')
+			.modal-dialog.modal-dialog-centered(role='document')
+				.modal-content
+					.modal-header
+						h5#exampleModalCenterTitle.modal-title Modal title
+						button.close(type='button' data-dismiss='modal' aria-label='Close')
+						span(aria-hidden='true') ×
+					.modal-body
+						p
+						| Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+					.modal-footer
+						button.btn.btn-secondary(type='button' data-dismiss='modal') Close
+						button.btn.btn-primary(type='button') Save changes
 	
 script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')
 script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q', crossorigin='anonymous')
