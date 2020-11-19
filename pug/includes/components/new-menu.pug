@@ -77,30 +77,42 @@ mixin new-menu()
 			//- 						a(href="#") Adapting to Change
 			ul.navbar-nav
 				li.nav-item.dropdown
+					a#dropdown-flag.navbar-link.dropdown-toggle
+						img.avatar-flag(src="./images/united-states-of-america.svg", alt="profile")
+					.dropdown-menu.dropdown-menu__left.show(aria-labelledby='dropdown-flag')
+						a.dropdown-item(href='#',)
+							.dropdown-item__content
+								img.icon-item(src="./images/spain.svg", alt="icon")
+								p.text-item Spanish
+						a.dropdown-item(href='#')
+							.dropdown-item__content
+								img.icon-item(src="./images/brazilian-flag.svg", alt="icon")
+								p.text-item Portuguesse
+				li.nav-item.dropdown
 					.dot-notifi
 						span.badge.badge-pill.dot-notification 12
 					a#notification.navbar-link.dropdown-toggle-split(href='#')
 					img(src='./images/Icon/Bell.png' alt='Notification')
 				li.nav-item.dropdown
-					a#dropdown07.navbar-link.dropdown-toggle
-						img.avatar-prof.rounded-circle(src="./images/Avatar/Image.png", alt="profile")
-					.dropdown-menu.show(aria-labelledby='dropdown07')
-						a.dropdown-item(href='#',)
-							.dropdown-item__content
-								img.icon-item(src="./images/Icon/User.png", alt="icon")
-								p.text-item My Passport
-						a.dropdown-item(href='#')
-							.dropdown-item__content
-								img.icon-item(src="./images/Icon/Settings.png", alt="icon")
-								p.text-item Settings
-						a.dropdown-item(href='#')
-							.dropdown-item__content
-								img.icon-item(src="./images/Icon/Support.png", alt="icon")
-								p.text-item Help & Support
-						a.dropdown-item(href='#')
-							.dropdown-item__content
-								img.icon-item(src="./images/Icon/Logout.png", alt="icon")
-								p.text-item Log Out
+					//- a#dropdown07.navbar-link.dropdown-toggle
+					//- 	img.avatar-prof.rounded-circle(src="./images/Avatar/Image.png", alt="profile")
+					//- .dropdown-menu.show(aria-labelledby='dropdown07')
+					//- 	a.dropdown-item(href='#',)
+					//- 		.dropdown-item__content
+					//- 			img.icon-item(src="./images/Icon/User.png", alt="icon")
+					//- 			p.text-item My Passport
+					//- 	a.dropdown-item(href='#')
+					//- 		.dropdown-item__content
+					//- 			img.icon-item(src="./images/Icon/Settings.png", alt="icon")
+					//- 			p.text-item Settings
+					//- 	a.dropdown-item(href='#')
+					//- 		.dropdown-item__content
+					//- 			img.icon-item(src="./images/Icon/Support.png", alt="icon")
+					//- 			p.text-item Help & Support
+					//- 	a.dropdown-item(href='#')
+					//- 		.dropdown-item__content
+					//- 			img.icon-item(src="./images/Icon/Logout.png", alt="icon")
+					//- 			p.text-item Log Out
 
 
 		#navbarsExample10.collapse.navbar-collapse
@@ -204,6 +216,19 @@ mixin new-menu()
 
 			ul.navbar-nav
 				li.nav-item.dropdown
+					a#dropdown-flag.navbar-link.dropdown-toggle
+						img.avatar-flag(src="./images/united-states-of-america.svg", alt="profile")
+					.dropdown-menu.dropdown-menu__left.show(aria-labelledby='dropdown-flag')
+						a.dropdown-item(href='#',)
+							.dropdown-item__content
+								img.icon-item(src="./images/spain.svg", alt="icon")
+								p.text-item Spanish
+						a.dropdown-item(href='#')
+							.dropdown-item__content
+								img.icon-item(src="./images/brazilian-flag.svg", alt="icon")
+								p.text-item Portuguesse
+						
+				li.nav-item.dropdown
 					.dot-notifi
 						span.badge.badge-pill.dot-notification 12
 					a#notification.navbar-link.dropdown-toggle-split(href='#')
@@ -261,3 +286,4 @@ mixin new-menu()
 					//- 		.dropdown-item__content
 					//- 			img.icon-item(src="./images/Icon/Logout.png", alt="icon")
 					//- 			p.text-item Log Out
+				

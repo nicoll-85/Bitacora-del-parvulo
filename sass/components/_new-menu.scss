@@ -230,6 +230,10 @@
     .avatar-prof {
       width: 35px;
     }
+    .avatar-flag {
+      width: 25px;
+      border-radius: 8px;
+    }
   }
   .navbar-nav {
     .navbar-link {
@@ -280,6 +284,9 @@
           font-size: 15px;
         }
       }
+    }
+    &.dropdown-menu__left{
+      left: -92px;
     }
   }
 }
