@@ -336,6 +336,19 @@ mixin card--with-actions--horizontal()
           button.card__action
             svg(class="card__action-icon" role="img" aria-label="icon" aria-hidden=true)
               use(xlink:href='https://gistcdn.githack.com/dantedubon/b12e56737577b5c16c4a53fd04e02c5f/raw/2f0ac4ff73632e9b17914ab760c34b1763d1d193/oc.svg#oc-bookmark')
+mixin card--video-stamp
+  .card.card--video-with-actions.card--video--horizontal.card--video-stamp
+    .card__header
+      .video-thumbnail(style={'background-image': 'url(images/card-image-03.png)'})
+    .card__body
+      img.card-stamp(src="./images/stamp-achiever.svg", alt="")
+      .card__subtitle Section Title
+      .card__title Etiam Condimentum Magna Egestas Sem
+      .card__description Donec id elit non mi porta gravida at eget metus. Cura bitur blandit tempus porttitor. Nullam quis risus eget  as mollis ornaLorem ipsum dolor sit amet, consectur…
+      .card__footer-wrap
+        +progress-bar
+        .card__footer-actions
+          +button({'buttonTitle': 'Find a learning Serie'}).button--primary
 
 mixin card--with-actions--horizontal--inverse()
   .card.card--video-with-actions.card--video--horizontal.card--video--horizontal--inverse

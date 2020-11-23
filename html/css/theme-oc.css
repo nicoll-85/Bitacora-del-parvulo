@@ -7366,7 +7366,8 @@ ol.list {
       padding: 31px 36px; }
       .card.card--video-with-actions.card--video--horizontal .card__body .card-stamp {
         float: right;
-        margin-top: -15px; }
+        margin-top: -58px;
+        width: 72px; }
       @media only screen and (min-width: 768px) {
         .card.card--video-with-actions.card--video--horizontal .card__body {
           margin: 0px;
@@ -7389,6 +7390,28 @@ ol.list {
         font-weight: lighter;
         font-size: 16px;
         color: #3B3145; }
+  .card.card--video-with-actions.card--video-stamp .card__footer-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-top: 15px; }
+    @media screen and (max-width: 575.98px) {
+      .card.card--video-with-actions.card--video-stamp .card__footer-wrap {
+        flex-wrap: wrap; } }
+    @media screen and (min-width: 576px) and (max-width: 767.98px) {
+      .card.card--video-with-actions.card--video-stamp .card__footer-wrap {
+        flex-wrap: wrap; } }
+    .card.card--video-with-actions.card--video-stamp .card__footer-wrap .card__footer-actions {
+      margin-left: 15px;
+      margin-top: 0px; }
+      @media screen and (max-width: 575.98px) {
+        .card.card--video-with-actions.card--video-stamp .card__footer-wrap .card__footer-actions {
+          margin: 15px auto 0px; } }
+      @media screen and (min-width: 576px) and (max-width: 767.98px) {
+        .card.card--video-with-actions.card--video-stamp .card__footer-wrap .card__footer-actions {
+          margin: 15px auto 0px; } }
   .card.card--video-with-actions.card--video--horizontal--inverse {
     background-color: #ffffff;
     flex-direction: column;
@@ -7804,28 +7827,6 @@ ol.list {
   height: 100%;
   width: 100%;
   border: transparent; }
-
-.card__footer-wrap {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: nowrap; }
-  @media screen and (max-width: 575.98px) {
-    .card__footer-wrap {
-      flex-wrap: wrap; } }
-  @media screen and (min-width: 576px) and (max-width: 767.98px) {
-    .card__footer-wrap {
-      flex-wrap: wrap; } }
-  .card__footer-wrap .card__footer-actions {
-    margin-left: 15px;
-    margin-top: 0px; }
-    @media screen and (max-width: 575.98px) {
-      .card__footer-wrap .card__footer-actions {
-        margin: 15px auto 0px; } }
-    @media screen and (min-width: 576px) and (max-width: 767.98px) {
-      .card__footer-wrap .card__footer-actions {
-        margin: 15px auto 0px; } }
 
 .banner {
   padding: 32px;
