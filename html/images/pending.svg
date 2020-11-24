@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>pending</title>
+    <g id="One-Faculty" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Teaching-Modules-pending-enroll" transform="translate(-374.000000, -443.000000)" fill-rule="nonzero">
+            <g id="Group" transform="translate(374.000000, 439.000000)">
+                <g id="pending" transform="translate(0.000000, 4.000000)">
+                    <circle id="Oval" fill="#FFC107" cx="12.5" cy="12.5" r="12.5"></circle>
+                    <path d="M17.5881315,14 L12.4118685,14 C11.6321151,14 11,13.3679546 11,12.5882872 L11,7.4117128 C11,6.63204535 11.6321151,6 12.4118685,6 C13.191622,6 13.823737,6.63204535 13.823737,7.4117128 L13.823737,11.1765744 L17.5881315,11.1765744 C18.3678849,11.1765744 19,11.8086197 19,12.5882872 C19,13.3679546 18.3678849,14 17.5881315,14 L17.5881315,14 Z" id="Path" fill="#FAFAFA"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -7828,6 +7828,13 @@ ol.list {
   width: 100%;
   border: transparent; }
 
+.check-img {
+  display: block;
+  width: 32px;
+  margin-left: auto;
+  margin-top: -40px;
+  margin-bottom: 10px; }
+
 .banner {
   padding: 32px;
   display: flex;
@@ -8030,6 +8037,10 @@ ol.list {
       background: #FBD273;
       background: #F9C035;
       /*IE*/ }
+    .banner.banner--boxed.banner--blue {
+      background: #09B3E3;
+      background: #09B3E3;
+      /*IE*/ }
 
 .banner--basic {
   padding: 34px;
@@ -8139,6 +8150,20 @@ ol.list {
   text-align: left;
   font-weight: 600;
   margin-right: auto; }
+
+.banner__status {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center; }
+  .banner__status .status-img {
+    display: block;
+    width: 30px;
+    margin-bottom: 10px;
+    margin-right: 10px; }
+  .banner__status p {
+    color: #ffffff;
+    font-weight: 600; }
 
 .sidebar-menu {
   transform: translateX(-100%);
@@ -9008,6 +9033,17 @@ ol.list {
     @media screen and (max-width: 375.98px) {
       .modal .modal-dialog-portfolio .modal-content .modal-footer-passport button {
         width: 100%; } }
+
+.img-center {
+  display: block;
+  margin: 0px auto 20px; }
+
+.modal-actions-center {
+  display: flex;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  justify-content: center; }
 
 .navbar {
   position: relative;

@@ -11,6 +11,20 @@ mixin modal-basic()
 				.modal-actions
 					+button({'buttonTitle': 'Secondary action'}).button--ghost-primary.mr-1
 					+button({'buttonTitle': 'Primary action'}).button--primary
+mixin modal-basic-2()
+	.modal-container&attributes(attributes)
+		+link(href="#open-modal-1") My modal
+	#open-modal-1.modal-window
+		.modal-box
+			.modal-header__basic
+					a.modal-close__basic(href="#",title="close") X
+			.modal-body
+				.modal-content__basic()
+				img.img-center(src="./images/wait.svg", alt="")
+				h5.text-center Please wait 10 minutes for registration
+				p.text-center Requested on December 12, 2020.
+				.modal-actions-center
+					+button({'buttonTitle': 'Ok'}).button--primary
 mixin modal-basic--large()
 	.modal-container&attributes(attributes)
 		+link(href="#open-modal") My modal
