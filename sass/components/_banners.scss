@@ -269,6 +269,10 @@
       background: $accent-color-09;
       background: #F9C035;/*IE*/
     }
+    &.banner--blue{
+      background: $secondary-color;
+      background: #09B3E3;/*IE*/
+    }
   }
 
 }
@@ -406,4 +410,21 @@
   text-align: left;
   font-weight: 600;
   margin-right: auto;
+}
+
+.banner__status{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  .status-img{
+    display: block;
+    width: 30px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  p{
+    color: $lightest-color;
+    font-weight: 600;
+  }
 }

@@ -447,3 +447,22 @@ mixin lpa--card()
                 text.circle-chart__percent(y='17', x='15.5', alignment-baseline='central', font-size='8') 7
                 text.circle-chart__subline(y='17', x='20.5', alignment-baseline='central', font-size='2')
           .chart-title Analizing & Solving Problems
+mixin card--checked
+  .card
+    img.media--top(src="./images/Fill@3x.png", alt="video image")
+    button
+      img.icon-play--video(src="./images/Button/Play.svg", alt="Play") 
+    .card__body
+      img.check-img(src="./images/checked.svg", alt="profile photo")
+      h5.card__title Design Thinking: The New Standard for Creative...
+      p.card__text Some quick example text to build on the card title and make...
+      .card-footer__actions
+        .left-actions
+          img.icon-actions(src="./images/language.png", alt="Chat")
+          p.counter 25
+        .right-actions
+          a(href="#")
+            img.icon-actions(src="./images/heartbeat.png", alt="like")
+          a(href="#")
+            img.icon-actions(src="./images/bookmark.png", alt="Save")
+

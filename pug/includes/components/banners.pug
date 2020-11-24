@@ -28,6 +28,19 @@ mixin banner--boxed--purple(options)
 		.banner__image(style={'background-image': 'url("images/banner--boxed-02.png")'})
 			.banner__inside-image(style={'background-image': 'url("images/masks/banner-mask--purple.svg")'})
 
+mixin banner--boxed--blue(options)
+	.banner.banner--boxed.banner--blue&attributes(attributes)
+		.banner__content
+			.banner__text
+				h4.banner__title Skills Check
+				.label__description
+					p Quickly and easily check your skill level in the five areas employers say are most important for the success of new employees.
+			.banner__status
+				img.status-img(src="./images/warning.svg", alt="")
+				p Something went wrong! The enrollment to this program was not completed.
+		.banner__image(style={'background-image': 'url("images/banner--boxed-02.png")'})
+			.banner__inside-image(style={'background-image': 'url("images/masks/banner-mask--blue.svg")'})
+
 mixin banner()
 	.banner
 		.banner__content
