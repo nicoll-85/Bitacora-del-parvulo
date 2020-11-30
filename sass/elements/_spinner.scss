@@ -1,17 +1,28 @@
 .spinner-container{
   display: block;
-  margin: 20px auto;
+  width: 100%;
   .spinner{
-    display: inline-block;
+    display: block;
     width: 50px;
     height: 50px;
     border: 3px solid rgba(199, 161, 60, .4);
     border-radius: 50%;
     border-top-color: #C7A13C;
     animation: spin 1s ease-in-out infinite;
+    margin: auto;
     -webkit-animation: spin 1s ease-in-out infinite;
+    &.spinner--big{
+      width: 100px;
+      height: 100px;
+      border: 8px solid rgba(199, 161, 60, .4);
+      margin: 25% auto;
+      border-radius: 50%;
+      border-top-color: #C7A13C;
+      animation: spin 1s ease-in-out infinite;
+    }
   }
 }
+
 @keyframes spin {
   to { -webkit-transform: rotate(360deg); }
 }
