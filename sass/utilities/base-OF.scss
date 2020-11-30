@@ -393,18 +393,20 @@ body {
   .controls-layout--lms{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    
     padding: 20px;
   
     .control-back--lms{
       color: $lightest-color;
       font-weight: 600;
       font-size: 16px;
+      margin-right:auto ;
     }
     .control-next--lms{
       color: $lightest-color;
       font-weight: 600;
       font-size: 16px;
+      margin-left: auto;
     }
   }
   .text__description {
