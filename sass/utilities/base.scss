@@ -647,3 +647,11 @@ iframe{
     }
   }
 }
+.img-default-bg {
+  width: 100%;
+  background-image: url(../../html/images/default-img-lms-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  background-position: center;
+}
