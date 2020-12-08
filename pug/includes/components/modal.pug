@@ -31,13 +31,20 @@ mixin modal-basic--large()
 	#open-modal.modal-window
 		.modal-box.modal-box__large
 			.modal-header__basic.modal-header__bg
-				h5 Module Registration Form
+				h5  Hello Nadia, this is the Module Registration Form
 				a.modal-close__basic(href="#",title="close") X
 			.modal-body
 				.modal-content__basic()
-					h4.text-center Hello Nadia Aguilar
-					p.text-center.mb-0 Complete the following information to complete your registreation in:
-					h6.text-center Introduction to Digital Teaching and Learning
+					.box-info.mb-2
+						.box-body.box-body--small
+							.flex-container.align-items-center.flex-nowrap
+								img.img-box.mr-2(src="./images/hourglass (1).svg", alt="")
+								.box-info--text-content
+									h6.text-left.mt-2 Please wait 10 minutes for registration
+									p.text-left Requested on December 12, 2020.
+					hr
+					p.mb-0 Complete the following information to complete your registreation in:
+					h6 "Introduction to Digital Teaching and Learning"
 					
 					.form-row
 						.form-group.mt-2.col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6
@@ -51,20 +58,16 @@ mixin modal-basic--large()
 							label(for="field2") Employee/ Teacher ID
 							input.form-control(type="text" id="field2" placeholder="Enter field name")
 							small.form-text.text-success Helper Text
+
 					.form-row
 						.form-group.mt-2.col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6
-							label(for="field1") Adittional Email address
-							input.form-control(type="text" id="field1" placeholder="Enter company name")
-							small.form-text.text-muted Helper Text
-
-						.form-group.mt-2.col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6
-							label(for="field2") Phone Number
-							input.form-control(type="text" id="field2" placeholder="Enter field name")
-							small.form-text.text-success Helper Textt
-
+							label(for="field1") Select language
+							input.form-control(type="text" id="field1" placeholder="Select language")
+							
+				
 				.modal-actions
 					+button({'buttonTitle': 'Cancel'}).button--ghost-primary.mr-1
-					+button({'buttonTitle': 'Send Information'}).button--primary
+					+button({'buttonTitle': 'Enroll'}).button--primary
 
 mixin modal--IE()
 	.modal-container__ie&attributes(attributes)
