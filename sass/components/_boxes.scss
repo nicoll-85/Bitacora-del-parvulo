@@ -266,9 +266,15 @@
 	display: block;
 	border-radius: 12px;
 	margin-bottom: 20px;
+	// border: 1px solid $primary-color;
+	// background-color: white;
 	.box-body{
 		display: block;
 		padding: 1.5rem;
+
+		&.box-body--small{
+			padding:0px;
+		}
 		.flex-container{
 			display: flex;
 			flex-direction: row;
@@ -285,6 +291,10 @@
 				@media screen and (min-width:576px) and (max-width:991.98px){
 					margin: auto;
 				}
+			}
+			.img-box{
+				display: block;
+				width: 40px;
 			}
 			.box-info--text-content{
 				color: $primary-color;
@@ -317,6 +327,6 @@
 	}
 	&.box-info__primary{
 		border: 1px solid $primary-color;
-		background-color:rgba(151, 151, 151,.4 );
+		background-color:rgba(151, 151, 151,.2 );
 	}
 }
