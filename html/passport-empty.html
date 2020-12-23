@@ -20,6 +20,75 @@
   <nav class="navbar navbar-expand-lg navbar-light rounded"><a class="navbar-brand" href="#"><img src="./images/Logo.png" alt="OneCampus logo"/></a>
     <div class="navbar-mobile">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="true" aria-label="Toggle navigation"><img src="./images/Icon/360.svg" alt="menu"/></button><a class="navbar-brand-mobile" href="#"><img src="./images/Logo.png" alt="OneCampus logo"/></a>
+      <Collapsible>content</Collapsible>
+      <div class="menu-mobile navbar-collapse collapse animated slideInLeft" id="navbarToggleExternalContent">
+        <h3 class="close-header">X</h3>
+        <hr/>
+        <div class="accordion" id="accordionExample">
+          <div class="mobile-item">
+            <div class="mobile-link" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Dashboard</button>
+              </h2>
+            </div>
+          </div>
+          <div class="mobile-item">
+            <div class="mobile-link" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#Abilities" aria-expanded="true" aria-controls="Abilities">Abilities</button><img class="icon-collapse" src="./images/Icon/Arrow - Down.png" alt="collapse-icon"/>
+              </h2>
+            </div>
+            <div class="collapse scroll-menu" id="Abilities" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <ul class="sub-menu">
+                <li class="submenu-link"><a href="#">Accountability</a></li>
+                <li class="submenu-link"><a href="#">Achieving Objetives</a></li>
+                <li class="submenu-link"><a href="#">Adapting to Change</a></li>
+                <li class="submenu-link"><a href="#">Analizing and Solving Problems</a></li>
+                <li class="submenu-link"><a href="#">Ethics and Social Responsability</a></li>
+                <li class="submenu-link"><a href="#">Generating Ideas & Renovating</a></li>
+                <li class="submenu-link"><a href="#">Making Decisions</a></li>
+                <li class="submenu-link"><a href="#">Planning & Organizing</a></li>
+                <li class="submenu-link"><a href="#">Resilience</a></li>
+                <li class="submenu-link"><a href="#">Strategic & Entrepreneurial Mindset</a></li>
+              </ul>
+              <div class="header-descript">
+                <h6 class="title-submenu-section">Assesment</h6>
+                <p class="submenu-description">Sed cursus turpis vitae tortor. Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi.</p>
+                <button class="button button--primary"><span class="button__title">Try Again</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="mobile-item">
+            <div class="mobile-link" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#Learning" aria-expanded="true" aria-controls="Learning">Learning</button><img class="icon-collapse" src="./images/Icon/Arrow - Down.png" alt="collapse-icon"/>
+              </h2>
+            </div>
+            <div class="collapse scroll-menu" id="Learning" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <ul class="sub-menu">
+                <li class="submenu-link"><a href="#">Accountability</a></li>
+                <li class="submenu-link"><a href="#">Achieving Objetives</a></li>
+                <li class="submenu-link"><a href="#">Adapting to Change</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mobile-item">
+            <div class="mobile-link" id="headingFour">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#Community" aria-expanded="true" aria-controls="Community">Community</button><img class="icon-collapse" src="./images/Icon/Arrow - Down.png" alt="collapse-icon"/>
+              </h2>
+            </div>
+            <div class="collapse scroll-menu" id="Community" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <ul class="sub-menu">
+                <li class="submenu-link"><a href="#">Accountability</a></li>
+                <li class="submenu-link"><a href="#">Achieving Objetives</a></li>
+                <li class="submenu-link"><a href="#">Adapting to Change</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
       <ul class="navbar-nav">
         <li class="nav-item dropdown"><a class="navbar-link dropdown-toggle" id="dropdown-flag"><img class="avatar-flag" src="./images/united-states-of-america.svg" alt="profile"/></a>
           <div class="dropdown-menu dropdown-menu__left show" aria-labelledby="dropdown-flag"><a class="dropdown-item" href="#">
@@ -33,7 +102,21 @@
         <li class="nav-item dropdown">
           <div class="dot-notifi"><span class="badge badge-pill dot-notification">12</span></div><a class="navbar-link dropdown-toggle-split" id="notification" href="#"></a><img src="./images/Icon/Bell.png" alt="Notification"/>
         </li>
-        <li class="nav-item dropdown"><a class="navbar-link dropdown-toggle" id="dropdown07"><img class="avatar-prof rounded-circle" src="./images/Avatar/Image.png" alt="profile"/></a></li>
+        <li class="nav-item dropdown"><a class="navbar-link dropdown-toggle" id="dropdown07"><img class="avatar-prof rounded-circle" src="./images/Avatar/Image.png" alt="profile"/></a>
+          <div class="dropdown-menu show" aria-labelledby="dropdown07"><a class="dropdown-item" href="#">
+              <div class="dropdown-item__content"><img class="icon-item" src="./images/Icon/User.png" alt="icon"/>
+                <p class="text-item">My Passport</p>
+              </div></a><a class="dropdown-item" href="#">
+              <div class="dropdown-item__content"><img class="icon-item" src="./images/Icon/Settings.png" alt="icon"/>
+                <p class="text-item">Settings</p>
+              </div></a><a class="dropdown-item" href="#">
+              <div class="dropdown-item__content"><img class="icon-item" src="./images/Icon/Support.png" alt="icon"/>
+                <p class="text-item">Help & Support</p>
+              </div></a><a class="dropdown-item" href="#">
+              <div class="dropdown-item__content"><img class="icon-item" src="./images/Icon/Logout.png" alt="icon"/>
+                <p class="text-item">Log Out</p>
+              </div></a></div>
+        </li>
       </ul>
     </div>
     <div class="collapse navbar-collapse" id="navbarsExample10">
@@ -121,8 +204,49 @@
         </li>
         <li class="nav-item dropdown">
           <div class="dot-notifi"><span class="badge badge-pill dot-notification">12</span></div><a class="navbar-link dropdown-toggle-split" id="notification" href="#"></a><img src="./images/Icon/Bell.png" alt="Notification"/>
+          <div class="notification-menu animated slideInRight show-menu" aria-labelledby="notification">
+            <div class="notification-header">
+              <p class="notification-menu__title">Notifications</p><span class="close-menu">x</span>
+            </div>
+            <hr/>
+            <p class="notification-date">Today</p>
+            <div class="notification-body">
+              <div class="link-item"><img class="notif-icon" src="./images/Logo.png" alt="OneCampus logo"/><a class="notification-link" href="#">
+                  <p class="notification-link__title">OneCampus news</p>
+                  <p class="notification-link__description">Curabitur a felis in nunc fringilla tristique. Nunc nec neque.</p></a></div>
+              <div class="link-item"><img class="notif-icon" src="./images/wobi-2-logo.png" alt="Wobi logo"/><a class="notification-link" href="#">
+                  <p class="notification-link__title">Wobi news</p>
+                  <p class="notification-link__description">Curabitur a felis in nunc fringilla tristique. Nunc nec neque.</p></a></div>
+              <div class="link-item"><img class="notif-icon" src="./images/Icon/Announcement.svg" alt="OneCampus logo"/><a class="notification-link" href="#">
+                  <p class="notification-link__title">News or announcement </p>
+                  <p class="notification-link__description">Curabitur a felis in nunc fringilla tristique. Nunc nec neque.</p></a></div>
+              <div class="link-item"><img class="notif-icon" src="./images/checkmark-enroll.svg" alt="Checkmark logo"/><a class="notification-link" href="#"> 
+                  <p class="notification-link__title">Success message</p>
+                  <p class="notification-link__description">Curabitur a felis in nunc fringilla tristique. Nunc nec neque.</p></a></div>
+              <div class="link-item"><img class="notif-icon" src="./images/Certificate1.svg" alt="achievements logo"/><a class="notification-link" href="#">
+                  <p class="notification-link__title">Achievement Certificate</p>
+                  <p class="notification-link__description">Curabitur a felis in nunc fringilla tristique. Nunc nec neque.</p></a></div>
+              <div class="link-item"><img class="notif-icon" src="./images/warning-error.svg" alt="achievements logo"/><a class="notification-link" href="#">
+                  <p class="notification-link__title">Error announcement</p>
+                  <p class="notification-link__description">Curabitur a felis in nunc fringilla tristique. Nunc nec neque.</p></a></div>
+            </div>
+          </div>
         </li>
-        <li class="nav-item dropdown"><a class="navbar-link dropdown-toggle" id="dropdown07"><img class="avatar-prof rounded-circle" src="./images/Avatar/Image.png" alt="profile"/></a></li>
+        <li class="nav-item dropdown"><a class="navbar-link dropdown-toggle" id="dropdown07"><img class="avatar-prof rounded-circle" src="./images/Avatar/Image.png" alt="profile"/></a>
+          <div class="dropdown-menu show" aria-labelledby="dropdown07"><a class="dropdown-item" href="#">
+              <div class="dropdown-item__content"><img class="icon-item" src="./images/Icon/User.png" alt="icon"/>
+                <p class="text-item">My Passport</p>
+              </div></a><a class="dropdown-item" href="#">
+              <div class="dropdown-item__content"><img class="icon-item" src="./images/Icon/Settings.png" alt="icon"/>
+                <p class="text-item">Settings</p>
+              </div></a><a class="dropdown-item" href="#">
+              <div class="dropdown-item__content"><img class="icon-item" src="./images/Icon/Support.png" alt="icon"/>
+                <p class="text-item">Help & Support</p>
+              </div></a><a class="dropdown-item" href="#">
+              <div class="dropdown-item__content"><img class="icon-item" src="./images/Icon/Logout.png" alt="icon"/>
+                <p class="text-item">Log Out</p>
+              </div></a></div>
+        </li>
       </ul>
     </div>
   </nav>
