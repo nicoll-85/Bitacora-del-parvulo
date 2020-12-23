@@ -1,11 +1,30 @@
 .nav-landing{
   background-color: $lightest-color;
+  padding-left: 33px;
+  padding-right: 15px;
+  @media screen and (max-width:575.98px){
+    padding-left: 13px;
+    padding-right: 15px;
+  }
   .navbar-nav{
     display: flex;
     position: relative;
     flex-wrap: nowrap;
     flex-direction: row;
+    @media screen and (max-width:575.98px){
+      display: none;
+    }
+    @media screen and (min-width:576px) and (max-width:767.98px){
+      display: none;
+    }
     .nav-item{
+      display: block;
+      @media screen and (max-width:575.98px){
+        display: none;
+      }
+      @media screen and (min-width:576px) and (max-width:767.98px){
+        display: none;
+      }
       .nav-link{
         padding-left: 0px;
         padding-right: 0px;
@@ -17,8 +36,41 @@
         }
       }
     }
+    
+  }
+  .menu-container{
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width:768px){
+      display: none;
+    }
+    .menu-btn{
+      display: block;
+      float: right;
+      img{
+        width: 25px;
+      }
+    }
   }
 }
 .selected{
   border-bottom: 4px solid $accent-color-09;
+}
+.navbar-nav-mobile{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  @media screen and (min-width:768px){
+    display: none;
+  }
+  .nav-link{
+    padding-left: 0px;
+    padding-right: 0px;
+    color: $darkest-color;
+    margin-right: 20px;
+    &:hover{
+      border-bottom: 4px solid $accent-color-09;
+      padding-right: 0px;
+    }
+  }
 }
