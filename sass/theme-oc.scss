@@ -8,8 +8,9 @@
 @import "utilities/bootstrapBase/spacing";
 @import "utilities/bootstrapBase/bootstrap_reboot";
 @import "utilities/typography";
-@import "utilities/base";
+// @import "utilities/base";
 // @import "utilities/base-OF.scss";
+@import "utilities/base-lms-OC.scss";
 @import "utilities/headings";
 
 @import "elements/buttons";
@@ -51,7 +52,7 @@
 @import "components/nav-landing.scss";
 
 @import "modules/topbar";
-@import "modules/footer";
+// @import "modules/footer";
 @import "modules/new-footer";
 @import "modules/sidebar-layout";
 @import "modules/login";
