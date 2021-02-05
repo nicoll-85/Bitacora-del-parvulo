@@ -238,6 +238,9 @@
   .navbar-nav {
     .navbar-link {
       color: $header-text-color;
+      &.navbar-link--dark{
+        color:$darkest-color;
+      }
 
       @include hover-focus() {
         color: lighten($header-text-color, $amount: 0);

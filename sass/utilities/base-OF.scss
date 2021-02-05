@@ -25,7 +25,9 @@ $darkest-color:  #3B3145;
 $header-text-color: #ffffff;
 $link-color:#B167FB;
 $header-bg-color: rgb(122,47,95) linear-gradient(90deg, rgba(122,47,95,1) 0%, rgba(108,91,123,1) 35%, rgba(10,43,71,1) 100%);
+$footer-text-color:#ffffff;
 $pass-bg-color:rgb(17,37,53) linear-gradient(90deg, rgba(17,37,53,1) 0%, rgba(255,255,255,1) 100%);
+$footer-bg-color:#3B3145;
 $primary-font: "canada-type-gibson", "Helvetica Neue", Arial, sans-serif;
 $secondary-font: "Lato", "Helvetica Neue", Arial, sans-serif;
 
@@ -84,6 +86,10 @@ body {
   
     &.page--light-gray {
       background-color: #F9F9FA;
+    }
+    &.page--grad-yellow {
+      background: rgb(255,225,135);
+      background: linear-gradient(180deg, rgba(255,225,135,1) 0%, rgba(51,70,82,1) 100%);
     }
   }
   .page-content {
@@ -691,4 +697,7 @@ body {
 }
 .resource-footer--yellow{
   background-color:$accent-color-06 ;
+}
+.text-subitem{
+  font-weight: 600;
 }
