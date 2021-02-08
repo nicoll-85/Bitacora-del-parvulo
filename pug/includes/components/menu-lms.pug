@@ -24,6 +24,37 @@ mixin menu-lms()
 			//- 					button.btn.btn-link(type='button' data-toggle='collapse' data-target='#Abilities' aria-expanded='true' aria-controls='Abilities') Collections
 			//- 					img.icon-collapse(src="./images/Icon/Arrow - Down.png", alt="collapse-icon")
 			ul.navbar-nav
+				
+				li.nav-item.dropdown
+					//- .dot-notifi
+					//- 	span.badge.badge-pill.dot-notification 12
+					a#notification.navbar-link.dropdown-toggle-split(href='#')
+					img(src='./images/LMS/notification-lms.svg' alt='Notification')
+				//- li.nav-item.dropdown
+				//- 	a#dropdown07.navbar-link.dropdown-toggle
+				//- 		img.avatar-prof.rounded-circle(src="./images/Avatar/Image.png", alt="profile")
+				//- 	.dropdown-menu.show(aria-labelledby='dropdown07')
+				//- 		a.dropdown-item(href='#',)
+				//- 			.dropdown-item__content
+				//- 				img.icon-item(src="./images/Icon/User.png", alt="icon")
+				//- 				p.text-item My Passport
+				//- 		a.dropdown-item(href='#')
+				//- 			.dropdown-item__content
+				//- 				img.icon-item(src="./images/Icon/Settings.png", alt="icon")
+				//- 				p.text-item Settings
+				//- 		a.dropdown-item(href='#')
+				//- 			.dropdown-item__content
+				//- 				img.icon-item(src="./images/Icon/Support.png", alt="icon")
+				//- 				p.text-item Help & Support
+				//- 		a.dropdown-item(href='#')
+				//- 			.dropdown-item__content
+				//- 				img.icon-item(src="./images/Icon/Logout.png", alt="icon")
+				//- 				p.text-item Log Out
+				li.nav-item.dropdown
+					//- .dot-notifi
+					//- 	span.badge.badge-pill.dot-notification 12
+					a#notification.navbar-link.dropdown-toggle-split(href='#')
+					img(src='./images/LMS/settings-lms.svg' alt='Notification')
 				li.nav-item.dropdown
 					a#dropdown-flag.navbar-link.dropdown-toggle
 						img.avatar-flag(src="./images/united-states-of-america.svg", alt="profile")
@@ -36,31 +67,6 @@ mixin menu-lms()
 							.dropdown-item__content
 								img.icon-item(src="./images/brazilian-flag.svg", alt="icon")
 								p.text-item Portuguesse
-				li.nav-item.dropdown
-					.dot-notifi
-						span.badge.badge-pill.dot-notification 12
-					a#notification.navbar-link.dropdown-toggle-split(href='#')
-					img(src='./images/Icon/Bell.png' alt='Notification')
-				li.nav-item.dropdown
-					a#dropdown07.navbar-link.dropdown-toggle
-						img.avatar-prof.rounded-circle(src="./images/Avatar/Image.png", alt="profile")
-					.dropdown-menu.show(aria-labelledby='dropdown07')
-						a.dropdown-item(href='#',)
-							.dropdown-item__content
-								img.icon-item(src="./images/Icon/User.png", alt="icon")
-								p.text-item My Passport
-						a.dropdown-item(href='#')
-							.dropdown-item__content
-								img.icon-item(src="./images/Icon/Settings.png", alt="icon")
-								p.text-item Settings
-						a.dropdown-item(href='#')
-							.dropdown-item__content
-								img.icon-item(src="./images/Icon/Support.png", alt="icon")
-								p.text-item Help & Support
-						a.dropdown-item(href='#')
-							.dropdown-item__content
-								img.icon-item(src="./images/Icon/Logout.png", alt="icon")
-								p.text-item Log Out
 
 
 		#navbarsExample10.collapse.navbar-collapse
@@ -72,23 +78,10 @@ mixin menu-lms()
 					
 			ul.navbar-nav
 				li.nav-item.dropdown
-					a#dropdown-flag.navbar-link.dropdown-toggle
-						img.avatar-flag(src="./images/united-states-of-america.svg", alt="profile")
-					.dropdown-menu.dropdown-menu__left.show(aria-labelledby='dropdown-flag')
-						a.dropdown-item(href='#',)
-							.dropdown-item__content
-								img.icon-item(src="./images/spain.svg", alt="icon")
-								p.text-item Spanish
-						a.dropdown-item(href='#')
-							.dropdown-item__content
-								img.icon-item(src="./images/brazilian-flag.svg", alt="icon")
-								p.text-item Portuguesse
-						
-				li.nav-item.dropdown
-					.dot-notifi
-						span.badge.badge-pill.dot-notification 12
-					//- a#notification.navbar-link.dropdown-toggle-split(href='#')
-					//- img(src="./images/Icon/Bell.png", alt="Notification")
+					//- .dot-notifi
+					//- 	span.badge.badge-pill.dot-notification 12
+					a#notification.navbar-link.dropdown-toggle-split(href='#')
+					img(src="./images/LMS/notification-lms.svg", alt="Notification")
 					//- .notification-menu.animated.slideInRight.show-menu(aria-labelledby='notification')
 					//- 	.notification-header
 					//- 		p.notification-menu__title Notifications
@@ -127,6 +120,26 @@ mixin menu-lms()
 					//- 			a.notification-link(href="#")
 					//- 				p.notification-link__title Error announcement
 					//- 				p.notification-link__description Curabitur a felis in nunc fringilla tristique. Nunc nec neque.
+				li.nav-item.dropdown
+					//- .dot-notifi
+					//- 	span.badge.badge-pill.dot-notification 12
+					a#notification.navbar-link.dropdown-toggle-split(href='#')
+					img(src="./images/LMS/settings-lms.svg", alt="Notification")
+				li.nav-item.dropdown.no-border
+					a#dropdown-flag.navbar-link.dropdown-toggle
+						img.avatar-flag(src="./images/united-states-of-america.svg", alt="profile")
+					.dropdown-menu.dropdown-menu__left.show(aria-labelledby='dropdown-flag')
+						a.dropdown-item(href='#',)
+							.dropdown-item__content
+								img.icon-item(src="./images/spain.svg", alt="icon")
+								p.text-item Spanish
+						a.dropdown-item(href='#')
+							.dropdown-item__content
+								img.icon-item(src="./images/brazilian-flag.svg", alt="icon")
+								p.text-item Portuguesse
+				
+						
+				
 
 				li.nav-item.dropdown
 					a#dropdown07.navbar-link.dropdown-toggle

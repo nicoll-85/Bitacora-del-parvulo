@@ -174,19 +174,30 @@
 .navbar-nav {
   position: relative;
 
+  
 
   .nav-item {
     position: relative;
-    display: inline-block;
+    display: flex;
     margin-bottom: 3px;
+    margin-right: 10px;
+    
 
     &:hover {
-      border-bottom: 4px solid #F3C53B;
+      color:  #F3C53B;
       .dropdown--mega-menu {
         display: block;
       }
       .navbar-link{
         text-decoration: none;
+        &:hover {
+          color:  #F3C53B;
+        }
+
+        img{
+          display: block;
+          margin: 0 auto;
+        }
       }
     }
 

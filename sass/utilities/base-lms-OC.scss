@@ -25,6 +25,7 @@ $darkest-color: #334652;
 $header-bg-color:  #334652;
 $header-text-color: #ffffff;
 $link-color:#FF7C5F;
+$text-color:#334652;
 $footer-bg-color:#ffffff;
 $footer-text-color:#334652;
 $pass-bg-color: rgb(255,124,95)linear-gradient(90deg, rgba(255,124,95,1) 0%, rgba(253,200,115,1) 100%);
@@ -90,6 +91,10 @@ svg {
   &.page--grad-yellow {
     background: rgb(255,225,135);
     background: linear-gradient(180deg, rgba(255,225,135,1) 0%, rgba(51,70,82,1) 100%);
+  }
+  &.page--grad-purple {
+    background: rgb(117,124,169);
+    background: linear-gradient(180deg, rgba(117,124,169,1) 0%, rgba(94,44,67,1) 100%);
   }
 }
 .page-content {
@@ -666,4 +671,7 @@ iframe{
 }
 .navbar-link-dark{
   color: $darkest-color;
+}
+.text-white{
+  color: $lightest-color;
 }

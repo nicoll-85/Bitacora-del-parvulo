@@ -6,7 +6,7 @@
 /* Typography and Variables
 **********************/
 
-$primary-color: #FF7C5F;
+$primary-color: #A66690;
 $secondary-color: #3A86CF;
 $third-color: #979797;
 $fourth-color: #f2f4f5;/*#F9F9FA*/
@@ -22,12 +22,12 @@ $accent-color-08: #463B96;
 $accent-color-09: #F9C035;
 $lightest-color: #ffffff;
 $darkest-color: #334652;
-$header-bg-color:  #ffffff;
-$header-text-color: #334652;
-$link-color:#FF7C5F;
-$text-color:#334652;
-$footer-bg-color:#334652;
-$footer-text-color:#ffffff;
+$header-bg-color:  #2B2736;
+$header-text-color: #ffffff;
+$link-color:#F3C53B;
+$text-color:#ffffff;
+$footer-bg-color:#ffffff;
+$footer-text-color:#334652;
 $pass-bg-color: rgb(255,124,95)linear-gradient(90deg, rgba(255,124,95,1) 0%, rgba(253,200,115,1) 100%);
 $primary-font: "canada-type-gibson", "Helvetica Neue", Arial, sans-serif;
 $secondary-font: "Lato", "Helvetica Neue", Arial, sans-serif;
@@ -669,9 +669,6 @@ iframe{
 .text-subitem{
   font-weight: 600;
 }
-.text-white{
-  color: $lightest-color;
-}
-.text-white{
-  color: $lightest-color;
+.navbar-link-dark{
+  color: $darkest-color;
 }
