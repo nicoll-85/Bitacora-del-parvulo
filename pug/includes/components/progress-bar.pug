@@ -1,9 +1,0 @@
-mixin progress-bar(options)
-	- options = options || {};
-	- var progressValue = options.progressValue || 0;
-
-	.progress-bar-container
-		.progress-bar__marker(style={'left': 'calc('+progressValue+'% - 15px);'}) #{progressValue}%
-		progress(max="100" value=progressValue)
-			.progress-bar--fallback
-				.progress-bar__value(style={'width': progressValue+'%'})
